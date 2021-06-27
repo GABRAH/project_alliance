@@ -1,3 +1,5 @@
+import os
+import shutil
 # import gemmi
 # from privateer import libprivateer as pvt
 
@@ -497,3 +499,88 @@ glycamOneLetterToPDBThreeLetterCodeConversion = {
           "full-name": "N-glycolyl-beta-neuraminic acid", 
           "abbreviation": "NeuNGc" or "Neu5Gc" }
 }
+
+def import_pdb(path):
+        file = open(path, "r")
+        Lines = file.readlines()
+        file.close()  
+        return Lines
+
+def export_pdb(path, output):
+        file = open(path, "a")
+        file.writelines(output)
+        file.close()
+        
+def CreateFolder(path):
+    if not os.path.exists(path):
+        os.makedirs(path)
+    else:
+        shutil.rmtree(path)           # Removes all the subdirectories!
+        os.makedirs(path)
+
+def generateROHReplacementInstructions(Lines):
+        for count, line in enumerate(Lines):
+                if len(line) > 20:
+                        currentCode = line[16:21]
+                        symbolsToReplace = currentCode.replace(" ", "")
+                        if not symbolsToReplace == "ROH":
+                                return {"count": count, "code": symbolsToReplace}
+        
+        return False
+
+def replaceROH(instructionsForROHReplacement, Lines):
+        output = Lines.copy()
+        if instructionsForROHReplacement == False:
+                return output
+        else:
+                count = instructionsForROHReplacement["count"]
+                code = instructionsForROHReplacement["code"]
+        
+        for i in range(count):
+                if len(output[i]) > 20:
+                        output[i] = output[i].replace("ROH", code)
+        
+        return output
+
+def convertGlycamToPDB(glycamOneLetterToPDBThreeLetterCodeConversion, inputPDB):
+        output = inputPDB.copy()
+        unsupportedByPrivateer = 0 
+        for count, line in enumerate(inputPDB):
+                if len(line) > 20:
+                        currentCode = line[16:21]
+                        currentCodeNoSpaces = currentCode.replace(" ", "")
+                        queryCode = currentCodeNoSpaces[1:]
+                        
+                        if queryCode in glycamOneLetterToPDBThreeLetterCodeConversion:
+                                detectedMatch = glycamOneLetterToPDBThreeLetterCodeConversion[queryCode]
+                                replaceGlycamCodeWith = detectedMatch["PDB"]
+                                output[count] = output[count].replace(currentCodeNoSpaces, replaceGlycamCodeWith)
+                                if detectedMatch["supported"] == False: unsupportedByPrivateer += 1
+                        else:
+                                print(f'ERROR: Unable to convert the following glycam ID of "{currentCodeNoSpaces}", the internal database query used "{queryCode}"')
+                                return False
+        
+        if unsupportedByPrivateer > 0:
+                print("WARNING: input PDB has sugars that are unsupported by Privateer!")
+        else:
+                return output
+
+def conversionPipeline(path):
+        glycamPDB = import_pdb(path)
+        instructionsForROHReplacement = generateROHReplacementInstructions(glycamPDB)
+        ROH_removed = replaceROH(instructionsForROHReplacement, glycamPDB)
+        convertedPDB = convertGlycamToPDB(glycamOneLetterToPDBThreeLetterCodeConversion, ROH_removed)
+        return convertedPDB
+
+inputpath = '/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/Volume/'
+outputpath = '/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConverted/'
+CreateFolder(outputpath)
+
+for root, dirs, files in os.walk(inputpath, topdown=False):
+        for name in files:
+                head, tail = os.path.split(root)
+                outputroot = os.path.join(outputpath, tail)
+                if not os.path.exists(outputroot):
+                        os.makedirs(outputroot)
+                with open(os.path.join(outputroot, name), mode="w") as newfile:
+                        newfile.writelines(conversionPipeline(os.path.join(root, name)))
