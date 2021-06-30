@@ -518,13 +518,30 @@ def CreateFolder(path):
         shutil.rmtree(path)           # Removes all the subdirectories!
         os.makedirs(path)
 
+def replace_char_at_index(org_str, index, replacement):
+    ''' Replace character at index in string org_str with the
+    given replacement character.'''
+    new_str = org_str
+    if index < len(org_str):
+        new_str = org_str[0:index] + replacement + org_str[index + 1:]
+    return new_str        
+
 def generateROHReplacementInstructions(Lines):
+        rohID = ""
+        rohIDNoSpaces = ""
         for count, line in enumerate(Lines):
                 if len(line) > 20:
                         currentCode = line[16:21]
                         symbolsToReplace = currentCode.replace(" ", "")
+                        
+                        currentMonomerID = line[24:28]
+                        currentMonomerIDNoSpaces = currentMonomerID.replace(" ", "")
+                        
+                        if symbolsToReplace == "ROH":
+                                rohID = line[24:28]
+                                rohIDNoSpaces = rohID.replace(" ", "")
                         if not symbolsToReplace == "ROH":
-                                return {"count": count, "code": symbolsToReplace}
+                                return {"count": count, "code": symbolsToReplace, "monomerID": currentMonomerIDNoSpaces, "ROH_ID": rohIDNoSpaces}
         
         return False
 
@@ -535,33 +552,56 @@ def replaceROH(instructionsForROHReplacement, Lines):
         else:
                 count = instructionsForROHReplacement["count"]
                 code = instructionsForROHReplacement["code"]
+                rohID = instructionsForROHReplacement["ROH_ID"]
+                monomerID = instructionsForROHReplacement["monomerID"]
         
         for i in range(count):
                 if len(output[i]) > 20:
                         output[i] = output[i].replace("ROH", code)
+                        output[i] = replace_char_at_index(output[i], 25, monomerID)
         
         return output
 
 def convertGlycamToPDB(glycamOneLetterToPDBThreeLetterCodeConversion, inputPDB):
         output = inputPDB.copy()
-        unsupportedByPrivateer = 0 
+        unsupportedByPrivateer = 0
+        
+        alreadyBeenInLoop = False
+        reduceIndexBy = 0
         for count, line in enumerate(inputPDB):
                 if len(line) > 20:
+                        if alreadyBeenInLoop == False:
+                                currentMonomerID = line[24:28]
+                                currentMonomerIDNoSpaces = currentMonomerID.replace(" ", "")
+                                
+                                if int(currentMonomerIDNoSpaces) > 1:
+                                        reduceIndexBy = int(currentMonomerIDNoSpaces) - 1
+                                alreadyBeenInLoop = True
+                                
                         currentCode = line[16:21]
                         currentCodeNoSpaces = currentCode.replace(" ", "")
                         queryCode = currentCodeNoSpaces[1:]
+                        
+                        currentMonomerID = line[24:28]
+                        currentMonomerIDNoSpaces = currentMonomerID.replace(" ", "")
                         
                         if queryCode in glycamOneLetterToPDBThreeLetterCodeConversion:
                                 detectedMatch = glycamOneLetterToPDBThreeLetterCodeConversion[queryCode]
                                 replaceGlycamCodeWith = detectedMatch["PDB"]
                                 output[count] = output[count].replace(currentCodeNoSpaces, replaceGlycamCodeWith)
+                                # output[count] = replace_char_at_index(output[count], 21, "A")
+                                # Need to ask Carl whether he requires the index to start from 1, otherwise I need to sort out the space character issue from index 9 onwards
+                                # And also modify the TER record.
+                                # output[count] = output[count].replace(currentMonomerIDNoSpaces, str(int(currentMonomerIDNoSpaces) - reduceIndexBy))
                                 if detectedMatch["supported"] == False: unsupportedByPrivateer += 1
                         else:
                                 print(f'ERROR: Unable to convert the following glycam ID of "{currentCodeNoSpaces}", the internal database query used "{queryCode}"')
                                 return False
+
         
         if unsupportedByPrivateer > 0:
                 print("WARNING: input PDB has sugars that are unsupported by Privateer!")
+                return output
         else:
                 return output
 
@@ -570,6 +610,7 @@ def conversionPipeline(path):
         instructionsForROHReplacement = generateROHReplacementInstructions(glycamPDB)
         ROH_removed = replaceROH(instructionsForROHReplacement, glycamPDB)
         convertedPDB = convertGlycamToPDB(glycamOneLetterToPDBThreeLetterCodeConversion, ROH_removed)
+        convertedPDB.pop(0)
         return convertedPDB
 
 inputpath = '/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/Volume/'
