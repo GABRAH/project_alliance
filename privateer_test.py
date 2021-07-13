@@ -1,8 +1,8 @@
 from privateer import privateer_core as pvt
 
 # glycosylation = pvt.GlycosylationComposition("/home/harold/Dev/privateer_python/tests/test_data/2h6o_carbremediation.pdb")
-glycosylation = pvt.GlycosylationComposition("/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConverted/man8.2/Cluster2.pdb")
-
+# glycosylation = pvt.GlycosylationComposition("/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedPDB/man8.2/Cluster2.pdb")
+glycosylation = pvt.GlycosylationComposition("/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedmmCIF/man9/Cluster1.mmCIF")
 
 listOfDetectedGlycans = glycosylation.get_summary_of_detected_glycans()
 
