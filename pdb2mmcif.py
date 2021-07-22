@@ -1,5 +1,4 @@
 import os
-import shutil
 import gemmi
 from privateer import privateer_core as pvt
 
@@ -9,8 +8,8 @@ from privateer import privateer_core as pvt
 # https://project-gemmi.github.io/python-api/gemmi.Connection.html
 # Combine this method with privateer.privateer_core.CarbohydrateStructure.get_sugar_linkage_info()
 
-inputPath = '/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedPDB/'
-outputPath = '/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedmmCIF/'
+inputPath = '/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/confConvertedPDB/'
+outputPath = '/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/confConvertedmmCIF/'
 
 singular_mmCIF_output = gemmi.cif.Document()
 for root, dirs, files in os.walk(inputPath, topdown=False):
@@ -36,12 +35,13 @@ for root, dirs, files in os.walk(inputPath, topdown=False):
     gemmiDocument = gemmiStructure.make_mmcif_document()
     gemmiBlock = gemmiDocument.sole_block()
     gemmiBlock.set_pair("_wurcs", glycanWURCS)
-    
+        
     # outputTail = tail + clusterName
     # singular_mmCIF_output.add_new_block(outputTail)
     # singular_output_block = singular_mmCIF_output.find_block(outputTail)
     
-    
+    # for item in gemmiBlock:
+    #   singular_output_block.add_item(item)
     
     with open(outputFilePath, mode="w") as newfile:
       gemmiDocument.write_file(outputFilePath)

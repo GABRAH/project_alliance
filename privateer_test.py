@@ -2,8 +2,8 @@ from privateer import privateer_core as pvt
 
 # glycosylation = pvt.GlycosylationComposition("/home/harold/Dev/privateer_python/tests/test_data/2h6o_carbremediation.pdb")
 # glycosylation = pvt.GlycosylationComposition("/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedPDB/man8.2/Cluster2.pdb")
-glycosylation = pvt.GlycosylationComposition("/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedmmCIF/man9/Cluster1.mmCIF")
-
+# glycosylation = pvt.GlycosylationComposition("/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedmmCIF/man9/Cluster1.mmCIF")
+glycosylation = pvt.GlycosylationComposition("/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedmmCIF/man9/Cluster2.mmCIF")
 listOfDetectedGlycans = glycosylation.get_summary_of_detected_glycans()
 
 print("\n")
@@ -16,10 +16,13 @@ glycan = glycosylation.get_glycan(0)
 
 print("Summary of the glycan: " + str(glycan.get_glycan_summary()))
 
-sugar = glycan.get_monosaccharide(6)
+sugar = glycan.get_monosaccharide(1)
 sugarSummary = sugar.get_sugar_summary()
 
 print(sugarSummary)
+print("\n")
+linkages = sugar.get_sugar_linkage_info()
+print(linkages)
 print("\n")
 
 print("is_sane: " + str(sugar.is_sane()))

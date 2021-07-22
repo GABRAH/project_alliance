@@ -613,8 +613,8 @@ def conversionPipeline(path):
         convertedPDB.pop(0)
         return convertedPDB
 
-inputpath = '/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/Volume/'
-outputpath = '/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedPDB/'
+inputpath = '/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/conf/'
+outputpath = '/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/confConvertedPDB/'
 CreateFolder(outputpath)
 
 for root, dirs, files in os.walk(inputpath, topdown=False):
