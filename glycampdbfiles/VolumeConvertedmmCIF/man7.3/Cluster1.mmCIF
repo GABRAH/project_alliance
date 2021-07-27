@@ -28,7 +28,41 @@ _struct_asym.id
 _struct_asym.entity_id
 poly ?
 
+loop_
+_struct_conn.id
+_struct_conn.conn_type_id
+_struct_conn.ptnr1_auth_asym_id
+_struct_conn.ptnr1_label_asym_id
+_struct_conn.ptnr1_label_comp_id
+_struct_conn.ptnr1_label_seq_id
+_struct_conn.ptnr1_label_atom_id
+_struct_conn.pdbx_ptnr1_label_alt_id
+_struct_conn.ptnr1_auth_seq_id
+_struct_conn.pdbx_ptnr1_PDB_ins_code
+_struct_conn.ptnr1_symmetry
+_struct_conn.ptnr2_auth_asym_id
+_struct_conn.ptnr2_label_asym_id
+_struct_conn.ptnr2_label_comp_id
+_struct_conn.ptnr2_label_seq_id
+_struct_conn.ptnr2_label_atom_id
+_struct_conn.pdbx_ptnr2_label_alt_id
+_struct_conn.ptnr2_auth_seq_id
+_struct_conn.pdbx_ptnr2_PDB_ins_code
+_struct_conn.ptnr2_symmetry
+_struct_conn.details
+_struct_conn.pdbx_dist_value
+'2NDG_C1-C4_NAG3' covale '' poly NDG . C1 ? 2 ? 1_555 '' poly NAG . C4 ? 3 ? 1_555 ? 8.3016
+'3NAG_C1-C4_BMA4' covale '' poly NAG . C1 ? 3 ? 1_555 '' poly BMA . C4 ? 4 ? 1_555 ? 8.2929
+'4BMA_C1-C3_MAN5' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . C3 ? 5 ? 1_555 ? 6.4503
+'4BMA_C1-C6_MAN7' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . C6 ? 7 ? 1_555 ? 8.3123
+'5MAN_C1-C2_MAN6' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . C2 ? 6 ? 1_555 ? 4.6433
+'7MAN_C1-C3_MAN8' covale '' poly MAN . C1 ? 7 ? 1_555 '' poly MAN . C3 ? 8 ? 1_555 ? 6.4453
+'7MAN_C1-C6_MAN9' covale '' poly MAN . C1 ? 7 ? 1_555 '' poly MAN . C6 ? 9 ? 1_555 ? 6.3081
+'9MAN_C1-C2_MAN10' covale '' poly MAN . C1 ? 9 ? 1_555 '' poly MAN . C2 ? 10 ? 1_555 ? 4.4480
 
+loop_
+_struct_conn_type.id
+covale
 
 
 loop_
@@ -263,5 +297,6 @@ _atom_site.pdbx_PDB_model_num
 203 O O2 . MAN poly . . ? 30.531 23.044 23.332 -0.71 70 1 10 '' 1
 204 H H2O . MAN poly . . ? 31.189 23.723 23.17 0.44 60 1 10 '' 1
 
-_wurcs
-WURCS=2.0/4,9,8/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c4-f1_c6-h1_d2-e1_f2-g1_h3-i1
+_WURCS
+'WURCS=2.0/4,9,8/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-f1_d2-e1_f3-g1_f6-h1_h2-i1'
+_GlyTouCan G07505DF

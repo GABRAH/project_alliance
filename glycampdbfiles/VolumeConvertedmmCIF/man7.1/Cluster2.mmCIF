@@ -28,7 +28,41 @@ _struct_asym.id
 _struct_asym.entity_id
 poly ?
 
+loop_
+_struct_conn.id
+_struct_conn.conn_type_id
+_struct_conn.ptnr1_auth_asym_id
+_struct_conn.ptnr1_label_asym_id
+_struct_conn.ptnr1_label_comp_id
+_struct_conn.ptnr1_label_seq_id
+_struct_conn.ptnr1_label_atom_id
+_struct_conn.pdbx_ptnr1_label_alt_id
+_struct_conn.ptnr1_auth_seq_id
+_struct_conn.pdbx_ptnr1_PDB_ins_code
+_struct_conn.ptnr1_symmetry
+_struct_conn.ptnr2_auth_asym_id
+_struct_conn.ptnr2_label_asym_id
+_struct_conn.ptnr2_label_comp_id
+_struct_conn.ptnr2_label_seq_id
+_struct_conn.ptnr2_label_atom_id
+_struct_conn.pdbx_ptnr2_label_alt_id
+_struct_conn.ptnr2_auth_seq_id
+_struct_conn.pdbx_ptnr2_PDB_ins_code
+_struct_conn.ptnr2_symmetry
+_struct_conn.details
+_struct_conn.pdbx_dist_value
+'2NDG_C1-C4_NAG3' covale '' poly NDG . C1 ? 2 ? 1_555 '' poly NAG . C4 ? 3 ? 1_555 ? 8.1435
+'3NAG_C1-C4_BMA4' covale '' poly NAG . C1 ? 3 ? 1_555 '' poly BMA . C4 ? 4 ? 1_555 ? 8.4331
+'4BMA_C1-C3_MAN5' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . C3 ? 5 ? 1_555 ? 6.7659
+'4BMA_C1-C6_MAN8' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . C6 ? 8 ? 1_555 ? 6.7003
+'5MAN_C1-C2_MAN6' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . C2 ? 6 ? 1_555 ? 4.4707
+'6MAN_C1-C2_MAN7' covale '' poly MAN . C1 ? 6 ? 1_555 '' poly MAN . C2 ? 7 ? 1_555 ? 4.5489
+'8MAN_C1-C3_MAN9' covale '' poly MAN . C1 ? 8 ? 1_555 '' poly MAN . C3 ? 9 ? 1_555 ? 6.3804
+'8MAN_C1-C6_MAN10' covale '' poly MAN . C1 ? 8 ? 1_555 '' poly MAN . C6 ? 10 ? 1_555 ? 8.5439
 
+loop_
+_struct_conn_type.id
+covale
 
 
 loop_
@@ -263,5 +297,6 @@ _atom_site.pdbx_PDB_model_num
 203 O O2 . MAN poly . . ? 26.058 19.82 25.484 -0.71 70 1 10 '' 1
 204 H H2O . MAN poly . . ? 25.386 20.49 25.627 0.44 60 1 10 '' 1
 
-_wurcs
-WURCS=2.0/4,9,8/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-i1
+_WURCS
+'WURCS=2.0/4,9,8/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-i1'
+_GlyTouCan 'Not Found'
