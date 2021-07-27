@@ -1,30 +1,33 @@
 data_index
-_block.id 0 man6.2/Phi=66,Psi=-179,Omega=55.1
-_block.id 1 man6.2/Phi=66,Psi=-179,Omega=-177
-_block.id 2 man7.1/Phi=66,Psi=-179,Omega=55.1
-_block.id 3 man7.1/Phi=66,Psi=-179,Omega=-177
-_block.id 4 man5/Phi=66,Psi=-179,Omega=55.1
-_block.id 5 man5/Phi=66,Psi=-179,Omega=-177
-_block.id 6 man7.3/Phi=66,Psi=-179,Omega=55.1
-_block.id 7 man7.3/Phi=66,Psi=-179,Omega=-177
-_block.id 8 man7.4/Phi=66,Psi=-179,Omega=55.1
-_block.id 9 man7.4/Phi=66,Psi=-179,Omega=-177
-_block.id 10 man6.3/Phi=66,Psi=-179,Omega=55.1
-_block.id 11 man6.3/Phi=66,Psi=-179,Omega=-177
-_block.id 12 man8.3/Phi=66,Psi=-179,Omega=55.1
-_block.id 13 man8.3/Phi=66,Psi=-179,Omega=-177
-_block.id 14 man8.2/Phi=66,Psi=-179,Omega=55.1
-_block.id 15 man8.2/Phi=66,Psi=-179,Omega=-177
-_block.id 16 man8.1/Phi=66,Psi=-179,Omega=55.1
-_block.id 17 man8.1/Phi=66,Psi=-179,Omega=-177
-_block.id 18 man6.1/Phi=66,Psi=-179,Omega=55.1
-_block.id 19 man6.1/Phi=66,Psi=-179,Omega=-177
-_block.id 20 man9/Phi=66,Psi=-179,Omega=55.1
-_block.id 21 man9/Phi=66,Psi=-179,Omega=-177
-_block.id 22 man7.2/Phi=66,Psi=-179,Omega=55.1
-_block.id 23 man7.2/Phi=66,Psi=-179,Omega=-177
+loop_
+_index.id
+_index.block_name
+0 man6.2/Phi=66_Psi=-179_Omega=55.1
+1 man6.2/Phi=66_Psi=-179_Omega=-177
+2 man7.1/Phi=66_Psi=-179_Omega=55.1
+3 man7.1/Phi=66_Psi=-179_Omega=-177
+4 man5/Phi=66_Psi=-179_Omega=55.1
+5 man5/Phi=66_Psi=-179_Omega=-177
+6 man7.3/Phi=66_Psi=-179_Omega=55.1
+7 man7.3/Phi=66_Psi=-179_Omega=-177
+8 man7.4/Phi=66_Psi=-179_Omega=55.1
+9 man7.4/Phi=66_Psi=-179_Omega=-177
+10 man6.3/Phi=66_Psi=-179_Omega=55.1
+11 man6.3/Phi=66_Psi=-179_Omega=-177
+12 man8.3/Phi=66_Psi=-179_Omega=55.1
+13 man8.3/Phi=66_Psi=-179_Omega=-177
+14 man8.2/Phi=66_Psi=-179_Omega=55.1
+15 man8.2/Phi=66_Psi=-179_Omega=-177
+16 man8.1/Phi=66_Psi=-179_Omega=55.1
+17 man8.1/Phi=66_Psi=-179_Omega=-177
+18 man6.1/Phi=66_Psi=-179_Omega=55.1
+19 man6.1/Phi=66_Psi=-179_Omega=-177
+20 man9/Phi=66_Psi=-179_Omega=55.1
+21 man9/Phi=66_Psi=-179_Omega=-177
+22 man7.2/Phi=66_Psi=-179_Omega=55.1
+23 man7.2/Phi=66_Psi=-179_Omega=-177
 
-data_man6.2/Phi=66,Psi=-179,Omega=55.1
+data_man6.2/Phi=66_Psi=-179_Omega=55.1
 _entry.id man6.2
 
 _cell.entry_id man6.2
@@ -305,7 +308,7 @@ _WURCS
 'WURCS=2.0/4,8,7/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-h1_f2-g1'
 _GlyTouCan 'Not Found'
 
-data_man6.2/Phi=66,Psi=-179,Omega=-177
+data_man6.2/Phi=66_Psi=-179_Omega=-177
 _entry.id man6.2
 
 _cell.entry_id man6.2
@@ -586,7 +589,7 @@ _WURCS
 'WURCS=2.0/4,8,7/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-h1_f2-g1'
 _GlyTouCan 'Not Found'
 
-data_man7.1/Phi=66,Psi=-179,Omega=55.1
+data_man7.1/Phi=66_Psi=-179_Omega=55.1
 _entry.id man7.1
 
 _cell.entry_id man7.1
@@ -889,7 +892,7 @@ _WURCS
 'WURCS=2.0/4,9,8/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-i1'
 _GlyTouCan 'Not Found'
 
-data_man7.1/Phi=66,Psi=-179,Omega=-177
+data_man7.1/Phi=66_Psi=-179_Omega=-177
 _entry.id man7.1
 
 _cell.entry_id man7.1
@@ -1192,7 +1195,7 @@ _WURCS
 'WURCS=2.0/4,9,8/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-i1'
 _GlyTouCan 'Not Found'
 
-data_man5/Phi=66,Psi=-179,Omega=55.1
+data_man5/Phi=66_Psi=-179_Omega=55.1
 _entry.id man5
 
 _cell.entry_id man5
@@ -1451,7 +1454,7 @@ _WURCS
 'WURCS=2.0/4,7,6/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-g1'
 _GlyTouCan G58214IQ
 
-data_man5/Phi=66,Psi=-179,Omega=-177
+data_man5/Phi=66_Psi=-179_Omega=-177
 _entry.id man5
 
 _cell.entry_id man5
@@ -1710,7 +1713,7 @@ _WURCS
 'WURCS=2.0/4,7,6/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-g1'
 _GlyTouCan G58214IQ
 
-data_man7.3/Phi=66,Psi=-179,Omega=55.1
+data_man7.3/Phi=66_Psi=-179_Omega=55.1
 _entry.id man7.3
 
 _cell.entry_id man7.3
@@ -2013,7 +2016,7 @@ _WURCS
 'WURCS=2.0/4,9,8/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-f1_d2-e1_f3-g1_f6-h1_h2-i1'
 _GlyTouCan G07505DF
 
-data_man7.3/Phi=66,Psi=-179,Omega=-177
+data_man7.3/Phi=66_Psi=-179_Omega=-177
 _entry.id man7.3
 
 _cell.entry_id man7.3
@@ -2316,7 +2319,7 @@ _WURCS
 'WURCS=2.0/4,9,8/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-f1_d2-e1_f3-g1_f6-h1_h2-i1'
 _GlyTouCan G07505DF
 
-data_man7.4/Phi=66,Psi=-179,Omega=55.1
+data_man7.4/Phi=66_Psi=-179_Omega=55.1
 _entry.id man7.4
 
 _cell.entry_id man7.4
@@ -2619,7 +2622,7 @@ _WURCS
 'WURCS=2.0/4,9,8/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-h1_f2-g1_h2-i1'
 _GlyTouCan 'Not Found'
 
-data_man7.4/Phi=66,Psi=-179,Omega=-177
+data_man7.4/Phi=66_Psi=-179_Omega=-177
 _entry.id man7.4
 
 _cell.entry_id man7.4
@@ -2922,7 +2925,7 @@ _WURCS
 'WURCS=2.0/4,9,8/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-h1_f2-g1_h2-i1'
 _GlyTouCan 'Not Found'
 
-data_man6.3/Phi=66,Psi=-179,Omega=55.1
+data_man6.3/Phi=66_Psi=-179_Omega=55.1
 _entry.id man6.3
 
 _cell.entry_id man6.3
@@ -3203,7 +3206,7 @@ _WURCS
 'WURCS=2.0/4,8,7/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-g1_g2-h1'
 _GlyTouCan 'Not Found'
 
-data_man6.3/Phi=66,Psi=-179,Omega=-177
+data_man6.3/Phi=66_Psi=-179_Omega=-177
 _entry.id man6.3
 
 _cell.entry_id man6.3
@@ -3484,7 +3487,7 @@ _WURCS
 'WURCS=2.0/4,8,7/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-g1_g2-h1'
 _GlyTouCan 'Not Found'
 
-data_man8.3/Phi=66,Psi=-179,Omega=55.1
+data_man8.3/Phi=66_Psi=-179_Omega=55.1
 _entry.id man8.3
 
 _cell.entry_id man8.3
@@ -3809,7 +3812,7 @@ _WURCS
 'WURCS=2.0/4,10,9/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-f1_d2-e1_f3-g1_f6-i1_g2-h1_i2-j1'
 _GlyTouCan 'Not Found'
 
-data_man8.3/Phi=66,Psi=-179,Omega=-177
+data_man8.3/Phi=66_Psi=-179_Omega=-177
 _entry.id man8.3
 
 _cell.entry_id man8.3
@@ -4134,7 +4137,7 @@ _WURCS
 'WURCS=2.0/4,10,9/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-f1_d2-e1_f3-g1_f6-i1_g2-h1_i2-j1'
 _GlyTouCan 'Not Found'
 
-data_man8.2/Phi=66,Psi=-179,Omega=55.1
+data_man8.2/Phi=66_Psi=-179_Omega=55.1
 _entry.id man8.2
 
 _cell.entry_id man8.2
@@ -4459,7 +4462,7 @@ _WURCS
 'WURCS=2.0/4,10,9/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-i1_i2-j1'
 _GlyTouCan G55786MG
 
-data_man8.2/Phi=66,Psi=-179,Omega=-177
+data_man8.2/Phi=66_Psi=-179_Omega=-177
 _entry.id man8.2
 
 _cell.entry_id man8.2
@@ -4784,7 +4787,7 @@ _WURCS
 'WURCS=2.0/4,10,9/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-i1_i2-j1'
 _GlyTouCan G55786MG
 
-data_man8.1/Phi=66,Psi=-179,Omega=55.1
+data_man8.1/Phi=66_Psi=-179_Omega=55.1
 _entry.id man8.1
 
 _cell.entry_id man8.1
@@ -5109,7 +5112,7 @@ _WURCS
 'WURCS=2.0/4,10,9/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1'
 _GlyTouCan G48148JS
 
-data_man8.1/Phi=66,Psi=-179,Omega=-177
+data_man8.1/Phi=66_Psi=-179_Omega=-177
 _entry.id man8.1
 
 _cell.entry_id man8.1
@@ -5434,7 +5437,7 @@ _WURCS
 'WURCS=2.0/4,10,9/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1'
 _GlyTouCan G48148JS
 
-data_man6.1/Phi=66,Psi=-179,Omega=55.1
+data_man6.1/Phi=66_Psi=-179_Omega=55.1
 _entry.id man6.1
 
 _cell.entry_id man6.1
@@ -5715,7 +5718,7 @@ _WURCS
 'WURCS=2.0/4,8,7/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-f1_d2-e1_f3-g1_f6-h1'
 _GlyTouCan 'Not Found'
 
-data_man6.1/Phi=66,Psi=-179,Omega=-177
+data_man6.1/Phi=66_Psi=-179_Omega=-177
 _entry.id man6.1
 
 _cell.entry_id man6.1
@@ -5996,7 +5999,7 @@ _WURCS
 'WURCS=2.0/4,8,7/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-f1_d2-e1_f3-g1_f6-h1'
 _GlyTouCan 'Not Found'
 
-data_man9/Phi=66,Psi=-179,Omega=55.1
+data_man9/Phi=66_Psi=-179_Omega=55.1
 _entry.id man9
 
 _cell.entry_id man9
@@ -6343,7 +6346,7 @@ _WURCS
 'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
 _GlyTouCan G39578OU
 
-data_man9/Phi=66,Psi=-179,Omega=-177
+data_man9/Phi=66_Psi=-179_Omega=-177
 _entry.id man9
 
 _cell.entry_id man9
@@ -6690,7 +6693,7 @@ _WURCS
 'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
 _GlyTouCan G39578OU
 
-data_man7.2/Phi=66,Psi=-179,Omega=55.1
+data_man7.2/Phi=66_Psi=-179_Omega=55.1
 _entry.id man7.2
 
 _cell.entry_id man7.2
@@ -6993,7 +6996,7 @@ _WURCS
 'WURCS=2.0/4,9,8/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-f1_d2-e1_f3-g1_f6-i1_g2-h1'
 _GlyTouCan 'Not Found'
 
-data_man7.2/Phi=66,Psi=-179,Omega=-177
+data_man7.2/Phi=66_Psi=-179_Omega=-177
 _entry.id man7.2
 
 _cell.entry_id man7.2

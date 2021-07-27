@@ -1,7 +1,7 @@
-data_Cluster6
-_entry.id Cluster6
+data_confConvertedPDB/
+_entry.id confConvertedPDB
 
-_cell.entry_id Cluster6
+_cell.entry_id confConvertedPDB
 _cell.length_a 1
 _cell.length_b 1
 _cell.length_c 1
@@ -9,7 +9,7 @@ _cell.angle_alpha 90
 _cell.angle_beta 90
 _cell.angle_gamma 90
 
-_symmetry.entry_id Cluster6
+_symmetry.entry_id confConvertedPDB
 _symmetry.space_group_name_H-M ''
 
 
@@ -28,7 +28,43 @@ _struct_asym.id
 _struct_asym.entity_id
 poly ?
 
+loop_
+_struct_conn.id
+_struct_conn.conn_type_id
+_struct_conn.ptnr1_auth_asym_id
+_struct_conn.ptnr1_label_asym_id
+_struct_conn.ptnr1_label_comp_id
+_struct_conn.ptnr1_label_seq_id
+_struct_conn.ptnr1_label_atom_id
+_struct_conn.pdbx_ptnr1_label_alt_id
+_struct_conn.ptnr1_auth_seq_id
+_struct_conn.pdbx_ptnr1_PDB_ins_code
+_struct_conn.ptnr1_symmetry
+_struct_conn.ptnr2_auth_asym_id
+_struct_conn.ptnr2_label_asym_id
+_struct_conn.ptnr2_label_comp_id
+_struct_conn.ptnr2_label_seq_id
+_struct_conn.ptnr2_label_atom_id
+_struct_conn.pdbx_ptnr2_label_alt_id
+_struct_conn.ptnr2_auth_seq_id
+_struct_conn.pdbx_ptnr2_PDB_ins_code
+_struct_conn.ptnr2_symmetry
+_struct_conn.details
+_struct_conn.pdbx_dist_value
+'2NDG_C1-C4_NAG3' covale '' poly NDG . C1 ? 2 ? 1_555 '' poly NAG . C4 ? 3 ? 1_555 ? 8.2828
+'3NAG_C1-C4_BMA4' covale '' poly NAG . C1 ? 3 ? 1_555 '' poly BMA . C4 ? 4 ? 1_555 ? 8.2355
+'4BMA_C1-C3_MAN10' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . C3 ? 10 ? 1_555 ? 6.8028
+'4BMA_C1-C6_MAN5' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . C6 ? 5 ? 1_555 ? 5.0938
+'5MAN_C1-C3_MAN8' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . C3 ? 8 ? 1_555 ? 6.4320
+'5MAN_C1-C6_MAN6' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . C6 ? 6 ? 1_555 ? 8.3615
+'6MAN_C1-C2_MAN7' covale '' poly MAN . C1 ? 6 ? 1_555 '' poly MAN . C2 ? 7 ? 1_555 ? 4.7046
+'8MAN_C1-C2_MAN9' covale '' poly MAN . C1 ? 8 ? 1_555 '' poly MAN . C2 ? 9 ? 1_555 ? 4.9071
+'10MAN_C1-C2_MAN11' covale '' poly MAN . C1 ? 10 ? 1_555 '' poly MAN . C2 ? 11 ? 1_555 ? 4.6202
+'11MAN_C1-C2_MAN12' covale '' poly MAN . C1 ? 11 ? 1_555 '' poly MAN . C2 ? 12 ? 1_555 ? 4.6129
 
+loop_
+_struct_conn_type.id
+covale
 
 
 loop_
@@ -305,5 +341,6 @@ _atom_site.pdbx_PDB_model_num
 245 O O2 . MAN poly . . ? 19.699 21.966 38.97 -0.71 70 1 12 '' 1
 246 H H2O . MAN poly . . ? 18.993 21.414 39.316 0.44 60 1 12 '' 1
 
-_wurcs
-WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1
+_WURCS
+'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
+_GlyTouCan G39578OU

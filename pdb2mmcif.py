@@ -142,9 +142,9 @@ def convertSinglePDBtoSingleCIF(inputFilePath, outputFilePath, privateerJSON):
 
     outputName = ""
     if fileName == "Cluster1.pdb":
-        outputName = "Phi=66,Psi=-179,Omega=-177"
+        outputName = "Phi=66_Psi=-179_Omega=-177"
     elif fileName == "Cluster2.pdb":
-        outputName = "Phi=66,Psi=-179,Omega=55.1"
+        outputName = "Phi=66_Psi=-179_Omega=55.1"
 
     privateerMetaData = getMetadataFromPrivateer(inputFilePath, privateerJSON)
     gemmiStructure = gemmi.read_structure(inputFilePath)
@@ -171,9 +171,9 @@ def convertAllPDBtoSingleCIF(
 
     outputName = ""
     if fileName == "Cluster1.pdb":
-        outputName = "Phi=66,Psi=-179,Omega=-177"
+        outputName = "Phi=66_Psi=-179_Omega=-177"
     elif fileName == "Cluster2.pdb":
-        outputName = "Phi=66,Psi=-179,Omega=55.1"
+        outputName = "Phi=66_Psi=-179_Omega=55.1"
 
     privateerMetaData = getMetadataFromPrivateer(inputFilePath, privateerJSON)
     gemmiStructure = gemmi.read_structure(inputFilePath)
@@ -223,7 +223,8 @@ for root, dirs, files in os.walk(inputPath, topdown=False):
         )
 
 indexBlock = singular_mmCIF_output.add_new_block(name="index", pos=0)
+indexLoop = indexBlock.init_loop("_index.", ["id", "block_name"])
 for count, item in enumerate(blockNameList):
-    indexBlock.set_pair(f"_block.id {count}", item)
+    indexLoop.add_row([str(count), item])
 
 singular_mmCIF_output.write_file(single_mmCIF_output_path)
