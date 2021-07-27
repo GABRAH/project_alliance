@@ -1,7 +1,7 @@
-data_Cluster2
-_entry.id Cluster2
+data_man9/Phi=66,Psi=-179,Omega=55.1
+_entry.id man9
 
-_cell.entry_id Cluster2
+_cell.entry_id man9
 _cell.length_a 1
 _cell.length_b 1
 _cell.length_c 1
@@ -9,7 +9,7 @@ _cell.angle_alpha 90
 _cell.angle_beta 90
 _cell.angle_gamma 90
 
-_symmetry.entry_id Cluster2
+_symmetry.entry_id man9
 _symmetry.space_group_name_H-M ''
 
 

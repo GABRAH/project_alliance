@@ -18,6 +18,7 @@ def CreateFolder(path):
         os.makedirs(path)
 
 
+# Privateer/gemmi functions
 def getResidueSummaryInChain(chain):
     summary = []
 
@@ -39,7 +40,6 @@ def getResidueSummaryInChain(chain):
     return summary
 
 
-# Privateer/gemmi functions
 def getMetadataFromPrivateer(inputFilePath, privateerJSON):
     glycosylation = pvt.GlycosylationComposition(inputFilePath)
     inputGlycan = glycosylation.get_glycan(0)
@@ -136,7 +136,16 @@ def addGemmiConnectionsBetweenSugars(gemmiStructure, privateerMetaData):
     return outputGemmiStructure
 
 
-def convertSinglePDBtoCIF(inputFilePath, outputFilePath, privateerJSON):
+def convertSinglePDBtoSingleCIF(inputFilePath, outputFilePath, privateerJSON):
+    root, fileName = os.path.split(inputFilePath)
+    trash, glycanName = os.path.split(root)
+
+    outputName = ""
+    if fileName == "Cluster1.pdb":
+        outputName = "Phi=66,Psi=-179,Omega=-177"
+    elif fileName == "Cluster2.pdb":
+        outputName = "Phi=66,Psi=-179,Omega=55.1"
+
     privateerMetaData = getMetadataFromPrivateer(inputFilePath, privateerJSON)
     gemmiStructure = gemmi.read_structure(inputFilePath)
     gemmiStructureWithSugarLinks = addGemmiConnectionsBetweenSugars(
@@ -147,14 +156,52 @@ def convertSinglePDBtoCIF(inputFilePath, outputFilePath, privateerJSON):
     gemmiBlock = gemmiDocument.sole_block()
     gemmiBlock.set_pair("_WURCS", gemmi.cif.quote(privateerMetaData["glycanWURCS"]))
     gemmiBlock.set_pair("_GlyTouCan", gemmi.cif.quote(privateerMetaData["glytoucanID"]))
+    gemmiBlock.name = glycanName + "/" + outputName
+    gemmiBlock.set_pair("_entry.id", glycanName)
+    gemmiBlock.set_pair("_cell.entry_id", glycanName)
+    gemmiBlock.set_pair("_symmetry.entry_id", glycanName)
     gemmiDocument.write_file(outputFilePath)
+
+
+def convertAllPDBtoSingleCIF(
+    inputFilePath, singular_mmCIF_output, privateerJSON, blockNameList
+):
+    root, fileName = os.path.split(inputFilePath)
+    trash, glycanName = os.path.split(root)
+
+    outputName = ""
+    if fileName == "Cluster1.pdb":
+        outputName = "Phi=66,Psi=-179,Omega=-177"
+    elif fileName == "Cluster2.pdb":
+        outputName = "Phi=66,Psi=-179,Omega=55.1"
+
+    privateerMetaData = getMetadataFromPrivateer(inputFilePath, privateerJSON)
+    gemmiStructure = gemmi.read_structure(inputFilePath)
+    gemmiStructureWithSugarLinks = addGemmiConnectionsBetweenSugars(
+        gemmiStructure, privateerMetaData
+    )
+
+    gemmiDocument = gemmiStructureWithSugarLinks.make_mmcif_document()
+    gemmiBlock = gemmiDocument.sole_block()
+    gemmiBlock.set_pair("_WURCS", gemmi.cif.quote(privateerMetaData["glycanWURCS"]))
+    gemmiBlock.set_pair("_GlyTouCan", gemmi.cif.quote(privateerMetaData["glytoucanID"]))
+
+    gemmiBlock.name = glycanName + "/" + outputName
+    blockNameList.append(gemmiBlock.name)
+
+    gemmiBlock.set_pair("_entry.id", glycanName)
+    gemmiBlock.set_pair("_cell.entry_id", glycanName)
+    gemmiBlock.set_pair("_symmetry.entry_id", glycanName)
+    singular_mmCIF_output.add_copied_block(gemmiBlock, pos=-1)
 
 
 inputPath = "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedPDB/"
 outputPath = "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedmmCIF/"
 privateerJSON = pvt.OfflineDatabase()
 
+single_mmCIF_output_path = os.path.join(outputPath, "compilation.mmCIF")
 singular_mmCIF_output = gemmi.cif.Document()
+blockNameList = []
 CreateFolder(outputPath)
 for root, dirs, files in os.walk(inputPath, topdown=False):
     for name in files:
@@ -170,18 +217,13 @@ for root, dirs, files in os.walk(inputPath, topdown=False):
         name_of_file = name.replace(".pdb", ".mmCIF")
         outputFilePath = os.path.join(outputroot, name_of_file)
 
-        convertSinglePDBtoCIF(inputFilePath, outputFilePath, privateerJSON)
+        convertSinglePDBtoSingleCIF(inputFilePath, outputFilePath, privateerJSON)
+        convertAllPDBtoSingleCIF(
+            inputFilePath, singular_mmCIF_output, privateerJSON, blockNameList
+        )
 
-        # outputTail = tail + clusterName
-        # singular_mmCIF_output.add_new_block(outputTail)
-        # singular_output_block = singular_mmCIF_output.find_block(outputTail)
+indexBlock = singular_mmCIF_output.add_new_block(name="index", pos=0)
+for count, item in enumerate(blockNameList):
+    indexBlock.set_pair(f"_block.id {count}", item)
 
-        # for item in gemmiBlock:
-        #   singular_output_block.add_item(item)
-
-
-# with open("/home/harold/Dev/privateer_python/project_alliance/single.mmCIF", mode="w") as newfile:
-#   singular_mmCIF_output.write_file("/home/harold/Dev/privateer_python/project_alliance/single.mmCIF")
-
-# mmcif = structure.make_mmcif_document()
-# mmcif.write_file("Cluster1.mmCIF")
+singular_mmCIF_output.write_file(single_mmCIF_output_path)
