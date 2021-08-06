@@ -2,1748 +2,13 @@ data_index
 loop_
 _index.id
 _index.block_name
-0 confConvertedPDB/Phi=66_Psi=-179_Omega=-177
+0 confConvertedPDB/
 1 confConvertedPDB/
 2 confConvertedPDB/Phi=66_Psi=-179_Omega=55.1
-3 confConvertedPDB/
+3 confConvertedPDB/Phi=66_Psi=-179_Omega=-177
 4 confConvertedPDB/
 5 confConvertedPDB/
 6 confConvertedPDB/
-
-data_confConvertedPDB/Phi=66_Psi=-179_Omega=-177
-_entry.id confConvertedPDB
-
-_cell.entry_id confConvertedPDB
-_cell.length_a 1
-_cell.length_b 1
-_cell.length_c 1
-_cell.angle_alpha 90
-_cell.angle_beta 90
-_cell.angle_gamma 90
-
-_symmetry.entry_id confConvertedPDB
-_symmetry.space_group_name_H-M ''
-
-
-
-
-loop_
-_chem_comp.id
-_chem_comp.type
-BMA .
-MAN .
-NAG .
-NDG .
-
-loop_
-_struct_asym.id
-_struct_asym.entity_id
-poly ?
-
-loop_
-_struct_conn.id
-_struct_conn.conn_type_id
-_struct_conn.ptnr1_auth_asym_id
-_struct_conn.ptnr1_label_asym_id
-_struct_conn.ptnr1_label_comp_id
-_struct_conn.ptnr1_label_seq_id
-_struct_conn.ptnr1_label_atom_id
-_struct_conn.pdbx_ptnr1_label_alt_id
-_struct_conn.ptnr1_auth_seq_id
-_struct_conn.pdbx_ptnr1_PDB_ins_code
-_struct_conn.ptnr1_symmetry
-_struct_conn.ptnr2_auth_asym_id
-_struct_conn.ptnr2_label_asym_id
-_struct_conn.ptnr2_label_comp_id
-_struct_conn.ptnr2_label_seq_id
-_struct_conn.ptnr2_label_atom_id
-_struct_conn.pdbx_ptnr2_label_alt_id
-_struct_conn.ptnr2_auth_seq_id
-_struct_conn.pdbx_ptnr2_PDB_ins_code
-_struct_conn.ptnr2_symmetry
-_struct_conn.details
-_struct_conn.pdbx_dist_value
-'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.5212
-'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4581
-'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4248
-'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.5435
-'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4386
-'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4355
-'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4734
-'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.5127
-'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4856
-'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4763
-
-loop_
-_struct_conn_type.id
-covale
-
-
-loop_
-_atom_type.symbol
-H
-C
-N
-O
-
-
-loop_
-_atom_site.id
-_atom_site.type_symbol
-_atom_site.label_atom_id
-_atom_site.label_alt_id
-_atom_site.label_comp_id
-_atom_site.label_asym_id
-_atom_site.label_entity_id
-_atom_site.label_seq_id
-_atom_site.pdbx_PDB_ins_code
-_atom_site.Cartn_x
-_atom_site.Cartn_y
-_atom_site.Cartn_z
-_atom_site.occupancy
-_atom_site.B_iso_or_equiv
-_atom_site.pdbx_formal_charge
-_atom_site.auth_seq_id
-_atom_site.auth_asym_id
-_atom_site.pdbx_PDB_model_num
-1 H HO1 . NDG poly . . ? 29.026 28.448 37.266 0.44 50 1 2 '' 1
-2 O O1 . NDG poly . . ? 28.251 27.907 37.096 -0.63 90 1 2 '' 1
-3 C C1 . NDG poly . . ? 27.202 28.74 36.589 0.46 80 1 2 '' 1
-4 H H1 . NDG poly . . ? 26.685 29.225 37.417 0 0 2 2 '' 1
-5 C C2 . NDG poly . . ? 26.036 27.951 35.869 0.24 50 1 2 '' 1
-6 H H2 . NDG poly . . ? 25.277 28.73 35.791 0 0 3 2 '' 1
-7 N N2 . NDG poly . . ? 25.509 26.808 36.625 -0.55 20 1 2 '' 1
-8 H H2N . NDG poly . . ? 26.099 26.021 36.856 0.23 60 4 2 '' 1
-9 C C2N . NDG poly . . ? 24.565 27.026 37.52 0.58 80 1 2 '' 1
-10 C CME . NDG poly . . ? 24.423 25.919 38.6 0.06 30 1 2 '' 1
-11 H H3M . NDG poly . . ? 23.886 26.259 39.486 0 0 5 2 '' 1
-12 H H2M . NDG poly . . ? 23.849 25.101 38.166 0 0 5 2 '' 1
-13 H H1M . NDG poly . . ? 25.392 25.726 39.06 0 0 5 2 '' 1
-14 O O2N . NDG poly . . ? 23.919 28.05 37.552 -0.57 90 2 2 '' 1
-15 C C3 . NDG poly . . ? 26.599 27.51 34.525 0.16 50 1 2 '' 1
-16 H H3 . NDG poly . . ? 27.28 26.681 34.716 0 0 3 2 '' 1
-17 O O3 . NDG poly . . ? 25.444 26.942 33.794 -0.63 0 1 2 '' 1
-18 H H3O . NDG poly . . ? 25.579 26.912 32.844 0.41 30 1 2 '' 1
-19 C C4 . NDG poly . . ? 27.326 28.631 33.67 0.32 20 1 2 '' 1
-20 H H4 . NDG poly . . ? 26.605 29.379 33.342 0 0 3 2 '' 1
-21 C C5 . NDG poly . . ? 28.38 29.363 34.55 0.24 60 1 2 '' 1
-22 H H5 . NDG poly . . ? 29.119 28.606 34.813 0 0 3 2 '' 1
-23 C C6 . NDG poly . . ? 29.26 30.462 33.858 0.32 80 1 2 '' 1
-24 H H62 . NDG poly . . ? 29.942 29.993 33.149 0 0 3 2 '' 1
-25 H H61 . NDG poly . . ? 30.016 30.883 34.521 0 0 3 2 '' 1
-26 O O6 . NDG poly . . ? 28.385 31.451 33.252 -0.68 80 1 2 '' 1
-27 H H6O . NDG poly . . ? 28.842 32.051 32.658 0.42 10 1 2 '' 1
-28 O O5 . NDG poly . . ? 27.742 29.783 35.758 -0.56 80 3 2 '' 1
-29 O O4 . NDG poly . . ? 27.998 28.05 32.571 -0.47 80 3 2 '' 1
-30 C C1 . NAG poly . . ? 27.248 27.892 31.257 0.28 70 1 3 '' 1
-31 H H1 . NAG poly . . ? 26.713 28.83 31.108 0 0 2 3 '' 1
-32 O O5 . NAG poly . . ? 26.268 26.773 31.386 -0.43 30 3 3 '' 1
-33 C C5 . NAG poly . . ? 25.455 26.675 30.148 0.2 80 1 3 '' 1
-34 H H5 . NAG poly . . ? 25.069 27.661 29.891 0 0 3 3 '' 1
-35 C C6 . NAG poly . . ? 24.181 25.831 30.507 0.28 90 1 3 '' 1
-36 H H62 . NAG poly . . ? 23.53 25.756 29.637 0 0 3 3 '' 1
-37 H H61 . NAG poly . . ? 23.54 26.297 31.256 0 0 3 3 '' 1
-38 O O6 . NAG poly . . ? 24.524 24.516 30.949 -0.68 90 1 3 '' 1
-39 H H6O . NAG poly . . ? 25.029 24.506 31.766 0.42 40 1 3 '' 1
-40 C C4 . NAG poly . . ? 26.361 26.256 28.967 0.3 20 1 3 '' 1
-41 H H4 . NAG poly . . ? 26.602 25.241 29.282 0 0 3 3 '' 1
-42 C C3 . NAG poly . . ? 27.687 27.063 28.806 0.18 0 1 3 '' 1
-43 H H3 . NAG poly . . ? 27.325 27.87 28.17 0 0 3 3 '' 1
-44 O O3 . NAG poly . . ? 28.628 26.18 28.076 -0.68 10 1 3 '' 1
-45 H H3O . NAG poly . . ? 28.257 25.901 27.235 0.42 30 1 3 '' 1
-46 C C2 . NAG poly . . ? 28.215 27.599 30.134 0.48 0 1 3 '' 1
-47 H H2 . NAG poly . . ? 28.833 26.844 30.619 0 0 3 3 '' 1
-48 N N2 . NAG poly . . ? 29.144 28.743 29.819 -0.72 20 1 3 '' 1
-49 H H2N . NAG poly . . ? 28.865 29.295 29.02 0.3 0 4 3 '' 1
-50 C C2N . NAG poly . . ? 30.279 29.107 30.397 0.64 80 1 3 '' 1
-51 O O2N . NAG poly . . ? 30.748 28.435 31.278 -0.57 60 2 3 '' 1
-52 C CME . NAG poly . . ? 30.899 30.413 29.917 0.03 40 1 3 '' 1
-53 H H3M . NAG poly . . ? 31.885 30.468 30.378 0 0 5 3 '' 1
-54 H H2M . NAG poly . . ? 31.055 30.484 28.841 0 0 5 3 '' 1
-55 H H1M . NAG poly . . ? 30.336 31.263 30.304 0 0 5 3 '' 1
-56 O O4 . NAG poly . . ? 25.507 26.211 27.7 -0.47 40 3 3 '' 1
-57 C C1 . BMA poly . . ? 25.574 25.081 26.781 0.31 40 1 4 '' 1
-58 H H1 . BMA poly . . ? 25.319 24.197 27.366 0 0 2 4 '' 1
-59 O O5 . BMA poly . . ? 26.979 24.938 26.272 -0.39 30 3 4 '' 1
-60 C C5 . BMA poly . . ? 27.194 23.881 25.214 0.2 60 1 4 '' 1
-61 H H5 . BMA poly . . ? 27.242 22.946 25.772 0 0 3 4 '' 1
-62 C C6 . BMA poly . . ? 28.678 23.988 24.766 0.27 30 1 4 '' 1
-63 H H62 . BMA poly . . ? 28.861 24.952 24.292 0 0 3 4 '' 1
-64 H H61 . BMA poly . . ? 28.828 23.197 24.031 0 0 3 4 '' 1
-65 O O6 . BMA poly . . ? 29.624 23.836 25.916 -0.45 50 3 4 '' 1
-66 C C4 . BMA poly . . ? 26.144 24.008 24.07 0.34 90 1 4 '' 1
-67 H H4 . BMA poly . . ? 26.384 24.873 23.452 0 0 3 4 '' 1
-68 O O4 . BMA poly . . ? 26.237 22.762 23.275 -0.74 60 1 4 '' 1
-69 H H4O . BMA poly . . ? 25.652 22.914 22.528 0.44 30 1 4 '' 1
-70 C C3 . BMA poly . . ? 24.685 24.029 24.646 0.26 30 1 4 '' 1
-71 H H3 . BMA poly . . ? 24.59 23.103 25.213 0 0 3 4 '' 1
-72 C C2 . BMA poly . . ? 24.513 25.119 25.693 0.24 10 1 4 '' 1
-73 H H2 . BMA poly . . ? 23.547 24.867 26.13 0 0 3 4 '' 1
-74 O O2 . BMA poly . . ? 24.407 26.406 25.072 -0.66 40 1 4 '' 1
-75 H H2O . BMA poly . . ? 23.782 26.927 25.582 0.43 10 1 4 '' 1
-76 O O3 . BMA poly . . ? 23.542 23.996 23.647 -0.45 60 3 4 '' 1
-77 C C1 . MAN poly . . ? 31.127 23.669 25.607 0.43 30 1 5 '' 1
-78 H H1 . MAN poly . . ? 31.22 22.789 24.97 0 0 2 5 '' 1
-79 C C2 . MAN poly . . ? 31.873 23.336 26.969 0.24 50 1 5 '' 1
-80 H H2 . MAN poly . . ? 31.416 22.407 27.308 0 0 3 5 '' 1
-81 O O2 . MAN poly . . ? 33.307 23.125 26.734 -0.71 70 1 5 '' 1
-82 H H2O . MAN poly . . ? 33.367 22.637 25.91 0.44 60 1 5 '' 1
-83 C C3 . MAN poly . . ? 31.631 24.385 28 0.25 20 1 5 '' 1
-84 H H3 . MAN poly . . ? 30.567 24.424 28.236 0 0 3 5 '' 1
-85 C C4 . MAN poly . . ? 32.023 25.793 27.454 0.32 60 1 5 '' 1
-86 H H4 . MAN poly . . ? 33.106 25.857 27.561 0 0 3 5 '' 1
-87 C C5 . MAN poly . . ? 31.489 26.092 26.032 0.27 60 1 5 '' 1
-88 H H5 . MAN poly . . ? 30.416 26.282 26.017 0 0 3 5 '' 1
-89 C C6 . MAN poly . . ? 32.12 27.381 25.537 0.26 60 1 5 '' 1
-90 H H62 . MAN poly . . ? 33.125 27.388 25.959 0 0 3 5 '' 1
-91 H H61 . MAN poly . . ? 32.228 27.38 24.453 0 0 3 5 '' 1
-92 O O6 . MAN poly . . ? 31.312 28.599 26.016 -0.46 0 3 5 '' 1
-93 O O5 . MAN poly . . ? 31.665 24.971 25.069 -0.5 70 3 5 '' 1
-94 O O4 . MAN poly . . ? 31.439 26.705 28.344 -0.73 30 1 5 '' 1
-95 H H4O . MAN poly . . ? 30.479 26.695 28.33 0.43 80 1 5 '' 1
-96 O O3 . MAN poly . . ? 32.415 24.098 29.239 -0.45 90 3 5 '' 1
-97 C C1 . MAN poly . . ? 30.895 29.546 25.021 0.43 30 1 6 '' 1
-98 H H1 . MAN poly . . ? 31.744 29.759 24.372 0 0 2 6 '' 1
-99 C C2 . MAN poly . . ? 30.266 30.78 25.643 0.24 50 1 6 '' 1
-100 H H2 . MAN poly . . ? 31.039 31.047 26.364 0 0 3 6 '' 1
-101 C C3 . MAN poly . . ? 28.92 30.468 26.178 0.25 20 1 6 '' 1
-102 H H3 . MAN poly . . ? 29.093 29.76 26.988 0 0 3 6 '' 1
-103 C C4 . MAN poly . . ? 27.898 29.818 25.242 0.32 60 1 6 '' 1
-104 H H4 . MAN poly . . ? 27.65 30.449 24.388 0 0 3 6 '' 1
-105 C C5 . MAN poly . . ? 28.571 28.536 24.698 0.27 60 1 6 '' 1
-106 H H5 . MAN poly . . ? 28.68 27.898 25.574 0 0 3 6 '' 1
-107 C C6 . MAN poly . . ? 27.662 27.743 23.701 0.26 60 1 6 '' 1
-108 H H62 . MAN poly . . ? 28.208 26.865 23.356 0 0 3 6 '' 1
-109 H H61 . MAN poly . . ? 26.726 27.456 24.18 0 0 3 6 '' 1
-110 O O6 . MAN poly . . ? 27.206 28.542 22.566 -0.68 80 1 6 '' 1
-111 H H6O . MAN poly . . ? 26.288 28.811 22.652 0.42 20 1 6 '' 1
-112 O O5 . MAN poly . . ? 29.934 28.846 24.142 -0.5 70 3 6 '' 1
-113 O O4 . MAN poly . . ? 26.676 29.505 25.978 -0.73 30 1 6 '' 1
-114 H H4O . MAN poly . . ? 26.119 30.287 26.01 0.43 80 1 6 '' 1
-115 O O3 . MAN poly . . ? 28.326 31.678 26.819 -0.69 60 1 6 '' 1
-116 H H3O . MAN poly . . ? 27.606 31.458 27.414 0.43 10 1 6 '' 1
-117 O O2 . MAN poly . . ? 30.139 31.954 24.602 -0.46 50 3 6 '' 1
-118 C C1 . MAN poly . . ? 31.455 32.61 24.508 0.43 30 1 7 '' 1
-119 H H1 . MAN poly . . ? 31.908 32.844 25.471 0 0 2 7 '' 1
-120 C C2 . MAN poly . . ? 31.132 33.999 23.885 0.24 50 1 7 '' 1
-121 H H2 . MAN poly . . ? 30.413 34.532 24.507 0 0 3 7 '' 1
-122 C C3 . MAN poly . . ? 30.596 33.742 22.422 0.25 20 1 7 '' 1
-123 H H3 . MAN poly . . ? 29.658 33.187 22.434 0 0 3 7 '' 1
-124 C C4 . MAN poly . . ? 31.452 32.915 21.54 0.32 60 1 7 '' 1
-125 H H4 . MAN poly . . ? 32.276 33.603 21.351 0 0 3 7 '' 1
-126 C C5 . MAN poly . . ? 32.085 31.655 22.258 0.27 60 1 7 '' 1
-127 H H5 . MAN poly . . ? 31.37 30.832 22.227 0 0 3 7 '' 1
-128 C C6 . MAN poly . . ? 33.353 31.158 21.462 0.26 60 1 7 '' 1
-129 H H62 . MAN poly . . ? 33.57 30.225 21.982 0 0 3 7 '' 1
-130 H H61 . MAN poly . . ? 33.166 30.937 20.411 0 0 3 7 '' 1
-131 O O6 . MAN poly . . ? 34.464 32.068 21.467 -0.68 80 1 7 '' 1
-132 H H6O . MAN poly . . ? 34.971 31.748 20.718 0.42 20 1 7 '' 1
-133 O O5 . MAN poly . . ? 32.384 31.855 23.693 -0.5 70 3 7 '' 1
-134 O O4 . MAN poly . . ? 30.867 32.457 20.336 -0.73 30 1 7 '' 1
-135 H H4O . MAN poly . . ? 30.668 33.137 19.689 0.43 80 1 7 '' 1
-136 O O3 . MAN poly . . ? 30.307 35.037 21.76 -0.69 60 1 7 '' 1
-137 H H3O . MAN poly . . ? 31.073 35.615 21.78 0.43 10 1 7 '' 1
-138 O O2 . MAN poly . . ? 32.33 34.75 23.892 -0.71 70 1 7 '' 1
-139 H H2O . MAN poly . . ? 32.146 35.62 24.253 0.44 60 1 7 '' 1
-140 C C1 . MAN poly . . ? 31.767 23.445 30.345 0.43 30 1 8 '' 1
-141 H H1 . MAN poly . . ? 31.2 22.561 30.052 0 0 2 8 '' 1
-142 C C2 . MAN poly . . ? 30.878 24.416 31.222 0.24 50 1 8 '' 1
-143 H H2 . MAN poly . . ? 30.221 25.032 30.608 0 0 3 8 '' 1
-144 C C3 . MAN poly . . ? 31.725 25.382 32.098 0.25 20 1 8 '' 1
-145 H H3 . MAN poly . . ? 32.27 26.084 31.468 0 0 3 8 '' 1
-146 C C4 . MAN poly . . ? 32.755 24.558 32.958 0.32 60 1 8 '' 1
-147 H H4 . MAN poly . . ? 32.228 23.9 33.648 0 0 3 8 '' 1
-148 C C5 . MAN poly . . ? 33.676 23.807 31.95 0.27 60 1 8 '' 1
-149 H H5 . MAN poly . . ? 34.089 24.497 31.214 0 0 3 8 '' 1
-150 C C6 . MAN poly . . ? 34.834 22.942 32.562 0.26 60 1 8 '' 1
-151 H H62 . MAN poly . . ? 35.637 23.569 32.95 0 0 3 8 '' 1
-152 H H61 . MAN poly . . ? 34.451 22.336 33.383 0 0 3 8 '' 1
-153 O O6 . MAN poly . . ? 35.378 22.115 31.518 -0.68 80 1 8 '' 1
-154 H H6O . MAN poly . . ? 34.68 21.731 30.983 0.42 20 1 8 '' 1
-155 O O5 . MAN poly . . ? 32.828 22.84 31.154 -0.5 70 3 8 '' 1
-156 O O4 . MAN poly . . ? 33.535 25.458 33.728 -0.73 30 1 8 '' 1
-157 H H4O . MAN poly . . ? 33.391 25.33 34.669 0.43 80 1 8 '' 1
-158 O O3 . MAN poly . . ? 30.71 26.069 32.969 -0.69 60 1 8 '' 1
-159 H H3O . MAN poly . . ? 30.715 26.984 32.679 0.43 10 1 8 '' 1
-160 O O2 . MAN poly . . ? 29.891 23.522 31.961 -0.46 50 3 8 '' 1
-161 C C1 . MAN poly . . ? 28.431 23.892 31.82 0.43 30 1 9 '' 1
-162 H H1 . MAN poly . . ? 28.425 24.979 31.899 0 0 2 9 '' 1
-163 C C2 . MAN poly . . ? 27.585 23.203 32.936 0.24 50 1 9 '' 1
-164 H H2 . MAN poly . . ? 27.899 23.262 33.979 0 0 3 9 '' 1
-165 C C3 . MAN poly . . ? 27.558 21.664 32.661 0.25 20 1 9 '' 1
-166 H H3 . MAN poly . . ? 28.532 21.252 32.927 0 0 3 9 '' 1
-167 C C4 . MAN poly . . ? 27.108 21.33 31.209 0.32 60 1 9 '' 1
-168 H H4 . MAN poly . . ? 26.075 21.648 31.067 0 0 3 9 '' 1
-169 C C5 . MAN poly . . ? 28.062 22.04 30.182 0.27 60 1 9 '' 1
-170 H H5 . MAN poly . . ? 29.067 21.7 30.432 0 0 3 9 '' 1
-171 C C6 . MAN poly . . ? 27.98 21.676 28.646 0.26 60 1 9 '' 1
-172 H H62 . MAN poly . . ? 26.92 21.505 28.461 0 0 3 9 '' 1
-173 H H61 . MAN poly . . ? 28.323 22.549 28.089 0 0 3 9 '' 1
-174 O O6 . MAN poly . . ? 28.774 20.46 28.327 -0.68 80 1 9 '' 1
-175 H H6O . MAN poly . . ? 28.797 20.332 27.376 0.42 20 1 9 '' 1
-176 O O5 . MAN poly . . ? 28.024 23.514 30.473 -0.5 70 3 9 '' 1
-177 O O4 . MAN poly . . ? 26.975 19.898 30.857 -0.73 30 1 9 '' 1
-178 H H4O . MAN poly . . ? 27.881 19.64 31.042 0.43 80 1 9 '' 1
-179 O O3 . MAN poly . . ? 26.597 20.974 33.539 -0.69 60 1 9 '' 1
-180 H H3O . MAN poly . . ? 26.928 20.188 33.979 0.43 10 1 9 '' 1
-181 O O2 . MAN poly . . ? 26.297 23.833 32.854 -0.71 70 1 9 '' 1
-182 H H2O . MAN poly . . ? 25.946 23.663 33.731 0.44 60 1 9 '' 1
-183 C C1 . MAN poly . . ? 22.293 23.458 24.072 0.43 30 1 10 '' 1
-184 H H1 . MAN poly . . ? 22.509 22.587 24.691 0 0 2 10 '' 1
-185 C C2 . MAN poly . . ? 21.468 22.98 22.86 0.24 50 1 10 '' 1
-186 H H2 . MAN poly . . ? 21.994 22.449 22.067 0 0 3 10 '' 1
-187 C C3 . MAN poly . . ? 20.983 24.274 22.108 0.25 20 1 10 '' 1
-188 H H3 . MAN poly . . ? 21.798 24.899 21.744 0 0 3 10 '' 1
-189 C C4 . MAN poly . . ? 20.135 25.158 23.051 0.32 60 1 10 '' 1
-190 H H4 . MAN poly . . ? 19.2 24.642 23.267 0 0 3 10 '' 1
-191 C C5 . MAN poly . . ? 20.913 25.566 24.292 0.27 60 1 10 '' 1
-192 H H5 . MAN poly . . ? 21.545 26.421 24.051 0 0 3 10 '' 1
-193 C C6 . MAN poly . . ? 20.114 26.269 25.384 0.26 60 1 10 '' 1
-194 H H62 . MAN poly . . ? 20.712 26.591 26.236 0 0 3 10 '' 1
-195 H H61 . MAN poly . . ? 19.607 27.169 25.039 0 0 3 10 '' 1
-196 O O6 . MAN poly . . ? 19.137 25.425 25.954 -0.68 80 1 10 '' 1
-197 H H6O . MAN poly . . ? 19.456 24.889 26.684 0.42 20 1 10 '' 1
-198 O O5 . MAN poly . . ? 21.543 24.405 24.869 -0.5 70 3 10 '' 1
-199 O O4 . MAN poly . . ? 19.8 26.359 22.35 -0.73 30 1 10 '' 1
-200 H H4O . MAN poly . . ? 19.006 26.265 21.819 0.43 80 1 10 '' 1
-201 O O3 . MAN poly . . ? 20.131 23.77 20.993 -0.69 60 1 10 '' 1
-202 H H3O . MAN poly . . ? 19.36 24.326 20.861 0.43 10 1 10 '' 1
-203 O O2 . MAN poly . . ? 20.24 22.074 23.272 -0.46 50 3 10 '' 1
-204 C C1 . MAN poly . . ? 20.41 21.065 24.349 0.43 30 1 11 '' 1
-205 H H1 . MAN poly . . ? 21.38 20.597 24.183 0 0 2 11 '' 1
-206 C C2 . MAN poly . . ? 19.307 20.006 24.044 0.24 50 1 11 '' 1
-207 H H2 . MAN poly . . ? 19.316 19.774 22.979 0 0 3 11 '' 1
-208 C C3 . MAN poly . . ? 17.899 20.621 24.335 0.25 20 1 11 '' 1
-209 H H3 . MAN poly . . ? 17.789 21.476 23.668 0 0 3 11 '' 1
-210 C C4 . MAN poly . . ? 17.856 20.99 25.853 0.32 60 1 11 '' 1
-211 H H4 . MAN poly . . ? 18.094 20.041 26.334 0 0 3 11 '' 1
-212 C C5 . MAN poly . . ? 18.909 22.099 26.209 0.27 60 1 11 '' 1
-213 H H5 . MAN poly . . ? 18.553 22.969 25.658 0 0 3 11 '' 1
-214 C C6 . MAN poly . . ? 19.001 22.503 27.643 0.26 60 1 11 '' 1
-215 H H62 . MAN poly . . ? 17.998 22.764 27.978 0 0 3 11 '' 1
-216 H H61 . MAN poly . . ? 19.457 21.728 28.259 0 0 3 11 '' 1
-217 O O6 . MAN poly . . ? 19.898 23.625 27.724 -0.68 80 1 11 '' 1
-218 H H6O . MAN poly . . ? 20.706 23.303 27.318 0.42 20 1 11 '' 1
-219 O O5 . MAN poly . . ? 20.281 21.684 25.649 -0.5 70 3 11 '' 1
-220 O O4 . MAN poly . . ? 16.507 21.483 26.222 -0.73 30 1 11 '' 1
-221 H H4O . MAN poly . . ? 15.829 20.819 26.365 0.43 80 1 11 '' 1
-222 O O3 . MAN poly . . ? 16.951 19.651 24.004 -0.69 60 1 11 '' 1
-223 H H3O . MAN poly . . ? 16.871 18.996 24.701 0.43 10 1 11 '' 1
-224 O O2 . MAN poly . . ? 19.544 18.842 24.853 -0.46 50 3 11 '' 1
-225 C C1 . MAN poly . . ? 20.524 17.841 24.387 0.43 30 1 12 '' 1
-226 H H1 . MAN poly . . ? 20.366 17.713 23.316 0 0 2 12 '' 1
-227 C C2 . MAN poly . . ? 20.331 16.649 25.275 0.24 50 1 12 '' 1
-228 H H2 . MAN poly . . ? 19.312 16.291 25.128 0 0 3 12 '' 1
-229 C C3 . MAN poly . . ? 20.596 16.952 26.798 0.25 20 1 12 '' 1
-230 H H3 . MAN poly . . ? 19.758 17.609 27.031 0 0 3 12 '' 1
-231 C C4 . MAN poly . . ? 21.926 17.588 27.027 0.32 60 1 12 '' 1
-232 H H4 . MAN poly . . ? 22.661 16.802 26.85 0 0 3 12 '' 1
-233 C C5 . MAN poly . . ? 22.216 18.73 26.074 0.27 60 1 12 '' 1
-234 H H5 . MAN poly . . ? 21.639 19.594 26.404 0 0 3 12 '' 1
-235 C C6 . MAN poly . . ? 23.691 19.15 26.133 0.26 60 1 12 '' 1
-236 H H62 . MAN poly . . ? 23.881 19.299 27.196 0 0 3 12 '' 1
-237 H H61 . MAN poly . . ? 24.337 18.367 25.735 0 0 3 12 '' 1
-238 O O6 . MAN poly . . ? 23.876 20.464 25.551 -0.68 80 1 12 '' 1
-239 H H6O . MAN poly . . ? 24.055 20.417 24.609 0.42 20 1 12 '' 1
-240 O O5 . MAN poly . . ? 21.906 18.323 24.585 -0.5 70 3 12 '' 1
-241 O O4 . MAN poly . . ? 21.989 18.056 28.394 -0.73 30 1 12 '' 1
-242 H H4O . MAN poly . . ? 22.624 17.541 28.897 0.43 80 1 12 '' 1
-243 O O3 . MAN poly . . ? 20.447 15.746 27.699 -0.69 60 1 12 '' 1
-244 H H3O . MAN poly . . ? 21.121 15.123 27.42 0.43 10 1 12 '' 1
-245 O O2 . MAN poly . . ? 21.201 15.548 24.835 -0.71 70 1 12 '' 1
-246 H H2O . MAN poly . . ? 21.187 14.77 25.397 0.44 60 1 12 '' 1
-
-_WURCS
-'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
-_GlyTouCan G39578OU
-
-data_confConvertedPDB/
-_entry.id confConvertedPDB
-
-_cell.entry_id confConvertedPDB
-_cell.length_a 1
-_cell.length_b 1
-_cell.length_c 1
-_cell.angle_alpha 90
-_cell.angle_beta 90
-_cell.angle_gamma 90
-
-_symmetry.entry_id confConvertedPDB
-_symmetry.space_group_name_H-M ''
-
-
-
-
-loop_
-_chem_comp.id
-_chem_comp.type
-BMA .
-MAN .
-NAG .
-NDG .
-
-loop_
-_struct_asym.id
-_struct_asym.entity_id
-poly ?
-
-loop_
-_struct_conn.id
-_struct_conn.conn_type_id
-_struct_conn.ptnr1_auth_asym_id
-_struct_conn.ptnr1_label_asym_id
-_struct_conn.ptnr1_label_comp_id
-_struct_conn.ptnr1_label_seq_id
-_struct_conn.ptnr1_label_atom_id
-_struct_conn.pdbx_ptnr1_label_alt_id
-_struct_conn.ptnr1_auth_seq_id
-_struct_conn.pdbx_ptnr1_PDB_ins_code
-_struct_conn.ptnr1_symmetry
-_struct_conn.ptnr2_auth_asym_id
-_struct_conn.ptnr2_label_asym_id
-_struct_conn.ptnr2_label_comp_id
-_struct_conn.ptnr2_label_seq_id
-_struct_conn.ptnr2_label_atom_id
-_struct_conn.pdbx_ptnr2_label_alt_id
-_struct_conn.ptnr2_auth_seq_id
-_struct_conn.pdbx_ptnr2_PDB_ins_code
-_struct_conn.ptnr2_symmetry
-_struct_conn.details
-_struct_conn.pdbx_dist_value
-'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.4771
-'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4469
-'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4793
-'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4912
-'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4525
-'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4743
-'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4901
-'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4999
-'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4906
-'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4529
-
-loop_
-_struct_conn_type.id
-covale
-
-
-loop_
-_atom_type.symbol
-H
-C
-N
-O
-
-
-loop_
-_atom_site.id
-_atom_site.type_symbol
-_atom_site.label_atom_id
-_atom_site.label_alt_id
-_atom_site.label_comp_id
-_atom_site.label_asym_id
-_atom_site.label_entity_id
-_atom_site.label_seq_id
-_atom_site.pdbx_PDB_ins_code
-_atom_site.Cartn_x
-_atom_site.Cartn_y
-_atom_site.Cartn_z
-_atom_site.occupancy
-_atom_site.B_iso_or_equiv
-_atom_site.pdbx_formal_charge
-_atom_site.auth_seq_id
-_atom_site.auth_asym_id
-_atom_site.pdbx_PDB_model_num
-1 H HO1 . NDG poly . . ? 22.247 39.788 26.961 0.44 50 1 2 '' 1
-2 O O1 . NDG poly . . ? 21.488 39.22 26.806 -0.63 90 1 2 '' 1
-3 C C1 . NDG poly . . ? 22.023 38.549 25.658 0.46 80 1 2 '' 1
-4 H H1 . NDG poly . . ? 21.968 39.134 24.74 0 0 2 2 '' 1
-5 C C2 . NDG poly . . ? 21.358 37.207 25.286 0.24 50 1 2 '' 1
-6 H H2 . NDG poly . . ? 21.681 37.029 24.26 0 0 3 2 '' 1
-7 N N2 . NDG poly . . ? 19.916 37.278 25.052 -0.55 20 1 2 '' 1
-8 H H2N . NDG poly . . ? 19.375 36.79 25.752 0.23 60 4 2 '' 1
-9 C C2N . NDG poly . . ? 19.361 37.842 23.992 0.58 80 1 2 '' 1
-10 C CME . NDG poly . . ? 17.987 38.249 24.106 0.06 30 1 2 '' 1
-11 H H3M . NDG poly . . ? 17.745 38.977 23.332 0 0 5 2 '' 1
-12 H H2M . NDG poly . . ? 17.235 37.463 24.041 0 0 5 2 '' 1
-13 H H1M . NDG poly . . ? 17.862 38.836 25.016 0 0 5 2 '' 1
-14 O O2N . NDG poly . . ? 20.055 38.259 23.027 -0.57 90 2 2 '' 1
-15 C C3 . NDG poly . . ? 21.848 36.006 26.077 0.16 50 1 2 '' 1
-16 H H3 . NDG poly . . ? 21.379 36.136 27.052 0 0 3 2 '' 1
-17 O O3 . NDG poly . . ? 21.299 34.834 25.499 -0.63 0 1 2 '' 1
-18 H H3O . NDG poly . . ? 21.492 34.13 26.124 0.41 30 1 2 '' 1
-19 C C4 . NDG poly . . ? 23.37 35.947 26.197 0.32 20 1 2 '' 1
-20 H H4 . NDG poly . . ? 23.746 35.847 25.179 0 0 3 2 '' 1
-21 C C5 . NDG poly . . ? 23.89 37.304 26.775 0.24 60 1 2 '' 1
-22 H H5 . NDG poly . . ? 23.451 37.457 27.76 0 0 3 2 '' 1
-23 C C6 . NDG poly . . ? 25.45 37.403 26.868 0.32 80 1 2 '' 1
-24 H H62 . NDG poly . . ? 25.96 36.678 27.503 0 0 3 2 '' 1
-25 H H61 . NDG poly . . ? 25.705 38.392 27.249 0 0 3 2 '' 1
-26 O O6 . NDG poly . . ? 26.06 37.369 25.541 -0.68 80 1 2 '' 1
-27 H H6O . NDG poly . . ? 25.5 37.906 24.975 0.42 10 1 2 '' 1
-28 O O5 . NDG poly . . ? 23.441 38.417 25.854 -0.56 80 3 2 '' 1
-29 O O4 . NDG poly . . ? 23.903 34.867 27.033 -0.47 80 3 2 '' 1
-30 C C1 . NAG poly . . ? 24.552 33.724 26.359 0.28 70 1 3 '' 1
-31 H H1 . NAG poly . . ? 25.264 34.087 25.618 0 0 2 3 '' 1
-32 O O5 . NAG poly . . ? 23.609 32.842 25.718 -0.43 30 3 3 '' 1
-33 C C5 . NAG poly . . ? 24.194 31.605 25.138 0.2 80 1 3 '' 1
-34 H H5 . NAG poly . . ? 25.035 31.919 24.52 0 0 3 3 '' 1
-35 C C6 . NAG poly . . ? 23.085 30.956 24.277 0.28 90 1 3 '' 1
-36 H H62 . NAG poly . . ? 22.106 31.094 24.736 0 0 3 3 '' 1
-37 H H61 . NAG poly . . ? 23.265 29.883 24.226 0 0 3 3 '' 1
-38 O O6 . NAG poly . . ? 22.953 31.547 22.927 -0.68 90 1 3 '' 1
-39 H H6O . NAG poly . . ? 23.761 31.368 22.441 0.42 40 1 3 '' 1
-40 C C4 . NAG poly . . ? 24.792 30.725 26.134 0.3 20 1 3 '' 1
-41 H H4 . NAG poly . . ? 24.004 30.57 26.871 0 0 3 3 '' 1
-42 C C3 . NAG poly . . ? 25.925 31.459 26.85 0.18 0 1 3 '' 1
-43 H H3 . NAG poly . . ? 26.73 31.748 26.174 0 0 3 3 '' 1
-44 O O3 . NAG poly . . ? 26.428 30.727 28.001 -0.68 10 1 3 '' 1
-45 H H3O . NAG poly . . ? 26.658 29.82 27.785 0.42 30 1 3 '' 1
-46 C C2 . NAG poly . . ? 25.377 32.836 27.393 0.48 0 1 3 '' 1
-47 H H2 . NAG poly . . ? 24.716 32.565 28.216 0 0 3 3 '' 1
-48 N N2 . NAG poly . . ? 26.373 33.719 28.074 -0.72 20 1 3 '' 1
-49 H H2N . NAG poly . . ? 27.109 34.166 27.547 0.3 0 4 3 '' 1
-50 C C2N . NAG poly . . ? 26.487 33.887 29.397 0.64 80 1 3 '' 1
-51 O O2N . NAG poly . . ? 25.81 33.286 30.2 -0.57 60 2 3 '' 1
-52 C CME . NAG poly . . ? 27.601 34.934 29.759 0.03 40 1 3 '' 1
-53 H H3M . NAG poly . . ? 27.087 35.885 29.899 0 0 5 3 '' 1
-54 H H2M . NAG poly . . ? 28.022 34.53 30.68 0 0 5 3 '' 1
-55 H H1M . NAG poly . . ? 28.408 34.938 29.026 0 0 5 3 '' 1
-56 O O4 . NAG poly . . ? 25.202 29.467 25.509 -0.47 40 3 3 '' 1
-57 C C1 . BMA poly . . ? 24.877 28.262 26.241 0.31 40 1 4 '' 1
-58 H H1 . BMA poly . . ? 23.794 28.267 26.369 0 0 2 4 '' 1
-59 O O5 . BMA poly . . ? 25.564 28.156 27.563 -0.39 30 3 4 '' 1
-60 C C5 . BMA poly . . ? 25.288 26.957 28.412 0.2 60 1 4 '' 1
-61 H H5 . BMA poly . . ? 24.208 26.853 28.517 0 0 3 4 '' 1
-62 C C6 . BMA poly . . ? 25.945 27.097 29.751 0.27 30 1 4 '' 1
-63 H H62 . BMA poly . . ? 25.4 26.369 30.352 0 0 3 4 '' 1
-64 H H61 . BMA poly . . ? 25.776 28.128 30.064 0 0 3 4 '' 1
-65 O O6 . BMA poly . . ? 27.415 26.927 29.596 -0.45 50 3 4 '' 1
-66 C C4 . BMA poly . . ? 25.646 25.73 27.609 0.34 90 1 4 '' 1
-67 H H4 . BMA poly . . ? 26.722 25.84 27.472 0 0 3 4 '' 1
-68 O O4 . BMA poly . . ? 25.379 24.548 28.387 -0.74 60 1 4 '' 1
-69 H H4O . BMA poly . . ? 25.86 23.794 28.037 0.44 30 1 4 '' 1
-70 C C3 . BMA poly . . ? 24.942 25.658 26.209 0.26 30 1 4 '' 1
-71 H H3 . BMA poly . . ? 23.869 25.612 26.396 0 0 3 4 '' 1
-72 C C2 . BMA poly . . ? 25.245 26.976 25.438 0.24 10 1 4 '' 1
-73 H H2 . BMA poly . . ? 24.695 27.071 24.501 0 0 3 4 '' 1
-74 O O2 . BMA poly . . ? 26.718 27.071 25.116 -0.66 40 1 4 '' 1
-75 H H2O . BMA poly . . ? 26.794 27.748 24.44 0.43 10 1 4 '' 1
-76 O O3 . BMA poly . . ? 25.555 24.446 25.522 -0.45 60 3 4 '' 1
-77 C C1 . MAN poly . . ? 28.101 26.642 30.889 0.43 30 1 5 '' 1
-78 H H1 . MAN poly . . ? 27.9 27.436 31.608 0 0 2 5 '' 1
-79 C C2 . MAN poly . . ? 29.611 26.717 30.61 0.24 50 1 5 '' 1
-80 H H2 . MAN poly . . ? 29.82 27.645 30.079 0 0 3 5 '' 1
-81 O O2 . MAN poly . . ? 30.409 26.615 31.829 -0.71 70 1 5 '' 1
-82 H H2O . MAN poly . . ? 30.502 27.397 32.379 0.44 60 1 5 '' 1
-83 C C3 . MAN poly . . ? 30.005 25.515 29.683 0.25 20 1 5 '' 1
-84 H H3 . MAN poly . . ? 29.407 25.545 28.773 0 0 3 5 '' 1
-85 C C4 . MAN poly . . ? 29.741 24.191 30.479 0.32 60 1 5 '' 1
-86 H H4 . MAN poly . . ? 30.195 24.121 31.468 0 0 3 5 '' 1
-87 C C5 . MAN poly . . ? 28.194 24.102 30.7 0.27 60 1 5 '' 1
-88 H H5 . MAN poly . . ? 27.832 24.041 29.674 0 0 3 5 '' 1
-89 C C6 . MAN poly . . ? 27.597 22.86 31.367 0.26 60 1 5 '' 1
-90 H H62 . MAN poly . . ? 26.513 22.819 31.479 0 0 3 5 '' 1
-91 H H61 . MAN poly . . ? 27.838 22.052 30.676 0 0 3 5 '' 1
-92 O O6 . MAN poly . . ? 28.395 22.566 32.507 -0.46 0 3 5 '' 1
-93 O O5 . MAN poly . . ? 27.755 25.339 31.488 -0.5 70 3 5 '' 1
-94 O O4 . MAN poly . . ? 30.238 23.111 29.607 -0.73 30 1 5 '' 1
-95 H H4O . MAN poly . . ? 31.178 23.076 29.798 0.43 80 1 5 '' 1
-96 O O3 . MAN poly . . ? 31.482 25.646 29.305 -0.45 90 3 5 '' 1
-97 C C1 . MAN poly . . ? 28 21.347 33.236 0.43 30 1 6 '' 1
-98 H H1 . MAN poly . . ? 26.911 21.313 33.189 0 0 2 6 '' 1
-99 C C2 . MAN poly . . ? 28.369 21.267 34.709 0.24 50 1 6 '' 1
-100 H H2 . MAN poly . . ? 27.871 22.055 35.274 0 0 3 6 '' 1
-101 C C3 . MAN poly . . ? 29.863 21.301 34.848 0.25 20 1 6 '' 1
-102 H H3 . MAN poly . . ? 30.208 22.312 34.629 0 0 3 6 '' 1
-103 C C4 . MAN poly . . ? 30.561 20.243 33.907 0.32 60 1 6 '' 1
-104 H H4 . MAN poly . . ? 30.387 19.218 34.234 0 0 3 6 '' 1
-105 C C5 . MAN poly . . ? 30.055 20.198 32.436 0.27 60 1 6 '' 1
-106 H H5 . MAN poly . . ? 30.396 21.064 31.87 0 0 3 6 '' 1
-107 C C6 . MAN poly . . ? 30.553 18.941 31.706 0.26 60 1 6 '' 1
-108 H H62 . MAN poly . . ? 31.63 18.987 31.543 0 0 3 6 '' 1
-109 H H61 . MAN poly . . ? 30.326 18.016 32.235 0 0 3 6 '' 1
-110 O O6 . MAN poly . . ? 29.807 18.891 30.478 -0.68 80 1 6 '' 1
-111 H H6O . MAN poly . . ? 29.929 17.984 30.187 0.42 20 1 6 '' 1
-112 O O5 . MAN poly . . ? 28.528 20.26 32.457 -0.5 70 3 6 '' 1
-113 O O4 . MAN poly . . ? 31.947 20.391 33.948 -0.73 30 1 6 '' 1
-114 H H4O . MAN poly . . ? 32.272 19.531 34.223 0.43 80 1 6 '' 1
-115 O O3 . MAN poly . . ? 30.236 21.118 36.182 -0.69 60 1 6 '' 1
-116 H H3O . MAN poly . . ? 30.022 20.237 36.498 0.43 10 1 6 '' 1
-117 O O2 . MAN poly . . ? 27.904 19.931 35.157 -0.46 50 3 6 '' 1
-118 C C1 . MAN poly . . ? 26.656 19.911 35.971 0.43 30 1 7 '' 1
-119 H H1 . MAN poly . . ? 26.778 20.474 36.897 0 0 2 7 '' 1
-120 C C2 . MAN poly . . ? 26.42 18.456 36.545 0.24 50 1 7 '' 1
-121 H H2 . MAN poly . . ? 27.372 18.152 36.981 0 0 3 7 '' 1
-122 C C3 . MAN poly . . ? 26.045 17.523 35.372 0.25 20 1 7 '' 1
-123 H H3 . MAN poly . . ? 26.9 17.462 34.699 0 0 3 7 '' 1
-124 C C4 . MAN poly . . ? 24.925 18.039 34.408 0.32 60 1 7 '' 1
-125 H H4 . MAN poly . . ? 23.949 18.017 34.893 0 0 3 7 '' 1
-126 C C5 . MAN poly . . ? 25.121 19.457 33.929 0.27 60 1 7 '' 1
-127 H H5 . MAN poly . . ? 25.841 19.609 33.125 0 0 3 7 '' 1
-128 C C6 . MAN poly . . ? 23.747 19.99 33.296 0.26 60 1 7 '' 1
-129 H H62 . MAN poly . . ? 23.501 19.552 32.329 0 0 3 7 '' 1
-130 H H61 . MAN poly . . ? 22.959 19.744 34.009 0 0 3 7 '' 1
-131 O O6 . MAN poly . . ? 23.893 21.422 33.049 -0.68 80 1 7 '' 1
-132 H H6O . MAN poly . . ? 24.314 21.925 33.75 0.42 20 1 7 '' 1
-133 O O5 . MAN poly . . ? 25.553 20.328 35.091 -0.5 70 3 7 '' 1
-134 O O4 . MAN poly . . ? 24.952 17.232 33.195 -0.73 30 1 7 '' 1
-135 H H4O . MAN poly . . ? 25.671 17.592 32.671 0.43 80 1 7 '' 1
-136 O O3 . MAN poly . . ? 25.809 16.156 35.828 -0.69 60 1 7 '' 1
-137 H H3O . MAN poly . . ? 26.519 15.762 36.34 0.43 10 1 7 '' 1
-138 O O2 . MAN poly . . ? 25.325 18.533 37.565 -0.71 70 1 7 '' 1
-139 H H2O . MAN poly . . ? 25.527 17.902 38.259 0.44 60 1 7 '' 1
-140 C C1 . MAN poly . . ? 31.837 26.098 27.971 0.43 30 1 8 '' 1
-141 H H1 . MAN poly . . ? 31.139 25.613 27.288 0 0 2 8 '' 1
-142 C C2 . MAN poly . . ? 33.274 25.669 27.529 0.24 50 1 8 '' 1
-143 H H2 . MAN poly . . ? 33.382 24.589 27.632 0 0 3 8 '' 1
-144 C C3 . MAN poly . . ? 34.324 26.293 28.464 0.25 20 1 8 '' 1
-145 H H3 . MAN poly . . ? 34.23 25.851 29.455 0 0 3 8 '' 1
-146 C C4 . MAN poly . . ? 34.058 27.815 28.581 0.32 60 1 8 '' 1
-147 H H4 . MAN poly . . ? 34.56 28.249 27.716 0 0 3 8 '' 1
-148 C C5 . MAN poly . . ? 32.648 28.37 28.777 0.27 60 1 8 '' 1
-149 H H5 . MAN poly . . ? 32.365 28.215 29.818 0 0 3 8 '' 1
-150 C C6 . MAN poly . . ? 32.499 29.846 28.513 0.26 60 1 8 '' 1
-151 H H62 . MAN poly . . ? 31.637 30.229 29.059 0 0 3 8 '' 1
-152 H H61 . MAN poly . . ? 33.352 30.277 29.038 0 0 3 8 '' 1
-153 O O6 . MAN poly . . ? 32.372 30.259 27.113 -0.68 80 1 8 '' 1
-154 H H6O . MAN poly . . ? 33.09 30.837 26.844 0.42 20 1 8 '' 1
-155 O O5 . MAN poly . . ? 31.729 27.552 27.903 -0.5 70 3 8 '' 1
-156 O O4 . MAN poly . . ? 34.72 28.287 29.805 -0.73 30 1 8 '' 1
-157 H H4O . MAN poly . . ? 35.609 27.926 29.828 0.43 80 1 8 '' 1
-158 O O3 . MAN poly . . ? 35.632 26.02 27.91 -0.69 60 1 8 '' 1
-159 H H3O . MAN poly . . ? 35.795 26.368 27.031 0.43 10 1 8 '' 1
-160 O O2 . MAN poly . . ? 33.537 26.059 26.22 -0.46 50 3 8 '' 1
-161 C C1 . MAN poly . . ? 33.281 25.019 25.17 0.43 30 1 9 '' 1
-162 H H1 . MAN poly . . ? 33.779 24.06 25.312 0 0 2 9 '' 1
-163 C C2 . MAN poly . . ? 34.011 25.459 23.883 0.24 50 1 9 '' 1
-164 H H2 . MAN poly . . ? 35.079 25.617 24.031 0 0 3 9 '' 1
-165 C C3 . MAN poly . . ? 33.426 26.848 23.343 0.25 20 1 9 '' 1
-166 H H3 . MAN poly . . ? 33.709 27.647 24.029 0 0 3 9 '' 1
-167 C C4 . MAN poly . . ? 31.941 26.685 23.179 0.32 60 1 9 '' 1
-168 H H4 . MAN poly . . ? 31.778 25.982 22.362 0 0 3 9 '' 1
-169 C C5 . MAN poly . . ? 31.177 26.125 24.469 0.27 60 1 9 '' 1
-170 H H5 . MAN poly . . ? 31.264 26.893 25.237 0 0 3 9 '' 1
-171 C C6 . MAN poly . . ? 29.676 25.883 24.23 0.26 60 1 9 '' 1
-172 H H62 . MAN poly . . ? 29.252 26.737 23.702 0 0 3 9 '' 1
-173 H H61 . MAN poly . . ? 29.471 25.005 23.618 0 0 3 9 '' 1
-174 O O6 . MAN poly . . ? 29.136 25.816 25.526 -0.68 80 1 9 '' 1
-175 H H6O . MAN poly . . ? 28.221 26.092 25.432 0.42 20 1 9 '' 1
-176 O O5 . MAN poly . . ? 31.868 24.876 24.893 -0.5 70 3 9 '' 1
-177 O O4 . MAN poly . . ? 31.291 27.953 22.822 -0.73 30 1 9 '' 1
-178 H H4O . MAN poly . . ? 31.541 28.607 23.478 0.43 80 1 9 '' 1
-179 O O3 . MAN poly . . ? 34.134 27.216 22.12 -0.69 60 1 9 '' 1
-180 H H3O . MAN poly . . ? 33.48 27.292 21.421 0.43 10 1 9 '' 1
-181 O O2 . MAN poly . . ? 33.943 24.37 22.879 -0.71 70 1 9 '' 1
-182 H H2O . MAN poly . . ? 34.283 24.711 22.048 0.44 60 1 9 '' 1
-183 C C1 . MAN poly . . ? 24.581 23.357 25.29 0.43 30 1 10 '' 1
-184 H H1 . MAN poly . . ? 24.236 23.039 26.273 0 0 2 10 '' 1
-185 C C2 . MAN poly . . ? 25.253 22.151 24.6 0.24 50 1 10 '' 1
-186 H H2 . MAN poly . . ? 26.138 21.909 25.189 0 0 3 10 '' 1
-187 C C3 . MAN poly . . ? 25.674 22.456 23.165 0.25 20 1 10 '' 1
-188 H H3 . MAN poly . . ? 26.508 23.155 23.105 0 0 3 10 '' 1
-189 C C4 . MAN poly . . ? 24.487 22.987 22.366 0.32 60 1 10 '' 1
-190 H H4 . MAN poly . . ? 23.84 22.126 22.197 0 0 3 10 '' 1
-191 C C5 . MAN poly . . ? 23.718 24.144 23.01 0.27 60 1 10 '' 1
-192 H H5 . MAN poly . . ? 24.281 25.07 23.129 0 0 3 10 '' 1
-193 C C6 . MAN poly . . ? 22.357 24.479 22.356 0.26 60 1 10 '' 1
-194 H H62 . MAN poly . . ? 21.89 25.429 22.617 0 0 3 10 '' 1
-195 H H61 . MAN poly . . ? 22.502 24.497 21.276 0 0 3 10 '' 1
-196 O O6 . MAN poly . . ? 21.402 23.38 22.628 -0.68 80 1 10 '' 1
-197 H H6O . MAN poly . . ? 20.889 23.245 21.828 0.42 20 1 10 '' 1
-198 O O5 . MAN poly . . ? 23.421 23.848 24.451 -0.5 70 3 10 '' 1
-199 O O4 . MAN poly . . ? 25.01 23.47 21.095 -0.73 30 1 10 '' 1
-200 H H4O . MAN poly . . ? 24.426 23.037 20.469 0.43 80 1 10 '' 1
-201 O O3 . MAN poly . . ? 26.131 21.199 22.569 -0.69 60 1 10 '' 1
-202 H H3O . MAN poly . . ? 27.054 21.13 22.824 0.43 10 1 10 '' 1
-203 O O2 . MAN poly . . ? 24.372 20.901 24.611 -0.46 50 3 10 '' 1
-204 C C1 . MAN poly . . ? 24.671 19.97 25.736 0.43 30 1 11 '' 1
-205 H H1 . MAN poly . . ? 25.739 19.767 25.657 0 0 2 11 '' 1
-206 C C2 . MAN poly . . ? 23.795 18.735 25.436 0.24 50 1 11 '' 1
-207 H H2 . MAN poly . . ? 23.877 18.411 24.398 0 0 3 11 '' 1
-208 C C3 . MAN poly . . ? 22.287 18.987 25.757 0.25 20 1 11 '' 1
-209 H H3 . MAN poly . . ? 21.891 19.593 24.942 0 0 3 11 '' 1
-210 C C4 . MAN poly . . ? 21.898 19.814 27.034 0.32 60 1 11 '' 1
-211 H H4 . MAN poly . . ? 21.907 19.147 27.896 0 0 3 11 '' 1
-212 C C5 . MAN poly . . ? 22.954 20.908 27.306 0.27 60 1 11 '' 1
-213 H H5 . MAN poly . . ? 22.705 21.608 26.509 0 0 3 11 '' 1
-214 C C6 . MAN poly . . ? 22.834 21.687 28.644 0.26 60 1 11 '' 1
-215 H H62 . MAN poly . . ? 23.388 22.604 28.441 0 0 3 11 '' 1
-216 H H61 . MAN poly . . ? 21.782 21.848 28.879 0 0 3 11 '' 1
-217 O O6 . MAN poly . . ? 23.431 20.976 29.757 -0.68 80 1 11 '' 1
-218 H H6O . MAN poly . . ? 23.335 21.468 30.576 0.42 20 1 11 '' 1
-219 O O5 . MAN poly . . ? 24.338 20.489 27.076 -0.5 70 3 11 '' 1
-220 O O4 . MAN poly . . ? 20.561 20.438 27.011 -0.73 30 1 11 '' 1
-221 H H4O . MAN poly . . ? 19.989 19.669 26.955 0.43 80 1 11 '' 1
-222 O O3 . MAN poly . . ? 21.518 17.753 25.661 -0.69 60 1 11 '' 1
-223 H H3O . MAN poly . . ? 20.713 17.968 25.183 0.43 10 1 11 '' 1
-224 O O2 . MAN poly . . ? 24.263 17.613 26.37 -0.46 50 3 11 '' 1
-225 C C1 . MAN poly . . ? 25.125 16.66 25.692 0.43 30 1 12 '' 1
-226 H H1 . MAN poly . . ? 24.687 16.447 24.717 0 0 2 12 '' 1
-227 C C2 . MAN poly . . ? 25.201 15.306 26.523 0.24 50 1 12 '' 1
-228 H H2 . MAN poly . . ? 24.21 14.921 26.763 0 0 3 12 '' 1
-229 C C3 . MAN poly . . ? 25.633 15.64 27.922 0.25 20 1 12 '' 1
-230 H H3 . MAN poly . . ? 24.984 16.409 28.34 0 0 3 12 '' 1
-231 C C4 . MAN poly . . ? 27.064 16.217 27.915 0.32 60 1 12 '' 1
-232 H H4 . MAN poly . . ? 27.781 15.413 27.749 0 0 3 12 '' 1
-233 C C5 . MAN poly . . ? 27.223 17.4 26.872 0.27 60 1 12 '' 1
-234 H H5 . MAN poly . . ? 26.78 18.252 27.387 0 0 3 12 '' 1
-235 C C6 . MAN poly . . ? 28.735 17.578 26.683 0.26 60 1 12 '' 1
-236 H H62 . MAN poly . . ? 28.819 18.392 25.963 0 0 3 12 '' 1
-237 H H61 . MAN poly . . ? 29.258 18.045 27.517 0 0 3 12 '' 1
-238 O O6 . MAN poly . . ? 29.442 16.409 26.285 -0.68 80 1 12 '' 1
-239 H H6O . MAN poly . . ? 29.091 16.212 25.413 0.42 20 1 12 '' 1
-240 O O5 . MAN poly . . ? 26.498 17.242 25.532 -0.5 70 3 12 '' 1
-241 O O4 . MAN poly . . ? 27.447 16.856 29.183 -0.73 30 1 12 '' 1
-242 H H4O . MAN poly . . ? 28.395 16.746 29.284 0.43 80 1 12 '' 1
-243 O O3 . MAN poly . . ? 25.654 14.453 28.786 -0.69 60 1 12 '' 1
-244 H H3O . MAN poly . . ? 25.904 14.627 29.696 0.43 10 1 12 '' 1
-245 O O2 . MAN poly . . ? 26.129 14.289 25.913 -0.71 70 1 12 '' 1
-246 H H2O . MAN poly . . ? 25.766 13.409 26.038 0.44 60 1 12 '' 1
-
-_WURCS
-'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
-_GlyTouCan G39578OU
-
-data_confConvertedPDB/Phi=66_Psi=-179_Omega=55.1
-_entry.id confConvertedPDB
-
-_cell.entry_id confConvertedPDB
-_cell.length_a 1
-_cell.length_b 1
-_cell.length_c 1
-_cell.angle_alpha 90
-_cell.angle_beta 90
-_cell.angle_gamma 90
-
-_symmetry.entry_id confConvertedPDB
-_symmetry.space_group_name_H-M ''
-
-
-
-
-loop_
-_chem_comp.id
-_chem_comp.type
-BMA .
-MAN .
-NAG .
-NDG .
-
-loop_
-_struct_asym.id
-_struct_asym.entity_id
-poly ?
-
-loop_
-_struct_conn.id
-_struct_conn.conn_type_id
-_struct_conn.ptnr1_auth_asym_id
-_struct_conn.ptnr1_label_asym_id
-_struct_conn.ptnr1_label_comp_id
-_struct_conn.ptnr1_label_seq_id
-_struct_conn.ptnr1_label_atom_id
-_struct_conn.pdbx_ptnr1_label_alt_id
-_struct_conn.ptnr1_auth_seq_id
-_struct_conn.pdbx_ptnr1_PDB_ins_code
-_struct_conn.ptnr1_symmetry
-_struct_conn.ptnr2_auth_asym_id
-_struct_conn.ptnr2_label_asym_id
-_struct_conn.ptnr2_label_comp_id
-_struct_conn.ptnr2_label_seq_id
-_struct_conn.ptnr2_label_atom_id
-_struct_conn.pdbx_ptnr2_label_alt_id
-_struct_conn.ptnr2_auth_seq_id
-_struct_conn.pdbx_ptnr2_PDB_ins_code
-_struct_conn.ptnr2_symmetry
-_struct_conn.details
-_struct_conn.pdbx_dist_value
-'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.4505
-'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4510
-'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4758
-'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4376
-'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4951
-'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4624
-'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4087
-'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4877
-'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4960
-'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4942
-
-loop_
-_struct_conn_type.id
-covale
-
-
-loop_
-_atom_type.symbol
-H
-C
-N
-O
-
-
-loop_
-_atom_site.id
-_atom_site.type_symbol
-_atom_site.label_atom_id
-_atom_site.label_alt_id
-_atom_site.label_comp_id
-_atom_site.label_asym_id
-_atom_site.label_entity_id
-_atom_site.label_seq_id
-_atom_site.pdbx_PDB_ins_code
-_atom_site.Cartn_x
-_atom_site.Cartn_y
-_atom_site.Cartn_z
-_atom_site.occupancy
-_atom_site.B_iso_or_equiv
-_atom_site.pdbx_formal_charge
-_atom_site.auth_seq_id
-_atom_site.auth_asym_id
-_atom_site.pdbx_PDB_model_num
-1 H HO1 . NDG poly . . ? 13.422 21.025 30.896 0.44 50 1 2 '' 1
-2 O O1 . NDG poly . . ? 13.431 21.964 31.094 -0.63 90 1 2 '' 1
-3 C C1 . NDG poly . . ? 14.632 22.177 31.864 0.46 80 1 2 '' 1
-4 H H1 . NDG poly . . ? 14.34 21.904 32.878 0 0 2 2 '' 1
-5 C C2 . NDG poly . . ? 15.143 23.663 31.87 0.24 50 1 2 '' 1
-6 H H2 . NDG poly . . ? 15.841 23.69 32.707 0 0 3 2 '' 1
-7 N N2 . NDG poly . . ? 14.073 24.663 32.127 -0.55 20 1 2 '' 1
-8 H H2N . NDG poly . . ? 14.016 25.416 31.456 0.23 60 4 2 '' 1
-9 C C2N . NDG poly . . ? 13.374 24.667 33.227 0.58 80 1 2 '' 1
-10 C CME . NDG poly . . ? 12.401 25.783 33.394 0.06 30 1 2 '' 1
-11 H H3M . NDG poly . . ? 11.526 25.547 32.789 0 0 5 2 '' 1
-12 H H2M . NDG poly . . ? 12.153 25.923 34.446 0 0 5 2 '' 1
-13 H H1M . NDG poly . . ? 12.885 26.649 32.943 0 0 5 2 '' 1
-14 O O2N . NDG poly . . ? 13.663 23.891 34.164 -0.57 90 2 2 '' 1
-15 C C3 . NDG poly . . ? 15.931 23.96 30.591 0.16 50 1 2 '' 1
-16 H H3 . NDG poly . . ? 15.285 23.942 29.712 0 0 3 2 '' 1
-17 O O3 . NDG poly . . ? 16.512 25.262 30.62 -0.63 0 1 2 '' 1
-18 H H3O . NDG poly . . ? 16.826 25.538 29.755 0.41 30 1 2 '' 1
-19 C C4 . NDG poly . . ? 17.121 22.938 30.351 0.32 20 1 2 '' 1
-20 H H4 . NDG poly . . ? 17.749 22.936 31.242 0 0 3 2 '' 1
-21 C C5 . NDG poly . . ? 16.426 21.58 30.212 0.24 60 1 2 '' 1
-22 H H5 . NDG poly . . ? 15.624 21.772 29.5 0 0 3 2 '' 1
-23 C C6 . NDG poly . . ? 17.197 20.256 29.735 0.32 80 1 2 '' 1
-24 H H62 . NDG poly . . ? 17.348 20.26 28.655 0 0 3 2 '' 1
-25 H H61 . NDG poly . . ? 16.657 19.392 30.122 0 0 3 2 '' 1
-26 O O6 . NDG poly . . ? 18.491 20.184 30.358 -0.68 80 1 2 '' 1
-27 H H6O . NDG poly . . ? 18.962 19.533 29.832 0.42 10 1 2 '' 1
-28 O O5 . NDG poly . . ? 15.637 21.268 31.469 -0.56 80 3 2 '' 1
-29 O O4 . NDG poly . . ? 17.937 23.269 29.156 -0.47 80 3 2 '' 1
-30 C C1 . NAG poly . . ? 19.286 23.727 29.429 0.28 70 1 3 '' 1
-31 H H1 . NAG poly . . ? 19.689 23.185 30.284 0 0 2 3 '' 1
-32 O O5 . NAG poly . . ? 19.288 25.193 29.819 -0.43 30 3 3 '' 1
-33 C C5 . NAG poly . . ? 20.623 25.636 30.326 0.2 80 1 3 '' 1
-34 H H5 . NAG poly . . ? 20.864 24.873 31.066 0 0 3 3 '' 1
-35 C C6 . NAG poly . . ? 20.523 27.081 30.97 0.28 90 1 3 '' 1
-36 H H62 . NAG poly . . ? 21.421 27.254 31.563 0 0 3 3 '' 1
-37 H H61 . NAG poly . . ? 19.712 27.184 31.691 0 0 3 3 '' 1
-38 O O6 . NAG poly . . ? 20.398 28.123 30.02 -0.68 90 1 3 '' 1
-39 H H6O . NAG poly . . ? 19.885 27.86 29.253 0.42 40 1 3 '' 1
-40 C C4 . NAG poly . . ? 21.657 25.554 29.197 0.3 20 1 3 '' 1
-41 H H4 . NAG poly . . ? 21.512 26.357 28.474 0 0 3 3 '' 1
-42 C C3 . NAG poly . . ? 21.583 24.187 28.461 0.18 0 1 3 '' 1
-43 H H3 . NAG poly . . ? 22.123 23.455 29.062 0 0 3 3 '' 1
-44 O O3 . NAG poly . . ? 22.335 24.355 27.211 -0.68 10 1 3 '' 1
-45 H H3O . NAG poly . . ? 23.19 24.742 27.414 0.42 30 1 3 '' 1
-46 C C2 . NAG poly . . ? 20.228 23.471 28.232 0.48 0 1 3 '' 1
-47 H H2 . NAG poly . . ? 19.678 23.889 27.389 0 0 3 3 '' 1
-48 N N2 . NAG poly . . ? 20.397 22.081 27.965 -0.72 20 1 3 '' 1
-49 H H2N . NAG poly . . ? 20.555 21.498 28.775 0.3 0 4 3 '' 1
-50 C C2N . NAG poly . . ? 20.501 21.503 26.738 0.64 80 1 3 '' 1
-51 O O2N . NAG poly . . ? 20.245 22.133 25.755 -0.57 60 2 3 '' 1
-52 C CME . NAG poly . . ? 21.045 20.067 26.662 0.03 40 1 3 '' 1
-53 H H3M . NAG poly . . ? 21.343 19.719 27.651 0 0 5 3 '' 1
-54 H H2M . NAG poly . . ? 20.387 19.425 26.075 0 0 5 3 '' 1
-55 H H1M . NAG poly . . ? 21.958 20.171 26.076 0 0 5 3 '' 1
-56 O O4 . NAG poly . . ? 23.003 25.683 29.812 -0.47 40 3 3 '' 1
-57 C C1 . BMA poly . . ? 24.136 26.411 29.272 0.31 40 1 4 '' 1
-58 H H1 . BMA poly . . ? 23.724 27.37 28.957 0 0 2 4 '' 1
-59 O O5 . BMA poly . . ? 24.58 25.84 28.011 -0.39 30 3 4 '' 1
-60 C C5 . BMA poly . . ? 25.655 26.657 27.412 0.2 60 1 4 '' 1
-61 H H5 . BMA poly . . ? 25.292 27.671 27.245 0 0 3 4 '' 1
-62 C C6 . BMA poly . . ? 26.076 26.036 26.076 0.27 30 1 4 '' 1
-63 H H62 . BMA poly . . ? 26.729 26.749 25.573 0 0 3 4 '' 1
-64 H H61 . BMA poly . . ? 25.133 25.935 25.539 0 0 3 4 '' 1
-65 O O6 . BMA poly . . ? 26.698 24.666 26.231 -0.45 50 3 4 '' 1
-66 C C4 . BMA poly . . ? 26.843 26.635 28.381 0.34 90 1 4 '' 1
-67 H H4 . BMA poly . . ? 27.33 25.66 28.411 0 0 3 4 '' 1
-68 O O4 . BMA poly . . ? 27.981 27.388 27.825 -0.74 60 1 4 '' 1
-69 H H4O . BMA poly . . ? 28.87 27.048 27.952 0.44 30 1 4 '' 1
-70 C C3 . BMA poly . . ? 26.428 27.267 29.719 0.26 30 1 4 '' 1
-71 H H3 . BMA poly . . ? 26.097 28.302 29.627 0 0 3 4 '' 1
-72 C C2 . BMA poly . . ? 25.272 26.513 30.289 0.24 10 1 4 '' 1
-73 H H2 . BMA poly . . ? 24.821 27.008 31.149 0 0 3 4 '' 1
-74 O O2 . BMA poly . . ? 25.671 25.106 30.641 -0.66 40 1 4 '' 1
-75 H H2O . BMA poly . . ? 26.229 25.156 31.42 0.43 10 1 4 '' 1
-76 O O3 . BMA poly . . ? 27.52 27.214 30.775 -0.45 60 3 4 '' 1
-77 C C1 . MAN poly . . ? 26.951 24.121 24.925 0.43 30 1 5 '' 1
-78 H H1 . MAN poly . . ? 26.091 24.217 24.261 0 0 2 5 '' 1
-79 C C2 . MAN poly . . ? 27.204 22.55 25.193 0.24 50 1 5 '' 1
-80 H H2 . MAN poly . . ? 26.347 22.196 25.767 0 0 3 5 '' 1
-81 O O2 . MAN poly . . ? 27.123 21.736 23.947 -0.71 70 1 5 '' 1
-82 H H2O . MAN poly . . ? 27.168 20.791 24.113 0.44 60 1 5 '' 1
-83 C C3 . MAN poly . . ? 28.573 22.315 25.936 0.25 20 1 5 '' 1
-84 H H3 . MAN poly . . ? 28.538 22.914 26.846 0 0 3 5 '' 1
-85 C C4 . MAN poly . . ? 29.745 22.873 25.074 0.32 60 1 5 '' 1
-86 H H4 . MAN poly . . ? 29.738 22.562 24.029 0 0 3 5 '' 1
-87 C C5 . MAN poly . . ? 29.418 24.431 25.042 0.27 60 1 5 '' 1
-88 H H5 . MAN poly . . ? 29.317 24.696 26.094 0 0 3 5 '' 1
-89 C C6 . MAN poly . . ? 30.493 25.437 24.381 0.26 60 1 5 '' 1
-90 H H62 . MAN poly . . ? 30.047 26.43 24.432 0 0 3 5 '' 1
-91 H H61 . MAN poly . . ? 31.373 25.503 25.02 0 0 3 5 '' 1
-92 O O6 . MAN poly . . ? 30.788 25.227 22.938 -0.46 0 3 5 '' 1
-93 O O5 . MAN poly . . ? 28.095 24.675 24.341 -0.5 70 3 5 '' 1
-94 O O4 . MAN poly . . ? 31.029 22.674 25.676 -0.73 30 1 5 '' 1
-95 H H4O . MAN poly . . ? 31.256 21.744 25.603 0.43 80 1 5 '' 1
-96 O O3 . MAN poly . . ? 28.771 20.918 26.37 -0.45 90 3 5 '' 1
-97 C C1 . MAN poly . . ? 29.885 25.69 21.885 0.43 30 1 6 '' 1
-98 H H1 . MAN poly . . ? 28.909 25.272 22.132 0 0 2 6 '' 1
-99 C C2 . MAN poly . . ? 30.387 25.243 20.442 0.24 50 1 6 '' 1
-100 H H2 . MAN poly . . ? 30.514 24.162 20.38 0 0 3 6 '' 1
-101 C C3 . MAN poly . . ? 31.771 25.927 20.135 0.25 20 1 6 '' 1
-102 H H3 . MAN poly . . ? 32.497 25.506 20.831 0 0 3 6 '' 1
-103 C C4 . MAN poly . . ? 31.739 27.45 20.332 0.32 60 1 6 '' 1
-104 H H4 . MAN poly . . ? 31.258 27.858 19.442 0 0 3 6 '' 1
-105 C C5 . MAN poly . . ? 31.109 27.823 21.681 0.27 60 1 6 '' 1
-106 H H5 . MAN poly . . ? 31.827 27.464 22.418 0 0 3 6 '' 1
-107 C C6 . MAN poly . . ? 30.852 29.315 21.953 0.26 60 1 6 '' 1
-108 H H62 . MAN poly . . ? 30.1 29.42 22.735 0 0 3 6 '' 1
-109 H H61 . MAN poly . . ? 31.7 29.943 22.227 0 0 3 6 '' 1
-110 O O6 . MAN poly . . ? 30.118 29.836 20.74 -0.68 80 1 6 '' 1
-111 H H6O . MAN poly . . ? 29.384 30.386 21.023 0.42 20 1 6 '' 1
-112 O O5 . MAN poly . . ? 29.798 27.156 21.839 -0.5 70 3 6 '' 1
-113 O O4 . MAN poly . . ? 33.083 27.96 20.371 -0.73 30 1 6 '' 1
-114 H H4O . MAN poly . . ? 33.473 27.662 19.546 0.43 80 1 6 '' 1
-115 O O3 . MAN poly . . ? 32.098 25.548 18.698 -0.69 60 1 6 '' 1
-116 H H3O . MAN poly . . ? 31.24 25.317 18.335 0.43 10 1 6 '' 1
-117 O O2 . MAN poly . . ? 29.449 25.674 19.404 -0.46 50 3 6 '' 1
-118 C C1 . MAN poly . . ? 28.184 25.057 19.345 0.43 30 1 7 '' 1
-119 H H1 . MAN poly . . ? 28.369 23.992 19.486 0 0 2 7 '' 1
-120 C C2 . MAN poly . . ? 27.586 25.219 17.902 0.24 50 1 7 '' 1
-121 H H2 . MAN poly . . ? 28.388 24.846 17.265 0 0 3 7 '' 1
-122 C C3 . MAN poly . . ? 27.208 26.699 17.546 0.25 20 1 7 '' 1
-123 H H3 . MAN poly . . ? 28.08 27.351 17.495 0 0 3 7 '' 1
-124 C C4 . MAN poly . . ? 26.33 27.263 18.74 0.32 60 1 7 '' 1
-125 H H4 . MAN poly . . ? 25.391 26.726 18.606 0 0 3 7 '' 1
-126 C C5 . MAN poly . . ? 26.92 27.17 20.149 0.27 60 1 7 '' 1
-127 H H5 . MAN poly . . ? 27.885 27.677 20.13 0 0 3 7 '' 1
-128 C C6 . MAN poly . . ? 26.166 27.697 21.332 0.26 60 1 7 '' 1
-129 H H62 . MAN poly . . ? 26.666 27.564 22.291 0 0 3 7 '' 1
-130 H H61 . MAN poly . . ? 26.02 28.774 21.251 0 0 3 7 '' 1
-131 O O6 . MAN poly . . ? 24.875 26.975 21.486 -0.68 80 1 7 '' 1
-132 H H6O . MAN poly . . ? 25.061 26.166 21.969 0.42 20 1 7 '' 1
-133 O O5 . MAN poly . . ? 27.223 25.747 20.393 -0.5 70 3 7 '' 1
-134 O O4 . MAN poly . . ? 26.085 28.657 18.499 -0.73 30 1 7 '' 1
-135 H H4O . MAN poly . . ? 26.892 29.166 18.401 0.43 80 1 7 '' 1
-136 O O3 . MAN poly . . ? 26.492 26.733 16.287 -0.69 60 1 7 '' 1
-137 H H3O . MAN poly . . ? 25.554 26.735 16.495 0.43 10 1 7 '' 1
-138 O O2 . MAN poly . . ? 26.474 24.328 17.64 -0.71 70 1 7 '' 1
-139 H H2O . MAN poly . . ? 26.263 24.381 16.705 0.44 60 1 7 '' 1
-140 C C1 . MAN poly . . ? 28.219 20.581 27.718 0.43 30 1 8 '' 1
-141 H H1 . MAN poly . . ? 28.724 21.319 28.341 0 0 2 8 '' 1
-142 C C2 . MAN poly . . ? 28.757 19.175 28.184 0.24 50 1 8 '' 1
-143 H H2 . MAN poly . . ? 29.775 19.188 27.794 0 0 3 8 '' 1
-144 C C3 . MAN poly . . ? 27.873 18.102 27.402 0.25 20 1 8 '' 1
-145 H H3 . MAN poly . . ? 28.117 18.186 26.343 0 0 3 8 '' 1
-146 C C4 . MAN poly . . ? 26.366 18.215 27.68 0.32 60 1 8 '' 1
-147 H H4 . MAN poly . . ? 26.242 18.052 28.75 0 0 3 8 '' 1
-148 C C5 . MAN poly . . ? 25.819 19.633 27.346 0.27 60 1 8 '' 1
-149 H H5 . MAN poly . . ? 25.695 19.701 26.265 0 0 3 8 '' 1
-150 C C6 . MAN poly . . ? 24.468 19.857 27.971 0.26 60 1 8 '' 1
-151 H H62 . MAN poly . . ? 23.858 19.155 27.403 0 0 3 8 '' 1
-152 H H61 . MAN poly . . ? 24.281 19.579 29.009 0 0 3 8 '' 1
-153 O O6 . MAN poly . . ? 24.011 21.211 27.811 -0.68 80 1 8 '' 1
-154 H H6O . MAN poly . . ? 24.443 21.763 28.467 0.42 20 1 8 '' 1
-155 O O5 . MAN poly . . ? 26.695 20.73 27.835 -0.5 70 3 8 '' 1
-156 O O4 . MAN poly . . ? 25.703 17.204 26.938 -0.73 30 1 8 '' 1
-157 H H4O . MAN poly . . ? 26.191 16.392 27.093 0.43 80 1 8 '' 1
-158 O O3 . MAN poly . . ? 28.338 16.811 27.938 -0.69 60 1 8 '' 1
-159 H H3O . MAN poly . . ? 28.531 16.915 28.873 0.43 10 1 8 '' 1
-160 O O2 . MAN poly . . ? 28.692 18.962 29.652 -0.46 50 3 8 '' 1
-161 C C1 . MAN poly . . ? 29.85 19.599 30.335 0.43 30 1 9 '' 1
-162 H H1 . MAN poly . . ? 30.715 19.496 29.68 0 0 2 9 '' 1
-163 C C2 . MAN poly . . ? 30.196 18.983 31.728 0.24 50 1 9 '' 1
-164 H H2 . MAN poly . . ? 30.292 17.898 31.677 0 0 3 9 '' 1
-165 C C3 . MAN poly . . ? 29.227 19.408 32.894 0.25 20 1 9 '' 1
-166 H H3 . MAN poly . . ? 28.249 18.954 32.729 0 0 3 9 '' 1
-167 C C4 . MAN poly . . ? 29.132 20.948 32.908 0.32 60 1 9 '' 1
-168 H H4 . MAN poly . . ? 30.132 21.369 33.004 0 0 3 9 '' 1
-169 C C5 . MAN poly . . ? 28.594 21.37 31.516 0.27 60 1 9 '' 1
-170 H H5 . MAN poly . . ? 27.675 20.851 31.245 0 0 3 9 '' 1
-171 C C6 . MAN poly . . ? 28.402 22.881 31.283 0.26 60 1 9 '' 1
-172 H H62 . MAN poly . . ? 28.03 23.094 30.281 0 0 3 9 '' 1
-173 H H61 . MAN poly . . ? 27.687 23.3 31.991 0 0 3 9 '' 1
-174 O O6 . MAN poly . . ? 29.672 23.517 31.541 -0.68 80 1 9 '' 1
-175 H H6O . MAN poly . . ? 30.343 22.864 31.329 0.42 20 1 9 '' 1
-176 O O5 . MAN poly . . ? 29.578 20.973 30.483 -0.5 70 3 9 '' 1
-177 O O4 . MAN poly . . ? 28.292 21.527 33.94 -0.73 30 1 9 '' 1
-178 H H4O . MAN poly . . ? 27.413 21.146 33.875 0.43 80 1 9 '' 1
-179 O O3 . MAN poly . . ? 29.658 19.013 34.219 -0.69 60 1 9 '' 1
-180 H H3O . MAN poly . . ? 30.488 19.404 34.502 0.43 10 1 9 '' 1
-181 O O2 . MAN poly . . ? 31.617 19.428 32.039 -0.71 70 1 9 '' 1
-182 H H2O . MAN poly . . ? 32.035 18.689 32.487 0.44 60 1 9 '' 1
-183 C C1 . MAN poly . . ? 28.298 28.46 30.917 0.43 30 1 10 '' 1
-184 H H1 . MAN poly . . ? 28.545 28.863 29.935 0 0 2 10 '' 1
-185 C C2 . MAN poly . . ? 29.552 28.224 31.781 0.24 50 1 10 '' 1
-186 H H2 . MAN poly . . ? 30.041 27.36 31.331 0 0 3 10 '' 1
-187 C C3 . MAN poly . . ? 29.233 27.862 33.259 0.25 20 1 10 '' 1
-188 H H3 . MAN poly . . ? 28.827 26.852 33.204 0 0 3 10 '' 1
-189 C C4 . MAN poly . . ? 28.298 28.883 33.922 0.32 60 1 10 '' 1
-190 H H4 . MAN poly . . ? 28.858 29.766 34.228 0 0 3 10 '' 1
-191 C C5 . MAN poly . . ? 27.116 29.282 33.056 0.27 60 1 10 '' 1
-192 H H5 . MAN poly . . ? 26.434 28.433 33.019 0 0 3 10 '' 1
-193 C C6 . MAN poly . . ? 26.375 30.534 33.595 0.26 60 1 10 '' 1
-194 H H62 . MAN poly . . ? 25.565 30.878 32.953 0 0 3 10 '' 1
-195 H H61 . MAN poly . . ? 26.006 30.097 34.524 0 0 3 10 '' 1
-196 O O6 . MAN poly . . ? 27.347 31.601 33.889 -0.68 80 1 10 '' 1
-197 H H6O . MAN poly . . ? 27.515 32.121 33.099 0.42 20 1 10 '' 1
-198 O O5 . MAN poly . . ? 27.464 29.488 31.6 -0.5 70 3 10 '' 1
-199 O O4 . MAN poly . . ? 27.772 28.286 35.096 -0.73 30 1 10 '' 1
-200 H H4O . MAN poly . . ? 28.47 27.773 35.509 0.43 80 1 10 '' 1
-201 O O3 . MAN poly . . ? 30.438 27.707 34.053 -0.69 60 1 10 '' 1
-202 H H3O . MAN poly . . ? 31.061 27.132 33.603 0.43 10 1 10 '' 1
-203 O O2 . MAN poly . . ? 30.442 29.418 31.753 -0.46 50 3 10 '' 1
-204 C C1 . MAN poly . . ? 31.368 29.563 30.587 0.43 30 1 11 '' 1
-205 H H1 . MAN poly . . ? 31.777 28.607 30.259 0 0 2 11 '' 1
-206 C C2 . MAN poly . . ? 32.498 30.476 30.989 0.24 50 1 11 '' 1
-207 H H2 . MAN poly . . ? 32.945 29.832 31.746 0 0 3 11 '' 1
-208 C C3 . MAN poly . . ? 32.014 31.912 31.464 0.25 20 1 11 '' 1
-209 H H3 . MAN poly . . ? 31.363 31.746 32.323 0 0 3 11 '' 1
-210 C C4 . MAN poly . . ? 31.205 32.606 30.369 0.32 60 1 11 '' 1
-211 H H4 . MAN poly . . ? 31.785 32.968 29.52 0 0 3 11 '' 1
-212 C C5 . MAN poly . . ? 30.179 31.689 29.77 0.27 60 1 11 '' 1
-213 H H5 . MAN poly . . ? 29.441 31.54 30.558 0 0 3 11 '' 1
-214 C C6 . MAN poly . . ? 29.382 32.316 28.646 0.26 60 1 11 '' 1
-215 H H62 . MAN poly . . ? 28.775 33.144 29.013 0 0 3 11 '' 1
-216 H H61 . MAN poly . . ? 30.129 32.796 28.013 0 0 3 11 '' 1
-217 O O6 . MAN poly . . ? 28.486 31.428 27.878 -0.68 80 1 11 '' 1
-218 H H6O . MAN poly . . ? 27.717 31.911 27.566 0.42 20 1 11 '' 1
-219 O O5 . MAN poly . . ? 30.71 30.259 29.481 -0.5 70 3 11 '' 1
-220 O O4 . MAN poly . . ? 30.465 33.81 30.926 -0.73 30 1 11 '' 1
-221 H H4O . MAN poly . . ? 31.172 34.261 31.394 0.43 80 1 11 '' 1
-222 O O3 . MAN poly . . ? 33.15 32.637 31.854 -0.69 60 1 11 '' 1
-223 H H3O . MAN poly . . ? 33.656 31.991 32.352 0.43 10 1 11 '' 1
-224 O O2 . MAN poly . . ? 33.408 30.643 29.894 -0.46 50 3 11 '' 1
-225 C C1 . MAN poly . . ? 34.852 30.556 30.268 0.43 30 1 12 '' 1
-226 H H1 . MAN poly . . ? 35.032 31.176 31.146 0 0 2 12 '' 1
-227 C C2 . MAN poly . . ? 35.66 31.202 29.12 0.24 50 1 12 '' 1
-228 H H2 . MAN poly . . ? 35.241 32.196 28.966 0 0 3 12 '' 1
-229 C C3 . MAN poly . . ? 35.434 30.376 27.856 0.25 20 1 12 '' 1
-230 H H3 . MAN poly . . ? 34.436 30.479 27.429 0 0 3 12 '' 1
-231 C C4 . MAN poly . . ? 35.807 28.921 28.101 0.32 60 1 12 '' 1
-232 H H4 . MAN poly . . ? 36.887 28.859 28.231 0 0 3 12 '' 1
-233 C C5 . MAN poly . . ? 35.144 28.278 29.352 0.27 60 1 12 '' 1
-234 H H5 . MAN poly . . ? 34.076 28.123 29.202 0 0 3 12 '' 1
-235 C C6 . MAN poly . . ? 35.768 26.946 29.843 0.26 60 1 12 '' 1
-236 H H62 . MAN poly . . ? 35.707 26.216 29.035 0 0 3 12 '' 1
-237 H H61 . MAN poly . . ? 36.82 27.099 30.085 0 0 3 12 '' 1
-238 O O6 . MAN poly . . ? 35.261 26.363 31.044 -0.68 80 1 12 '' 1
-239 H H6O . MAN poly . . ? 35.93 25.694 31.209 0.42 20 1 12 '' 1
-240 O O5 . MAN poly . . ? 35.296 29.173 30.443 -0.5 70 3 12 '' 1
-241 O O4 . MAN poly . . ? 35.29 28.265 26.911 -0.73 30 1 12 '' 1
-242 H H4O . MAN poly . . ? 34.342 28.416 26.875 0.43 80 1 12 '' 1
-243 O O3 . MAN poly . . ? 36.234 31.053 26.877 -0.69 60 1 12 '' 1
-244 H H3O . MAN poly . . ? 36.673 30.398 26.328 0.43 10 1 12 '' 1
-245 O O2 . MAN poly . . ? 37.126 31.296 29.427 -0.71 70 1 12 '' 1
-246 H H2O . MAN poly . . ? 37.559 31.301 28.57 0.44 60 1 12 '' 1
-
-_WURCS
-'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
-_GlyTouCan G39578OU
-
-data_confConvertedPDB/
-_entry.id confConvertedPDB
-
-_cell.entry_id confConvertedPDB
-_cell.length_a 1
-_cell.length_b 1
-_cell.length_c 1
-_cell.angle_alpha 90
-_cell.angle_beta 90
-_cell.angle_gamma 90
-
-_symmetry.entry_id confConvertedPDB
-_symmetry.space_group_name_H-M ''
-
-
-
-
-loop_
-_chem_comp.id
-_chem_comp.type
-BMA .
-MAN .
-NAG .
-NDG .
-
-loop_
-_struct_asym.id
-_struct_asym.entity_id
-poly ?
-
-loop_
-_struct_conn.id
-_struct_conn.conn_type_id
-_struct_conn.ptnr1_auth_asym_id
-_struct_conn.ptnr1_label_asym_id
-_struct_conn.ptnr1_label_comp_id
-_struct_conn.ptnr1_label_seq_id
-_struct_conn.ptnr1_label_atom_id
-_struct_conn.pdbx_ptnr1_label_alt_id
-_struct_conn.ptnr1_auth_seq_id
-_struct_conn.pdbx_ptnr1_PDB_ins_code
-_struct_conn.ptnr1_symmetry
-_struct_conn.ptnr2_auth_asym_id
-_struct_conn.ptnr2_label_asym_id
-_struct_conn.ptnr2_label_comp_id
-_struct_conn.ptnr2_label_seq_id
-_struct_conn.ptnr2_label_atom_id
-_struct_conn.pdbx_ptnr2_label_alt_id
-_struct_conn.ptnr2_auth_seq_id
-_struct_conn.pdbx_ptnr2_PDB_ins_code
-_struct_conn.ptnr2_symmetry
-_struct_conn.details
-_struct_conn.pdbx_dist_value
-'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.4796
-'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4842
-'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4554
-'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4338
-'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4557
-'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4510
-'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4444
-'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4680
-'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4492
-'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4605
-
-loop_
-_struct_conn_type.id
-covale
-
-
-loop_
-_atom_type.symbol
-H
-C
-N
-O
-
-
-loop_
-_atom_site.id
-_atom_site.type_symbol
-_atom_site.label_atom_id
-_atom_site.label_alt_id
-_atom_site.label_comp_id
-_atom_site.label_asym_id
-_atom_site.label_entity_id
-_atom_site.label_seq_id
-_atom_site.pdbx_PDB_ins_code
-_atom_site.Cartn_x
-_atom_site.Cartn_y
-_atom_site.Cartn_z
-_atom_site.occupancy
-_atom_site.B_iso_or_equiv
-_atom_site.pdbx_formal_charge
-_atom_site.auth_seq_id
-_atom_site.auth_asym_id
-_atom_site.pdbx_PDB_model_num
-1 H HO1 . NDG poly . . ? 29.637 18.271 18.122 0.44 50 1 2 '' 1
-2 O O1 . NDG poly . . ? 29.245 17.635 18.725 -0.63 90 1 2 '' 1
-3 C C1 . NDG poly . . ? 30.126 17.708 19.878 0.46 80 1 2 '' 1
-4 H H1 . NDG poly . . ? 30.832 16.878 19.834 0 0 2 2 '' 1
-5 C C2 . NDG poly . . ? 29.324 17.531 21.179 0.24 50 1 2 '' 1
-6 H H2 . NDG poly . . ? 30.027 17.183 21.936 0 0 3 2 '' 1
-7 N N2 . NDG poly . . ? 28.363 16.373 21.172 -0.55 20 1 2 '' 1
-8 H H2N . NDG poly . . ? 27.381 16.572 21.043 0.23 60 4 2 '' 1
-9 C C2N . NDG poly . . ? 28.857 15.133 21.228 0.58 80 1 2 '' 1
-10 C CME . NDG poly . . ? 27.979 13.956 21.427 0.06 30 1 2 '' 1
-11 H H3M . NDG poly . . ? 28.426 12.974 21.583 0 0 5 2 '' 1
-12 H H2M . NDG poly . . ? 27.471 14.294 22.331 0 0 5 2 '' 1
-13 H H1M . NDG poly . . ? 27.302 13.866 20.578 0 0 5 2 '' 1
-14 O O2N . NDG poly . . ? 30.082 14.911 21.28 -0.57 90 2 2 '' 1
-15 C C3 . NDG poly . . ? 28.618 18.821 21.686 0.16 50 1 2 '' 1
-16 H H3 . NDG poly . . ? 27.709 18.891 21.088 0 0 3 2 '' 1
-17 O O3 . NDG poly . . ? 28.422 18.713 23.077 -0.63 0 1 2 '' 1
-18 H H3O . NDG poly . . ? 27.964 19.491 23.404 0.41 30 1 2 '' 1
-19 C C4 . NDG poly . . ? 29.454 20.112 21.562 0.32 20 1 2 '' 1
-20 H H4 . NDG poly . . ? 30.214 19.967 22.33 0 0 3 2 '' 1
-21 C C5 . NDG poly . . ? 29.997 20.252 20.185 0.24 60 1 2 '' 1
-22 H H5 . NDG poly . . ? 29.086 20.239 19.586 0 0 3 2 '' 1
-23 C C6 . NDG poly . . ? 30.902 21.463 19.991 0.32 80 1 2 '' 1
-24 H H62 . NDG poly . . ? 30.228 22.317 20.062 0 0 3 2 '' 1
-25 H H61 . NDG poly . . ? 31.443 21.381 19.049 0 0 3 2 '' 1
-26 O O6 . NDG poly . . ? 31.895 21.604 21.026 -0.68 80 1 2 '' 1
-27 H H6O . NDG poly . . ? 32.472 22.34 20.809 0.42 10 1 2 '' 1
-28 O O5 . NDG poly . . ? 30.808 19.048 19.815 -0.56 80 3 2 '' 1
-29 O O4 . NDG poly . . ? 28.571 21.31 21.882 -0.47 80 3 2 '' 1
-30 C C1 . NAG poly . . ? 28.527 21.898 23.239 0.28 70 1 3 '' 1
-31 H H1 . NAG poly . . ? 29.565 22.132 23.473 0 0 2 3 '' 1
-32 O O5 . NAG poly . . ? 27.933 20.949 24.308 -0.43 30 3 3 '' 1
-33 C C5 . NAG poly . . ? 27.853 21.452 25.689 0.2 80 1 3 '' 1
-34 H H5 . NAG poly . . ? 28.878 21.743 25.918 0 0 3 3 '' 1
-35 C C6 . NAG poly . . ? 27.512 20.373 26.662 0.28 90 1 3 '' 1
-36 H H62 . NAG poly . . ? 27.983 20.617 27.614 0 0 3 3 '' 1
-37 H H61 . NAG poly . . ? 28.181 19.574 26.341 0 0 3 3 '' 1
-38 O O6 . NAG poly . . ? 26.127 20.045 26.737 -0.68 90 1 3 '' 1
-39 H H6O . NAG poly . . ? 26.023 19.192 26.309 0.42 40 1 3 '' 1
-40 C C4 . NAG poly . . ? 26.972 22.719 25.67 0.3 20 1 3 '' 1
-41 H H4 . NAG poly . . ? 25.98 22.472 25.291 0 0 3 3 '' 1
-42 C C3 . NAG poly . . ? 27.609 23.743 24.737 0.18 0 1 3 '' 1
-43 H H3 . NAG poly . . ? 28.6 23.943 25.144 0 0 3 3 '' 1
-44 O O3 . NAG poly . . ? 26.747 24.944 24.875 -0.68 10 1 3 '' 1
-45 H H3O . NAG poly . . ? 27.004 25.357 25.703 0.42 30 1 3 '' 1
-46 C C2 . NAG poly . . ? 27.754 23.232 23.211 0.48 0 1 3 '' 1
-47 H H2 . NAG poly . . ? 26.808 23.054 22.7 0 0 3 3 '' 1
-48 N N2 . NAG poly . . ? 28.415 24.232 22.351 -0.72 20 1 3 '' 1
-49 H H2N . NAG poly . . ? 29.238 24.595 22.811 0.3 0 4 3 '' 1
-50 C C2N . NAG poly . . ? 27.944 24.821 21.256 0.64 80 1 3 '' 1
-51 O O2N . NAG poly . . ? 26.775 24.564 20.915 -0.57 60 2 3 '' 1
-52 C CME . NAG poly . . ? 28.925 25.686 20.519 0.03 40 1 3 '' 1
-53 H H3M . NAG poly . . ? 28.498 26.204 19.66 0 0 5 3 '' 1
-54 H H2M . NAG poly . . ? 29.395 26.411 21.184 0 0 5 3 '' 1
-55 H H1M . NAG poly . . ? 29.693 24.993 20.176 0 0 5 3 '' 1
-56 O O4 . NAG poly . . ? 27.075 23.276 27.096 -0.47 40 3 3 '' 1
-57 C C1 . BMA poly . . ? 25.774 23.521 27.767 0.31 40 1 4 '' 1
-58 H H1 . BMA poly . . ? 25.23 22.577 27.733 0 0 2 4 '' 1
-59 O O5 . BMA poly . . ? 24.892 24.485 27.086 -0.39 30 3 4 '' 1
-60 C C5 . BMA poly . . ? 23.558 24.66 27.715 0.2 60 1 4 '' 1
-61 H H5 . BMA poly . . ? 23.062 23.69 27.671 0 0 3 4 '' 1
-62 C C6 . BMA poly . . ? 22.77 25.804 26.989 0.27 30 1 4 '' 1
-63 H H62 . BMA poly . . ? 22.253 26.396 27.744 0 0 3 4 '' 1
-64 H H61 . BMA poly . . ? 21.969 25.326 26.425 0 0 3 4 '' 1
-65 O O6 . BMA poly . . ? 23.524 26.599 26.018 -0.45 50 3 4 '' 1
-66 C C4 . BMA poly . . ? 23.766 24.975 29.213 0.34 90 1 4 '' 1
-67 H H4 . BMA poly . . ? 24.156 25.992 29.221 0 0 3 4 '' 1
-68 O O4 . BMA poly . . ? 22.432 25.015 29.917 -0.74 60 1 4 '' 1
-69 H H4O . BMA poly . . ? 22.517 25.647 30.635 0.44 30 1 4 '' 1
-70 C C3 . BMA poly . . ? 24.75 24.038 29.981 0.26 30 1 4 '' 1
-71 H H3 . BMA poly . . ? 24.285 23.052 29.992 0 0 3 4 '' 1
-72 C C2 . BMA poly . . ? 26.073 23.956 29.21 0.24 10 1 4 '' 1
-73 H H2 . BMA poly . . ? 26.696 23.173 29.642 0 0 3 4 '' 1
-74 O O2 . BMA poly . . ? 26.66 25.231 29.253 -0.66 40 1 4 '' 1
-75 H H2O . BMA poly . . ? 27.556 25.282 28.911 0.43 10 1 4 '' 1
-76 O O3 . BMA poly . . ? 24.996 24.573 31.369 -0.45 60 3 4 '' 1
-77 C C1 . MAN poly . . ? 23.569 28.021 26.196 0.43 30 1 5 '' 1
-78 H H1 . MAN poly . . ? 22.546 28.367 26.342 0 0 2 5 '' 1
-79 C C2 . MAN poly . . ? 24.189 28.668 24.903 0.24 50 1 5 '' 1
-80 H H2 . MAN poly . . ? 23.619 28.231 24.083 0 0 3 5 '' 1
-81 O O2 . MAN poly . . ? 24.133 30.06 24.83 -0.71 70 1 5 '' 1
-82 H H2O . MAN poly . . ? 24.094 30.26 23.892 0.44 60 1 5 '' 1
-83 C C3 . MAN poly . . ? 25.593 28.257 24.766 0.25 20 1 5 '' 1
-84 H H3 . MAN poly . . ? 25.611 27.193 24.529 0 0 3 5 '' 1
-85 C C4 . MAN poly . . ? 26.559 28.437 25.912 0.32 60 1 5 '' 1
-86 H H4 . MAN poly . . ? 26.891 29.469 25.8 0 0 3 5 '' 1
-87 C C5 . MAN poly . . ? 25.867 28.02 27.312 0.27 60 1 5 '' 1
-88 H H5 . MAN poly . . ? 25.787 26.937 27.406 0 0 3 5 '' 1
-89 C C6 . MAN poly . . ? 26.591 28.494 28.508 0.26 60 1 5 '' 1
-90 H H62 . MAN poly . . ? 25.982 28.208 29.365 0 0 3 5 '' 1
-91 H H61 . MAN poly . . ? 27.519 27.921 28.516 0 0 3 5 '' 1
-92 O O6 . MAN poly . . ? 26.891 29.859 28.454 -0.46 0 3 5 '' 1
-93 O O5 . MAN poly . . ? 24.458 28.395 27.379 -0.5 70 3 5 '' 1
-94 O O4 . MAN poly . . ? 27.631 27.528 25.778 -0.73 30 1 5 '' 1
-95 H H4O . MAN poly . . ? 28.4 27.842 25.297 0.43 80 1 5 '' 1
-96 O O3 . MAN poly . . ? 26.164 28.907 23.582 -0.45 90 3 5 '' 1
-97 C C1 . MAN poly . . ? 27.45 30.315 29.713 0.43 30 1 6 '' 1
-98 H H1 . MAN poly . . ? 26.931 30.023 30.626 0 0 2 6 '' 1
-99 C C2 . MAN poly . . ? 27.626 31.869 29.548 0.24 50 1 6 '' 1
-100 H H2 . MAN poly . . ? 26.685 32.264 29.165 0 0 3 6 '' 1
-101 C C3 . MAN poly . . ? 28.623 32.306 28.448 0.25 20 1 6 '' 1
-102 H H3 . MAN poly . . ? 28.129 31.906 27.563 0 0 3 6 '' 1
-103 C C4 . MAN poly . . ? 29.93 31.57 28.655 0.32 60 1 6 '' 1
-104 H H4 . MAN poly . . ? 30.484 31.972 29.503 0 0 3 6 '' 1
-105 C C5 . MAN poly . . ? 29.838 30.065 28.83 0.27 60 1 6 '' 1
-106 H H5 . MAN poly . . ? 29.548 29.669 27.857 0 0 3 6 '' 1
-107 C C6 . MAN poly . . ? 31.203 29.5 29.27 0.26 60 1 6 '' 1
-108 H H62 . MAN poly . . ? 32.028 30.118 28.917 0 0 3 6 '' 1
-109 H H61 . MAN poly . . ? 31.103 29.431 30.353 0 0 3 6 '' 1
-110 O O6 . MAN poly . . ? 31.317 28.116 28.824 -0.68 80 1 6 '' 1
-111 H H6O . MAN poly . . ? 31.985 27.718 29.387 0.42 20 1 6 '' 1
-112 O O5 . MAN poly . . ? 28.819 29.653 29.786 -0.5 70 3 6 '' 1
-113 O O4 . MAN poly . . ? 30.728 31.796 27.453 -0.73 30 1 6 '' 1
-114 H H4O . MAN poly . . ? 31.513 32.314 27.645 0.43 80 1 6 '' 1
-115 O O3 . MAN poly . . ? 28.785 33.758 28.337 -0.69 60 1 6 '' 1
-116 H H3O . MAN poly . . ? 27.918 34.117 28.135 0.43 10 1 6 '' 1
-117 O O2 . MAN poly . . ? 27.994 32.475 30.85 -0.46 50 3 6 '' 1
-118 C C1 . MAN poly . . ? 26.92 32.93 31.702 0.43 30 1 7 '' 1
-119 H H1 . MAN poly . . ? 26.115 33.354 31.101 0 0 2 7 '' 1
-120 C C2 . MAN poly . . ? 27.404 33.956 32.692 0.24 50 1 7 '' 1
-121 H H2 . MAN poly . . ? 27.879 34.799 32.19 0 0 3 7 '' 1
-122 C C3 . MAN poly . . ? 28.446 33.331 33.622 0.25 20 1 7 '' 1
-123 H H3 . MAN poly . . ? 29.249 32.978 32.975 0 0 3 7 '' 1
-124 C C4 . MAN poly . . ? 27.865 32.184 34.495 0.32 60 1 7 '' 1
-125 H H4 . MAN poly . . ? 27.016 32.512 35.096 0 0 3 7 '' 1
-126 C C5 . MAN poly . . ? 27.332 31.195 33.436 0.27 60 1 7 '' 1
-127 H H5 . MAN poly . . ? 28.166 30.863 32.818 0 0 3 7 '' 1
-128 C C6 . MAN poly . . ? 26.774 29.913 33.899 0.26 60 1 7 '' 1
-129 H H62 . MAN poly . . ? 26.65 29.232 33.057 0 0 3 7 '' 1
-130 H H61 . MAN poly . . ? 27.468 29.45 34.601 0 0 3 7 '' 1
-131 O O6 . MAN poly . . ? 25.506 30.186 34.657 -0.68 80 1 7 '' 1
-132 H H6O . MAN poly . . ? 24.99 30.869 34.22 0.42 20 1 7 '' 1
-133 O O5 . MAN poly . . ? 26.361 31.879 32.437 -0.5 70 3 7 '' 1
-134 O O4 . MAN poly . . ? 28.82 31.45 35.319 -0.73 30 1 7 '' 1
-135 H H4O . MAN poly . . ? 29.111 32.063 35.999 0.43 80 1 7 '' 1
-136 O O3 . MAN poly . . ? 28.98 34.336 34.51 -0.69 60 1 7 '' 1
-137 H H3O . MAN poly . . ? 29.504 34.979 34.027 0.43 10 1 7 '' 1
-138 O O2 . MAN poly . . ? 26.31 34.579 33.447 -0.71 70 1 7 '' 1
-139 H H2O . MAN poly . . ? 26.73 35.308 33.909 0.44 60 1 7 '' 1
-140 C C1 . MAN poly . . ? 27.173 28.361 22.686 0.43 30 1 8 '' 1
-141 H H1 . MAN poly . . ? 27.907 27.711 23.164 0 0 2 8 '' 1
-142 C C2 . MAN poly . . ? 27.907 29.643 22.046 0.24 50 1 8 '' 1
-143 H H2 . MAN poly . . ? 28.332 30.276 22.825 0 0 3 8 '' 1
-144 C C3 . MAN poly . . ? 26.875 30.398 21.217 0.25 20 1 8 '' 1
-145 H H3 . MAN poly . . ? 26.082 30.692 21.905 0 0 3 8 '' 1
-146 C C4 . MAN poly . . ? 26.192 29.587 20.142 0.32 60 1 8 '' 1
-147 H H4 . MAN poly . . ? 26.798 29.435 19.249 0 0 3 8 '' 1
-148 C C5 . MAN poly . . ? 25.639 28.277 20.728 0.27 60 1 8 '' 1
-149 H H5 . MAN poly . . ? 24.884 28.488 21.486 0 0 3 8 '' 1
-150 C C6 . MAN poly . . ? 25.144 27.369 19.554 0.26 60 1 8 '' 1
-151 H H62 . MAN poly . . ? 24.502 27.942 18.886 0 0 3 8 '' 1
-152 H H61 . MAN poly . . ? 26.04 27.097 18.996 0 0 3 8 '' 1
-153 O O6 . MAN poly . . ? 24.528 26.197 20.073 -0.68 80 1 8 '' 1
-154 H H6O . MAN poly . . ? 25.271 25.637 20.308 0.42 20 1 8 '' 1
-155 O O5 . MAN poly . . ? 26.535 27.535 21.613 -0.5 70 3 8 '' 1
-156 O O4 . MAN poly . . ? 25.137 30.35 19.644 -0.73 30 1 8 '' 1
-157 H H4O . MAN poly . . ? 24.501 29.932 19.059 0.43 80 1 8 '' 1
-158 O O3 . MAN poly . . ? 27.465 31.645 20.667 -0.69 60 1 8 '' 1
-159 H H3O . MAN poly . . ? 27.32 32.408 21.231 0.43 10 1 8 '' 1
-160 O O2 . MAN poly . . ? 29.108 29.204 21.207 -0.46 50 3 8 '' 1
-161 C C1 . MAN poly . . ? 30.258 30.075 21.479 0.43 30 1 9 '' 1
-162 H H1 . MAN poly . . ? 29.851 31.062 21.259 0 0 2 9 '' 1
-163 C C2 . MAN poly . . ? 31.416 29.647 20.583 0.24 50 1 9 '' 1
-164 H H2 . MAN poly . . ? 31.252 29.565 19.508 0 0 3 9 '' 1
-165 C C3 . MAN poly . . ? 32.015 28.314 20.962 0.25 20 1 9 '' 1
-166 H H3 . MAN poly . . ? 31.346 27.564 20.539 0 0 3 9 '' 1
-167 C C4 . MAN poly . . ? 32.268 28.181 22.532 0.32 60 1 9 '' 1
-168 H H4 . MAN poly . . ? 33.187 28.666 22.861 0 0 3 9 '' 1
-169 C C5 . MAN poly . . ? 31.007 28.559 23.431 0.27 60 1 9 '' 1
-170 H H5 . MAN poly . . ? 30.225 27.857 23.14 0 0 3 9 '' 1
-171 C C6 . MAN poly . . ? 31.264 28.516 24.965 0.26 60 1 9 '' 1
-172 H H62 . MAN poly . . ? 31.476 27.518 25.348 0 0 3 9 '' 1
-173 H H61 . MAN poly . . ? 32.158 29.067 25.255 0 0 3 9 '' 1
-174 O O6 . MAN poly . . ? 29.981 28.967 25.562 -0.68 80 1 9 '' 1
-175 H H6O . MAN poly . . ? 29.873 29.915 25.456 0.42 20 1 9 '' 1
-176 O O5 . MAN poly . . ? 30.655 29.945 22.948 -0.5 70 3 9 '' 1
-177 O O4 . MAN poly . . ? 32.518 26.73 22.77 -0.73 30 1 9 '' 1
-178 H H4O . MAN poly . . ? 33.437 26.574 22.538 0.43 80 1 9 '' 1
-179 O O3 . MAN poly . . ? 33.265 28.117 20.206 -0.69 60 1 9 '' 1
-180 H H3O . MAN poly . . ? 33.17 27.973 19.262 0.43 10 1 9 '' 1
-181 O O2 . MAN poly . . ? 32.466 30.633 20.68 -0.71 70 1 9 '' 1
-182 H H2O . MAN poly . . ? 33.296 30.372 20.274 0.44 60 1 9 '' 1
-183 C C1 . MAN poly . . ? 25.13 23.572 32.417 0.43 30 1 10 '' 1
-184 H H1 . MAN poly . . ? 24.433 22.745 32.285 0 0 2 10 '' 1
-185 C C2 . MAN poly . . ? 24.897 24.099 33.868 0.24 50 1 10 '' 1
-186 H H2 . MAN poly . . ? 23.934 24.605 33.806 0 0 3 10 '' 1
-187 C C3 . MAN poly . . ? 25.989 24.998 34.404 0.25 20 1 10 '' 1
-188 H H3 . MAN poly . . ? 25.96 25.959 33.89 0 0 3 10 '' 1
-189 C C4 . MAN poly . . ? 27.399 24.495 34.177 0.32 60 1 10 '' 1
-190 H H4 . MAN poly . . ? 27.535 23.687 34.896 0 0 3 10 '' 1
-191 C C5 . MAN poly . . ? 27.572 24.053 32.716 0.27 60 1 10 '' 1
-192 H H5 . MAN poly . . ? 27.457 24.872 32.005 0 0 3 10 '' 1
-193 C C6 . MAN poly . . ? 28.966 23.6 32.322 0.26 60 1 10 '' 1
-194 H H62 . MAN poly . . ? 29.028 23.636 31.234 0 0 3 10 '' 1
-195 H H61 . MAN poly . . ? 29.748 24.279 32.663 0 0 3 10 '' 1
-196 O O6 . MAN poly . . ? 29.287 22.27 32.836 -0.68 80 1 10 '' 1
-197 H H6O . MAN poly . . ? 29.715 22.313 33.695 0.42 20 1 10 '' 1
-198 O O5 . MAN poly . . ? 26.511 23.068 32.315 -0.5 70 3 10 '' 1
-199 O O4 . MAN poly . . ? 28.301 25.63 34.521 -0.73 30 1 10 '' 1
-200 H H4O . MAN poly . . ? 28.427 25.618 35.472 0.43 80 1 10 '' 1
-201 O O3 . MAN poly . . ? 25.649 25.269 35.791 -0.69 60 1 10 '' 1
-202 H H3O . MAN poly . . ? 26.25 24.764 36.344 0.43 10 1 10 '' 1
-203 O O2 . MAN poly . . ? 24.846 22.906 34.708 -0.46 50 3 10 '' 1
-204 C C1 . MAN poly . . ? 23.617 22.161 34.894 0.43 30 1 11 '' 1
-205 H H1 . MAN poly . . ? 22.869 22.952 34.836 0 0 2 11 '' 1
-206 C C2 . MAN poly . . ? 23.64 21.425 36.227 0.24 50 1 11 '' 1
-207 H H2 . MAN poly . . ? 24.042 21.984 37.072 0 0 3 11 '' 1
-208 C C3 . MAN poly . . ? 24.516 20.176 36.134 0.25 20 1 11 '' 1
-209 H H3 . MAN poly . . ? 25.532 20.551 36.013 0 0 3 11 '' 1
-210 C C4 . MAN poly . . ? 24.184 19.301 34.932 0.32 60 1 11 '' 1
-211 H H4 . MAN poly . . ? 23.263 18.76 35.149 0 0 3 11 '' 1
-212 C C5 . MAN poly . . ? 24.068 20.092 33.589 0.27 60 1 11 '' 1
-213 H H5 . MAN poly . . ? 25.095 20.383 33.367 0 0 3 11 '' 1
-214 C C6 . MAN poly . . ? 23.538 19.165 32.458 0.26 60 1 11 '' 1
-215 H H62 . MAN poly . . ? 22.828 18.401 32.775 0 0 3 11 '' 1
-216 H H61 . MAN poly . . ? 23.068 19.87 31.772 0 0 3 11 '' 1
-217 O O6 . MAN poly . . ? 24.578 18.516 31.723 -0.68 80 1 11 '' 1
-218 H H6O . MAN poly . . ? 24.638 18.912 30.851 0.42 20 1 11 '' 1
-219 O O5 . MAN poly . . ? 23.275 21.361 33.776 -0.5 70 3 11 '' 1
-220 O O4 . MAN poly . . ? 25.236 18.275 34.7 -0.73 30 1 11 '' 1
-221 H H4O . MAN poly . . ? 24.89 17.423 34.975 0.43 80 1 11 '' 1
-222 O O3 . MAN poly . . ? 24.598 19.418 37.374 -0.69 60 1 11 '' 1
-223 H H3O . MAN poly . . ? 24.427 20.051 38.075 0.43 10 1 11 '' 1
-224 O O2 . MAN poly . . ? 22.291 20.973 36.611 -0.46 50 3 11 '' 1
-225 C C1 . MAN poly . . ? 21.574 21.893 37.49 0.43 30 1 12 '' 1
-226 H H1 . MAN poly . . ? 22.118 22.058 38.42 0 0 2 12 '' 1
-227 C C2 . MAN poly . . ? 20.267 21.172 37.907 0.24 50 1 12 '' 1
-228 H H2 . MAN poly . . ? 20.517 20.178 38.28 0 0 3 12 '' 1
-229 C C3 . MAN poly . . ? 19.322 21.008 36.675 0.25 20 1 12 '' 1
-230 H H3 . MAN poly . . ? 19.784 20.329 35.959 0 0 3 12 '' 1
-231 C C4 . MAN poly . . ? 19.05 22.432 35.981 0.32 60 1 12 '' 1
-232 H H4 . MAN poly . . ? 18.585 23.114 36.694 0 0 3 12 '' 1
-233 C C5 . MAN poly . . ? 20.38 22.991 35.572 0.27 60 1 12 '' 1
-234 H H5 . MAN poly . . ? 20.84 22.302 34.864 0 0 3 12 '' 1
-235 C C6 . MAN poly . . ? 20.337 24.321 34.77 0.26 60 1 12 '' 1
-236 H H62 . MAN poly . . ? 21.305 24.815 34.689 0 0 3 12 '' 1
-237 H H61 . MAN poly . . ? 20.016 24.074 33.758 0 0 3 12 '' 1
-238 O O6 . MAN poly . . ? 19.39 25.358 35.255 -0.68 80 1 12 '' 1
-239 H H6O . MAN poly . . ? 18.565 25.376 34.764 0.42 20 1 12 '' 1
-240 O O5 . MAN poly . . ? 21.247 23.194 36.736 -0.5 70 3 12 '' 1
-241 O O4 . MAN poly . . ? 18.168 22.31 34.823 -0.73 30 1 12 '' 1
-242 H H4O . MAN poly . . ? 17.869 23.181 34.554 0.43 80 1 12 '' 1
-243 O O3 . MAN poly . . ? 18.073 20.471 37.104 -0.69 60 1 12 '' 1
-244 H H3O . MAN poly . . ? 17.462 20.627 36.38 0.43 10 1 12 '' 1
-245 O O2 . MAN poly . . ? 19.699 21.966 38.97 -0.71 70 1 12 '' 1
-246 H H2O . MAN poly . . ? 18.993 21.414 39.316 0.44 60 1 12 '' 1
-
-_WURCS
-'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
-_GlyTouCan G39578OU
-
-data_confConvertedPDB/
-_entry.id confConvertedPDB
-
-_cell.entry_id confConvertedPDB
-_cell.length_a 1
-_cell.length_b 1
-_cell.length_c 1
-_cell.angle_alpha 90
-_cell.angle_beta 90
-_cell.angle_gamma 90
-
-_symmetry.entry_id confConvertedPDB
-_symmetry.space_group_name_H-M ''
-
-
-
-
-loop_
-_chem_comp.id
-_chem_comp.type
-BMA .
-MAN .
-NAG .
-NDG .
-
-loop_
-_struct_asym.id
-_struct_asym.entity_id
-poly ?
-
-loop_
-_struct_conn.id
-_struct_conn.conn_type_id
-_struct_conn.ptnr1_auth_asym_id
-_struct_conn.ptnr1_label_asym_id
-_struct_conn.ptnr1_label_comp_id
-_struct_conn.ptnr1_label_seq_id
-_struct_conn.ptnr1_label_atom_id
-_struct_conn.pdbx_ptnr1_label_alt_id
-_struct_conn.ptnr1_auth_seq_id
-_struct_conn.pdbx_ptnr1_PDB_ins_code
-_struct_conn.ptnr1_symmetry
-_struct_conn.ptnr2_auth_asym_id
-_struct_conn.ptnr2_label_asym_id
-_struct_conn.ptnr2_label_comp_id
-_struct_conn.ptnr2_label_seq_id
-_struct_conn.ptnr2_label_atom_id
-_struct_conn.pdbx_ptnr2_label_alt_id
-_struct_conn.ptnr2_auth_seq_id
-_struct_conn.pdbx_ptnr2_PDB_ins_code
-_struct_conn.ptnr2_symmetry
-_struct_conn.details
-_struct_conn.pdbx_dist_value
-'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.4444
-'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.5171
-'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4713
-'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4685
-'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4744
-'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4790
-'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4125
-'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4123
-'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4992
-'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4113
-
-loop_
-_struct_conn_type.id
-covale
-
-
-loop_
-_atom_type.symbol
-H
-C
-N
-O
-
-
-loop_
-_atom_site.id
-_atom_site.type_symbol
-_atom_site.label_atom_id
-_atom_site.label_alt_id
-_atom_site.label_comp_id
-_atom_site.label_asym_id
-_atom_site.label_entity_id
-_atom_site.label_seq_id
-_atom_site.pdbx_PDB_ins_code
-_atom_site.Cartn_x
-_atom_site.Cartn_y
-_atom_site.Cartn_z
-_atom_site.occupancy
-_atom_site.B_iso_or_equiv
-_atom_site.pdbx_formal_charge
-_atom_site.auth_seq_id
-_atom_site.auth_asym_id
-_atom_site.pdbx_PDB_model_num
-1 H HO1 . NDG poly . . ? 26.902 12.47 31.497 0.44 50 1 2 '' 1
-2 O O1 . NDG poly . . ? 27.577 13.116 31.717 -0.63 90 1 2 '' 1
-3 C C1 . NDG poly . . ? 26.991 13.946 32.721 0.46 80 1 2 '' 1
-4 H H1 . NDG poly . . ? 26.624 13.216 33.443 0 0 2 2 '' 1
-5 C C2 . NDG poly . . ? 25.868 14.888 32.163 0.24 50 1 2 '' 1
-6 H H2 . NDG poly . . ? 25.339 15.417 32.956 0 0 3 2 '' 1
-7 N N2 . NDG poly . . ? 24.794 14.214 31.481 -0.55 20 1 2 '' 1
-8 H H2N . NDG poly . . ? 24.751 14.441 30.498 0.23 60 4 2 '' 1
-9 C C2N . NDG poly . . ? 23.891 13.423 31.996 0.58 80 1 2 '' 1
-10 C CME . NDG poly . . ? 22.988 12.579 30.948 0.06 30 1 2 '' 1
-11 H H3M . NDG poly . . ? 22.756 13.113 30.027 0 0 5 2 '' 1
-12 H H2M . NDG poly . . ? 23.559 11.668 30.766 0 0 5 2 '' 1
-13 H H1M . NDG poly . . ? 22.056 12.376 31.475 0 0 5 2 '' 1
-14 O O2N . NDG poly . . ? 23.73 13.189 33.192 -0.57 90 2 2 '' 1
-15 C C3 . NDG poly . . ? 26.379 16.021 31.373 0.16 50 1 2 '' 1
-16 H H3 . NDG poly . . ? 26.682 15.687 30.38 0 0 3 2 '' 1
-17 O O3 . NDG poly . . ? 25.373 17.058 31.015 -0.63 0 1 2 '' 1
-18 H H3O . NDG poly . . ? 25.756 17.876 30.692 0.41 30 1 2 '' 1
-19 C C4 . NDG poly . . ? 27.618 16.694 32.021 0.32 20 1 2 '' 1
-20 H H4 . NDG poly . . ? 27.267 17.139 32.952 0 0 3 2 '' 1
-21 C C5 . NDG poly . . ? 28.722 15.716 32.405 0.24 60 1 2 '' 1
-22 H H5 . NDG poly . . ? 28.913 15.114 31.516 0 0 3 2 '' 1
-23 C C6 . NDG poly . . ? 30.054 16.285 32.969 0.32 80 1 2 '' 1
-24 H H62 . NDG poly . . ? 29.807 16.885 33.844 0 0 3 2 '' 1
-25 H H61 . NDG poly . . ? 30.517 17.015 32.306 0 0 3 2 '' 1
-26 O O6 . NDG poly . . ? 30.915 15.188 33.299 -0.68 80 1 2 '' 1
-27 H H6O . NDG poly . . ? 30.38 14.514 33.725 0.42 10 1 2 '' 1
-28 O O5 . NDG poly . . ? 28.139 14.748 33.322 -0.56 80 3 2 '' 1
-29 O O4 . NDG poly . . ? 28.291 17.68 31.145 -0.47 80 3 2 '' 1
-30 C C1 . NAG poly . . ? 28.044 19.04 31.564 0.28 70 1 3 '' 1
-31 H H1 . NAG poly . . ? 28.132 19.041 32.65 0 0 2 3 '' 1
-32 O O5 . NAG poly . . ? 26.697 19.439 31.262 -0.43 30 3 3 '' 1
-33 C C5 . NAG poly . . ? 26.323 20.686 31.979 0.2 80 1 3 '' 1
-34 H H5 . NAG poly . . ? 26.372 20.531 33.056 0 0 3 3 '' 1
-35 C C6 . NAG poly . . ? 24.77 20.889 31.689 0.28 90 1 3 '' 1
-36 H H62 . NAG poly . . ? 24.387 21.693 32.317 0 0 3 3 '' 1
-37 H H61 . NAG poly . . ? 24.337 19.959 32.058 0 0 3 3 '' 1
-38 O O6 . NAG poly . . ? 24.473 21.296 30.338 -0.68 90 1 3 '' 1
-39 H H6O . NAG poly . . ? 23.786 21.96 30.42 0.42 40 1 3 '' 1
-40 C C4 . NAG poly . . ? 27.196 21.881 31.492 0.3 20 1 3 '' 1
-41 H H4 . NAG poly . . ? 27.139 22.102 30.426 0 0 3 3 '' 1
-42 C C3 . NAG poly . . ? 28.671 21.503 31.712 0.18 0 1 3 '' 1
-43 H H3 . NAG poly . . ? 28.772 21.428 32.795 0 0 3 3 '' 1
-44 O O3 . NAG poly . . ? 29.581 22.494 31.291 -0.68 10 1 3 '' 1
-45 H H3O . NAG poly . . ? 29.253 23.389 31.404 0.42 30 1 3 '' 1
-46 C C2 . NAG poly . . ? 29.055 20.1 31.05 0.48 0 1 3 '' 1
-47 H H2 . NAG poly . . ? 28.946 20.2 29.97 0 0 3 3 '' 1
-48 N N2 . NAG poly . . ? 30.443 19.76 31.398 -0.72 20 1 3 '' 1
-49 H H2N . NAG poly . . ? 30.513 19.64 32.398 0.3 0 4 3 '' 1
-50 C C2N . NAG poly . . ? 31.5 19.886 30.597 0.64 80 1 3 '' 1
-51 O O2N . NAG poly . . ? 31.365 19.849 29.377 -0.57 60 2 3 '' 1
-52 C CME . NAG poly . . ? 32.876 19.803 31.295 0.03 40 1 3 '' 1
-53 H H3M . NAG poly . . ? 33.297 20.795 31.46 0 0 5 3 '' 1
-54 H H2M . NAG poly . . ? 32.853 19.44 32.323 0 0 5 3 '' 1
-55 H H1M . NAG poly . . ? 33.486 19.15 30.673 0 0 5 3 '' 1
-56 O O4 . NAG poly . . ? 26.874 23.079 32.334 -0.47 40 3 3 '' 1
-57 C C1 . BMA poly . . ? 26.756 24.397 31.592 0.31 40 1 4 '' 1
-58 H H1 . BMA poly . . ? 26.014 24.391 30.793 0 0 2 4 '' 1
-59 O O5 . BMA poly . . ? 28.102 24.8 31.131 -0.39 30 3 4 '' 1
-60 C C5 . BMA poly . . ? 28.208 26.185 30.576 0.2 60 1 4 '' 1
-61 H H5 . BMA poly . . ? 27.664 26.108 29.634 0 0 3 4 '' 1
-62 C C6 . BMA poly . . ? 29.704 26.66 30.272 0.27 30 1 4 '' 1
-63 H H62 . BMA poly . . ? 30.375 25.864 30.596 0 0 3 4 '' 1
-64 H H61 . BMA poly . . ? 29.976 27.601 30.75 0 0 3 4 '' 1
-65 O O6 . BMA poly . . ? 30.031 26.881 28.924 -0.45 50 3 4 '' 1
-66 C C4 . BMA poly . . ? 27.551 27.317 31.417 0.34 90 1 4 '' 1
-67 H H4 . BMA poly . . ? 28.209 27.513 32.264 0 0 3 4 '' 1
-68 O O4 . BMA poly . . ? 27.445 28.557 30.731 -0.74 60 1 4 '' 1
-69 H H4O . BMA poly . . ? 27.472 29.361 31.256 0.44 30 1 4 '' 1
-70 C C3 . BMA poly . . ? 26.148 26.901 31.956 0.26 30 1 4 '' 1
-71 H H3 . BMA poly . . ? 25.463 26.783 31.116 0 0 3 4 '' 1
-72 C C2 . BMA poly . . ? 26.225 25.476 32.635 0.24 10 1 4 '' 1
-73 H H2 . BMA poly . . ? 25.243 25.168 32.994 0 0 3 4 '' 1
-74 O O2 . BMA poly . . ? 27.091 25.592 33.844 -0.66 40 1 4 '' 1
-75 H H2O . BMA poly . . ? 26.508 25.817 34.572 0.43 10 1 4 '' 1
-76 O O3 . BMA poly . . ? 25.565 27.885 32.865 -0.45 60 3 4 '' 1
-77 C C1 . MAN poly . . ? 30.77 25.784 28.286 0.43 30 1 5 '' 1
-78 H H1 . MAN poly . . ? 31.698 25.577 28.819 0 0 2 5 '' 1
-79 C C2 . MAN poly . . ? 31.157 26.31 26.887 0.24 50 1 5 '' 1
-80 H H2 . MAN poly . . ? 31.701 27.244 27.03 0 0 3 5 '' 1
-81 O O2 . MAN poly . . ? 32.066 25.326 26.254 -0.71 70 1 5 '' 1
-82 H H2O . MAN poly . . ? 31.991 24.55 26.816 0.44 60 1 5 '' 1
-83 C C3 . MAN poly . . ? 29.927 26.553 26.033 0.25 20 1 5 '' 1
-84 H H3 . MAN poly . . ? 29.289 27.318 26.476 0 0 3 5 '' 1
-85 C C4 . MAN poly . . ? 29.12 25.248 25.903 0.32 60 1 5 '' 1
-86 H H4 . MAN poly . . ? 29.761 24.479 25.471 0 0 3 5 '' 1
-87 C C5 . MAN poly . . ? 28.646 24.659 27.265 0.27 60 1 5 '' 1
-88 H H5 . MAN poly . . ? 27.955 25.361 27.731 0 0 3 5 '' 1
-89 C C6 . MAN poly . . ? 27.899 23.285 27.24 0.26 60 1 5 '' 1
-90 H H62 . MAN poly . . ? 28.43 22.519 26.675 0 0 3 5 '' 1
-91 H H61 . MAN poly . . ? 27.952 22.892 28.255 0 0 3 5 '' 1
-92 O O6 . MAN poly . . ? 26.469 23.394 26.893 -0.46 0 3 5 '' 1
-93 O O5 . MAN poly . . ? 29.853 24.548 28.147 -0.5 70 3 5 '' 1
-94 O O4 . MAN poly . . ? 27.899 25.471 25.058 -0.73 30 1 5 '' 1
-95 H H4O . MAN poly . . ? 28.01 25.3 24.12 0.43 80 1 5 '' 1
-96 O O3 . MAN poly . . ? 30.352 27.082 24.674 -0.45 90 3 5 '' 1
-97 C C1 . MAN poly . . ? 26.038 22.544 25.762 0.43 30 1 6 '' 1
-98 H H1 . MAN poly . . ? 26.895 22.383 25.108 0 0 2 6 '' 1
-99 C C2 . MAN poly . . ? 24.876 23.179 24.972 0.24 50 1 6 '' 1
-100 H H2 . MAN poly . . ? 25.294 24.153 24.716 0 0 3 6 '' 1
-101 C C3 . MAN poly . . ? 23.608 23.294 25.893 0.25 20 1 6 '' 1
-102 H H3 . MAN poly . . ? 23.887 24.074 26.602 0 0 3 6 '' 1
-103 C C4 . MAN poly . . ? 23.239 21.986 26.54 0.32 60 1 6 '' 1
-104 H H4 . MAN poly . . ? 22.897 21.316 25.752 0 0 3 6 '' 1
-105 C C5 . MAN poly . . ? 24.461 21.206 27.197 0.27 60 1 6 '' 1
-106 H H5 . MAN poly . . ? 24.75 21.73 28.108 0 0 3 6 '' 1
-107 C C6 . MAN poly . . ? 24.087 19.774 27.761 0.26 60 1 6 '' 1
-108 H H62 . MAN poly . . ? 23.158 19.811 28.33 0 0 3 6 '' 1
-109 H H61 . MAN poly . . ? 23.884 19.125 26.909 0 0 3 6 '' 1
-110 O O6 . MAN poly . . ? 25.179 19.207 28.568 -0.68 80 1 6 '' 1
-111 H H6O . MAN poly . . ? 25.16 19.811 29.313 0.42 20 1 6 '' 1
-112 O O5 . MAN poly . . ? 25.626 21.213 26.258 -0.5 70 3 6 '' 1
-113 O O4 . MAN poly . . ? 22.081 22.162 27.434 -0.73 30 1 6 '' 1
-114 H H4O . MAN poly . . ? 21.738 21.375 27.862 0.43 80 1 6 '' 1
-115 O O3 . MAN poly . . ? 22.545 23.872 25.056 -0.69 60 1 6 '' 1
-116 H H3O . MAN poly . . ? 22.309 23.32 24.306 0.43 10 1 6 '' 1
-117 O O2 . MAN poly . . ? 24.59 22.492 23.718 -0.46 50 3 6 '' 1
-118 C C1 . MAN poly . . ? 25.026 23.106 22.523 0.43 30 1 7 '' 1
-119 H H1 . MAN poly . . ? 24.704 24.142 22.415 0 0 2 7 '' 1
-120 C C2 . MAN poly . . ? 24.336 22.435 21.337 0.24 50 1 7 '' 1
-121 H H2 . MAN poly . . ? 23.251 22.484 21.427 0 0 3 7 '' 1
-122 C C3 . MAN poly . . ? 24.878 20.968 21.084 0.25 20 1 7 '' 1
-123 H H3 . MAN poly . . ? 24.659 20.386 21.98 0 0 3 7 '' 1
-124 C C4 . MAN poly . . ? 26.443 20.941 20.988 0.32 60 1 7 '' 1
-125 H H4 . MAN poly . . ? 26.655 21.452 20.049 0 0 3 7 '' 1
-126 C C5 . MAN poly . . ? 27.094 21.73 22.15 0.27 60 1 7 '' 1
-127 H H5 . MAN poly . . ? 27.022 21.138 23.062 0 0 3 7 '' 1
-128 C C6 . MAN poly . . ? 28.651 21.871 21.866 0.26 60 1 7 '' 1
-129 H H62 . MAN poly . . ? 29.069 22.294 22.779 0 0 3 7 '' 1
-130 H H61 . MAN poly . . ? 29.07 20.889 21.649 0 0 3 7 '' 1
-131 O O6 . MAN poly . . ? 28.876 22.706 20.716 -0.68 80 1 7 '' 1
-132 H H6O . MAN poly . . ? 29.825 22.702 20.571 0.42 20 1 7 '' 1
-133 O O5 . MAN poly . . ? 26.498 23.046 22.381 -0.5 70 3 7 '' 1
-134 O O4 . MAN poly . . ? 26.816 19.517 20.814 -0.73 30 1 7 '' 1
-135 H H4O . MAN poly . . ? 27.763 19.362 20.788 0.43 80 1 7 '' 1
-136 O O3 . MAN poly . . ? 24.153 20.329 19.963 -0.69 60 1 7 '' 1
-137 H H3O . MAN poly . . ? 24.731 19.722 19.495 0.43 10 1 7 '' 1
-138 O O2 . MAN poly . . ? 24.581 23.263 20.133 -0.71 70 1 7 '' 1
-139 H H2O . MAN poly . . ? 24.161 22.881 19.359 0.44 60 1 7 '' 1
-140 C C1 . MAN poly . . ? 29.598 28.255 24.195 0.43 30 1 8 '' 1
-141 H H1 . MAN poly . . ? 28.532 28.044 24.28 0 0 2 8 '' 1
-142 C C2 . MAN poly . . ? 29.653 28.46 22.681 0.24 50 1 8 '' 1
-143 H H2 . MAN poly . . ? 29.46 27.532 22.143 0 0 3 8 '' 1
-144 C C3 . MAN poly . . ? 31.049 29.092 22.29 0.25 20 1 8 '' 1
-145 H H3 . MAN poly . . ? 31.823 28.373 22.559 0 0 3 8 '' 1
-146 C C4 . MAN poly . . ? 31.357 30.385 23.129 0.32 60 1 8 '' 1
-147 H H4 . MAN poly . . ? 30.75 31.239 22.829 0 0 3 8 '' 1
-148 C C5 . MAN poly . . ? 31.273 30.042 24.655 0.27 60 1 8 '' 1
-149 H H5 . MAN poly . . ? 31.978 29.228 24.826 0 0 3 8 '' 1
-150 C C6 . MAN poly . . ? 31.75 31.255 25.447 0.26 60 1 8 '' 1
-151 H H62 . MAN poly . . ? 31.586 31.097 26.513 0 0 3 8 '' 1
-152 H H61 . MAN poly . . ? 32.776 31.549 25.225 0 0 3 8 '' 1
-153 O O6 . MAN poly . . ? 30.911 32.373 25.198 -0.68 80 1 8 '' 1
-154 H H6O . MAN poly . . ? 31.467 33.148 25.305 0.42 20 1 8 '' 1
-155 O O5 . MAN poly . . ? 29.907 29.471 25.051 -0.5 70 3 8 '' 1
-156 O O4 . MAN poly . . ? 32.75 30.627 22.832 -0.73 30 1 8 '' 1
-157 H H4O . MAN poly . . ? 32.807 30.57 21.875 0.43 80 1 8 '' 1
-158 O O3 . MAN poly . . ? 31.117 29.276 20.884 -0.69 60 1 8 '' 1
-159 H H3O . MAN poly . . ? 31.293 28.441 20.444 0.43 10 1 8 '' 1
-160 O O2 . MAN poly . . ? 28.542 29.453 22.389 -0.46 50 3 8 '' 1
-161 C C1 . MAN poly . . ? 27.769 29.221 21.23 0.43 30 1 9 '' 1
-162 H H1 . MAN poly . . ? 28.474 29.11 20.406 0 0 2 9 '' 1
-163 C C2 . MAN poly . . ? 26.935 30.447 21.008 0.24 50 1 9 '' 1
-164 H H2 . MAN poly . . ? 27.607 31.302 20.935 0 0 3 9 '' 1
-165 C C3 . MAN poly . . ? 25.805 30.682 22.078 0.25 20 1 9 '' 1
-166 H H3 . MAN poly . . ? 26.411 30.905 22.956 0 0 3 9 '' 1
-167 C C4 . MAN poly . . ? 24.891 29.384 22.254 0.32 60 1 9 '' 1
-168 H H4 . MAN poly . . ? 24.302 29.273 21.343 0 0 3 9 '' 1
-169 C C5 . MAN poly . . ? 25.825 28.161 22.438 0.27 60 1 9 '' 1
-170 H H5 . MAN poly . . ? 26.319 28.137 23.409 0 0 3 9 '' 1
-171 C C6 . MAN poly . . ? 25.127 26.802 22.314 0.26 60 1 9 '' 1
-172 H H62 . MAN poly . . ? 25.88 26.015 22.322 0 0 3 9 '' 1
-173 H H61 . MAN poly . . ? 24.467 26.643 23.166 0 0 3 9 '' 1
-174 O O6 . MAN poly . . ? 24.182 26.624 21.124 -0.68 80 1 9 '' 1
-175 H H6O . MAN poly . . ? 23.327 27.062 21.145 0.42 20 1 9 '' 1
-176 O O5 . MAN poly . . ? 26.918 28.101 21.447 -0.5 70 3 9 '' 1
-177 O O4 . MAN poly . . ? 24.095 29.54 23.456 -0.73 30 1 9 '' 1
-178 H H4O . MAN poly . . ? 23.729 30.427 23.427 0.43 80 1 9 '' 1
-179 O O3 . MAN poly . . ? 25.031 31.87 21.822 -0.69 60 1 9 '' 1
-180 H H3O . MAN poly . . ? 25.67 32.545 21.583 0.43 10 1 9 '' 1
-181 O O2 . MAN poly . . ? 26.368 30.452 19.653 -0.71 70 1 9 '' 1
-182 H H2O . MAN poly . . ? 26.651 31.135 19.04 0.44 60 1 9 '' 1
-183 C C1 . MAN poly . . ? 24.726 28.772 32.044 0.43 30 1 10 '' 1
-184 H H1 . MAN poly . . ? 25.146 28.929 31.05 0 0 2 10 '' 1
-185 C C2 . MAN poly . . ? 24.62 30.209 32.57 0.24 50 1 10 '' 1
-186 H H2 . MAN poly . . ? 25.647 30.536 32.73 0 0 3 10 '' 1
-187 C C3 . MAN poly . . ? 23.835 30.274 33.929 0.25 20 1 10 '' 1
-188 H H3 . MAN poly . . ? 24.461 29.742 34.645 0 0 3 10 '' 1
-189 C C4 . MAN poly . . ? 22.49 29.564 33.789 0.32 60 1 10 '' 1
-190 H H4 . MAN poly . . ? 21.888 30.214 33.154 0 0 3 10 '' 1
-191 C C5 . MAN poly . . ? 22.765 28.099 33.287 0.27 60 1 10 '' 1
-192 H H5 . MAN poly . . ? 23.375 27.687 34.091 0 0 3 10 '' 1
-193 C C6 . MAN poly . . ? 21.497 27.229 33.166 0.26 60 1 10 '' 1
-194 H H62 . MAN poly . . ? 20.77 27.371 33.965 0 0 3 10 '' 1
-195 H H61 . MAN poly . . ? 20.932 27.471 32.266 0 0 3 10 '' 1
-196 O O6 . MAN poly . . ? 21.893 25.799 32.985 -0.68 80 1 10 '' 1
-197 H H6O . MAN poly . . ? 22.454 25.886 32.211 0.42 20 1 10 '' 1
-198 O O5 . MAN poly . . ? 23.46 28.138 31.936 -0.5 70 3 10 '' 1
-199 O O4 . MAN poly . . ? 21.858 29.477 35.094 -0.73 30 1 10 '' 1
-200 H H4O . MAN poly . . ? 21.893 30.345 35.502 0.43 80 1 10 '' 1
-201 O O3 . MAN poly . . ? 23.663 31.632 34.418 -0.69 60 1 10 '' 1
-202 H H3O . MAN poly . . ? 23.366 32.23 33.729 0.43 10 1 10 '' 1
-203 O O2 . MAN poly . . ? 23.983 31.158 31.565 -0.46 50 3 10 '' 1
-204 C C1 . MAN poly . . ? 24.897 31.541 30.44 0.43 30 1 11 '' 1
-205 H H1 . MAN poly . . ? 25.504 30.722 30.052 0 0 2 11 '' 1
-206 C C2 . MAN poly . . ? 25.785 32.743 30.741 0.24 50 1 11 '' 1
-207 H H2 . MAN poly . . ? 26.456 32.499 31.565 0 0 3 11 '' 1
-208 C C3 . MAN poly . . ? 24.999 33.965 31.262 0.25 20 1 11 '' 1
-209 H H3 . MAN poly . . ? 24.441 33.805 32.185 0 0 3 11 '' 1
-210 C C4 . MAN poly . . ? 23.981 34.327 30.065 0.32 60 1 11 '' 1
-211 H H4 . MAN poly . . ? 24.592 34.882 29.353 0 0 3 11 '' 1
-212 C C5 . MAN poly . . ? 23.21 33.129 29.473 0.27 60 1 11 '' 1
-213 H H5 . MAN poly . . ? 22.446 32.761 30.157 0 0 3 11 '' 1
-214 C C6 . MAN poly . . ? 22.499 33.506 28.199 0.26 60 1 11 '' 1
-215 H H62 . MAN poly . . ? 21.73 34.256 28.381 0 0 3 11 '' 1
-216 H H61 . MAN poly . . ? 23.167 34.006 27.498 0 0 3 11 '' 1
-217 O O6 . MAN poly . . ? 21.861 32.34 27.662 -0.68 80 1 11 '' 1
-218 H H6O . MAN poly . . ? 21.378 32.651 26.892 0.42 20 1 11 '' 1
-219 O O5 . MAN poly . . ? 24.11 31.997 29.243 -0.5 70 3 11 '' 1
-220 O O4 . MAN poly . . ? 23.051 35.281 30.718 -0.73 30 1 11 '' 1
-221 H H4O . MAN poly . . ? 23.163 36.111 30.249 0.43 80 1 11 '' 1
-222 O O3 . MAN poly . . ? 25.918 35.035 31.46 -0.69 60 1 11 '' 1
-223 H H3O . MAN poly . . ? 26.808 34.739 31.254 0.43 10 1 11 '' 1
-224 O O2 . MAN poly . . ? 26.617 33.099 29.523 -0.46 50 3 11 '' 1
-225 C C1 . MAN poly . . ? 27.804 32.379 29.269 0.43 30 1 12 '' 1
-226 H H1 . MAN poly . . ? 28.36 32.275 30.201 0 0 2 12 '' 1
-227 C C2 . MAN poly . . ? 28.574 33.146 28.163 0.24 50 1 12 '' 1
-228 H H2 . MAN poly . . ? 28.794 34.126 28.586 0 0 3 12 '' 1
-229 C C3 . MAN poly . . ? 27.767 33.252 26.86 0.25 20 1 12 '' 1
-230 H H3 . MAN poly . . ? 26.838 33.74 27.156 0 0 3 12 '' 1
-231 C C4 . MAN poly . . ? 27.471 31.762 26.329 0.32 60 1 12 '' 1
-232 H H4 . MAN poly . . ? 28.445 31.41 25.988 0 0 3 12 '' 1
-233 C C5 . MAN poly . . ? 26.895 30.871 27.487 0.27 60 1 12 '' 1
-234 H H5 . MAN poly . . ? 25.848 31.127 27.647 0 0 3 12 '' 1
-235 C C6 . MAN poly . . ? 26.91 29.435 27.009 0.26 60 1 12 '' 1
-236 H H62 . MAN poly . . ? 26.199 29.361 26.186 0 0 3 12 '' 1
-237 H H61 . MAN poly . . ? 27.85 29.201 26.51 0 0 3 12 '' 1
-238 O O6 . MAN poly . . ? 26.548 28.402 27.99 -0.68 80 1 12 '' 1
-239 H H6O . MAN poly . . ? 27 28.741 28.766 0.42 20 1 12 '' 1
-240 O O5 . MAN poly . . ? 27.491 30.987 28.855 -0.5 70 3 12 '' 1
-241 O O4 . MAN poly . . ? 26.551 31.797 25.226 -0.73 30 1 12 '' 1
-242 H H4O . MAN poly . . ? 25.879 32.482 25.266 0.43 80 1 12 '' 1
-243 O O3 . MAN poly . . ? 28.492 34.084 25.969 -0.69 60 1 12 '' 1
-244 H H3O . MAN poly . . ? 27.833 34.312 25.31 0.43 10 1 12 '' 1
-245 O O2 . MAN poly . . ? 29.872 32.51 27.886 -0.71 70 1 12 '' 1
-246 H H2O . MAN poly . . ? 30.367 33.058 27.272 0.44 60 1 12 '' 1
-
-_WURCS
-'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
-_GlyTouCan G39578OU
 
 data_confConvertedPDB/
 _entry.id confConvertedPDB
@@ -2434,6 +699,1741 @@ _atom_site.pdbx_PDB_model_num
 244 H H3O . MAN poly . . ? 20.093 31.342 21.898 0.43 10 1 12 '' 1
 245 O O2 . MAN poly . . ? 22.039 32.05 20.402 -0.71 70 1 12 '' 1
 246 H H2O . MAN poly . . ? 22.575 32.518 19.757 0.44 60 1 12 '' 1
+
+_WURCS
+'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
+_GlyTouCan G39578OU
+
+data_confConvertedPDB/Phi=66_Psi=-179_Omega=55.1
+_entry.id confConvertedPDB
+
+_cell.entry_id confConvertedPDB
+_cell.length_a 1
+_cell.length_b 1
+_cell.length_c 1
+_cell.angle_alpha 90
+_cell.angle_beta 90
+_cell.angle_gamma 90
+
+_symmetry.entry_id confConvertedPDB
+_symmetry.space_group_name_H-M ''
+
+
+
+
+loop_
+_chem_comp.id
+_chem_comp.type
+BMA .
+MAN .
+NAG .
+NDG .
+
+loop_
+_struct_asym.id
+_struct_asym.entity_id
+poly ?
+
+loop_
+_struct_conn.id
+_struct_conn.conn_type_id
+_struct_conn.ptnr1_auth_asym_id
+_struct_conn.ptnr1_label_asym_id
+_struct_conn.ptnr1_label_comp_id
+_struct_conn.ptnr1_label_seq_id
+_struct_conn.ptnr1_label_atom_id
+_struct_conn.pdbx_ptnr1_label_alt_id
+_struct_conn.ptnr1_auth_seq_id
+_struct_conn.pdbx_ptnr1_PDB_ins_code
+_struct_conn.ptnr1_symmetry
+_struct_conn.ptnr2_auth_asym_id
+_struct_conn.ptnr2_label_asym_id
+_struct_conn.ptnr2_label_comp_id
+_struct_conn.ptnr2_label_seq_id
+_struct_conn.ptnr2_label_atom_id
+_struct_conn.pdbx_ptnr2_label_alt_id
+_struct_conn.ptnr2_auth_seq_id
+_struct_conn.pdbx_ptnr2_PDB_ins_code
+_struct_conn.ptnr2_symmetry
+_struct_conn.details
+_struct_conn.pdbx_dist_value
+'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.4505
+'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4510
+'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4758
+'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4376
+'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4951
+'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4624
+'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4087
+'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4877
+'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4960
+'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4942
+
+loop_
+_struct_conn_type.id
+covale
+
+
+loop_
+_atom_type.symbol
+H
+C
+N
+O
+
+
+loop_
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.label_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_seq_id
+_atom_site.auth_asym_id
+_atom_site.pdbx_PDB_model_num
+1 H HO1 . NDG poly . . ? 13.422 21.025 30.896 0.44 50 1 2 '' 1
+2 O O1 . NDG poly . . ? 13.431 21.964 31.094 -0.63 90 1 2 '' 1
+3 C C1 . NDG poly . . ? 14.632 22.177 31.864 0.46 80 1 2 '' 1
+4 H H1 . NDG poly . . ? 14.34 21.904 32.878 0 0 2 2 '' 1
+5 C C2 . NDG poly . . ? 15.143 23.663 31.87 0.24 50 1 2 '' 1
+6 H H2 . NDG poly . . ? 15.841 23.69 32.707 0 0 3 2 '' 1
+7 N N2 . NDG poly . . ? 14.073 24.663 32.127 -0.55 20 1 2 '' 1
+8 H H2N . NDG poly . . ? 14.016 25.416 31.456 0.23 60 4 2 '' 1
+9 C C2N . NDG poly . . ? 13.374 24.667 33.227 0.58 80 1 2 '' 1
+10 C CME . NDG poly . . ? 12.401 25.783 33.394 0.06 30 1 2 '' 1
+11 H H3M . NDG poly . . ? 11.526 25.547 32.789 0 0 5 2 '' 1
+12 H H2M . NDG poly . . ? 12.153 25.923 34.446 0 0 5 2 '' 1
+13 H H1M . NDG poly . . ? 12.885 26.649 32.943 0 0 5 2 '' 1
+14 O O2N . NDG poly . . ? 13.663 23.891 34.164 -0.57 90 2 2 '' 1
+15 C C3 . NDG poly . . ? 15.931 23.96 30.591 0.16 50 1 2 '' 1
+16 H H3 . NDG poly . . ? 15.285 23.942 29.712 0 0 3 2 '' 1
+17 O O3 . NDG poly . . ? 16.512 25.262 30.62 -0.63 0 1 2 '' 1
+18 H H3O . NDG poly . . ? 16.826 25.538 29.755 0.41 30 1 2 '' 1
+19 C C4 . NDG poly . . ? 17.121 22.938 30.351 0.32 20 1 2 '' 1
+20 H H4 . NDG poly . . ? 17.749 22.936 31.242 0 0 3 2 '' 1
+21 C C5 . NDG poly . . ? 16.426 21.58 30.212 0.24 60 1 2 '' 1
+22 H H5 . NDG poly . . ? 15.624 21.772 29.5 0 0 3 2 '' 1
+23 C C6 . NDG poly . . ? 17.197 20.256 29.735 0.32 80 1 2 '' 1
+24 H H62 . NDG poly . . ? 17.348 20.26 28.655 0 0 3 2 '' 1
+25 H H61 . NDG poly . . ? 16.657 19.392 30.122 0 0 3 2 '' 1
+26 O O6 . NDG poly . . ? 18.491 20.184 30.358 -0.68 80 1 2 '' 1
+27 H H6O . NDG poly . . ? 18.962 19.533 29.832 0.42 10 1 2 '' 1
+28 O O5 . NDG poly . . ? 15.637 21.268 31.469 -0.56 80 3 2 '' 1
+29 O O4 . NDG poly . . ? 17.937 23.269 29.156 -0.47 80 3 2 '' 1
+30 C C1 . NAG poly . . ? 19.286 23.727 29.429 0.28 70 1 3 '' 1
+31 H H1 . NAG poly . . ? 19.689 23.185 30.284 0 0 2 3 '' 1
+32 O O5 . NAG poly . . ? 19.288 25.193 29.819 -0.43 30 3 3 '' 1
+33 C C5 . NAG poly . . ? 20.623 25.636 30.326 0.2 80 1 3 '' 1
+34 H H5 . NAG poly . . ? 20.864 24.873 31.066 0 0 3 3 '' 1
+35 C C6 . NAG poly . . ? 20.523 27.081 30.97 0.28 90 1 3 '' 1
+36 H H62 . NAG poly . . ? 21.421 27.254 31.563 0 0 3 3 '' 1
+37 H H61 . NAG poly . . ? 19.712 27.184 31.691 0 0 3 3 '' 1
+38 O O6 . NAG poly . . ? 20.398 28.123 30.02 -0.68 90 1 3 '' 1
+39 H H6O . NAG poly . . ? 19.885 27.86 29.253 0.42 40 1 3 '' 1
+40 C C4 . NAG poly . . ? 21.657 25.554 29.197 0.3 20 1 3 '' 1
+41 H H4 . NAG poly . . ? 21.512 26.357 28.474 0 0 3 3 '' 1
+42 C C3 . NAG poly . . ? 21.583 24.187 28.461 0.18 0 1 3 '' 1
+43 H H3 . NAG poly . . ? 22.123 23.455 29.062 0 0 3 3 '' 1
+44 O O3 . NAG poly . . ? 22.335 24.355 27.211 -0.68 10 1 3 '' 1
+45 H H3O . NAG poly . . ? 23.19 24.742 27.414 0.42 30 1 3 '' 1
+46 C C2 . NAG poly . . ? 20.228 23.471 28.232 0.48 0 1 3 '' 1
+47 H H2 . NAG poly . . ? 19.678 23.889 27.389 0 0 3 3 '' 1
+48 N N2 . NAG poly . . ? 20.397 22.081 27.965 -0.72 20 1 3 '' 1
+49 H H2N . NAG poly . . ? 20.555 21.498 28.775 0.3 0 4 3 '' 1
+50 C C2N . NAG poly . . ? 20.501 21.503 26.738 0.64 80 1 3 '' 1
+51 O O2N . NAG poly . . ? 20.245 22.133 25.755 -0.57 60 2 3 '' 1
+52 C CME . NAG poly . . ? 21.045 20.067 26.662 0.03 40 1 3 '' 1
+53 H H3M . NAG poly . . ? 21.343 19.719 27.651 0 0 5 3 '' 1
+54 H H2M . NAG poly . . ? 20.387 19.425 26.075 0 0 5 3 '' 1
+55 H H1M . NAG poly . . ? 21.958 20.171 26.076 0 0 5 3 '' 1
+56 O O4 . NAG poly . . ? 23.003 25.683 29.812 -0.47 40 3 3 '' 1
+57 C C1 . BMA poly . . ? 24.136 26.411 29.272 0.31 40 1 4 '' 1
+58 H H1 . BMA poly . . ? 23.724 27.37 28.957 0 0 2 4 '' 1
+59 O O5 . BMA poly . . ? 24.58 25.84 28.011 -0.39 30 3 4 '' 1
+60 C C5 . BMA poly . . ? 25.655 26.657 27.412 0.2 60 1 4 '' 1
+61 H H5 . BMA poly . . ? 25.292 27.671 27.245 0 0 3 4 '' 1
+62 C C6 . BMA poly . . ? 26.076 26.036 26.076 0.27 30 1 4 '' 1
+63 H H62 . BMA poly . . ? 26.729 26.749 25.573 0 0 3 4 '' 1
+64 H H61 . BMA poly . . ? 25.133 25.935 25.539 0 0 3 4 '' 1
+65 O O6 . BMA poly . . ? 26.698 24.666 26.231 -0.45 50 3 4 '' 1
+66 C C4 . BMA poly . . ? 26.843 26.635 28.381 0.34 90 1 4 '' 1
+67 H H4 . BMA poly . . ? 27.33 25.66 28.411 0 0 3 4 '' 1
+68 O O4 . BMA poly . . ? 27.981 27.388 27.825 -0.74 60 1 4 '' 1
+69 H H4O . BMA poly . . ? 28.87 27.048 27.952 0.44 30 1 4 '' 1
+70 C C3 . BMA poly . . ? 26.428 27.267 29.719 0.26 30 1 4 '' 1
+71 H H3 . BMA poly . . ? 26.097 28.302 29.627 0 0 3 4 '' 1
+72 C C2 . BMA poly . . ? 25.272 26.513 30.289 0.24 10 1 4 '' 1
+73 H H2 . BMA poly . . ? 24.821 27.008 31.149 0 0 3 4 '' 1
+74 O O2 . BMA poly . . ? 25.671 25.106 30.641 -0.66 40 1 4 '' 1
+75 H H2O . BMA poly . . ? 26.229 25.156 31.42 0.43 10 1 4 '' 1
+76 O O3 . BMA poly . . ? 27.52 27.214 30.775 -0.45 60 3 4 '' 1
+77 C C1 . MAN poly . . ? 26.951 24.121 24.925 0.43 30 1 5 '' 1
+78 H H1 . MAN poly . . ? 26.091 24.217 24.261 0 0 2 5 '' 1
+79 C C2 . MAN poly . . ? 27.204 22.55 25.193 0.24 50 1 5 '' 1
+80 H H2 . MAN poly . . ? 26.347 22.196 25.767 0 0 3 5 '' 1
+81 O O2 . MAN poly . . ? 27.123 21.736 23.947 -0.71 70 1 5 '' 1
+82 H H2O . MAN poly . . ? 27.168 20.791 24.113 0.44 60 1 5 '' 1
+83 C C3 . MAN poly . . ? 28.573 22.315 25.936 0.25 20 1 5 '' 1
+84 H H3 . MAN poly . . ? 28.538 22.914 26.846 0 0 3 5 '' 1
+85 C C4 . MAN poly . . ? 29.745 22.873 25.074 0.32 60 1 5 '' 1
+86 H H4 . MAN poly . . ? 29.738 22.562 24.029 0 0 3 5 '' 1
+87 C C5 . MAN poly . . ? 29.418 24.431 25.042 0.27 60 1 5 '' 1
+88 H H5 . MAN poly . . ? 29.317 24.696 26.094 0 0 3 5 '' 1
+89 C C6 . MAN poly . . ? 30.493 25.437 24.381 0.26 60 1 5 '' 1
+90 H H62 . MAN poly . . ? 30.047 26.43 24.432 0 0 3 5 '' 1
+91 H H61 . MAN poly . . ? 31.373 25.503 25.02 0 0 3 5 '' 1
+92 O O6 . MAN poly . . ? 30.788 25.227 22.938 -0.46 0 3 5 '' 1
+93 O O5 . MAN poly . . ? 28.095 24.675 24.341 -0.5 70 3 5 '' 1
+94 O O4 . MAN poly . . ? 31.029 22.674 25.676 -0.73 30 1 5 '' 1
+95 H H4O . MAN poly . . ? 31.256 21.744 25.603 0.43 80 1 5 '' 1
+96 O O3 . MAN poly . . ? 28.771 20.918 26.37 -0.45 90 3 5 '' 1
+97 C C1 . MAN poly . . ? 29.885 25.69 21.885 0.43 30 1 6 '' 1
+98 H H1 . MAN poly . . ? 28.909 25.272 22.132 0 0 2 6 '' 1
+99 C C2 . MAN poly . . ? 30.387 25.243 20.442 0.24 50 1 6 '' 1
+100 H H2 . MAN poly . . ? 30.514 24.162 20.38 0 0 3 6 '' 1
+101 C C3 . MAN poly . . ? 31.771 25.927 20.135 0.25 20 1 6 '' 1
+102 H H3 . MAN poly . . ? 32.497 25.506 20.831 0 0 3 6 '' 1
+103 C C4 . MAN poly . . ? 31.739 27.45 20.332 0.32 60 1 6 '' 1
+104 H H4 . MAN poly . . ? 31.258 27.858 19.442 0 0 3 6 '' 1
+105 C C5 . MAN poly . . ? 31.109 27.823 21.681 0.27 60 1 6 '' 1
+106 H H5 . MAN poly . . ? 31.827 27.464 22.418 0 0 3 6 '' 1
+107 C C6 . MAN poly . . ? 30.852 29.315 21.953 0.26 60 1 6 '' 1
+108 H H62 . MAN poly . . ? 30.1 29.42 22.735 0 0 3 6 '' 1
+109 H H61 . MAN poly . . ? 31.7 29.943 22.227 0 0 3 6 '' 1
+110 O O6 . MAN poly . . ? 30.118 29.836 20.74 -0.68 80 1 6 '' 1
+111 H H6O . MAN poly . . ? 29.384 30.386 21.023 0.42 20 1 6 '' 1
+112 O O5 . MAN poly . . ? 29.798 27.156 21.839 -0.5 70 3 6 '' 1
+113 O O4 . MAN poly . . ? 33.083 27.96 20.371 -0.73 30 1 6 '' 1
+114 H H4O . MAN poly . . ? 33.473 27.662 19.546 0.43 80 1 6 '' 1
+115 O O3 . MAN poly . . ? 32.098 25.548 18.698 -0.69 60 1 6 '' 1
+116 H H3O . MAN poly . . ? 31.24 25.317 18.335 0.43 10 1 6 '' 1
+117 O O2 . MAN poly . . ? 29.449 25.674 19.404 -0.46 50 3 6 '' 1
+118 C C1 . MAN poly . . ? 28.184 25.057 19.345 0.43 30 1 7 '' 1
+119 H H1 . MAN poly . . ? 28.369 23.992 19.486 0 0 2 7 '' 1
+120 C C2 . MAN poly . . ? 27.586 25.219 17.902 0.24 50 1 7 '' 1
+121 H H2 . MAN poly . . ? 28.388 24.846 17.265 0 0 3 7 '' 1
+122 C C3 . MAN poly . . ? 27.208 26.699 17.546 0.25 20 1 7 '' 1
+123 H H3 . MAN poly . . ? 28.08 27.351 17.495 0 0 3 7 '' 1
+124 C C4 . MAN poly . . ? 26.33 27.263 18.74 0.32 60 1 7 '' 1
+125 H H4 . MAN poly . . ? 25.391 26.726 18.606 0 0 3 7 '' 1
+126 C C5 . MAN poly . . ? 26.92 27.17 20.149 0.27 60 1 7 '' 1
+127 H H5 . MAN poly . . ? 27.885 27.677 20.13 0 0 3 7 '' 1
+128 C C6 . MAN poly . . ? 26.166 27.697 21.332 0.26 60 1 7 '' 1
+129 H H62 . MAN poly . . ? 26.666 27.564 22.291 0 0 3 7 '' 1
+130 H H61 . MAN poly . . ? 26.02 28.774 21.251 0 0 3 7 '' 1
+131 O O6 . MAN poly . . ? 24.875 26.975 21.486 -0.68 80 1 7 '' 1
+132 H H6O . MAN poly . . ? 25.061 26.166 21.969 0.42 20 1 7 '' 1
+133 O O5 . MAN poly . . ? 27.223 25.747 20.393 -0.5 70 3 7 '' 1
+134 O O4 . MAN poly . . ? 26.085 28.657 18.499 -0.73 30 1 7 '' 1
+135 H H4O . MAN poly . . ? 26.892 29.166 18.401 0.43 80 1 7 '' 1
+136 O O3 . MAN poly . . ? 26.492 26.733 16.287 -0.69 60 1 7 '' 1
+137 H H3O . MAN poly . . ? 25.554 26.735 16.495 0.43 10 1 7 '' 1
+138 O O2 . MAN poly . . ? 26.474 24.328 17.64 -0.71 70 1 7 '' 1
+139 H H2O . MAN poly . . ? 26.263 24.381 16.705 0.44 60 1 7 '' 1
+140 C C1 . MAN poly . . ? 28.219 20.581 27.718 0.43 30 1 8 '' 1
+141 H H1 . MAN poly . . ? 28.724 21.319 28.341 0 0 2 8 '' 1
+142 C C2 . MAN poly . . ? 28.757 19.175 28.184 0.24 50 1 8 '' 1
+143 H H2 . MAN poly . . ? 29.775 19.188 27.794 0 0 3 8 '' 1
+144 C C3 . MAN poly . . ? 27.873 18.102 27.402 0.25 20 1 8 '' 1
+145 H H3 . MAN poly . . ? 28.117 18.186 26.343 0 0 3 8 '' 1
+146 C C4 . MAN poly . . ? 26.366 18.215 27.68 0.32 60 1 8 '' 1
+147 H H4 . MAN poly . . ? 26.242 18.052 28.75 0 0 3 8 '' 1
+148 C C5 . MAN poly . . ? 25.819 19.633 27.346 0.27 60 1 8 '' 1
+149 H H5 . MAN poly . . ? 25.695 19.701 26.265 0 0 3 8 '' 1
+150 C C6 . MAN poly . . ? 24.468 19.857 27.971 0.26 60 1 8 '' 1
+151 H H62 . MAN poly . . ? 23.858 19.155 27.403 0 0 3 8 '' 1
+152 H H61 . MAN poly . . ? 24.281 19.579 29.009 0 0 3 8 '' 1
+153 O O6 . MAN poly . . ? 24.011 21.211 27.811 -0.68 80 1 8 '' 1
+154 H H6O . MAN poly . . ? 24.443 21.763 28.467 0.42 20 1 8 '' 1
+155 O O5 . MAN poly . . ? 26.695 20.73 27.835 -0.5 70 3 8 '' 1
+156 O O4 . MAN poly . . ? 25.703 17.204 26.938 -0.73 30 1 8 '' 1
+157 H H4O . MAN poly . . ? 26.191 16.392 27.093 0.43 80 1 8 '' 1
+158 O O3 . MAN poly . . ? 28.338 16.811 27.938 -0.69 60 1 8 '' 1
+159 H H3O . MAN poly . . ? 28.531 16.915 28.873 0.43 10 1 8 '' 1
+160 O O2 . MAN poly . . ? 28.692 18.962 29.652 -0.46 50 3 8 '' 1
+161 C C1 . MAN poly . . ? 29.85 19.599 30.335 0.43 30 1 9 '' 1
+162 H H1 . MAN poly . . ? 30.715 19.496 29.68 0 0 2 9 '' 1
+163 C C2 . MAN poly . . ? 30.196 18.983 31.728 0.24 50 1 9 '' 1
+164 H H2 . MAN poly . . ? 30.292 17.898 31.677 0 0 3 9 '' 1
+165 C C3 . MAN poly . . ? 29.227 19.408 32.894 0.25 20 1 9 '' 1
+166 H H3 . MAN poly . . ? 28.249 18.954 32.729 0 0 3 9 '' 1
+167 C C4 . MAN poly . . ? 29.132 20.948 32.908 0.32 60 1 9 '' 1
+168 H H4 . MAN poly . . ? 30.132 21.369 33.004 0 0 3 9 '' 1
+169 C C5 . MAN poly . . ? 28.594 21.37 31.516 0.27 60 1 9 '' 1
+170 H H5 . MAN poly . . ? 27.675 20.851 31.245 0 0 3 9 '' 1
+171 C C6 . MAN poly . . ? 28.402 22.881 31.283 0.26 60 1 9 '' 1
+172 H H62 . MAN poly . . ? 28.03 23.094 30.281 0 0 3 9 '' 1
+173 H H61 . MAN poly . . ? 27.687 23.3 31.991 0 0 3 9 '' 1
+174 O O6 . MAN poly . . ? 29.672 23.517 31.541 -0.68 80 1 9 '' 1
+175 H H6O . MAN poly . . ? 30.343 22.864 31.329 0.42 20 1 9 '' 1
+176 O O5 . MAN poly . . ? 29.578 20.973 30.483 -0.5 70 3 9 '' 1
+177 O O4 . MAN poly . . ? 28.292 21.527 33.94 -0.73 30 1 9 '' 1
+178 H H4O . MAN poly . . ? 27.413 21.146 33.875 0.43 80 1 9 '' 1
+179 O O3 . MAN poly . . ? 29.658 19.013 34.219 -0.69 60 1 9 '' 1
+180 H H3O . MAN poly . . ? 30.488 19.404 34.502 0.43 10 1 9 '' 1
+181 O O2 . MAN poly . . ? 31.617 19.428 32.039 -0.71 70 1 9 '' 1
+182 H H2O . MAN poly . . ? 32.035 18.689 32.487 0.44 60 1 9 '' 1
+183 C C1 . MAN poly . . ? 28.298 28.46 30.917 0.43 30 1 10 '' 1
+184 H H1 . MAN poly . . ? 28.545 28.863 29.935 0 0 2 10 '' 1
+185 C C2 . MAN poly . . ? 29.552 28.224 31.781 0.24 50 1 10 '' 1
+186 H H2 . MAN poly . . ? 30.041 27.36 31.331 0 0 3 10 '' 1
+187 C C3 . MAN poly . . ? 29.233 27.862 33.259 0.25 20 1 10 '' 1
+188 H H3 . MAN poly . . ? 28.827 26.852 33.204 0 0 3 10 '' 1
+189 C C4 . MAN poly . . ? 28.298 28.883 33.922 0.32 60 1 10 '' 1
+190 H H4 . MAN poly . . ? 28.858 29.766 34.228 0 0 3 10 '' 1
+191 C C5 . MAN poly . . ? 27.116 29.282 33.056 0.27 60 1 10 '' 1
+192 H H5 . MAN poly . . ? 26.434 28.433 33.019 0 0 3 10 '' 1
+193 C C6 . MAN poly . . ? 26.375 30.534 33.595 0.26 60 1 10 '' 1
+194 H H62 . MAN poly . . ? 25.565 30.878 32.953 0 0 3 10 '' 1
+195 H H61 . MAN poly . . ? 26.006 30.097 34.524 0 0 3 10 '' 1
+196 O O6 . MAN poly . . ? 27.347 31.601 33.889 -0.68 80 1 10 '' 1
+197 H H6O . MAN poly . . ? 27.515 32.121 33.099 0.42 20 1 10 '' 1
+198 O O5 . MAN poly . . ? 27.464 29.488 31.6 -0.5 70 3 10 '' 1
+199 O O4 . MAN poly . . ? 27.772 28.286 35.096 -0.73 30 1 10 '' 1
+200 H H4O . MAN poly . . ? 28.47 27.773 35.509 0.43 80 1 10 '' 1
+201 O O3 . MAN poly . . ? 30.438 27.707 34.053 -0.69 60 1 10 '' 1
+202 H H3O . MAN poly . . ? 31.061 27.132 33.603 0.43 10 1 10 '' 1
+203 O O2 . MAN poly . . ? 30.442 29.418 31.753 -0.46 50 3 10 '' 1
+204 C C1 . MAN poly . . ? 31.368 29.563 30.587 0.43 30 1 11 '' 1
+205 H H1 . MAN poly . . ? 31.777 28.607 30.259 0 0 2 11 '' 1
+206 C C2 . MAN poly . . ? 32.498 30.476 30.989 0.24 50 1 11 '' 1
+207 H H2 . MAN poly . . ? 32.945 29.832 31.746 0 0 3 11 '' 1
+208 C C3 . MAN poly . . ? 32.014 31.912 31.464 0.25 20 1 11 '' 1
+209 H H3 . MAN poly . . ? 31.363 31.746 32.323 0 0 3 11 '' 1
+210 C C4 . MAN poly . . ? 31.205 32.606 30.369 0.32 60 1 11 '' 1
+211 H H4 . MAN poly . . ? 31.785 32.968 29.52 0 0 3 11 '' 1
+212 C C5 . MAN poly . . ? 30.179 31.689 29.77 0.27 60 1 11 '' 1
+213 H H5 . MAN poly . . ? 29.441 31.54 30.558 0 0 3 11 '' 1
+214 C C6 . MAN poly . . ? 29.382 32.316 28.646 0.26 60 1 11 '' 1
+215 H H62 . MAN poly . . ? 28.775 33.144 29.013 0 0 3 11 '' 1
+216 H H61 . MAN poly . . ? 30.129 32.796 28.013 0 0 3 11 '' 1
+217 O O6 . MAN poly . . ? 28.486 31.428 27.878 -0.68 80 1 11 '' 1
+218 H H6O . MAN poly . . ? 27.717 31.911 27.566 0.42 20 1 11 '' 1
+219 O O5 . MAN poly . . ? 30.71 30.259 29.481 -0.5 70 3 11 '' 1
+220 O O4 . MAN poly . . ? 30.465 33.81 30.926 -0.73 30 1 11 '' 1
+221 H H4O . MAN poly . . ? 31.172 34.261 31.394 0.43 80 1 11 '' 1
+222 O O3 . MAN poly . . ? 33.15 32.637 31.854 -0.69 60 1 11 '' 1
+223 H H3O . MAN poly . . ? 33.656 31.991 32.352 0.43 10 1 11 '' 1
+224 O O2 . MAN poly . . ? 33.408 30.643 29.894 -0.46 50 3 11 '' 1
+225 C C1 . MAN poly . . ? 34.852 30.556 30.268 0.43 30 1 12 '' 1
+226 H H1 . MAN poly . . ? 35.032 31.176 31.146 0 0 2 12 '' 1
+227 C C2 . MAN poly . . ? 35.66 31.202 29.12 0.24 50 1 12 '' 1
+228 H H2 . MAN poly . . ? 35.241 32.196 28.966 0 0 3 12 '' 1
+229 C C3 . MAN poly . . ? 35.434 30.376 27.856 0.25 20 1 12 '' 1
+230 H H3 . MAN poly . . ? 34.436 30.479 27.429 0 0 3 12 '' 1
+231 C C4 . MAN poly . . ? 35.807 28.921 28.101 0.32 60 1 12 '' 1
+232 H H4 . MAN poly . . ? 36.887 28.859 28.231 0 0 3 12 '' 1
+233 C C5 . MAN poly . . ? 35.144 28.278 29.352 0.27 60 1 12 '' 1
+234 H H5 . MAN poly . . ? 34.076 28.123 29.202 0 0 3 12 '' 1
+235 C C6 . MAN poly . . ? 35.768 26.946 29.843 0.26 60 1 12 '' 1
+236 H H62 . MAN poly . . ? 35.707 26.216 29.035 0 0 3 12 '' 1
+237 H H61 . MAN poly . . ? 36.82 27.099 30.085 0 0 3 12 '' 1
+238 O O6 . MAN poly . . ? 35.261 26.363 31.044 -0.68 80 1 12 '' 1
+239 H H6O . MAN poly . . ? 35.93 25.694 31.209 0.42 20 1 12 '' 1
+240 O O5 . MAN poly . . ? 35.296 29.173 30.443 -0.5 70 3 12 '' 1
+241 O O4 . MAN poly . . ? 35.29 28.265 26.911 -0.73 30 1 12 '' 1
+242 H H4O . MAN poly . . ? 34.342 28.416 26.875 0.43 80 1 12 '' 1
+243 O O3 . MAN poly . . ? 36.234 31.053 26.877 -0.69 60 1 12 '' 1
+244 H H3O . MAN poly . . ? 36.673 30.398 26.328 0.43 10 1 12 '' 1
+245 O O2 . MAN poly . . ? 37.126 31.296 29.427 -0.71 70 1 12 '' 1
+246 H H2O . MAN poly . . ? 37.559 31.301 28.57 0.44 60 1 12 '' 1
+
+_WURCS
+'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
+_GlyTouCan G39578OU
+
+data_confConvertedPDB/Phi=66_Psi=-179_Omega=-177
+_entry.id confConvertedPDB
+
+_cell.entry_id confConvertedPDB
+_cell.length_a 1
+_cell.length_b 1
+_cell.length_c 1
+_cell.angle_alpha 90
+_cell.angle_beta 90
+_cell.angle_gamma 90
+
+_symmetry.entry_id confConvertedPDB
+_symmetry.space_group_name_H-M ''
+
+
+
+
+loop_
+_chem_comp.id
+_chem_comp.type
+BMA .
+MAN .
+NAG .
+NDG .
+
+loop_
+_struct_asym.id
+_struct_asym.entity_id
+poly ?
+
+loop_
+_struct_conn.id
+_struct_conn.conn_type_id
+_struct_conn.ptnr1_auth_asym_id
+_struct_conn.ptnr1_label_asym_id
+_struct_conn.ptnr1_label_comp_id
+_struct_conn.ptnr1_label_seq_id
+_struct_conn.ptnr1_label_atom_id
+_struct_conn.pdbx_ptnr1_label_alt_id
+_struct_conn.ptnr1_auth_seq_id
+_struct_conn.pdbx_ptnr1_PDB_ins_code
+_struct_conn.ptnr1_symmetry
+_struct_conn.ptnr2_auth_asym_id
+_struct_conn.ptnr2_label_asym_id
+_struct_conn.ptnr2_label_comp_id
+_struct_conn.ptnr2_label_seq_id
+_struct_conn.ptnr2_label_atom_id
+_struct_conn.pdbx_ptnr2_label_alt_id
+_struct_conn.ptnr2_auth_seq_id
+_struct_conn.pdbx_ptnr2_PDB_ins_code
+_struct_conn.ptnr2_symmetry
+_struct_conn.details
+_struct_conn.pdbx_dist_value
+'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.5212
+'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4581
+'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4248
+'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.5435
+'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4386
+'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4355
+'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4734
+'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.5127
+'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4856
+'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4763
+
+loop_
+_struct_conn_type.id
+covale
+
+
+loop_
+_atom_type.symbol
+H
+C
+N
+O
+
+
+loop_
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.label_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_seq_id
+_atom_site.auth_asym_id
+_atom_site.pdbx_PDB_model_num
+1 H HO1 . NDG poly . . ? 29.026 28.448 37.266 0.44 50 1 2 '' 1
+2 O O1 . NDG poly . . ? 28.251 27.907 37.096 -0.63 90 1 2 '' 1
+3 C C1 . NDG poly . . ? 27.202 28.74 36.589 0.46 80 1 2 '' 1
+4 H H1 . NDG poly . . ? 26.685 29.225 37.417 0 0 2 2 '' 1
+5 C C2 . NDG poly . . ? 26.036 27.951 35.869 0.24 50 1 2 '' 1
+6 H H2 . NDG poly . . ? 25.277 28.73 35.791 0 0 3 2 '' 1
+7 N N2 . NDG poly . . ? 25.509 26.808 36.625 -0.55 20 1 2 '' 1
+8 H H2N . NDG poly . . ? 26.099 26.021 36.856 0.23 60 4 2 '' 1
+9 C C2N . NDG poly . . ? 24.565 27.026 37.52 0.58 80 1 2 '' 1
+10 C CME . NDG poly . . ? 24.423 25.919 38.6 0.06 30 1 2 '' 1
+11 H H3M . NDG poly . . ? 23.886 26.259 39.486 0 0 5 2 '' 1
+12 H H2M . NDG poly . . ? 23.849 25.101 38.166 0 0 5 2 '' 1
+13 H H1M . NDG poly . . ? 25.392 25.726 39.06 0 0 5 2 '' 1
+14 O O2N . NDG poly . . ? 23.919 28.05 37.552 -0.57 90 2 2 '' 1
+15 C C3 . NDG poly . . ? 26.599 27.51 34.525 0.16 50 1 2 '' 1
+16 H H3 . NDG poly . . ? 27.28 26.681 34.716 0 0 3 2 '' 1
+17 O O3 . NDG poly . . ? 25.444 26.942 33.794 -0.63 0 1 2 '' 1
+18 H H3O . NDG poly . . ? 25.579 26.912 32.844 0.41 30 1 2 '' 1
+19 C C4 . NDG poly . . ? 27.326 28.631 33.67 0.32 20 1 2 '' 1
+20 H H4 . NDG poly . . ? 26.605 29.379 33.342 0 0 3 2 '' 1
+21 C C5 . NDG poly . . ? 28.38 29.363 34.55 0.24 60 1 2 '' 1
+22 H H5 . NDG poly . . ? 29.119 28.606 34.813 0 0 3 2 '' 1
+23 C C6 . NDG poly . . ? 29.26 30.462 33.858 0.32 80 1 2 '' 1
+24 H H62 . NDG poly . . ? 29.942 29.993 33.149 0 0 3 2 '' 1
+25 H H61 . NDG poly . . ? 30.016 30.883 34.521 0 0 3 2 '' 1
+26 O O6 . NDG poly . . ? 28.385 31.451 33.252 -0.68 80 1 2 '' 1
+27 H H6O . NDG poly . . ? 28.842 32.051 32.658 0.42 10 1 2 '' 1
+28 O O5 . NDG poly . . ? 27.742 29.783 35.758 -0.56 80 3 2 '' 1
+29 O O4 . NDG poly . . ? 27.998 28.05 32.571 -0.47 80 3 2 '' 1
+30 C C1 . NAG poly . . ? 27.248 27.892 31.257 0.28 70 1 3 '' 1
+31 H H1 . NAG poly . . ? 26.713 28.83 31.108 0 0 2 3 '' 1
+32 O O5 . NAG poly . . ? 26.268 26.773 31.386 -0.43 30 3 3 '' 1
+33 C C5 . NAG poly . . ? 25.455 26.675 30.148 0.2 80 1 3 '' 1
+34 H H5 . NAG poly . . ? 25.069 27.661 29.891 0 0 3 3 '' 1
+35 C C6 . NAG poly . . ? 24.181 25.831 30.507 0.28 90 1 3 '' 1
+36 H H62 . NAG poly . . ? 23.53 25.756 29.637 0 0 3 3 '' 1
+37 H H61 . NAG poly . . ? 23.54 26.297 31.256 0 0 3 3 '' 1
+38 O O6 . NAG poly . . ? 24.524 24.516 30.949 -0.68 90 1 3 '' 1
+39 H H6O . NAG poly . . ? 25.029 24.506 31.766 0.42 40 1 3 '' 1
+40 C C4 . NAG poly . . ? 26.361 26.256 28.967 0.3 20 1 3 '' 1
+41 H H4 . NAG poly . . ? 26.602 25.241 29.282 0 0 3 3 '' 1
+42 C C3 . NAG poly . . ? 27.687 27.063 28.806 0.18 0 1 3 '' 1
+43 H H3 . NAG poly . . ? 27.325 27.87 28.17 0 0 3 3 '' 1
+44 O O3 . NAG poly . . ? 28.628 26.18 28.076 -0.68 10 1 3 '' 1
+45 H H3O . NAG poly . . ? 28.257 25.901 27.235 0.42 30 1 3 '' 1
+46 C C2 . NAG poly . . ? 28.215 27.599 30.134 0.48 0 1 3 '' 1
+47 H H2 . NAG poly . . ? 28.833 26.844 30.619 0 0 3 3 '' 1
+48 N N2 . NAG poly . . ? 29.144 28.743 29.819 -0.72 20 1 3 '' 1
+49 H H2N . NAG poly . . ? 28.865 29.295 29.02 0.3 0 4 3 '' 1
+50 C C2N . NAG poly . . ? 30.279 29.107 30.397 0.64 80 1 3 '' 1
+51 O O2N . NAG poly . . ? 30.748 28.435 31.278 -0.57 60 2 3 '' 1
+52 C CME . NAG poly . . ? 30.899 30.413 29.917 0.03 40 1 3 '' 1
+53 H H3M . NAG poly . . ? 31.885 30.468 30.378 0 0 5 3 '' 1
+54 H H2M . NAG poly . . ? 31.055 30.484 28.841 0 0 5 3 '' 1
+55 H H1M . NAG poly . . ? 30.336 31.263 30.304 0 0 5 3 '' 1
+56 O O4 . NAG poly . . ? 25.507 26.211 27.7 -0.47 40 3 3 '' 1
+57 C C1 . BMA poly . . ? 25.574 25.081 26.781 0.31 40 1 4 '' 1
+58 H H1 . BMA poly . . ? 25.319 24.197 27.366 0 0 2 4 '' 1
+59 O O5 . BMA poly . . ? 26.979 24.938 26.272 -0.39 30 3 4 '' 1
+60 C C5 . BMA poly . . ? 27.194 23.881 25.214 0.2 60 1 4 '' 1
+61 H H5 . BMA poly . . ? 27.242 22.946 25.772 0 0 3 4 '' 1
+62 C C6 . BMA poly . . ? 28.678 23.988 24.766 0.27 30 1 4 '' 1
+63 H H62 . BMA poly . . ? 28.861 24.952 24.292 0 0 3 4 '' 1
+64 H H61 . BMA poly . . ? 28.828 23.197 24.031 0 0 3 4 '' 1
+65 O O6 . BMA poly . . ? 29.624 23.836 25.916 -0.45 50 3 4 '' 1
+66 C C4 . BMA poly . . ? 26.144 24.008 24.07 0.34 90 1 4 '' 1
+67 H H4 . BMA poly . . ? 26.384 24.873 23.452 0 0 3 4 '' 1
+68 O O4 . BMA poly . . ? 26.237 22.762 23.275 -0.74 60 1 4 '' 1
+69 H H4O . BMA poly . . ? 25.652 22.914 22.528 0.44 30 1 4 '' 1
+70 C C3 . BMA poly . . ? 24.685 24.029 24.646 0.26 30 1 4 '' 1
+71 H H3 . BMA poly . . ? 24.59 23.103 25.213 0 0 3 4 '' 1
+72 C C2 . BMA poly . . ? 24.513 25.119 25.693 0.24 10 1 4 '' 1
+73 H H2 . BMA poly . . ? 23.547 24.867 26.13 0 0 3 4 '' 1
+74 O O2 . BMA poly . . ? 24.407 26.406 25.072 -0.66 40 1 4 '' 1
+75 H H2O . BMA poly . . ? 23.782 26.927 25.582 0.43 10 1 4 '' 1
+76 O O3 . BMA poly . . ? 23.542 23.996 23.647 -0.45 60 3 4 '' 1
+77 C C1 . MAN poly . . ? 31.127 23.669 25.607 0.43 30 1 5 '' 1
+78 H H1 . MAN poly . . ? 31.22 22.789 24.97 0 0 2 5 '' 1
+79 C C2 . MAN poly . . ? 31.873 23.336 26.969 0.24 50 1 5 '' 1
+80 H H2 . MAN poly . . ? 31.416 22.407 27.308 0 0 3 5 '' 1
+81 O O2 . MAN poly . . ? 33.307 23.125 26.734 -0.71 70 1 5 '' 1
+82 H H2O . MAN poly . . ? 33.367 22.637 25.91 0.44 60 1 5 '' 1
+83 C C3 . MAN poly . . ? 31.631 24.385 28 0.25 20 1 5 '' 1
+84 H H3 . MAN poly . . ? 30.567 24.424 28.236 0 0 3 5 '' 1
+85 C C4 . MAN poly . . ? 32.023 25.793 27.454 0.32 60 1 5 '' 1
+86 H H4 . MAN poly . . ? 33.106 25.857 27.561 0 0 3 5 '' 1
+87 C C5 . MAN poly . . ? 31.489 26.092 26.032 0.27 60 1 5 '' 1
+88 H H5 . MAN poly . . ? 30.416 26.282 26.017 0 0 3 5 '' 1
+89 C C6 . MAN poly . . ? 32.12 27.381 25.537 0.26 60 1 5 '' 1
+90 H H62 . MAN poly . . ? 33.125 27.388 25.959 0 0 3 5 '' 1
+91 H H61 . MAN poly . . ? 32.228 27.38 24.453 0 0 3 5 '' 1
+92 O O6 . MAN poly . . ? 31.312 28.599 26.016 -0.46 0 3 5 '' 1
+93 O O5 . MAN poly . . ? 31.665 24.971 25.069 -0.5 70 3 5 '' 1
+94 O O4 . MAN poly . . ? 31.439 26.705 28.344 -0.73 30 1 5 '' 1
+95 H H4O . MAN poly . . ? 30.479 26.695 28.33 0.43 80 1 5 '' 1
+96 O O3 . MAN poly . . ? 32.415 24.098 29.239 -0.45 90 3 5 '' 1
+97 C C1 . MAN poly . . ? 30.895 29.546 25.021 0.43 30 1 6 '' 1
+98 H H1 . MAN poly . . ? 31.744 29.759 24.372 0 0 2 6 '' 1
+99 C C2 . MAN poly . . ? 30.266 30.78 25.643 0.24 50 1 6 '' 1
+100 H H2 . MAN poly . . ? 31.039 31.047 26.364 0 0 3 6 '' 1
+101 C C3 . MAN poly . . ? 28.92 30.468 26.178 0.25 20 1 6 '' 1
+102 H H3 . MAN poly . . ? 29.093 29.76 26.988 0 0 3 6 '' 1
+103 C C4 . MAN poly . . ? 27.898 29.818 25.242 0.32 60 1 6 '' 1
+104 H H4 . MAN poly . . ? 27.65 30.449 24.388 0 0 3 6 '' 1
+105 C C5 . MAN poly . . ? 28.571 28.536 24.698 0.27 60 1 6 '' 1
+106 H H5 . MAN poly . . ? 28.68 27.898 25.574 0 0 3 6 '' 1
+107 C C6 . MAN poly . . ? 27.662 27.743 23.701 0.26 60 1 6 '' 1
+108 H H62 . MAN poly . . ? 28.208 26.865 23.356 0 0 3 6 '' 1
+109 H H61 . MAN poly . . ? 26.726 27.456 24.18 0 0 3 6 '' 1
+110 O O6 . MAN poly . . ? 27.206 28.542 22.566 -0.68 80 1 6 '' 1
+111 H H6O . MAN poly . . ? 26.288 28.811 22.652 0.42 20 1 6 '' 1
+112 O O5 . MAN poly . . ? 29.934 28.846 24.142 -0.5 70 3 6 '' 1
+113 O O4 . MAN poly . . ? 26.676 29.505 25.978 -0.73 30 1 6 '' 1
+114 H H4O . MAN poly . . ? 26.119 30.287 26.01 0.43 80 1 6 '' 1
+115 O O3 . MAN poly . . ? 28.326 31.678 26.819 -0.69 60 1 6 '' 1
+116 H H3O . MAN poly . . ? 27.606 31.458 27.414 0.43 10 1 6 '' 1
+117 O O2 . MAN poly . . ? 30.139 31.954 24.602 -0.46 50 3 6 '' 1
+118 C C1 . MAN poly . . ? 31.455 32.61 24.508 0.43 30 1 7 '' 1
+119 H H1 . MAN poly . . ? 31.908 32.844 25.471 0 0 2 7 '' 1
+120 C C2 . MAN poly . . ? 31.132 33.999 23.885 0.24 50 1 7 '' 1
+121 H H2 . MAN poly . . ? 30.413 34.532 24.507 0 0 3 7 '' 1
+122 C C3 . MAN poly . . ? 30.596 33.742 22.422 0.25 20 1 7 '' 1
+123 H H3 . MAN poly . . ? 29.658 33.187 22.434 0 0 3 7 '' 1
+124 C C4 . MAN poly . . ? 31.452 32.915 21.54 0.32 60 1 7 '' 1
+125 H H4 . MAN poly . . ? 32.276 33.603 21.351 0 0 3 7 '' 1
+126 C C5 . MAN poly . . ? 32.085 31.655 22.258 0.27 60 1 7 '' 1
+127 H H5 . MAN poly . . ? 31.37 30.832 22.227 0 0 3 7 '' 1
+128 C C6 . MAN poly . . ? 33.353 31.158 21.462 0.26 60 1 7 '' 1
+129 H H62 . MAN poly . . ? 33.57 30.225 21.982 0 0 3 7 '' 1
+130 H H61 . MAN poly . . ? 33.166 30.937 20.411 0 0 3 7 '' 1
+131 O O6 . MAN poly . . ? 34.464 32.068 21.467 -0.68 80 1 7 '' 1
+132 H H6O . MAN poly . . ? 34.971 31.748 20.718 0.42 20 1 7 '' 1
+133 O O5 . MAN poly . . ? 32.384 31.855 23.693 -0.5 70 3 7 '' 1
+134 O O4 . MAN poly . . ? 30.867 32.457 20.336 -0.73 30 1 7 '' 1
+135 H H4O . MAN poly . . ? 30.668 33.137 19.689 0.43 80 1 7 '' 1
+136 O O3 . MAN poly . . ? 30.307 35.037 21.76 -0.69 60 1 7 '' 1
+137 H H3O . MAN poly . . ? 31.073 35.615 21.78 0.43 10 1 7 '' 1
+138 O O2 . MAN poly . . ? 32.33 34.75 23.892 -0.71 70 1 7 '' 1
+139 H H2O . MAN poly . . ? 32.146 35.62 24.253 0.44 60 1 7 '' 1
+140 C C1 . MAN poly . . ? 31.767 23.445 30.345 0.43 30 1 8 '' 1
+141 H H1 . MAN poly . . ? 31.2 22.561 30.052 0 0 2 8 '' 1
+142 C C2 . MAN poly . . ? 30.878 24.416 31.222 0.24 50 1 8 '' 1
+143 H H2 . MAN poly . . ? 30.221 25.032 30.608 0 0 3 8 '' 1
+144 C C3 . MAN poly . . ? 31.725 25.382 32.098 0.25 20 1 8 '' 1
+145 H H3 . MAN poly . . ? 32.27 26.084 31.468 0 0 3 8 '' 1
+146 C C4 . MAN poly . . ? 32.755 24.558 32.958 0.32 60 1 8 '' 1
+147 H H4 . MAN poly . . ? 32.228 23.9 33.648 0 0 3 8 '' 1
+148 C C5 . MAN poly . . ? 33.676 23.807 31.95 0.27 60 1 8 '' 1
+149 H H5 . MAN poly . . ? 34.089 24.497 31.214 0 0 3 8 '' 1
+150 C C6 . MAN poly . . ? 34.834 22.942 32.562 0.26 60 1 8 '' 1
+151 H H62 . MAN poly . . ? 35.637 23.569 32.95 0 0 3 8 '' 1
+152 H H61 . MAN poly . . ? 34.451 22.336 33.383 0 0 3 8 '' 1
+153 O O6 . MAN poly . . ? 35.378 22.115 31.518 -0.68 80 1 8 '' 1
+154 H H6O . MAN poly . . ? 34.68 21.731 30.983 0.42 20 1 8 '' 1
+155 O O5 . MAN poly . . ? 32.828 22.84 31.154 -0.5 70 3 8 '' 1
+156 O O4 . MAN poly . . ? 33.535 25.458 33.728 -0.73 30 1 8 '' 1
+157 H H4O . MAN poly . . ? 33.391 25.33 34.669 0.43 80 1 8 '' 1
+158 O O3 . MAN poly . . ? 30.71 26.069 32.969 -0.69 60 1 8 '' 1
+159 H H3O . MAN poly . . ? 30.715 26.984 32.679 0.43 10 1 8 '' 1
+160 O O2 . MAN poly . . ? 29.891 23.522 31.961 -0.46 50 3 8 '' 1
+161 C C1 . MAN poly . . ? 28.431 23.892 31.82 0.43 30 1 9 '' 1
+162 H H1 . MAN poly . . ? 28.425 24.979 31.899 0 0 2 9 '' 1
+163 C C2 . MAN poly . . ? 27.585 23.203 32.936 0.24 50 1 9 '' 1
+164 H H2 . MAN poly . . ? 27.899 23.262 33.979 0 0 3 9 '' 1
+165 C C3 . MAN poly . . ? 27.558 21.664 32.661 0.25 20 1 9 '' 1
+166 H H3 . MAN poly . . ? 28.532 21.252 32.927 0 0 3 9 '' 1
+167 C C4 . MAN poly . . ? 27.108 21.33 31.209 0.32 60 1 9 '' 1
+168 H H4 . MAN poly . . ? 26.075 21.648 31.067 0 0 3 9 '' 1
+169 C C5 . MAN poly . . ? 28.062 22.04 30.182 0.27 60 1 9 '' 1
+170 H H5 . MAN poly . . ? 29.067 21.7 30.432 0 0 3 9 '' 1
+171 C C6 . MAN poly . . ? 27.98 21.676 28.646 0.26 60 1 9 '' 1
+172 H H62 . MAN poly . . ? 26.92 21.505 28.461 0 0 3 9 '' 1
+173 H H61 . MAN poly . . ? 28.323 22.549 28.089 0 0 3 9 '' 1
+174 O O6 . MAN poly . . ? 28.774 20.46 28.327 -0.68 80 1 9 '' 1
+175 H H6O . MAN poly . . ? 28.797 20.332 27.376 0.42 20 1 9 '' 1
+176 O O5 . MAN poly . . ? 28.024 23.514 30.473 -0.5 70 3 9 '' 1
+177 O O4 . MAN poly . . ? 26.975 19.898 30.857 -0.73 30 1 9 '' 1
+178 H H4O . MAN poly . . ? 27.881 19.64 31.042 0.43 80 1 9 '' 1
+179 O O3 . MAN poly . . ? 26.597 20.974 33.539 -0.69 60 1 9 '' 1
+180 H H3O . MAN poly . . ? 26.928 20.188 33.979 0.43 10 1 9 '' 1
+181 O O2 . MAN poly . . ? 26.297 23.833 32.854 -0.71 70 1 9 '' 1
+182 H H2O . MAN poly . . ? 25.946 23.663 33.731 0.44 60 1 9 '' 1
+183 C C1 . MAN poly . . ? 22.293 23.458 24.072 0.43 30 1 10 '' 1
+184 H H1 . MAN poly . . ? 22.509 22.587 24.691 0 0 2 10 '' 1
+185 C C2 . MAN poly . . ? 21.468 22.98 22.86 0.24 50 1 10 '' 1
+186 H H2 . MAN poly . . ? 21.994 22.449 22.067 0 0 3 10 '' 1
+187 C C3 . MAN poly . . ? 20.983 24.274 22.108 0.25 20 1 10 '' 1
+188 H H3 . MAN poly . . ? 21.798 24.899 21.744 0 0 3 10 '' 1
+189 C C4 . MAN poly . . ? 20.135 25.158 23.051 0.32 60 1 10 '' 1
+190 H H4 . MAN poly . . ? 19.2 24.642 23.267 0 0 3 10 '' 1
+191 C C5 . MAN poly . . ? 20.913 25.566 24.292 0.27 60 1 10 '' 1
+192 H H5 . MAN poly . . ? 21.545 26.421 24.051 0 0 3 10 '' 1
+193 C C6 . MAN poly . . ? 20.114 26.269 25.384 0.26 60 1 10 '' 1
+194 H H62 . MAN poly . . ? 20.712 26.591 26.236 0 0 3 10 '' 1
+195 H H61 . MAN poly . . ? 19.607 27.169 25.039 0 0 3 10 '' 1
+196 O O6 . MAN poly . . ? 19.137 25.425 25.954 -0.68 80 1 10 '' 1
+197 H H6O . MAN poly . . ? 19.456 24.889 26.684 0.42 20 1 10 '' 1
+198 O O5 . MAN poly . . ? 21.543 24.405 24.869 -0.5 70 3 10 '' 1
+199 O O4 . MAN poly . . ? 19.8 26.359 22.35 -0.73 30 1 10 '' 1
+200 H H4O . MAN poly . . ? 19.006 26.265 21.819 0.43 80 1 10 '' 1
+201 O O3 . MAN poly . . ? 20.131 23.77 20.993 -0.69 60 1 10 '' 1
+202 H H3O . MAN poly . . ? 19.36 24.326 20.861 0.43 10 1 10 '' 1
+203 O O2 . MAN poly . . ? 20.24 22.074 23.272 -0.46 50 3 10 '' 1
+204 C C1 . MAN poly . . ? 20.41 21.065 24.349 0.43 30 1 11 '' 1
+205 H H1 . MAN poly . . ? 21.38 20.597 24.183 0 0 2 11 '' 1
+206 C C2 . MAN poly . . ? 19.307 20.006 24.044 0.24 50 1 11 '' 1
+207 H H2 . MAN poly . . ? 19.316 19.774 22.979 0 0 3 11 '' 1
+208 C C3 . MAN poly . . ? 17.899 20.621 24.335 0.25 20 1 11 '' 1
+209 H H3 . MAN poly . . ? 17.789 21.476 23.668 0 0 3 11 '' 1
+210 C C4 . MAN poly . . ? 17.856 20.99 25.853 0.32 60 1 11 '' 1
+211 H H4 . MAN poly . . ? 18.094 20.041 26.334 0 0 3 11 '' 1
+212 C C5 . MAN poly . . ? 18.909 22.099 26.209 0.27 60 1 11 '' 1
+213 H H5 . MAN poly . . ? 18.553 22.969 25.658 0 0 3 11 '' 1
+214 C C6 . MAN poly . . ? 19.001 22.503 27.643 0.26 60 1 11 '' 1
+215 H H62 . MAN poly . . ? 17.998 22.764 27.978 0 0 3 11 '' 1
+216 H H61 . MAN poly . . ? 19.457 21.728 28.259 0 0 3 11 '' 1
+217 O O6 . MAN poly . . ? 19.898 23.625 27.724 -0.68 80 1 11 '' 1
+218 H H6O . MAN poly . . ? 20.706 23.303 27.318 0.42 20 1 11 '' 1
+219 O O5 . MAN poly . . ? 20.281 21.684 25.649 -0.5 70 3 11 '' 1
+220 O O4 . MAN poly . . ? 16.507 21.483 26.222 -0.73 30 1 11 '' 1
+221 H H4O . MAN poly . . ? 15.829 20.819 26.365 0.43 80 1 11 '' 1
+222 O O3 . MAN poly . . ? 16.951 19.651 24.004 -0.69 60 1 11 '' 1
+223 H H3O . MAN poly . . ? 16.871 18.996 24.701 0.43 10 1 11 '' 1
+224 O O2 . MAN poly . . ? 19.544 18.842 24.853 -0.46 50 3 11 '' 1
+225 C C1 . MAN poly . . ? 20.524 17.841 24.387 0.43 30 1 12 '' 1
+226 H H1 . MAN poly . . ? 20.366 17.713 23.316 0 0 2 12 '' 1
+227 C C2 . MAN poly . . ? 20.331 16.649 25.275 0.24 50 1 12 '' 1
+228 H H2 . MAN poly . . ? 19.312 16.291 25.128 0 0 3 12 '' 1
+229 C C3 . MAN poly . . ? 20.596 16.952 26.798 0.25 20 1 12 '' 1
+230 H H3 . MAN poly . . ? 19.758 17.609 27.031 0 0 3 12 '' 1
+231 C C4 . MAN poly . . ? 21.926 17.588 27.027 0.32 60 1 12 '' 1
+232 H H4 . MAN poly . . ? 22.661 16.802 26.85 0 0 3 12 '' 1
+233 C C5 . MAN poly . . ? 22.216 18.73 26.074 0.27 60 1 12 '' 1
+234 H H5 . MAN poly . . ? 21.639 19.594 26.404 0 0 3 12 '' 1
+235 C C6 . MAN poly . . ? 23.691 19.15 26.133 0.26 60 1 12 '' 1
+236 H H62 . MAN poly . . ? 23.881 19.299 27.196 0 0 3 12 '' 1
+237 H H61 . MAN poly . . ? 24.337 18.367 25.735 0 0 3 12 '' 1
+238 O O6 . MAN poly . . ? 23.876 20.464 25.551 -0.68 80 1 12 '' 1
+239 H H6O . MAN poly . . ? 24.055 20.417 24.609 0.42 20 1 12 '' 1
+240 O O5 . MAN poly . . ? 21.906 18.323 24.585 -0.5 70 3 12 '' 1
+241 O O4 . MAN poly . . ? 21.989 18.056 28.394 -0.73 30 1 12 '' 1
+242 H H4O . MAN poly . . ? 22.624 17.541 28.897 0.43 80 1 12 '' 1
+243 O O3 . MAN poly . . ? 20.447 15.746 27.699 -0.69 60 1 12 '' 1
+244 H H3O . MAN poly . . ? 21.121 15.123 27.42 0.43 10 1 12 '' 1
+245 O O2 . MAN poly . . ? 21.201 15.548 24.835 -0.71 70 1 12 '' 1
+246 H H2O . MAN poly . . ? 21.187 14.77 25.397 0.44 60 1 12 '' 1
+
+_WURCS
+'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
+_GlyTouCan G39578OU
+
+data_confConvertedPDB/
+_entry.id confConvertedPDB
+
+_cell.entry_id confConvertedPDB
+_cell.length_a 1
+_cell.length_b 1
+_cell.length_c 1
+_cell.angle_alpha 90
+_cell.angle_beta 90
+_cell.angle_gamma 90
+
+_symmetry.entry_id confConvertedPDB
+_symmetry.space_group_name_H-M ''
+
+
+
+
+loop_
+_chem_comp.id
+_chem_comp.type
+BMA .
+MAN .
+NAG .
+NDG .
+
+loop_
+_struct_asym.id
+_struct_asym.entity_id
+poly ?
+
+loop_
+_struct_conn.id
+_struct_conn.conn_type_id
+_struct_conn.ptnr1_auth_asym_id
+_struct_conn.ptnr1_label_asym_id
+_struct_conn.ptnr1_label_comp_id
+_struct_conn.ptnr1_label_seq_id
+_struct_conn.ptnr1_label_atom_id
+_struct_conn.pdbx_ptnr1_label_alt_id
+_struct_conn.ptnr1_auth_seq_id
+_struct_conn.pdbx_ptnr1_PDB_ins_code
+_struct_conn.ptnr1_symmetry
+_struct_conn.ptnr2_auth_asym_id
+_struct_conn.ptnr2_label_asym_id
+_struct_conn.ptnr2_label_comp_id
+_struct_conn.ptnr2_label_seq_id
+_struct_conn.ptnr2_label_atom_id
+_struct_conn.pdbx_ptnr2_label_alt_id
+_struct_conn.ptnr2_auth_seq_id
+_struct_conn.pdbx_ptnr2_PDB_ins_code
+_struct_conn.ptnr2_symmetry
+_struct_conn.details
+_struct_conn.pdbx_dist_value
+'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.4444
+'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.5171
+'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4713
+'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4685
+'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4744
+'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4790
+'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4125
+'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4123
+'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4992
+'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4113
+
+loop_
+_struct_conn_type.id
+covale
+
+
+loop_
+_atom_type.symbol
+H
+C
+N
+O
+
+
+loop_
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.label_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_seq_id
+_atom_site.auth_asym_id
+_atom_site.pdbx_PDB_model_num
+1 H HO1 . NDG poly . . ? 26.902 12.47 31.497 0.44 50 1 2 '' 1
+2 O O1 . NDG poly . . ? 27.577 13.116 31.717 -0.63 90 1 2 '' 1
+3 C C1 . NDG poly . . ? 26.991 13.946 32.721 0.46 80 1 2 '' 1
+4 H H1 . NDG poly . . ? 26.624 13.216 33.443 0 0 2 2 '' 1
+5 C C2 . NDG poly . . ? 25.868 14.888 32.163 0.24 50 1 2 '' 1
+6 H H2 . NDG poly . . ? 25.339 15.417 32.956 0 0 3 2 '' 1
+7 N N2 . NDG poly . . ? 24.794 14.214 31.481 -0.55 20 1 2 '' 1
+8 H H2N . NDG poly . . ? 24.751 14.441 30.498 0.23 60 4 2 '' 1
+9 C C2N . NDG poly . . ? 23.891 13.423 31.996 0.58 80 1 2 '' 1
+10 C CME . NDG poly . . ? 22.988 12.579 30.948 0.06 30 1 2 '' 1
+11 H H3M . NDG poly . . ? 22.756 13.113 30.027 0 0 5 2 '' 1
+12 H H2M . NDG poly . . ? 23.559 11.668 30.766 0 0 5 2 '' 1
+13 H H1M . NDG poly . . ? 22.056 12.376 31.475 0 0 5 2 '' 1
+14 O O2N . NDG poly . . ? 23.73 13.189 33.192 -0.57 90 2 2 '' 1
+15 C C3 . NDG poly . . ? 26.379 16.021 31.373 0.16 50 1 2 '' 1
+16 H H3 . NDG poly . . ? 26.682 15.687 30.38 0 0 3 2 '' 1
+17 O O3 . NDG poly . . ? 25.373 17.058 31.015 -0.63 0 1 2 '' 1
+18 H H3O . NDG poly . . ? 25.756 17.876 30.692 0.41 30 1 2 '' 1
+19 C C4 . NDG poly . . ? 27.618 16.694 32.021 0.32 20 1 2 '' 1
+20 H H4 . NDG poly . . ? 27.267 17.139 32.952 0 0 3 2 '' 1
+21 C C5 . NDG poly . . ? 28.722 15.716 32.405 0.24 60 1 2 '' 1
+22 H H5 . NDG poly . . ? 28.913 15.114 31.516 0 0 3 2 '' 1
+23 C C6 . NDG poly . . ? 30.054 16.285 32.969 0.32 80 1 2 '' 1
+24 H H62 . NDG poly . . ? 29.807 16.885 33.844 0 0 3 2 '' 1
+25 H H61 . NDG poly . . ? 30.517 17.015 32.306 0 0 3 2 '' 1
+26 O O6 . NDG poly . . ? 30.915 15.188 33.299 -0.68 80 1 2 '' 1
+27 H H6O . NDG poly . . ? 30.38 14.514 33.725 0.42 10 1 2 '' 1
+28 O O5 . NDG poly . . ? 28.139 14.748 33.322 -0.56 80 3 2 '' 1
+29 O O4 . NDG poly . . ? 28.291 17.68 31.145 -0.47 80 3 2 '' 1
+30 C C1 . NAG poly . . ? 28.044 19.04 31.564 0.28 70 1 3 '' 1
+31 H H1 . NAG poly . . ? 28.132 19.041 32.65 0 0 2 3 '' 1
+32 O O5 . NAG poly . . ? 26.697 19.439 31.262 -0.43 30 3 3 '' 1
+33 C C5 . NAG poly . . ? 26.323 20.686 31.979 0.2 80 1 3 '' 1
+34 H H5 . NAG poly . . ? 26.372 20.531 33.056 0 0 3 3 '' 1
+35 C C6 . NAG poly . . ? 24.77 20.889 31.689 0.28 90 1 3 '' 1
+36 H H62 . NAG poly . . ? 24.387 21.693 32.317 0 0 3 3 '' 1
+37 H H61 . NAG poly . . ? 24.337 19.959 32.058 0 0 3 3 '' 1
+38 O O6 . NAG poly . . ? 24.473 21.296 30.338 -0.68 90 1 3 '' 1
+39 H H6O . NAG poly . . ? 23.786 21.96 30.42 0.42 40 1 3 '' 1
+40 C C4 . NAG poly . . ? 27.196 21.881 31.492 0.3 20 1 3 '' 1
+41 H H4 . NAG poly . . ? 27.139 22.102 30.426 0 0 3 3 '' 1
+42 C C3 . NAG poly . . ? 28.671 21.503 31.712 0.18 0 1 3 '' 1
+43 H H3 . NAG poly . . ? 28.772 21.428 32.795 0 0 3 3 '' 1
+44 O O3 . NAG poly . . ? 29.581 22.494 31.291 -0.68 10 1 3 '' 1
+45 H H3O . NAG poly . . ? 29.253 23.389 31.404 0.42 30 1 3 '' 1
+46 C C2 . NAG poly . . ? 29.055 20.1 31.05 0.48 0 1 3 '' 1
+47 H H2 . NAG poly . . ? 28.946 20.2 29.97 0 0 3 3 '' 1
+48 N N2 . NAG poly . . ? 30.443 19.76 31.398 -0.72 20 1 3 '' 1
+49 H H2N . NAG poly . . ? 30.513 19.64 32.398 0.3 0 4 3 '' 1
+50 C C2N . NAG poly . . ? 31.5 19.886 30.597 0.64 80 1 3 '' 1
+51 O O2N . NAG poly . . ? 31.365 19.849 29.377 -0.57 60 2 3 '' 1
+52 C CME . NAG poly . . ? 32.876 19.803 31.295 0.03 40 1 3 '' 1
+53 H H3M . NAG poly . . ? 33.297 20.795 31.46 0 0 5 3 '' 1
+54 H H2M . NAG poly . . ? 32.853 19.44 32.323 0 0 5 3 '' 1
+55 H H1M . NAG poly . . ? 33.486 19.15 30.673 0 0 5 3 '' 1
+56 O O4 . NAG poly . . ? 26.874 23.079 32.334 -0.47 40 3 3 '' 1
+57 C C1 . BMA poly . . ? 26.756 24.397 31.592 0.31 40 1 4 '' 1
+58 H H1 . BMA poly . . ? 26.014 24.391 30.793 0 0 2 4 '' 1
+59 O O5 . BMA poly . . ? 28.102 24.8 31.131 -0.39 30 3 4 '' 1
+60 C C5 . BMA poly . . ? 28.208 26.185 30.576 0.2 60 1 4 '' 1
+61 H H5 . BMA poly . . ? 27.664 26.108 29.634 0 0 3 4 '' 1
+62 C C6 . BMA poly . . ? 29.704 26.66 30.272 0.27 30 1 4 '' 1
+63 H H62 . BMA poly . . ? 30.375 25.864 30.596 0 0 3 4 '' 1
+64 H H61 . BMA poly . . ? 29.976 27.601 30.75 0 0 3 4 '' 1
+65 O O6 . BMA poly . . ? 30.031 26.881 28.924 -0.45 50 3 4 '' 1
+66 C C4 . BMA poly . . ? 27.551 27.317 31.417 0.34 90 1 4 '' 1
+67 H H4 . BMA poly . . ? 28.209 27.513 32.264 0 0 3 4 '' 1
+68 O O4 . BMA poly . . ? 27.445 28.557 30.731 -0.74 60 1 4 '' 1
+69 H H4O . BMA poly . . ? 27.472 29.361 31.256 0.44 30 1 4 '' 1
+70 C C3 . BMA poly . . ? 26.148 26.901 31.956 0.26 30 1 4 '' 1
+71 H H3 . BMA poly . . ? 25.463 26.783 31.116 0 0 3 4 '' 1
+72 C C2 . BMA poly . . ? 26.225 25.476 32.635 0.24 10 1 4 '' 1
+73 H H2 . BMA poly . . ? 25.243 25.168 32.994 0 0 3 4 '' 1
+74 O O2 . BMA poly . . ? 27.091 25.592 33.844 -0.66 40 1 4 '' 1
+75 H H2O . BMA poly . . ? 26.508 25.817 34.572 0.43 10 1 4 '' 1
+76 O O3 . BMA poly . . ? 25.565 27.885 32.865 -0.45 60 3 4 '' 1
+77 C C1 . MAN poly . . ? 30.77 25.784 28.286 0.43 30 1 5 '' 1
+78 H H1 . MAN poly . . ? 31.698 25.577 28.819 0 0 2 5 '' 1
+79 C C2 . MAN poly . . ? 31.157 26.31 26.887 0.24 50 1 5 '' 1
+80 H H2 . MAN poly . . ? 31.701 27.244 27.03 0 0 3 5 '' 1
+81 O O2 . MAN poly . . ? 32.066 25.326 26.254 -0.71 70 1 5 '' 1
+82 H H2O . MAN poly . . ? 31.991 24.55 26.816 0.44 60 1 5 '' 1
+83 C C3 . MAN poly . . ? 29.927 26.553 26.033 0.25 20 1 5 '' 1
+84 H H3 . MAN poly . . ? 29.289 27.318 26.476 0 0 3 5 '' 1
+85 C C4 . MAN poly . . ? 29.12 25.248 25.903 0.32 60 1 5 '' 1
+86 H H4 . MAN poly . . ? 29.761 24.479 25.471 0 0 3 5 '' 1
+87 C C5 . MAN poly . . ? 28.646 24.659 27.265 0.27 60 1 5 '' 1
+88 H H5 . MAN poly . . ? 27.955 25.361 27.731 0 0 3 5 '' 1
+89 C C6 . MAN poly . . ? 27.899 23.285 27.24 0.26 60 1 5 '' 1
+90 H H62 . MAN poly . . ? 28.43 22.519 26.675 0 0 3 5 '' 1
+91 H H61 . MAN poly . . ? 27.952 22.892 28.255 0 0 3 5 '' 1
+92 O O6 . MAN poly . . ? 26.469 23.394 26.893 -0.46 0 3 5 '' 1
+93 O O5 . MAN poly . . ? 29.853 24.548 28.147 -0.5 70 3 5 '' 1
+94 O O4 . MAN poly . . ? 27.899 25.471 25.058 -0.73 30 1 5 '' 1
+95 H H4O . MAN poly . . ? 28.01 25.3 24.12 0.43 80 1 5 '' 1
+96 O O3 . MAN poly . . ? 30.352 27.082 24.674 -0.45 90 3 5 '' 1
+97 C C1 . MAN poly . . ? 26.038 22.544 25.762 0.43 30 1 6 '' 1
+98 H H1 . MAN poly . . ? 26.895 22.383 25.108 0 0 2 6 '' 1
+99 C C2 . MAN poly . . ? 24.876 23.179 24.972 0.24 50 1 6 '' 1
+100 H H2 . MAN poly . . ? 25.294 24.153 24.716 0 0 3 6 '' 1
+101 C C3 . MAN poly . . ? 23.608 23.294 25.893 0.25 20 1 6 '' 1
+102 H H3 . MAN poly . . ? 23.887 24.074 26.602 0 0 3 6 '' 1
+103 C C4 . MAN poly . . ? 23.239 21.986 26.54 0.32 60 1 6 '' 1
+104 H H4 . MAN poly . . ? 22.897 21.316 25.752 0 0 3 6 '' 1
+105 C C5 . MAN poly . . ? 24.461 21.206 27.197 0.27 60 1 6 '' 1
+106 H H5 . MAN poly . . ? 24.75 21.73 28.108 0 0 3 6 '' 1
+107 C C6 . MAN poly . . ? 24.087 19.774 27.761 0.26 60 1 6 '' 1
+108 H H62 . MAN poly . . ? 23.158 19.811 28.33 0 0 3 6 '' 1
+109 H H61 . MAN poly . . ? 23.884 19.125 26.909 0 0 3 6 '' 1
+110 O O6 . MAN poly . . ? 25.179 19.207 28.568 -0.68 80 1 6 '' 1
+111 H H6O . MAN poly . . ? 25.16 19.811 29.313 0.42 20 1 6 '' 1
+112 O O5 . MAN poly . . ? 25.626 21.213 26.258 -0.5 70 3 6 '' 1
+113 O O4 . MAN poly . . ? 22.081 22.162 27.434 -0.73 30 1 6 '' 1
+114 H H4O . MAN poly . . ? 21.738 21.375 27.862 0.43 80 1 6 '' 1
+115 O O3 . MAN poly . . ? 22.545 23.872 25.056 -0.69 60 1 6 '' 1
+116 H H3O . MAN poly . . ? 22.309 23.32 24.306 0.43 10 1 6 '' 1
+117 O O2 . MAN poly . . ? 24.59 22.492 23.718 -0.46 50 3 6 '' 1
+118 C C1 . MAN poly . . ? 25.026 23.106 22.523 0.43 30 1 7 '' 1
+119 H H1 . MAN poly . . ? 24.704 24.142 22.415 0 0 2 7 '' 1
+120 C C2 . MAN poly . . ? 24.336 22.435 21.337 0.24 50 1 7 '' 1
+121 H H2 . MAN poly . . ? 23.251 22.484 21.427 0 0 3 7 '' 1
+122 C C3 . MAN poly . . ? 24.878 20.968 21.084 0.25 20 1 7 '' 1
+123 H H3 . MAN poly . . ? 24.659 20.386 21.98 0 0 3 7 '' 1
+124 C C4 . MAN poly . . ? 26.443 20.941 20.988 0.32 60 1 7 '' 1
+125 H H4 . MAN poly . . ? 26.655 21.452 20.049 0 0 3 7 '' 1
+126 C C5 . MAN poly . . ? 27.094 21.73 22.15 0.27 60 1 7 '' 1
+127 H H5 . MAN poly . . ? 27.022 21.138 23.062 0 0 3 7 '' 1
+128 C C6 . MAN poly . . ? 28.651 21.871 21.866 0.26 60 1 7 '' 1
+129 H H62 . MAN poly . . ? 29.069 22.294 22.779 0 0 3 7 '' 1
+130 H H61 . MAN poly . . ? 29.07 20.889 21.649 0 0 3 7 '' 1
+131 O O6 . MAN poly . . ? 28.876 22.706 20.716 -0.68 80 1 7 '' 1
+132 H H6O . MAN poly . . ? 29.825 22.702 20.571 0.42 20 1 7 '' 1
+133 O O5 . MAN poly . . ? 26.498 23.046 22.381 -0.5 70 3 7 '' 1
+134 O O4 . MAN poly . . ? 26.816 19.517 20.814 -0.73 30 1 7 '' 1
+135 H H4O . MAN poly . . ? 27.763 19.362 20.788 0.43 80 1 7 '' 1
+136 O O3 . MAN poly . . ? 24.153 20.329 19.963 -0.69 60 1 7 '' 1
+137 H H3O . MAN poly . . ? 24.731 19.722 19.495 0.43 10 1 7 '' 1
+138 O O2 . MAN poly . . ? 24.581 23.263 20.133 -0.71 70 1 7 '' 1
+139 H H2O . MAN poly . . ? 24.161 22.881 19.359 0.44 60 1 7 '' 1
+140 C C1 . MAN poly . . ? 29.598 28.255 24.195 0.43 30 1 8 '' 1
+141 H H1 . MAN poly . . ? 28.532 28.044 24.28 0 0 2 8 '' 1
+142 C C2 . MAN poly . . ? 29.653 28.46 22.681 0.24 50 1 8 '' 1
+143 H H2 . MAN poly . . ? 29.46 27.532 22.143 0 0 3 8 '' 1
+144 C C3 . MAN poly . . ? 31.049 29.092 22.29 0.25 20 1 8 '' 1
+145 H H3 . MAN poly . . ? 31.823 28.373 22.559 0 0 3 8 '' 1
+146 C C4 . MAN poly . . ? 31.357 30.385 23.129 0.32 60 1 8 '' 1
+147 H H4 . MAN poly . . ? 30.75 31.239 22.829 0 0 3 8 '' 1
+148 C C5 . MAN poly . . ? 31.273 30.042 24.655 0.27 60 1 8 '' 1
+149 H H5 . MAN poly . . ? 31.978 29.228 24.826 0 0 3 8 '' 1
+150 C C6 . MAN poly . . ? 31.75 31.255 25.447 0.26 60 1 8 '' 1
+151 H H62 . MAN poly . . ? 31.586 31.097 26.513 0 0 3 8 '' 1
+152 H H61 . MAN poly . . ? 32.776 31.549 25.225 0 0 3 8 '' 1
+153 O O6 . MAN poly . . ? 30.911 32.373 25.198 -0.68 80 1 8 '' 1
+154 H H6O . MAN poly . . ? 31.467 33.148 25.305 0.42 20 1 8 '' 1
+155 O O5 . MAN poly . . ? 29.907 29.471 25.051 -0.5 70 3 8 '' 1
+156 O O4 . MAN poly . . ? 32.75 30.627 22.832 -0.73 30 1 8 '' 1
+157 H H4O . MAN poly . . ? 32.807 30.57 21.875 0.43 80 1 8 '' 1
+158 O O3 . MAN poly . . ? 31.117 29.276 20.884 -0.69 60 1 8 '' 1
+159 H H3O . MAN poly . . ? 31.293 28.441 20.444 0.43 10 1 8 '' 1
+160 O O2 . MAN poly . . ? 28.542 29.453 22.389 -0.46 50 3 8 '' 1
+161 C C1 . MAN poly . . ? 27.769 29.221 21.23 0.43 30 1 9 '' 1
+162 H H1 . MAN poly . . ? 28.474 29.11 20.406 0 0 2 9 '' 1
+163 C C2 . MAN poly . . ? 26.935 30.447 21.008 0.24 50 1 9 '' 1
+164 H H2 . MAN poly . . ? 27.607 31.302 20.935 0 0 3 9 '' 1
+165 C C3 . MAN poly . . ? 25.805 30.682 22.078 0.25 20 1 9 '' 1
+166 H H3 . MAN poly . . ? 26.411 30.905 22.956 0 0 3 9 '' 1
+167 C C4 . MAN poly . . ? 24.891 29.384 22.254 0.32 60 1 9 '' 1
+168 H H4 . MAN poly . . ? 24.302 29.273 21.343 0 0 3 9 '' 1
+169 C C5 . MAN poly . . ? 25.825 28.161 22.438 0.27 60 1 9 '' 1
+170 H H5 . MAN poly . . ? 26.319 28.137 23.409 0 0 3 9 '' 1
+171 C C6 . MAN poly . . ? 25.127 26.802 22.314 0.26 60 1 9 '' 1
+172 H H62 . MAN poly . . ? 25.88 26.015 22.322 0 0 3 9 '' 1
+173 H H61 . MAN poly . . ? 24.467 26.643 23.166 0 0 3 9 '' 1
+174 O O6 . MAN poly . . ? 24.182 26.624 21.124 -0.68 80 1 9 '' 1
+175 H H6O . MAN poly . . ? 23.327 27.062 21.145 0.42 20 1 9 '' 1
+176 O O5 . MAN poly . . ? 26.918 28.101 21.447 -0.5 70 3 9 '' 1
+177 O O4 . MAN poly . . ? 24.095 29.54 23.456 -0.73 30 1 9 '' 1
+178 H H4O . MAN poly . . ? 23.729 30.427 23.427 0.43 80 1 9 '' 1
+179 O O3 . MAN poly . . ? 25.031 31.87 21.822 -0.69 60 1 9 '' 1
+180 H H3O . MAN poly . . ? 25.67 32.545 21.583 0.43 10 1 9 '' 1
+181 O O2 . MAN poly . . ? 26.368 30.452 19.653 -0.71 70 1 9 '' 1
+182 H H2O . MAN poly . . ? 26.651 31.135 19.04 0.44 60 1 9 '' 1
+183 C C1 . MAN poly . . ? 24.726 28.772 32.044 0.43 30 1 10 '' 1
+184 H H1 . MAN poly . . ? 25.146 28.929 31.05 0 0 2 10 '' 1
+185 C C2 . MAN poly . . ? 24.62 30.209 32.57 0.24 50 1 10 '' 1
+186 H H2 . MAN poly . . ? 25.647 30.536 32.73 0 0 3 10 '' 1
+187 C C3 . MAN poly . . ? 23.835 30.274 33.929 0.25 20 1 10 '' 1
+188 H H3 . MAN poly . . ? 24.461 29.742 34.645 0 0 3 10 '' 1
+189 C C4 . MAN poly . . ? 22.49 29.564 33.789 0.32 60 1 10 '' 1
+190 H H4 . MAN poly . . ? 21.888 30.214 33.154 0 0 3 10 '' 1
+191 C C5 . MAN poly . . ? 22.765 28.099 33.287 0.27 60 1 10 '' 1
+192 H H5 . MAN poly . . ? 23.375 27.687 34.091 0 0 3 10 '' 1
+193 C C6 . MAN poly . . ? 21.497 27.229 33.166 0.26 60 1 10 '' 1
+194 H H62 . MAN poly . . ? 20.77 27.371 33.965 0 0 3 10 '' 1
+195 H H61 . MAN poly . . ? 20.932 27.471 32.266 0 0 3 10 '' 1
+196 O O6 . MAN poly . . ? 21.893 25.799 32.985 -0.68 80 1 10 '' 1
+197 H H6O . MAN poly . . ? 22.454 25.886 32.211 0.42 20 1 10 '' 1
+198 O O5 . MAN poly . . ? 23.46 28.138 31.936 -0.5 70 3 10 '' 1
+199 O O4 . MAN poly . . ? 21.858 29.477 35.094 -0.73 30 1 10 '' 1
+200 H H4O . MAN poly . . ? 21.893 30.345 35.502 0.43 80 1 10 '' 1
+201 O O3 . MAN poly . . ? 23.663 31.632 34.418 -0.69 60 1 10 '' 1
+202 H H3O . MAN poly . . ? 23.366 32.23 33.729 0.43 10 1 10 '' 1
+203 O O2 . MAN poly . . ? 23.983 31.158 31.565 -0.46 50 3 10 '' 1
+204 C C1 . MAN poly . . ? 24.897 31.541 30.44 0.43 30 1 11 '' 1
+205 H H1 . MAN poly . . ? 25.504 30.722 30.052 0 0 2 11 '' 1
+206 C C2 . MAN poly . . ? 25.785 32.743 30.741 0.24 50 1 11 '' 1
+207 H H2 . MAN poly . . ? 26.456 32.499 31.565 0 0 3 11 '' 1
+208 C C3 . MAN poly . . ? 24.999 33.965 31.262 0.25 20 1 11 '' 1
+209 H H3 . MAN poly . . ? 24.441 33.805 32.185 0 0 3 11 '' 1
+210 C C4 . MAN poly . . ? 23.981 34.327 30.065 0.32 60 1 11 '' 1
+211 H H4 . MAN poly . . ? 24.592 34.882 29.353 0 0 3 11 '' 1
+212 C C5 . MAN poly . . ? 23.21 33.129 29.473 0.27 60 1 11 '' 1
+213 H H5 . MAN poly . . ? 22.446 32.761 30.157 0 0 3 11 '' 1
+214 C C6 . MAN poly . . ? 22.499 33.506 28.199 0.26 60 1 11 '' 1
+215 H H62 . MAN poly . . ? 21.73 34.256 28.381 0 0 3 11 '' 1
+216 H H61 . MAN poly . . ? 23.167 34.006 27.498 0 0 3 11 '' 1
+217 O O6 . MAN poly . . ? 21.861 32.34 27.662 -0.68 80 1 11 '' 1
+218 H H6O . MAN poly . . ? 21.378 32.651 26.892 0.42 20 1 11 '' 1
+219 O O5 . MAN poly . . ? 24.11 31.997 29.243 -0.5 70 3 11 '' 1
+220 O O4 . MAN poly . . ? 23.051 35.281 30.718 -0.73 30 1 11 '' 1
+221 H H4O . MAN poly . . ? 23.163 36.111 30.249 0.43 80 1 11 '' 1
+222 O O3 . MAN poly . . ? 25.918 35.035 31.46 -0.69 60 1 11 '' 1
+223 H H3O . MAN poly . . ? 26.808 34.739 31.254 0.43 10 1 11 '' 1
+224 O O2 . MAN poly . . ? 26.617 33.099 29.523 -0.46 50 3 11 '' 1
+225 C C1 . MAN poly . . ? 27.804 32.379 29.269 0.43 30 1 12 '' 1
+226 H H1 . MAN poly . . ? 28.36 32.275 30.201 0 0 2 12 '' 1
+227 C C2 . MAN poly . . ? 28.574 33.146 28.163 0.24 50 1 12 '' 1
+228 H H2 . MAN poly . . ? 28.794 34.126 28.586 0 0 3 12 '' 1
+229 C C3 . MAN poly . . ? 27.767 33.252 26.86 0.25 20 1 12 '' 1
+230 H H3 . MAN poly . . ? 26.838 33.74 27.156 0 0 3 12 '' 1
+231 C C4 . MAN poly . . ? 27.471 31.762 26.329 0.32 60 1 12 '' 1
+232 H H4 . MAN poly . . ? 28.445 31.41 25.988 0 0 3 12 '' 1
+233 C C5 . MAN poly . . ? 26.895 30.871 27.487 0.27 60 1 12 '' 1
+234 H H5 . MAN poly . . ? 25.848 31.127 27.647 0 0 3 12 '' 1
+235 C C6 . MAN poly . . ? 26.91 29.435 27.009 0.26 60 1 12 '' 1
+236 H H62 . MAN poly . . ? 26.199 29.361 26.186 0 0 3 12 '' 1
+237 H H61 . MAN poly . . ? 27.85 29.201 26.51 0 0 3 12 '' 1
+238 O O6 . MAN poly . . ? 26.548 28.402 27.99 -0.68 80 1 12 '' 1
+239 H H6O . MAN poly . . ? 27 28.741 28.766 0.42 20 1 12 '' 1
+240 O O5 . MAN poly . . ? 27.491 30.987 28.855 -0.5 70 3 12 '' 1
+241 O O4 . MAN poly . . ? 26.551 31.797 25.226 -0.73 30 1 12 '' 1
+242 H H4O . MAN poly . . ? 25.879 32.482 25.266 0.43 80 1 12 '' 1
+243 O O3 . MAN poly . . ? 28.492 34.084 25.969 -0.69 60 1 12 '' 1
+244 H H3O . MAN poly . . ? 27.833 34.312 25.31 0.43 10 1 12 '' 1
+245 O O2 . MAN poly . . ? 29.872 32.51 27.886 -0.71 70 1 12 '' 1
+246 H H2O . MAN poly . . ? 30.367 33.058 27.272 0.44 60 1 12 '' 1
+
+_WURCS
+'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
+_GlyTouCan G39578OU
+
+data_confConvertedPDB/
+_entry.id confConvertedPDB
+
+_cell.entry_id confConvertedPDB
+_cell.length_a 1
+_cell.length_b 1
+_cell.length_c 1
+_cell.angle_alpha 90
+_cell.angle_beta 90
+_cell.angle_gamma 90
+
+_symmetry.entry_id confConvertedPDB
+_symmetry.space_group_name_H-M ''
+
+
+
+
+loop_
+_chem_comp.id
+_chem_comp.type
+BMA .
+MAN .
+NAG .
+NDG .
+
+loop_
+_struct_asym.id
+_struct_asym.entity_id
+poly ?
+
+loop_
+_struct_conn.id
+_struct_conn.conn_type_id
+_struct_conn.ptnr1_auth_asym_id
+_struct_conn.ptnr1_label_asym_id
+_struct_conn.ptnr1_label_comp_id
+_struct_conn.ptnr1_label_seq_id
+_struct_conn.ptnr1_label_atom_id
+_struct_conn.pdbx_ptnr1_label_alt_id
+_struct_conn.ptnr1_auth_seq_id
+_struct_conn.pdbx_ptnr1_PDB_ins_code
+_struct_conn.ptnr1_symmetry
+_struct_conn.ptnr2_auth_asym_id
+_struct_conn.ptnr2_label_asym_id
+_struct_conn.ptnr2_label_comp_id
+_struct_conn.ptnr2_label_seq_id
+_struct_conn.ptnr2_label_atom_id
+_struct_conn.pdbx_ptnr2_label_alt_id
+_struct_conn.ptnr2_auth_seq_id
+_struct_conn.pdbx_ptnr2_PDB_ins_code
+_struct_conn.ptnr2_symmetry
+_struct_conn.details
+_struct_conn.pdbx_dist_value
+'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.4771
+'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4469
+'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4793
+'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4912
+'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4525
+'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4743
+'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4901
+'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4999
+'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4906
+'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4529
+
+loop_
+_struct_conn_type.id
+covale
+
+
+loop_
+_atom_type.symbol
+H
+C
+N
+O
+
+
+loop_
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.label_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_seq_id
+_atom_site.auth_asym_id
+_atom_site.pdbx_PDB_model_num
+1 H HO1 . NDG poly . . ? 22.247 39.788 26.961 0.44 50 1 2 '' 1
+2 O O1 . NDG poly . . ? 21.488 39.22 26.806 -0.63 90 1 2 '' 1
+3 C C1 . NDG poly . . ? 22.023 38.549 25.658 0.46 80 1 2 '' 1
+4 H H1 . NDG poly . . ? 21.968 39.134 24.74 0 0 2 2 '' 1
+5 C C2 . NDG poly . . ? 21.358 37.207 25.286 0.24 50 1 2 '' 1
+6 H H2 . NDG poly . . ? 21.681 37.029 24.26 0 0 3 2 '' 1
+7 N N2 . NDG poly . . ? 19.916 37.278 25.052 -0.55 20 1 2 '' 1
+8 H H2N . NDG poly . . ? 19.375 36.79 25.752 0.23 60 4 2 '' 1
+9 C C2N . NDG poly . . ? 19.361 37.842 23.992 0.58 80 1 2 '' 1
+10 C CME . NDG poly . . ? 17.987 38.249 24.106 0.06 30 1 2 '' 1
+11 H H3M . NDG poly . . ? 17.745 38.977 23.332 0 0 5 2 '' 1
+12 H H2M . NDG poly . . ? 17.235 37.463 24.041 0 0 5 2 '' 1
+13 H H1M . NDG poly . . ? 17.862 38.836 25.016 0 0 5 2 '' 1
+14 O O2N . NDG poly . . ? 20.055 38.259 23.027 -0.57 90 2 2 '' 1
+15 C C3 . NDG poly . . ? 21.848 36.006 26.077 0.16 50 1 2 '' 1
+16 H H3 . NDG poly . . ? 21.379 36.136 27.052 0 0 3 2 '' 1
+17 O O3 . NDG poly . . ? 21.299 34.834 25.499 -0.63 0 1 2 '' 1
+18 H H3O . NDG poly . . ? 21.492 34.13 26.124 0.41 30 1 2 '' 1
+19 C C4 . NDG poly . . ? 23.37 35.947 26.197 0.32 20 1 2 '' 1
+20 H H4 . NDG poly . . ? 23.746 35.847 25.179 0 0 3 2 '' 1
+21 C C5 . NDG poly . . ? 23.89 37.304 26.775 0.24 60 1 2 '' 1
+22 H H5 . NDG poly . . ? 23.451 37.457 27.76 0 0 3 2 '' 1
+23 C C6 . NDG poly . . ? 25.45 37.403 26.868 0.32 80 1 2 '' 1
+24 H H62 . NDG poly . . ? 25.96 36.678 27.503 0 0 3 2 '' 1
+25 H H61 . NDG poly . . ? 25.705 38.392 27.249 0 0 3 2 '' 1
+26 O O6 . NDG poly . . ? 26.06 37.369 25.541 -0.68 80 1 2 '' 1
+27 H H6O . NDG poly . . ? 25.5 37.906 24.975 0.42 10 1 2 '' 1
+28 O O5 . NDG poly . . ? 23.441 38.417 25.854 -0.56 80 3 2 '' 1
+29 O O4 . NDG poly . . ? 23.903 34.867 27.033 -0.47 80 3 2 '' 1
+30 C C1 . NAG poly . . ? 24.552 33.724 26.359 0.28 70 1 3 '' 1
+31 H H1 . NAG poly . . ? 25.264 34.087 25.618 0 0 2 3 '' 1
+32 O O5 . NAG poly . . ? 23.609 32.842 25.718 -0.43 30 3 3 '' 1
+33 C C5 . NAG poly . . ? 24.194 31.605 25.138 0.2 80 1 3 '' 1
+34 H H5 . NAG poly . . ? 25.035 31.919 24.52 0 0 3 3 '' 1
+35 C C6 . NAG poly . . ? 23.085 30.956 24.277 0.28 90 1 3 '' 1
+36 H H62 . NAG poly . . ? 22.106 31.094 24.736 0 0 3 3 '' 1
+37 H H61 . NAG poly . . ? 23.265 29.883 24.226 0 0 3 3 '' 1
+38 O O6 . NAG poly . . ? 22.953 31.547 22.927 -0.68 90 1 3 '' 1
+39 H H6O . NAG poly . . ? 23.761 31.368 22.441 0.42 40 1 3 '' 1
+40 C C4 . NAG poly . . ? 24.792 30.725 26.134 0.3 20 1 3 '' 1
+41 H H4 . NAG poly . . ? 24.004 30.57 26.871 0 0 3 3 '' 1
+42 C C3 . NAG poly . . ? 25.925 31.459 26.85 0.18 0 1 3 '' 1
+43 H H3 . NAG poly . . ? 26.73 31.748 26.174 0 0 3 3 '' 1
+44 O O3 . NAG poly . . ? 26.428 30.727 28.001 -0.68 10 1 3 '' 1
+45 H H3O . NAG poly . . ? 26.658 29.82 27.785 0.42 30 1 3 '' 1
+46 C C2 . NAG poly . . ? 25.377 32.836 27.393 0.48 0 1 3 '' 1
+47 H H2 . NAG poly . . ? 24.716 32.565 28.216 0 0 3 3 '' 1
+48 N N2 . NAG poly . . ? 26.373 33.719 28.074 -0.72 20 1 3 '' 1
+49 H H2N . NAG poly . . ? 27.109 34.166 27.547 0.3 0 4 3 '' 1
+50 C C2N . NAG poly . . ? 26.487 33.887 29.397 0.64 80 1 3 '' 1
+51 O O2N . NAG poly . . ? 25.81 33.286 30.2 -0.57 60 2 3 '' 1
+52 C CME . NAG poly . . ? 27.601 34.934 29.759 0.03 40 1 3 '' 1
+53 H H3M . NAG poly . . ? 27.087 35.885 29.899 0 0 5 3 '' 1
+54 H H2M . NAG poly . . ? 28.022 34.53 30.68 0 0 5 3 '' 1
+55 H H1M . NAG poly . . ? 28.408 34.938 29.026 0 0 5 3 '' 1
+56 O O4 . NAG poly . . ? 25.202 29.467 25.509 -0.47 40 3 3 '' 1
+57 C C1 . BMA poly . . ? 24.877 28.262 26.241 0.31 40 1 4 '' 1
+58 H H1 . BMA poly . . ? 23.794 28.267 26.369 0 0 2 4 '' 1
+59 O O5 . BMA poly . . ? 25.564 28.156 27.563 -0.39 30 3 4 '' 1
+60 C C5 . BMA poly . . ? 25.288 26.957 28.412 0.2 60 1 4 '' 1
+61 H H5 . BMA poly . . ? 24.208 26.853 28.517 0 0 3 4 '' 1
+62 C C6 . BMA poly . . ? 25.945 27.097 29.751 0.27 30 1 4 '' 1
+63 H H62 . BMA poly . . ? 25.4 26.369 30.352 0 0 3 4 '' 1
+64 H H61 . BMA poly . . ? 25.776 28.128 30.064 0 0 3 4 '' 1
+65 O O6 . BMA poly . . ? 27.415 26.927 29.596 -0.45 50 3 4 '' 1
+66 C C4 . BMA poly . . ? 25.646 25.73 27.609 0.34 90 1 4 '' 1
+67 H H4 . BMA poly . . ? 26.722 25.84 27.472 0 0 3 4 '' 1
+68 O O4 . BMA poly . . ? 25.379 24.548 28.387 -0.74 60 1 4 '' 1
+69 H H4O . BMA poly . . ? 25.86 23.794 28.037 0.44 30 1 4 '' 1
+70 C C3 . BMA poly . . ? 24.942 25.658 26.209 0.26 30 1 4 '' 1
+71 H H3 . BMA poly . . ? 23.869 25.612 26.396 0 0 3 4 '' 1
+72 C C2 . BMA poly . . ? 25.245 26.976 25.438 0.24 10 1 4 '' 1
+73 H H2 . BMA poly . . ? 24.695 27.071 24.501 0 0 3 4 '' 1
+74 O O2 . BMA poly . . ? 26.718 27.071 25.116 -0.66 40 1 4 '' 1
+75 H H2O . BMA poly . . ? 26.794 27.748 24.44 0.43 10 1 4 '' 1
+76 O O3 . BMA poly . . ? 25.555 24.446 25.522 -0.45 60 3 4 '' 1
+77 C C1 . MAN poly . . ? 28.101 26.642 30.889 0.43 30 1 5 '' 1
+78 H H1 . MAN poly . . ? 27.9 27.436 31.608 0 0 2 5 '' 1
+79 C C2 . MAN poly . . ? 29.611 26.717 30.61 0.24 50 1 5 '' 1
+80 H H2 . MAN poly . . ? 29.82 27.645 30.079 0 0 3 5 '' 1
+81 O O2 . MAN poly . . ? 30.409 26.615 31.829 -0.71 70 1 5 '' 1
+82 H H2O . MAN poly . . ? 30.502 27.397 32.379 0.44 60 1 5 '' 1
+83 C C3 . MAN poly . . ? 30.005 25.515 29.683 0.25 20 1 5 '' 1
+84 H H3 . MAN poly . . ? 29.407 25.545 28.773 0 0 3 5 '' 1
+85 C C4 . MAN poly . . ? 29.741 24.191 30.479 0.32 60 1 5 '' 1
+86 H H4 . MAN poly . . ? 30.195 24.121 31.468 0 0 3 5 '' 1
+87 C C5 . MAN poly . . ? 28.194 24.102 30.7 0.27 60 1 5 '' 1
+88 H H5 . MAN poly . . ? 27.832 24.041 29.674 0 0 3 5 '' 1
+89 C C6 . MAN poly . . ? 27.597 22.86 31.367 0.26 60 1 5 '' 1
+90 H H62 . MAN poly . . ? 26.513 22.819 31.479 0 0 3 5 '' 1
+91 H H61 . MAN poly . . ? 27.838 22.052 30.676 0 0 3 5 '' 1
+92 O O6 . MAN poly . . ? 28.395 22.566 32.507 -0.46 0 3 5 '' 1
+93 O O5 . MAN poly . . ? 27.755 25.339 31.488 -0.5 70 3 5 '' 1
+94 O O4 . MAN poly . . ? 30.238 23.111 29.607 -0.73 30 1 5 '' 1
+95 H H4O . MAN poly . . ? 31.178 23.076 29.798 0.43 80 1 5 '' 1
+96 O O3 . MAN poly . . ? 31.482 25.646 29.305 -0.45 90 3 5 '' 1
+97 C C1 . MAN poly . . ? 28 21.347 33.236 0.43 30 1 6 '' 1
+98 H H1 . MAN poly . . ? 26.911 21.313 33.189 0 0 2 6 '' 1
+99 C C2 . MAN poly . . ? 28.369 21.267 34.709 0.24 50 1 6 '' 1
+100 H H2 . MAN poly . . ? 27.871 22.055 35.274 0 0 3 6 '' 1
+101 C C3 . MAN poly . . ? 29.863 21.301 34.848 0.25 20 1 6 '' 1
+102 H H3 . MAN poly . . ? 30.208 22.312 34.629 0 0 3 6 '' 1
+103 C C4 . MAN poly . . ? 30.561 20.243 33.907 0.32 60 1 6 '' 1
+104 H H4 . MAN poly . . ? 30.387 19.218 34.234 0 0 3 6 '' 1
+105 C C5 . MAN poly . . ? 30.055 20.198 32.436 0.27 60 1 6 '' 1
+106 H H5 . MAN poly . . ? 30.396 21.064 31.87 0 0 3 6 '' 1
+107 C C6 . MAN poly . . ? 30.553 18.941 31.706 0.26 60 1 6 '' 1
+108 H H62 . MAN poly . . ? 31.63 18.987 31.543 0 0 3 6 '' 1
+109 H H61 . MAN poly . . ? 30.326 18.016 32.235 0 0 3 6 '' 1
+110 O O6 . MAN poly . . ? 29.807 18.891 30.478 -0.68 80 1 6 '' 1
+111 H H6O . MAN poly . . ? 29.929 17.984 30.187 0.42 20 1 6 '' 1
+112 O O5 . MAN poly . . ? 28.528 20.26 32.457 -0.5 70 3 6 '' 1
+113 O O4 . MAN poly . . ? 31.947 20.391 33.948 -0.73 30 1 6 '' 1
+114 H H4O . MAN poly . . ? 32.272 19.531 34.223 0.43 80 1 6 '' 1
+115 O O3 . MAN poly . . ? 30.236 21.118 36.182 -0.69 60 1 6 '' 1
+116 H H3O . MAN poly . . ? 30.022 20.237 36.498 0.43 10 1 6 '' 1
+117 O O2 . MAN poly . . ? 27.904 19.931 35.157 -0.46 50 3 6 '' 1
+118 C C1 . MAN poly . . ? 26.656 19.911 35.971 0.43 30 1 7 '' 1
+119 H H1 . MAN poly . . ? 26.778 20.474 36.897 0 0 2 7 '' 1
+120 C C2 . MAN poly . . ? 26.42 18.456 36.545 0.24 50 1 7 '' 1
+121 H H2 . MAN poly . . ? 27.372 18.152 36.981 0 0 3 7 '' 1
+122 C C3 . MAN poly . . ? 26.045 17.523 35.372 0.25 20 1 7 '' 1
+123 H H3 . MAN poly . . ? 26.9 17.462 34.699 0 0 3 7 '' 1
+124 C C4 . MAN poly . . ? 24.925 18.039 34.408 0.32 60 1 7 '' 1
+125 H H4 . MAN poly . . ? 23.949 18.017 34.893 0 0 3 7 '' 1
+126 C C5 . MAN poly . . ? 25.121 19.457 33.929 0.27 60 1 7 '' 1
+127 H H5 . MAN poly . . ? 25.841 19.609 33.125 0 0 3 7 '' 1
+128 C C6 . MAN poly . . ? 23.747 19.99 33.296 0.26 60 1 7 '' 1
+129 H H62 . MAN poly . . ? 23.501 19.552 32.329 0 0 3 7 '' 1
+130 H H61 . MAN poly . . ? 22.959 19.744 34.009 0 0 3 7 '' 1
+131 O O6 . MAN poly . . ? 23.893 21.422 33.049 -0.68 80 1 7 '' 1
+132 H H6O . MAN poly . . ? 24.314 21.925 33.75 0.42 20 1 7 '' 1
+133 O O5 . MAN poly . . ? 25.553 20.328 35.091 -0.5 70 3 7 '' 1
+134 O O4 . MAN poly . . ? 24.952 17.232 33.195 -0.73 30 1 7 '' 1
+135 H H4O . MAN poly . . ? 25.671 17.592 32.671 0.43 80 1 7 '' 1
+136 O O3 . MAN poly . . ? 25.809 16.156 35.828 -0.69 60 1 7 '' 1
+137 H H3O . MAN poly . . ? 26.519 15.762 36.34 0.43 10 1 7 '' 1
+138 O O2 . MAN poly . . ? 25.325 18.533 37.565 -0.71 70 1 7 '' 1
+139 H H2O . MAN poly . . ? 25.527 17.902 38.259 0.44 60 1 7 '' 1
+140 C C1 . MAN poly . . ? 31.837 26.098 27.971 0.43 30 1 8 '' 1
+141 H H1 . MAN poly . . ? 31.139 25.613 27.288 0 0 2 8 '' 1
+142 C C2 . MAN poly . . ? 33.274 25.669 27.529 0.24 50 1 8 '' 1
+143 H H2 . MAN poly . . ? 33.382 24.589 27.632 0 0 3 8 '' 1
+144 C C3 . MAN poly . . ? 34.324 26.293 28.464 0.25 20 1 8 '' 1
+145 H H3 . MAN poly . . ? 34.23 25.851 29.455 0 0 3 8 '' 1
+146 C C4 . MAN poly . . ? 34.058 27.815 28.581 0.32 60 1 8 '' 1
+147 H H4 . MAN poly . . ? 34.56 28.249 27.716 0 0 3 8 '' 1
+148 C C5 . MAN poly . . ? 32.648 28.37 28.777 0.27 60 1 8 '' 1
+149 H H5 . MAN poly . . ? 32.365 28.215 29.818 0 0 3 8 '' 1
+150 C C6 . MAN poly . . ? 32.499 29.846 28.513 0.26 60 1 8 '' 1
+151 H H62 . MAN poly . . ? 31.637 30.229 29.059 0 0 3 8 '' 1
+152 H H61 . MAN poly . . ? 33.352 30.277 29.038 0 0 3 8 '' 1
+153 O O6 . MAN poly . . ? 32.372 30.259 27.113 -0.68 80 1 8 '' 1
+154 H H6O . MAN poly . . ? 33.09 30.837 26.844 0.42 20 1 8 '' 1
+155 O O5 . MAN poly . . ? 31.729 27.552 27.903 -0.5 70 3 8 '' 1
+156 O O4 . MAN poly . . ? 34.72 28.287 29.805 -0.73 30 1 8 '' 1
+157 H H4O . MAN poly . . ? 35.609 27.926 29.828 0.43 80 1 8 '' 1
+158 O O3 . MAN poly . . ? 35.632 26.02 27.91 -0.69 60 1 8 '' 1
+159 H H3O . MAN poly . . ? 35.795 26.368 27.031 0.43 10 1 8 '' 1
+160 O O2 . MAN poly . . ? 33.537 26.059 26.22 -0.46 50 3 8 '' 1
+161 C C1 . MAN poly . . ? 33.281 25.019 25.17 0.43 30 1 9 '' 1
+162 H H1 . MAN poly . . ? 33.779 24.06 25.312 0 0 2 9 '' 1
+163 C C2 . MAN poly . . ? 34.011 25.459 23.883 0.24 50 1 9 '' 1
+164 H H2 . MAN poly . . ? 35.079 25.617 24.031 0 0 3 9 '' 1
+165 C C3 . MAN poly . . ? 33.426 26.848 23.343 0.25 20 1 9 '' 1
+166 H H3 . MAN poly . . ? 33.709 27.647 24.029 0 0 3 9 '' 1
+167 C C4 . MAN poly . . ? 31.941 26.685 23.179 0.32 60 1 9 '' 1
+168 H H4 . MAN poly . . ? 31.778 25.982 22.362 0 0 3 9 '' 1
+169 C C5 . MAN poly . . ? 31.177 26.125 24.469 0.27 60 1 9 '' 1
+170 H H5 . MAN poly . . ? 31.264 26.893 25.237 0 0 3 9 '' 1
+171 C C6 . MAN poly . . ? 29.676 25.883 24.23 0.26 60 1 9 '' 1
+172 H H62 . MAN poly . . ? 29.252 26.737 23.702 0 0 3 9 '' 1
+173 H H61 . MAN poly . . ? 29.471 25.005 23.618 0 0 3 9 '' 1
+174 O O6 . MAN poly . . ? 29.136 25.816 25.526 -0.68 80 1 9 '' 1
+175 H H6O . MAN poly . . ? 28.221 26.092 25.432 0.42 20 1 9 '' 1
+176 O O5 . MAN poly . . ? 31.868 24.876 24.893 -0.5 70 3 9 '' 1
+177 O O4 . MAN poly . . ? 31.291 27.953 22.822 -0.73 30 1 9 '' 1
+178 H H4O . MAN poly . . ? 31.541 28.607 23.478 0.43 80 1 9 '' 1
+179 O O3 . MAN poly . . ? 34.134 27.216 22.12 -0.69 60 1 9 '' 1
+180 H H3O . MAN poly . . ? 33.48 27.292 21.421 0.43 10 1 9 '' 1
+181 O O2 . MAN poly . . ? 33.943 24.37 22.879 -0.71 70 1 9 '' 1
+182 H H2O . MAN poly . . ? 34.283 24.711 22.048 0.44 60 1 9 '' 1
+183 C C1 . MAN poly . . ? 24.581 23.357 25.29 0.43 30 1 10 '' 1
+184 H H1 . MAN poly . . ? 24.236 23.039 26.273 0 0 2 10 '' 1
+185 C C2 . MAN poly . . ? 25.253 22.151 24.6 0.24 50 1 10 '' 1
+186 H H2 . MAN poly . . ? 26.138 21.909 25.189 0 0 3 10 '' 1
+187 C C3 . MAN poly . . ? 25.674 22.456 23.165 0.25 20 1 10 '' 1
+188 H H3 . MAN poly . . ? 26.508 23.155 23.105 0 0 3 10 '' 1
+189 C C4 . MAN poly . . ? 24.487 22.987 22.366 0.32 60 1 10 '' 1
+190 H H4 . MAN poly . . ? 23.84 22.126 22.197 0 0 3 10 '' 1
+191 C C5 . MAN poly . . ? 23.718 24.144 23.01 0.27 60 1 10 '' 1
+192 H H5 . MAN poly . . ? 24.281 25.07 23.129 0 0 3 10 '' 1
+193 C C6 . MAN poly . . ? 22.357 24.479 22.356 0.26 60 1 10 '' 1
+194 H H62 . MAN poly . . ? 21.89 25.429 22.617 0 0 3 10 '' 1
+195 H H61 . MAN poly . . ? 22.502 24.497 21.276 0 0 3 10 '' 1
+196 O O6 . MAN poly . . ? 21.402 23.38 22.628 -0.68 80 1 10 '' 1
+197 H H6O . MAN poly . . ? 20.889 23.245 21.828 0.42 20 1 10 '' 1
+198 O O5 . MAN poly . . ? 23.421 23.848 24.451 -0.5 70 3 10 '' 1
+199 O O4 . MAN poly . . ? 25.01 23.47 21.095 -0.73 30 1 10 '' 1
+200 H H4O . MAN poly . . ? 24.426 23.037 20.469 0.43 80 1 10 '' 1
+201 O O3 . MAN poly . . ? 26.131 21.199 22.569 -0.69 60 1 10 '' 1
+202 H H3O . MAN poly . . ? 27.054 21.13 22.824 0.43 10 1 10 '' 1
+203 O O2 . MAN poly . . ? 24.372 20.901 24.611 -0.46 50 3 10 '' 1
+204 C C1 . MAN poly . . ? 24.671 19.97 25.736 0.43 30 1 11 '' 1
+205 H H1 . MAN poly . . ? 25.739 19.767 25.657 0 0 2 11 '' 1
+206 C C2 . MAN poly . . ? 23.795 18.735 25.436 0.24 50 1 11 '' 1
+207 H H2 . MAN poly . . ? 23.877 18.411 24.398 0 0 3 11 '' 1
+208 C C3 . MAN poly . . ? 22.287 18.987 25.757 0.25 20 1 11 '' 1
+209 H H3 . MAN poly . . ? 21.891 19.593 24.942 0 0 3 11 '' 1
+210 C C4 . MAN poly . . ? 21.898 19.814 27.034 0.32 60 1 11 '' 1
+211 H H4 . MAN poly . . ? 21.907 19.147 27.896 0 0 3 11 '' 1
+212 C C5 . MAN poly . . ? 22.954 20.908 27.306 0.27 60 1 11 '' 1
+213 H H5 . MAN poly . . ? 22.705 21.608 26.509 0 0 3 11 '' 1
+214 C C6 . MAN poly . . ? 22.834 21.687 28.644 0.26 60 1 11 '' 1
+215 H H62 . MAN poly . . ? 23.388 22.604 28.441 0 0 3 11 '' 1
+216 H H61 . MAN poly . . ? 21.782 21.848 28.879 0 0 3 11 '' 1
+217 O O6 . MAN poly . . ? 23.431 20.976 29.757 -0.68 80 1 11 '' 1
+218 H H6O . MAN poly . . ? 23.335 21.468 30.576 0.42 20 1 11 '' 1
+219 O O5 . MAN poly . . ? 24.338 20.489 27.076 -0.5 70 3 11 '' 1
+220 O O4 . MAN poly . . ? 20.561 20.438 27.011 -0.73 30 1 11 '' 1
+221 H H4O . MAN poly . . ? 19.989 19.669 26.955 0.43 80 1 11 '' 1
+222 O O3 . MAN poly . . ? 21.518 17.753 25.661 -0.69 60 1 11 '' 1
+223 H H3O . MAN poly . . ? 20.713 17.968 25.183 0.43 10 1 11 '' 1
+224 O O2 . MAN poly . . ? 24.263 17.613 26.37 -0.46 50 3 11 '' 1
+225 C C1 . MAN poly . . ? 25.125 16.66 25.692 0.43 30 1 12 '' 1
+226 H H1 . MAN poly . . ? 24.687 16.447 24.717 0 0 2 12 '' 1
+227 C C2 . MAN poly . . ? 25.201 15.306 26.523 0.24 50 1 12 '' 1
+228 H H2 . MAN poly . . ? 24.21 14.921 26.763 0 0 3 12 '' 1
+229 C C3 . MAN poly . . ? 25.633 15.64 27.922 0.25 20 1 12 '' 1
+230 H H3 . MAN poly . . ? 24.984 16.409 28.34 0 0 3 12 '' 1
+231 C C4 . MAN poly . . ? 27.064 16.217 27.915 0.32 60 1 12 '' 1
+232 H H4 . MAN poly . . ? 27.781 15.413 27.749 0 0 3 12 '' 1
+233 C C5 . MAN poly . . ? 27.223 17.4 26.872 0.27 60 1 12 '' 1
+234 H H5 . MAN poly . . ? 26.78 18.252 27.387 0 0 3 12 '' 1
+235 C C6 . MAN poly . . ? 28.735 17.578 26.683 0.26 60 1 12 '' 1
+236 H H62 . MAN poly . . ? 28.819 18.392 25.963 0 0 3 12 '' 1
+237 H H61 . MAN poly . . ? 29.258 18.045 27.517 0 0 3 12 '' 1
+238 O O6 . MAN poly . . ? 29.442 16.409 26.285 -0.68 80 1 12 '' 1
+239 H H6O . MAN poly . . ? 29.091 16.212 25.413 0.42 20 1 12 '' 1
+240 O O5 . MAN poly . . ? 26.498 17.242 25.532 -0.5 70 3 12 '' 1
+241 O O4 . MAN poly . . ? 27.447 16.856 29.183 -0.73 30 1 12 '' 1
+242 H H4O . MAN poly . . ? 28.395 16.746 29.284 0.43 80 1 12 '' 1
+243 O O3 . MAN poly . . ? 25.654 14.453 28.786 -0.69 60 1 12 '' 1
+244 H H3O . MAN poly . . ? 25.904 14.627 29.696 0.43 10 1 12 '' 1
+245 O O2 . MAN poly . . ? 26.129 14.289 25.913 -0.71 70 1 12 '' 1
+246 H H2O . MAN poly . . ? 25.766 13.409 26.038 0.44 60 1 12 '' 1
+
+_WURCS
+'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
+_GlyTouCan G39578OU
+
+data_confConvertedPDB/
+_entry.id confConvertedPDB
+
+_cell.entry_id confConvertedPDB
+_cell.length_a 1
+_cell.length_b 1
+_cell.length_c 1
+_cell.angle_alpha 90
+_cell.angle_beta 90
+_cell.angle_gamma 90
+
+_symmetry.entry_id confConvertedPDB
+_symmetry.space_group_name_H-M ''
+
+
+
+
+loop_
+_chem_comp.id
+_chem_comp.type
+BMA .
+MAN .
+NAG .
+NDG .
+
+loop_
+_struct_asym.id
+_struct_asym.entity_id
+poly ?
+
+loop_
+_struct_conn.id
+_struct_conn.conn_type_id
+_struct_conn.ptnr1_auth_asym_id
+_struct_conn.ptnr1_label_asym_id
+_struct_conn.ptnr1_label_comp_id
+_struct_conn.ptnr1_label_seq_id
+_struct_conn.ptnr1_label_atom_id
+_struct_conn.pdbx_ptnr1_label_alt_id
+_struct_conn.ptnr1_auth_seq_id
+_struct_conn.pdbx_ptnr1_PDB_ins_code
+_struct_conn.ptnr1_symmetry
+_struct_conn.ptnr2_auth_asym_id
+_struct_conn.ptnr2_label_asym_id
+_struct_conn.ptnr2_label_comp_id
+_struct_conn.ptnr2_label_seq_id
+_struct_conn.ptnr2_label_atom_id
+_struct_conn.pdbx_ptnr2_label_alt_id
+_struct_conn.ptnr2_auth_seq_id
+_struct_conn.pdbx_ptnr2_PDB_ins_code
+_struct_conn.ptnr2_symmetry
+_struct_conn.details
+_struct_conn.pdbx_dist_value
+'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.4796
+'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4842
+'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4554
+'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4338
+'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4557
+'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4510
+'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4444
+'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4680
+'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4492
+'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4605
+
+loop_
+_struct_conn_type.id
+covale
+
+
+loop_
+_atom_type.symbol
+H
+C
+N
+O
+
+
+loop_
+_atom_site.id
+_atom_site.type_symbol
+_atom_site.label_atom_id
+_atom_site.label_alt_id
+_atom_site.label_comp_id
+_atom_site.label_asym_id
+_atom_site.label_entity_id
+_atom_site.label_seq_id
+_atom_site.pdbx_PDB_ins_code
+_atom_site.Cartn_x
+_atom_site.Cartn_y
+_atom_site.Cartn_z
+_atom_site.occupancy
+_atom_site.B_iso_or_equiv
+_atom_site.pdbx_formal_charge
+_atom_site.auth_seq_id
+_atom_site.auth_asym_id
+_atom_site.pdbx_PDB_model_num
+1 H HO1 . NDG poly . . ? 29.637 18.271 18.122 0.44 50 1 2 '' 1
+2 O O1 . NDG poly . . ? 29.245 17.635 18.725 -0.63 90 1 2 '' 1
+3 C C1 . NDG poly . . ? 30.126 17.708 19.878 0.46 80 1 2 '' 1
+4 H H1 . NDG poly . . ? 30.832 16.878 19.834 0 0 2 2 '' 1
+5 C C2 . NDG poly . . ? 29.324 17.531 21.179 0.24 50 1 2 '' 1
+6 H H2 . NDG poly . . ? 30.027 17.183 21.936 0 0 3 2 '' 1
+7 N N2 . NDG poly . . ? 28.363 16.373 21.172 -0.55 20 1 2 '' 1
+8 H H2N . NDG poly . . ? 27.381 16.572 21.043 0.23 60 4 2 '' 1
+9 C C2N . NDG poly . . ? 28.857 15.133 21.228 0.58 80 1 2 '' 1
+10 C CME . NDG poly . . ? 27.979 13.956 21.427 0.06 30 1 2 '' 1
+11 H H3M . NDG poly . . ? 28.426 12.974 21.583 0 0 5 2 '' 1
+12 H H2M . NDG poly . . ? 27.471 14.294 22.331 0 0 5 2 '' 1
+13 H H1M . NDG poly . . ? 27.302 13.866 20.578 0 0 5 2 '' 1
+14 O O2N . NDG poly . . ? 30.082 14.911 21.28 -0.57 90 2 2 '' 1
+15 C C3 . NDG poly . . ? 28.618 18.821 21.686 0.16 50 1 2 '' 1
+16 H H3 . NDG poly . . ? 27.709 18.891 21.088 0 0 3 2 '' 1
+17 O O3 . NDG poly . . ? 28.422 18.713 23.077 -0.63 0 1 2 '' 1
+18 H H3O . NDG poly . . ? 27.964 19.491 23.404 0.41 30 1 2 '' 1
+19 C C4 . NDG poly . . ? 29.454 20.112 21.562 0.32 20 1 2 '' 1
+20 H H4 . NDG poly . . ? 30.214 19.967 22.33 0 0 3 2 '' 1
+21 C C5 . NDG poly . . ? 29.997 20.252 20.185 0.24 60 1 2 '' 1
+22 H H5 . NDG poly . . ? 29.086 20.239 19.586 0 0 3 2 '' 1
+23 C C6 . NDG poly . . ? 30.902 21.463 19.991 0.32 80 1 2 '' 1
+24 H H62 . NDG poly . . ? 30.228 22.317 20.062 0 0 3 2 '' 1
+25 H H61 . NDG poly . . ? 31.443 21.381 19.049 0 0 3 2 '' 1
+26 O O6 . NDG poly . . ? 31.895 21.604 21.026 -0.68 80 1 2 '' 1
+27 H H6O . NDG poly . . ? 32.472 22.34 20.809 0.42 10 1 2 '' 1
+28 O O5 . NDG poly . . ? 30.808 19.048 19.815 -0.56 80 3 2 '' 1
+29 O O4 . NDG poly . . ? 28.571 21.31 21.882 -0.47 80 3 2 '' 1
+30 C C1 . NAG poly . . ? 28.527 21.898 23.239 0.28 70 1 3 '' 1
+31 H H1 . NAG poly . . ? 29.565 22.132 23.473 0 0 2 3 '' 1
+32 O O5 . NAG poly . . ? 27.933 20.949 24.308 -0.43 30 3 3 '' 1
+33 C C5 . NAG poly . . ? 27.853 21.452 25.689 0.2 80 1 3 '' 1
+34 H H5 . NAG poly . . ? 28.878 21.743 25.918 0 0 3 3 '' 1
+35 C C6 . NAG poly . . ? 27.512 20.373 26.662 0.28 90 1 3 '' 1
+36 H H62 . NAG poly . . ? 27.983 20.617 27.614 0 0 3 3 '' 1
+37 H H61 . NAG poly . . ? 28.181 19.574 26.341 0 0 3 3 '' 1
+38 O O6 . NAG poly . . ? 26.127 20.045 26.737 -0.68 90 1 3 '' 1
+39 H H6O . NAG poly . . ? 26.023 19.192 26.309 0.42 40 1 3 '' 1
+40 C C4 . NAG poly . . ? 26.972 22.719 25.67 0.3 20 1 3 '' 1
+41 H H4 . NAG poly . . ? 25.98 22.472 25.291 0 0 3 3 '' 1
+42 C C3 . NAG poly . . ? 27.609 23.743 24.737 0.18 0 1 3 '' 1
+43 H H3 . NAG poly . . ? 28.6 23.943 25.144 0 0 3 3 '' 1
+44 O O3 . NAG poly . . ? 26.747 24.944 24.875 -0.68 10 1 3 '' 1
+45 H H3O . NAG poly . . ? 27.004 25.357 25.703 0.42 30 1 3 '' 1
+46 C C2 . NAG poly . . ? 27.754 23.232 23.211 0.48 0 1 3 '' 1
+47 H H2 . NAG poly . . ? 26.808 23.054 22.7 0 0 3 3 '' 1
+48 N N2 . NAG poly . . ? 28.415 24.232 22.351 -0.72 20 1 3 '' 1
+49 H H2N . NAG poly . . ? 29.238 24.595 22.811 0.3 0 4 3 '' 1
+50 C C2N . NAG poly . . ? 27.944 24.821 21.256 0.64 80 1 3 '' 1
+51 O O2N . NAG poly . . ? 26.775 24.564 20.915 -0.57 60 2 3 '' 1
+52 C CME . NAG poly . . ? 28.925 25.686 20.519 0.03 40 1 3 '' 1
+53 H H3M . NAG poly . . ? 28.498 26.204 19.66 0 0 5 3 '' 1
+54 H H2M . NAG poly . . ? 29.395 26.411 21.184 0 0 5 3 '' 1
+55 H H1M . NAG poly . . ? 29.693 24.993 20.176 0 0 5 3 '' 1
+56 O O4 . NAG poly . . ? 27.075 23.276 27.096 -0.47 40 3 3 '' 1
+57 C C1 . BMA poly . . ? 25.774 23.521 27.767 0.31 40 1 4 '' 1
+58 H H1 . BMA poly . . ? 25.23 22.577 27.733 0 0 2 4 '' 1
+59 O O5 . BMA poly . . ? 24.892 24.485 27.086 -0.39 30 3 4 '' 1
+60 C C5 . BMA poly . . ? 23.558 24.66 27.715 0.2 60 1 4 '' 1
+61 H H5 . BMA poly . . ? 23.062 23.69 27.671 0 0 3 4 '' 1
+62 C C6 . BMA poly . . ? 22.77 25.804 26.989 0.27 30 1 4 '' 1
+63 H H62 . BMA poly . . ? 22.253 26.396 27.744 0 0 3 4 '' 1
+64 H H61 . BMA poly . . ? 21.969 25.326 26.425 0 0 3 4 '' 1
+65 O O6 . BMA poly . . ? 23.524 26.599 26.018 -0.45 50 3 4 '' 1
+66 C C4 . BMA poly . . ? 23.766 24.975 29.213 0.34 90 1 4 '' 1
+67 H H4 . BMA poly . . ? 24.156 25.992 29.221 0 0 3 4 '' 1
+68 O O4 . BMA poly . . ? 22.432 25.015 29.917 -0.74 60 1 4 '' 1
+69 H H4O . BMA poly . . ? 22.517 25.647 30.635 0.44 30 1 4 '' 1
+70 C C3 . BMA poly . . ? 24.75 24.038 29.981 0.26 30 1 4 '' 1
+71 H H3 . BMA poly . . ? 24.285 23.052 29.992 0 0 3 4 '' 1
+72 C C2 . BMA poly . . ? 26.073 23.956 29.21 0.24 10 1 4 '' 1
+73 H H2 . BMA poly . . ? 26.696 23.173 29.642 0 0 3 4 '' 1
+74 O O2 . BMA poly . . ? 26.66 25.231 29.253 -0.66 40 1 4 '' 1
+75 H H2O . BMA poly . . ? 27.556 25.282 28.911 0.43 10 1 4 '' 1
+76 O O3 . BMA poly . . ? 24.996 24.573 31.369 -0.45 60 3 4 '' 1
+77 C C1 . MAN poly . . ? 23.569 28.021 26.196 0.43 30 1 5 '' 1
+78 H H1 . MAN poly . . ? 22.546 28.367 26.342 0 0 2 5 '' 1
+79 C C2 . MAN poly . . ? 24.189 28.668 24.903 0.24 50 1 5 '' 1
+80 H H2 . MAN poly . . ? 23.619 28.231 24.083 0 0 3 5 '' 1
+81 O O2 . MAN poly . . ? 24.133 30.06 24.83 -0.71 70 1 5 '' 1
+82 H H2O . MAN poly . . ? 24.094 30.26 23.892 0.44 60 1 5 '' 1
+83 C C3 . MAN poly . . ? 25.593 28.257 24.766 0.25 20 1 5 '' 1
+84 H H3 . MAN poly . . ? 25.611 27.193 24.529 0 0 3 5 '' 1
+85 C C4 . MAN poly . . ? 26.559 28.437 25.912 0.32 60 1 5 '' 1
+86 H H4 . MAN poly . . ? 26.891 29.469 25.8 0 0 3 5 '' 1
+87 C C5 . MAN poly . . ? 25.867 28.02 27.312 0.27 60 1 5 '' 1
+88 H H5 . MAN poly . . ? 25.787 26.937 27.406 0 0 3 5 '' 1
+89 C C6 . MAN poly . . ? 26.591 28.494 28.508 0.26 60 1 5 '' 1
+90 H H62 . MAN poly . . ? 25.982 28.208 29.365 0 0 3 5 '' 1
+91 H H61 . MAN poly . . ? 27.519 27.921 28.516 0 0 3 5 '' 1
+92 O O6 . MAN poly . . ? 26.891 29.859 28.454 -0.46 0 3 5 '' 1
+93 O O5 . MAN poly . . ? 24.458 28.395 27.379 -0.5 70 3 5 '' 1
+94 O O4 . MAN poly . . ? 27.631 27.528 25.778 -0.73 30 1 5 '' 1
+95 H H4O . MAN poly . . ? 28.4 27.842 25.297 0.43 80 1 5 '' 1
+96 O O3 . MAN poly . . ? 26.164 28.907 23.582 -0.45 90 3 5 '' 1
+97 C C1 . MAN poly . . ? 27.45 30.315 29.713 0.43 30 1 6 '' 1
+98 H H1 . MAN poly . . ? 26.931 30.023 30.626 0 0 2 6 '' 1
+99 C C2 . MAN poly . . ? 27.626 31.869 29.548 0.24 50 1 6 '' 1
+100 H H2 . MAN poly . . ? 26.685 32.264 29.165 0 0 3 6 '' 1
+101 C C3 . MAN poly . . ? 28.623 32.306 28.448 0.25 20 1 6 '' 1
+102 H H3 . MAN poly . . ? 28.129 31.906 27.563 0 0 3 6 '' 1
+103 C C4 . MAN poly . . ? 29.93 31.57 28.655 0.32 60 1 6 '' 1
+104 H H4 . MAN poly . . ? 30.484 31.972 29.503 0 0 3 6 '' 1
+105 C C5 . MAN poly . . ? 29.838 30.065 28.83 0.27 60 1 6 '' 1
+106 H H5 . MAN poly . . ? 29.548 29.669 27.857 0 0 3 6 '' 1
+107 C C6 . MAN poly . . ? 31.203 29.5 29.27 0.26 60 1 6 '' 1
+108 H H62 . MAN poly . . ? 32.028 30.118 28.917 0 0 3 6 '' 1
+109 H H61 . MAN poly . . ? 31.103 29.431 30.353 0 0 3 6 '' 1
+110 O O6 . MAN poly . . ? 31.317 28.116 28.824 -0.68 80 1 6 '' 1
+111 H H6O . MAN poly . . ? 31.985 27.718 29.387 0.42 20 1 6 '' 1
+112 O O5 . MAN poly . . ? 28.819 29.653 29.786 -0.5 70 3 6 '' 1
+113 O O4 . MAN poly . . ? 30.728 31.796 27.453 -0.73 30 1 6 '' 1
+114 H H4O . MAN poly . . ? 31.513 32.314 27.645 0.43 80 1 6 '' 1
+115 O O3 . MAN poly . . ? 28.785 33.758 28.337 -0.69 60 1 6 '' 1
+116 H H3O . MAN poly . . ? 27.918 34.117 28.135 0.43 10 1 6 '' 1
+117 O O2 . MAN poly . . ? 27.994 32.475 30.85 -0.46 50 3 6 '' 1
+118 C C1 . MAN poly . . ? 26.92 32.93 31.702 0.43 30 1 7 '' 1
+119 H H1 . MAN poly . . ? 26.115 33.354 31.101 0 0 2 7 '' 1
+120 C C2 . MAN poly . . ? 27.404 33.956 32.692 0.24 50 1 7 '' 1
+121 H H2 . MAN poly . . ? 27.879 34.799 32.19 0 0 3 7 '' 1
+122 C C3 . MAN poly . . ? 28.446 33.331 33.622 0.25 20 1 7 '' 1
+123 H H3 . MAN poly . . ? 29.249 32.978 32.975 0 0 3 7 '' 1
+124 C C4 . MAN poly . . ? 27.865 32.184 34.495 0.32 60 1 7 '' 1
+125 H H4 . MAN poly . . ? 27.016 32.512 35.096 0 0 3 7 '' 1
+126 C C5 . MAN poly . . ? 27.332 31.195 33.436 0.27 60 1 7 '' 1
+127 H H5 . MAN poly . . ? 28.166 30.863 32.818 0 0 3 7 '' 1
+128 C C6 . MAN poly . . ? 26.774 29.913 33.899 0.26 60 1 7 '' 1
+129 H H62 . MAN poly . . ? 26.65 29.232 33.057 0 0 3 7 '' 1
+130 H H61 . MAN poly . . ? 27.468 29.45 34.601 0 0 3 7 '' 1
+131 O O6 . MAN poly . . ? 25.506 30.186 34.657 -0.68 80 1 7 '' 1
+132 H H6O . MAN poly . . ? 24.99 30.869 34.22 0.42 20 1 7 '' 1
+133 O O5 . MAN poly . . ? 26.361 31.879 32.437 -0.5 70 3 7 '' 1
+134 O O4 . MAN poly . . ? 28.82 31.45 35.319 -0.73 30 1 7 '' 1
+135 H H4O . MAN poly . . ? 29.111 32.063 35.999 0.43 80 1 7 '' 1
+136 O O3 . MAN poly . . ? 28.98 34.336 34.51 -0.69 60 1 7 '' 1
+137 H H3O . MAN poly . . ? 29.504 34.979 34.027 0.43 10 1 7 '' 1
+138 O O2 . MAN poly . . ? 26.31 34.579 33.447 -0.71 70 1 7 '' 1
+139 H H2O . MAN poly . . ? 26.73 35.308 33.909 0.44 60 1 7 '' 1
+140 C C1 . MAN poly . . ? 27.173 28.361 22.686 0.43 30 1 8 '' 1
+141 H H1 . MAN poly . . ? 27.907 27.711 23.164 0 0 2 8 '' 1
+142 C C2 . MAN poly . . ? 27.907 29.643 22.046 0.24 50 1 8 '' 1
+143 H H2 . MAN poly . . ? 28.332 30.276 22.825 0 0 3 8 '' 1
+144 C C3 . MAN poly . . ? 26.875 30.398 21.217 0.25 20 1 8 '' 1
+145 H H3 . MAN poly . . ? 26.082 30.692 21.905 0 0 3 8 '' 1
+146 C C4 . MAN poly . . ? 26.192 29.587 20.142 0.32 60 1 8 '' 1
+147 H H4 . MAN poly . . ? 26.798 29.435 19.249 0 0 3 8 '' 1
+148 C C5 . MAN poly . . ? 25.639 28.277 20.728 0.27 60 1 8 '' 1
+149 H H5 . MAN poly . . ? 24.884 28.488 21.486 0 0 3 8 '' 1
+150 C C6 . MAN poly . . ? 25.144 27.369 19.554 0.26 60 1 8 '' 1
+151 H H62 . MAN poly . . ? 24.502 27.942 18.886 0 0 3 8 '' 1
+152 H H61 . MAN poly . . ? 26.04 27.097 18.996 0 0 3 8 '' 1
+153 O O6 . MAN poly . . ? 24.528 26.197 20.073 -0.68 80 1 8 '' 1
+154 H H6O . MAN poly . . ? 25.271 25.637 20.308 0.42 20 1 8 '' 1
+155 O O5 . MAN poly . . ? 26.535 27.535 21.613 -0.5 70 3 8 '' 1
+156 O O4 . MAN poly . . ? 25.137 30.35 19.644 -0.73 30 1 8 '' 1
+157 H H4O . MAN poly . . ? 24.501 29.932 19.059 0.43 80 1 8 '' 1
+158 O O3 . MAN poly . . ? 27.465 31.645 20.667 -0.69 60 1 8 '' 1
+159 H H3O . MAN poly . . ? 27.32 32.408 21.231 0.43 10 1 8 '' 1
+160 O O2 . MAN poly . . ? 29.108 29.204 21.207 -0.46 50 3 8 '' 1
+161 C C1 . MAN poly . . ? 30.258 30.075 21.479 0.43 30 1 9 '' 1
+162 H H1 . MAN poly . . ? 29.851 31.062 21.259 0 0 2 9 '' 1
+163 C C2 . MAN poly . . ? 31.416 29.647 20.583 0.24 50 1 9 '' 1
+164 H H2 . MAN poly . . ? 31.252 29.565 19.508 0 0 3 9 '' 1
+165 C C3 . MAN poly . . ? 32.015 28.314 20.962 0.25 20 1 9 '' 1
+166 H H3 . MAN poly . . ? 31.346 27.564 20.539 0 0 3 9 '' 1
+167 C C4 . MAN poly . . ? 32.268 28.181 22.532 0.32 60 1 9 '' 1
+168 H H4 . MAN poly . . ? 33.187 28.666 22.861 0 0 3 9 '' 1
+169 C C5 . MAN poly . . ? 31.007 28.559 23.431 0.27 60 1 9 '' 1
+170 H H5 . MAN poly . . ? 30.225 27.857 23.14 0 0 3 9 '' 1
+171 C C6 . MAN poly . . ? 31.264 28.516 24.965 0.26 60 1 9 '' 1
+172 H H62 . MAN poly . . ? 31.476 27.518 25.348 0 0 3 9 '' 1
+173 H H61 . MAN poly . . ? 32.158 29.067 25.255 0 0 3 9 '' 1
+174 O O6 . MAN poly . . ? 29.981 28.967 25.562 -0.68 80 1 9 '' 1
+175 H H6O . MAN poly . . ? 29.873 29.915 25.456 0.42 20 1 9 '' 1
+176 O O5 . MAN poly . . ? 30.655 29.945 22.948 -0.5 70 3 9 '' 1
+177 O O4 . MAN poly . . ? 32.518 26.73 22.77 -0.73 30 1 9 '' 1
+178 H H4O . MAN poly . . ? 33.437 26.574 22.538 0.43 80 1 9 '' 1
+179 O O3 . MAN poly . . ? 33.265 28.117 20.206 -0.69 60 1 9 '' 1
+180 H H3O . MAN poly . . ? 33.17 27.973 19.262 0.43 10 1 9 '' 1
+181 O O2 . MAN poly . . ? 32.466 30.633 20.68 -0.71 70 1 9 '' 1
+182 H H2O . MAN poly . . ? 33.296 30.372 20.274 0.44 60 1 9 '' 1
+183 C C1 . MAN poly . . ? 25.13 23.572 32.417 0.43 30 1 10 '' 1
+184 H H1 . MAN poly . . ? 24.433 22.745 32.285 0 0 2 10 '' 1
+185 C C2 . MAN poly . . ? 24.897 24.099 33.868 0.24 50 1 10 '' 1
+186 H H2 . MAN poly . . ? 23.934 24.605 33.806 0 0 3 10 '' 1
+187 C C3 . MAN poly . . ? 25.989 24.998 34.404 0.25 20 1 10 '' 1
+188 H H3 . MAN poly . . ? 25.96 25.959 33.89 0 0 3 10 '' 1
+189 C C4 . MAN poly . . ? 27.399 24.495 34.177 0.32 60 1 10 '' 1
+190 H H4 . MAN poly . . ? 27.535 23.687 34.896 0 0 3 10 '' 1
+191 C C5 . MAN poly . . ? 27.572 24.053 32.716 0.27 60 1 10 '' 1
+192 H H5 . MAN poly . . ? 27.457 24.872 32.005 0 0 3 10 '' 1
+193 C C6 . MAN poly . . ? 28.966 23.6 32.322 0.26 60 1 10 '' 1
+194 H H62 . MAN poly . . ? 29.028 23.636 31.234 0 0 3 10 '' 1
+195 H H61 . MAN poly . . ? 29.748 24.279 32.663 0 0 3 10 '' 1
+196 O O6 . MAN poly . . ? 29.287 22.27 32.836 -0.68 80 1 10 '' 1
+197 H H6O . MAN poly . . ? 29.715 22.313 33.695 0.42 20 1 10 '' 1
+198 O O5 . MAN poly . . ? 26.511 23.068 32.315 -0.5 70 3 10 '' 1
+199 O O4 . MAN poly . . ? 28.301 25.63 34.521 -0.73 30 1 10 '' 1
+200 H H4O . MAN poly . . ? 28.427 25.618 35.472 0.43 80 1 10 '' 1
+201 O O3 . MAN poly . . ? 25.649 25.269 35.791 -0.69 60 1 10 '' 1
+202 H H3O . MAN poly . . ? 26.25 24.764 36.344 0.43 10 1 10 '' 1
+203 O O2 . MAN poly . . ? 24.846 22.906 34.708 -0.46 50 3 10 '' 1
+204 C C1 . MAN poly . . ? 23.617 22.161 34.894 0.43 30 1 11 '' 1
+205 H H1 . MAN poly . . ? 22.869 22.952 34.836 0 0 2 11 '' 1
+206 C C2 . MAN poly . . ? 23.64 21.425 36.227 0.24 50 1 11 '' 1
+207 H H2 . MAN poly . . ? 24.042 21.984 37.072 0 0 3 11 '' 1
+208 C C3 . MAN poly . . ? 24.516 20.176 36.134 0.25 20 1 11 '' 1
+209 H H3 . MAN poly . . ? 25.532 20.551 36.013 0 0 3 11 '' 1
+210 C C4 . MAN poly . . ? 24.184 19.301 34.932 0.32 60 1 11 '' 1
+211 H H4 . MAN poly . . ? 23.263 18.76 35.149 0 0 3 11 '' 1
+212 C C5 . MAN poly . . ? 24.068 20.092 33.589 0.27 60 1 11 '' 1
+213 H H5 . MAN poly . . ? 25.095 20.383 33.367 0 0 3 11 '' 1
+214 C C6 . MAN poly . . ? 23.538 19.165 32.458 0.26 60 1 11 '' 1
+215 H H62 . MAN poly . . ? 22.828 18.401 32.775 0 0 3 11 '' 1
+216 H H61 . MAN poly . . ? 23.068 19.87 31.772 0 0 3 11 '' 1
+217 O O6 . MAN poly . . ? 24.578 18.516 31.723 -0.68 80 1 11 '' 1
+218 H H6O . MAN poly . . ? 24.638 18.912 30.851 0.42 20 1 11 '' 1
+219 O O5 . MAN poly . . ? 23.275 21.361 33.776 -0.5 70 3 11 '' 1
+220 O O4 . MAN poly . . ? 25.236 18.275 34.7 -0.73 30 1 11 '' 1
+221 H H4O . MAN poly . . ? 24.89 17.423 34.975 0.43 80 1 11 '' 1
+222 O O3 . MAN poly . . ? 24.598 19.418 37.374 -0.69 60 1 11 '' 1
+223 H H3O . MAN poly . . ? 24.427 20.051 38.075 0.43 10 1 11 '' 1
+224 O O2 . MAN poly . . ? 22.291 20.973 36.611 -0.46 50 3 11 '' 1
+225 C C1 . MAN poly . . ? 21.574 21.893 37.49 0.43 30 1 12 '' 1
+226 H H1 . MAN poly . . ? 22.118 22.058 38.42 0 0 2 12 '' 1
+227 C C2 . MAN poly . . ? 20.267 21.172 37.907 0.24 50 1 12 '' 1
+228 H H2 . MAN poly . . ? 20.517 20.178 38.28 0 0 3 12 '' 1
+229 C C3 . MAN poly . . ? 19.322 21.008 36.675 0.25 20 1 12 '' 1
+230 H H3 . MAN poly . . ? 19.784 20.329 35.959 0 0 3 12 '' 1
+231 C C4 . MAN poly . . ? 19.05 22.432 35.981 0.32 60 1 12 '' 1
+232 H H4 . MAN poly . . ? 18.585 23.114 36.694 0 0 3 12 '' 1
+233 C C5 . MAN poly . . ? 20.38 22.991 35.572 0.27 60 1 12 '' 1
+234 H H5 . MAN poly . . ? 20.84 22.302 34.864 0 0 3 12 '' 1
+235 C C6 . MAN poly . . ? 20.337 24.321 34.77 0.26 60 1 12 '' 1
+236 H H62 . MAN poly . . ? 21.305 24.815 34.689 0 0 3 12 '' 1
+237 H H61 . MAN poly . . ? 20.016 24.074 33.758 0 0 3 12 '' 1
+238 O O6 . MAN poly . . ? 19.39 25.358 35.255 -0.68 80 1 12 '' 1
+239 H H6O . MAN poly . . ? 18.565 25.376 34.764 0.42 20 1 12 '' 1
+240 O O5 . MAN poly . . ? 21.247 23.194 36.736 -0.5 70 3 12 '' 1
+241 O O4 . MAN poly . . ? 18.168 22.31 34.823 -0.73 30 1 12 '' 1
+242 H H4O . MAN poly . . ? 17.869 23.181 34.554 0.43 80 1 12 '' 1
+243 O O3 . MAN poly . . ? 18.073 20.471 37.104 -0.69 60 1 12 '' 1
+244 H H3O . MAN poly . . ? 17.462 20.627 36.38 0.43 10 1 12 '' 1
+245 O O2 . MAN poly . . ? 19.699 21.966 38.97 -0.71 70 1 12 '' 1
+246 H H2O . MAN poly . . ? 18.993 21.414 39.316 0.44 60 1 12 '' 1
 
 _WURCS
 'WURCS=2.0/4,11,10/[a2122h-1a_1-5_2*NCC/3=O][a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-2-3-4-4-4-4-4-4-4-4/a4-b1_b4-c1_c3-d1_c6-g1_d2-e1_e2-f1_g3-h1_g6-j1_h2-i1_j2-k1'
