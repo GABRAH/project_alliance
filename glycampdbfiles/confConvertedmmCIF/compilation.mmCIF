@@ -63,16 +63,16 @@ _struct_conn.pdbx_ptnr2_PDB_ins_code
 _struct_conn.ptnr2_symmetry
 _struct_conn.details
 _struct_conn.pdbx_dist_value
-'2NDG_C1-O4_NAG3' covale '' poly NDG . C1 ? 2 ? 1_555 '' poly NAG . O4 ? 3 ? 1_555 ? 9.3959
-'3NAG_C1-O4_BMA4' covale '' poly NAG . C1 ? 3 ? 1_555 '' poly BMA . O4 ? 4 ? 1_555 ? 9.5421
-'4BMA_C1-O3_MAN10' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O3 ? 10 ? 1_555 ? 8.0527
-'4BMA_C1-O6_MAN5' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O6 ? 5 ? 1_555 ? 6.7739
-'5MAN_C1-O3_MAN8' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O3 ? 8 ? 1_555 ? 7.7545
-'5MAN_C1-O6_MAN6' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O6 ? 6 ? 1_555 ? 6.9547
-'6MAN_C1-O2_MAN7' covale '' poly MAN . C1 ? 6 ? 1_555 '' poly MAN . O2 ? 7 ? 1_555 ? 5.5150
-'8MAN_C1-O2_MAN9' covale '' poly MAN . C1 ? 8 ? 1_555 '' poly MAN . O2 ? 9 ? 1_555 ? 6.0305
-'10MAN_C1-O2_MAN11' covale '' poly MAN . C1 ? 10 ? 1_555 '' poly MAN . O2 ? 11 ? 1_555 ? 5.4290
-'11MAN_C1-O2_MAN12' covale '' poly MAN . C1 ? 11 ? 1_555 '' poly MAN . O2 ? 12 ? 1_555 ? 5.5946
+'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.5212
+'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4581
+'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4248
+'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.5435
+'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4386
+'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4355
+'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4734
+'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.5127
+'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4856
+'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4763
 
 loop_
 _struct_conn_type.id
@@ -410,16 +410,16 @@ _struct_conn.pdbx_ptnr2_PDB_ins_code
 _struct_conn.ptnr2_symmetry
 _struct_conn.details
 _struct_conn.pdbx_dist_value
-'2NDG_C1-O4_NAG3' covale '' poly NDG . C1 ? 2 ? 1_555 '' poly NAG . O4 ? 3 ? 1_555 ? 9.6235
-'3NAG_C1-O4_BMA4' covale '' poly NAG . C1 ? 3 ? 1_555 '' poly BMA . O4 ? 4 ? 1_555 ? 9.4338
-'4BMA_C1-O3_MAN10' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O3 ? 10 ? 1_555 ? 8.0587
-'4BMA_C1-O6_MAN5' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O6 ? 5 ? 1_555 ? 9.1697
-'5MAN_C1-O3_MAN8' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O3 ? 8 ? 1_555 ? 8.1226
-'5MAN_C1-O6_MAN6' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O6 ? 6 ? 1_555 ? 7.9472
-'6MAN_C1-O2_MAN7' covale '' poly MAN . C1 ? 6 ? 1_555 '' poly MAN . O2 ? 7 ? 1_555 ? 5.8150
-'8MAN_C1-O2_MAN9' covale '' poly MAN . C1 ? 8 ? 1_555 '' poly MAN . O2 ? 9 ? 1_555 ? 5.7749
-'10MAN_C1-O2_MAN11' covale '' poly MAN . C1 ? 10 ? 1_555 '' poly MAN . O2 ? 11 ? 1_555 ? 5.8533
-'11MAN_C1-O2_MAN12' covale '' poly MAN . C1 ? 11 ? 1_555 '' poly MAN . O2 ? 12 ? 1_555 ? 5.8678
+'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.4771
+'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4469
+'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4793
+'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4912
+'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4525
+'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4743
+'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4901
+'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4999
+'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4906
+'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4529
 
 loop_
 _struct_conn_type.id
@@ -757,16 +757,16 @@ _struct_conn.pdbx_ptnr2_PDB_ins_code
 _struct_conn.ptnr2_symmetry
 _struct_conn.details
 _struct_conn.pdbx_dist_value
-'2NDG_C1-O4_NAG3' covale '' poly NDG . C1 ? 2 ? 1_555 '' poly NAG . O4 ? 3 ? 1_555 ? 9.3046
-'3NAG_C1-O4_BMA4' covale '' poly NAG . C1 ? 3 ? 1_555 '' poly BMA . O4 ? 4 ? 1_555 ? 9.5697
-'4BMA_C1-O3_MAN10' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O3 ? 10 ? 1_555 ? 8.0158
-'4BMA_C1-O6_MAN5' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O6 ? 5 ? 1_555 ? 9.2612
-'5MAN_C1-O3_MAN8' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O3 ? 8 ? 1_555 ? 8.0273
-'5MAN_C1-O6_MAN6' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O6 ? 6 ? 1_555 ? 7.7592
-'6MAN_C1-O2_MAN7' covale '' poly MAN . C1 ? 6 ? 1_555 '' poly MAN . O2 ? 7 ? 1_555 ? 5.6134
-'8MAN_C1-O2_MAN9' covale '' poly MAN . C1 ? 8 ? 1_555 '' poly MAN . O2 ? 9 ? 1_555 ? 5.6167
-'10MAN_C1-O2_MAN11' covale '' poly MAN . C1 ? 10 ? 1_555 '' poly MAN . O2 ? 11 ? 1_555 ? 5.6501
-'11MAN_C1-O2_MAN12' covale '' poly MAN . C1 ? 11 ? 1_555 '' poly MAN . O2 ? 12 ? 1_555 ? 6.1240
+'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.4505
+'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4510
+'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4758
+'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4376
+'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4951
+'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4624
+'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4087
+'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4877
+'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4960
+'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4942
 
 loop_
 _struct_conn_type.id
@@ -1104,16 +1104,16 @@ _struct_conn.pdbx_ptnr2_PDB_ins_code
 _struct_conn.ptnr2_symmetry
 _struct_conn.details
 _struct_conn.pdbx_dist_value
-'2NDG_C1-O4_NAG3' covale '' poly NDG . C1 ? 2 ? 1_555 '' poly NAG . O4 ? 3 ? 1_555 ? 9.6131
-'3NAG_C1-O4_BMA4' covale '' poly NAG . C1 ? 3 ? 1_555 '' poly BMA . O4 ? 4 ? 1_555 ? 9.5635
-'4BMA_C1-O3_MAN10' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O3 ? 10 ? 1_555 ? 8.2131
-'4BMA_C1-O6_MAN5' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O6 ? 5 ? 1_555 ? 6.4722
-'5MAN_C1-O3_MAN8' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O3 ? 8 ? 1_555 ? 7.6735
-'5MAN_C1-O6_MAN6' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O6 ? 6 ? 1_555 ? 8.1821
-'6MAN_C1-O2_MAN7' covale '' poly MAN . C1 ? 6 ? 1_555 '' poly MAN . O2 ? 7 ? 1_555 ? 5.7814
-'8MAN_C1-O2_MAN9' covale '' poly MAN . C1 ? 8 ? 1_555 '' poly MAN . O2 ? 9 ? 1_555 ? 6.0993
-'10MAN_C1-O2_MAN11' covale '' poly MAN . C1 ? 10 ? 1_555 '' poly MAN . O2 ? 11 ? 1_555 ? 5.6925
-'11MAN_C1-O2_MAN12' covale '' poly MAN . C1 ? 11 ? 1_555 '' poly MAN . O2 ? 12 ? 1_555 ? 5.6571
+'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.4796
+'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4842
+'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4554
+'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4338
+'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4557
+'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4510
+'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4444
+'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4680
+'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4492
+'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4605
 
 loop_
 _struct_conn_type.id
@@ -1451,16 +1451,16 @@ _struct_conn.pdbx_ptnr2_PDB_ins_code
 _struct_conn.ptnr2_symmetry
 _struct_conn.details
 _struct_conn.pdbx_dist_value
-'2NDG_C1-O4_NAG3' covale '' poly NDG . C1 ? 2 ? 1_555 '' poly NAG . O4 ? 3 ? 1_555 ? 9.1419
-'3NAG_C1-O4_BMA4' covale '' poly NAG . C1 ? 3 ? 1_555 '' poly BMA . O4 ? 4 ? 1_555 ? 9.5721
-'4BMA_C1-O3_MAN10' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O3 ? 10 ? 1_555 ? 8.3605
-'4BMA_C1-O6_MAN5' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O6 ? 5 ? 1_555 ? 4.8134
-'5MAN_C1-O3_MAN8' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O3 ? 8 ? 1_555 ? 8.1917
-'5MAN_C1-O6_MAN6' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O6 ? 6 ? 1_555 ? 8.6369
-'6MAN_C1-O2_MAN7' covale '' poly MAN . C1 ? 6 ? 1_555 '' poly MAN . O2 ? 7 ? 1_555 ? 5.8588
-'8MAN_C1-O2_MAN9' covale '' poly MAN . C1 ? 8 ? 1_555 '' poly MAN . O2 ? 9 ? 1_555 ? 5.9908
-'10MAN_C1-O2_MAN11' covale '' poly MAN . C1 ? 10 ? 1_555 '' poly MAN . O2 ? 11 ? 1_555 ? 5.3530
-'11MAN_C1-O2_MAN12' covale '' poly MAN . C1 ? 11 ? 1_555 '' poly MAN . O2 ? 12 ? 1_555 ? 5.6756
+'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.4444
+'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.5171
+'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4713
+'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4685
+'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4744
+'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4790
+'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4125
+'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4123
+'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.4992
+'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4113
 
 loop_
 _struct_conn_type.id
@@ -1798,16 +1798,16 @@ _struct_conn.pdbx_ptnr2_PDB_ins_code
 _struct_conn.ptnr2_symmetry
 _struct_conn.details
 _struct_conn.pdbx_dist_value
-'2NDG_C1-O4_NAG3' covale '' poly NDG . C1 ? 2 ? 1_555 '' poly NAG . O4 ? 3 ? 1_555 ? 9.4650
-'3NAG_C1-O4_BMA4' covale '' poly NAG . C1 ? 3 ? 1_555 '' poly BMA . O4 ? 4 ? 1_555 ? 9.5397
-'4BMA_C1-O3_MAN10' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O3 ? 10 ? 1_555 ? 7.8979
-'4BMA_C1-O6_MAN5' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O6 ? 5 ? 1_555 ? 7.4753
-'5MAN_C1-O3_MAN8' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O3 ? 8 ? 1_555 ? 7.8504
-'5MAN_C1-O6_MAN6' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O6 ? 6 ? 1_555 ? 8.6552
-'6MAN_C1-O2_MAN7' covale '' poly MAN . C1 ? 6 ? 1_555 '' poly MAN . O2 ? 7 ? 1_555 ? 5.5506
-'8MAN_C1-O2_MAN9' covale '' poly MAN . C1 ? 8 ? 1_555 '' poly MAN . O2 ? 9 ? 1_555 ? 6.0391
-'10MAN_C1-O2_MAN11' covale '' poly MAN . C1 ? 10 ? 1_555 '' poly MAN . O2 ? 11 ? 1_555 ? 6.1888
-'11MAN_C1-O2_MAN12' covale '' poly MAN . C1 ? 11 ? 1_555 '' poly MAN . O2 ? 12 ? 1_555 ? 5.5538
+'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.5196
+'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4414
+'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4876
+'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4570
+'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.4846
+'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4427
+'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4749
+'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4663
+'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.5049
+'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.4430
 
 loop_
 _struct_conn_type.id
@@ -2145,16 +2145,16 @@ _struct_conn.pdbx_ptnr2_PDB_ins_code
 _struct_conn.ptnr2_symmetry
 _struct_conn.details
 _struct_conn.pdbx_dist_value
-'2NDG_C1-O4_NAG3' covale '' poly NDG . C1 ? 2 ? 1_555 '' poly NAG . O4 ? 3 ? 1_555 ? 9.7187
-'3NAG_C1-O4_BMA4' covale '' poly NAG . C1 ? 3 ? 1_555 '' poly BMA . O4 ? 4 ? 1_555 ? 9.4448
-'4BMA_C1-O3_MAN10' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O3 ? 10 ? 1_555 ? 8.1192
-'4BMA_C1-O6_MAN5' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O6 ? 5 ? 1_555 ? 8.8419
-'5MAN_C1-O3_MAN8' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O3 ? 8 ? 1_555 ? 7.7279
-'5MAN_C1-O6_MAN6' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O6 ? 6 ? 1_555 ? 7.2955
-'6MAN_C1-O2_MAN7' covale '' poly MAN . C1 ? 6 ? 1_555 '' poly MAN . O2 ? 7 ? 1_555 ? 6.0876
-'8MAN_C1-O2_MAN9' covale '' poly MAN . C1 ? 8 ? 1_555 '' poly MAN . O2 ? 9 ? 1_555 ? 5.6323
-'10MAN_C1-O2_MAN11' covale '' poly MAN . C1 ? 10 ? 1_555 '' poly MAN . O2 ? 11 ? 1_555 ? 5.5483
-'11MAN_C1-O2_MAN12' covale '' poly MAN . C1 ? 11 ? 1_555 '' poly MAN . O2 ? 12 ? 1_555 ? 5.8190
+'2NDG_O4-C1_NAG3' covale '' poly NDG . O4 ? 2 ? 1_555 '' poly NAG . C1 ? 3 ? 1_555 ? 1.4414
+'3NAG_O4-C1_BMA4' covale '' poly NAG . O4 ? 3 ? 1_555 '' poly BMA . C1 ? 4 ? 1_555 ? 1.4199
+'4BMA_O3-C1_MAN10' covale '' poly BMA . O3 ? 4 ? 1_555 '' poly MAN . C1 ? 10 ? 1_555 ? 1.4587
+'4BMA_O6-C1_MAN5' covale '' poly BMA . O6 ? 4 ? 1_555 '' poly MAN . C1 ? 5 ? 1_555 ? 1.4508
+'5MAN_O3-C1_MAN8' covale '' poly MAN . O3 ? 5 ? 1_555 '' poly MAN . C1 ? 8 ? 1_555 ? 1.5107
+'5MAN_O6-C1_MAN6' covale '' poly MAN . O6 ? 5 ? 1_555 '' poly MAN . C1 ? 6 ? 1_555 ? 1.4765
+'6MAN_O2-C1_MAN7' covale '' poly MAN . O2 ? 6 ? 1_555 '' poly MAN . C1 ? 7 ? 1_555 ? 1.4348
+'8MAN_O2-C1_MAN9' covale '' poly MAN . O2 ? 8 ? 1_555 '' poly MAN . C1 ? 9 ? 1_555 ? 1.4479
+'10MAN_O2-C1_MAN11' covale '' poly MAN . O2 ? 10 ? 1_555 '' poly MAN . C1 ? 11 ? 1_555 ? 1.5058
+'11MAN_O2-C1_MAN12' covale '' poly MAN . O2 ? 11 ? 1_555 '' poly MAN . C1 ? 12 ? 1_555 ? 1.5036
 
 loop_
 _struct_conn_type.id

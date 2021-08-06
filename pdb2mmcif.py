@@ -103,8 +103,8 @@ def addGemmiConnectionsBetweenSugars(gemmiStructure, privateerMetaData):
             )
             connectedToResidueName = connectedToInfoSummary["residueName"]
 
-            currentResidueAtomName = "C" + connection["hostLinkagePosition"]
-            connectedToResidueAtomName = "O" + connection["linkagePositionForeign"]
+            currentResidueAtomName = "O" + connection["linkagePositionForeign"]
+            connectedToResidueAtomName = "C" + connection["hostLinkagePosition"]
 
             new_connection = gemmi.Connection()
             new_connection.name = (
@@ -196,9 +196,9 @@ def convertAllPDBtoSingleCIF(
 
 
 # inputPath = "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedPDB/"
-inputPath = "/Users/haroldas/Dev/privateer_python/project_alliance/glycampdbfiles/confConvertedPDB/"
+inputPath = "/Users/haroldas/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedPDB/"
 # outputPath = "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedmmCIF/"
-outputPath = "/Users/haroldas/Dev/privateer_python/project_alliance/glycampdbfiles/confConvertedmmCIF/"
+outputPath = "/Users/haroldas/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedmmCIF/"
 privateerJSON = pvt.OfflineDatabase()
 
 single_mmCIF_output_path = os.path.join(outputPath, "compilation.mmCIF")
