@@ -51,16 +51,16 @@ _struct_conn.pdbx_ptnr2_PDB_ins_code
 _struct_conn.ptnr2_symmetry
 _struct_conn.details
 _struct_conn.pdbx_dist_value
-'2NDG_C1-C4_NAG3' covale '' poly NDG . C1 ? 2 ? 1_555 '' poly NAG . C4 ? 3 ? 1_555 ? 8.0605
-'3NAG_C1-C4_BMA4' covale '' poly NAG . C1 ? 3 ? 1_555 '' poly BMA . C4 ? 4 ? 1_555 ? 8.2436
-'4BMA_C1-C3_MAN10' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . C3 ? 10 ? 1_555 ? 6.6004
-'4BMA_C1-C6_MAN5' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . C6 ? 5 ? 1_555 ? 7.0489
-'5MAN_C1-C3_MAN8' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . C3 ? 8 ? 1_555 ? 6.7398
-'5MAN_C1-C6_MAN6' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . C6 ? 6 ? 1_555 ? 5.6777
-'6MAN_C1-C2_MAN7' covale '' poly MAN . C1 ? 6 ? 1_555 '' poly MAN . C2 ? 7 ? 1_555 ? 4.6017
-'8MAN_C1-C2_MAN9' covale '' poly MAN . C1 ? 8 ? 1_555 '' poly MAN . C2 ? 9 ? 1_555 ? 4.9255
-'10MAN_C1-C2_MAN11' covale '' poly MAN . C1 ? 10 ? 1_555 '' poly MAN . C2 ? 11 ? 1_555 ? 4.5643
-'11MAN_C1-C2_MAN12' covale '' poly MAN . C1 ? 11 ? 1_555 '' poly MAN . C2 ? 12 ? 1_555 ? 4.5127
+'2NDG_C1-O4_NAG3' covale '' poly NDG . C1 ? 2 ? 1_555 '' poly NAG . O4 ? 3 ? 1_555 ? 9.3959
+'3NAG_C1-O4_BMA4' covale '' poly NAG . C1 ? 3 ? 1_555 '' poly BMA . O4 ? 4 ? 1_555 ? 9.5421
+'4BMA_C1-O3_MAN10' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O3 ? 10 ? 1_555 ? 8.0527
+'4BMA_C1-O6_MAN5' covale '' poly BMA . C1 ? 4 ? 1_555 '' poly MAN . O6 ? 5 ? 1_555 ? 6.7739
+'5MAN_C1-O3_MAN8' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O3 ? 8 ? 1_555 ? 7.7545
+'5MAN_C1-O6_MAN6' covale '' poly MAN . C1 ? 5 ? 1_555 '' poly MAN . O6 ? 6 ? 1_555 ? 6.9547
+'6MAN_C1-O2_MAN7' covale '' poly MAN . C1 ? 6 ? 1_555 '' poly MAN . O2 ? 7 ? 1_555 ? 5.5150
+'8MAN_C1-O2_MAN9' covale '' poly MAN . C1 ? 8 ? 1_555 '' poly MAN . O2 ? 9 ? 1_555 ? 6.0305
+'10MAN_C1-O2_MAN11' covale '' poly MAN . C1 ? 10 ? 1_555 '' poly MAN . O2 ? 11 ? 1_555 ? 5.4290
+'11MAN_C1-O2_MAN12' covale '' poly MAN . C1 ? 11 ? 1_555 '' poly MAN . O2 ? 12 ? 1_555 ? 5.5946
 
 loop_
 _struct_conn_type.id
