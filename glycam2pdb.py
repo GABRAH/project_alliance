@@ -869,7 +869,9 @@ def conversionPipeline(path):
     convertedPDB = convertGlycamToPDB(
         glycamOneLetterToPDBThreeLetterCodeConversion, ROH_removed
     )
-    convertedPDB.pop(0)
+    convertedPDB.pop(
+        0
+    )  # Comment this line out of input file contains "MODEL 2506" at the very beginning to not get rid of O1 atom!
     return convertedPDB
 
 
