@@ -53,5 +53,6 @@ for i in range(numGlycans):
 
 builder = pvtmodelling.Builder(receiverpath, donorpath)
 sequence = builder.get_receiving_model_sequence_info()
+print(sequence)
 builder.graft_glycan_to_receiver(0, 0, 37)
 builder.export_grafted_model(outputpath)
