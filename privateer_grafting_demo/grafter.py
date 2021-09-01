@@ -6,24 +6,40 @@ import requests
 from privateer import privateer_core as pvtcore
 from privateer import privateer_modelling as pvtmodelling
 
-# TO DO: When downloading alphafold model from API, make sure that the script deletes the following line:
-# MODEL        0
+
+defaultDonorLocation = "input/glycanblocks/man5/cluster1.pdb"
+defaultInputModelLocation = "input/receiving_model"
+defaultOutputModelLocation = "output"
 
 
-donorpath = "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/glycanblocks/man9/cluster1.pdb"
-# donorpath = (
-#     f"/home/harold/Dev/privateer_python/project_alliance/builder_test/{donorPDBID}.pdb"
-# )
+def get_working_directory_path(scriptfilepath):
+    return os.path.dirname(scriptfilepath)
 
-receiverpath = f"/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/receiving_model/O15552.pdb"
-# receiverpath = f"/home/harold/Dev/privateer_python/project_alliance/builder_test/{receiverPDBID}.pdb"
 
-outputpath = "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/output/O15552.pdb"
-# outputpath = (
-#     f"/home/harold/Dev/privateer_python/project_alliance/builder_test/{outputPDBID}.pdb"
-# )
+def import_list_of_uniprotIDs_to_glycosylate(inputFilePath):
+    pass
 
-uniprotID = "O15552"
+
+def download_and_prepare_alphafoldDB_model(uniprotID, downloadLocation):
+    outputFileName = uniprotID + ".pdb"
+    outputFilePath = os.path.join(downloadLocation, outputFileName)
+    requestURL = f"https://alphafold.ebi.ac.uk/files/AF-{uniprotID}-F1-model_v1.pdb"
+    query = requests.get(requestURL, allow_redirects=True)
+
+    outputLines = []
+    downloadedLines = query.iter_lines()
+    for line in downloadedLines:
+        decodedLine = line.decode("utf-8")
+        if decodedLine[:5] != "MODEL":
+            outputLines.append(decodedLine)
+
+    with open(outputFilePath, "w") as file:
+        file.writelines("%s\n" % l for l in outputLines)
+
+    print(
+        f"Successfully downloaded model from AlphaFoldDB with UniProt ID: '{uniprotID}' to {outputFilePath}"
+    )
+    return outputFilePath
 
 
 def query_uniprot_for_glycosylation_locations(uniprotID):
@@ -195,4 +211,36 @@ def local_input_model_pipeline(receiverpath, donorpath, outputpath, uniprotID):
         print_grafted_glycans_summary(graftedGlycans)
 
 
-local_input_model_pipeline(receiverpath, donorpath, outputpath, uniprotID)
+def online_input_model_pipeline(uniprotID, donorpath, outputLocation):
+    outputFileName = uniprotID + ".pdb"
+    outputpath = os.path.join(outputLocation, outputFileName)
+    receiverpath = download_and_prepare_alphafoldDB_model(
+        uniprotID, defaultInputModelPath
+    )
+    uniprotGlycosylationQuery = query_uniprot_for_glycosylation_locations(uniprotID)
+    uniprotGlycosylations = uniprotGlycosylationQuery["glycosylations"]
+    targets = []
+    for item in uniprotGlycosylations:
+        if item["description"][0] == "N":
+            targets.append(int(item["begin"]) - 1)
+    graftedGlycans = glycosylate_receiving_model_using_uniprot_info(
+        receiverpath, donorpath, outputpath, targets, True, False
+    )
+    print_grafted_glycans_summary(graftedGlycans)
+
+
+scriptFilePath = os.path.abspath(__file__)
+workingDirectoryPath = get_working_directory_path(scriptFilePath)
+defaultDonorPath = os.path.join(workingDirectoryPath, defaultDonorLocation)
+defaultInputModelPath = os.path.join(workingDirectoryPath, defaultInputModelLocation)
+defaultOutputModelPath = os.path.join(workingDirectoryPath, defaultOutputModelLocation)
+
+localReceiverPath = f"/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/receiving_model/O15552.pdb"
+
+uniprotID = "O15552"
+
+
+# local_input_model_pipeline(localReceiverPath, defaultDonorPath, outputpath, uniprotID)
+online_input_model_pipeline(uniprotID, defaultDonorPath, defaultOutputModelPath)
+
+# Implement argparse here to complete demo for Zenodo release.
