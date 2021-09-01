@@ -1,32 +1,29 @@
 import os
 import re
 import sys
-import json
 import argparse
 import requests
 from privateer import privateer_core as pvtcore
 from privateer import privateer_modelling as pvtmodelling
 
+# TO DO: When downloading alphafold model from API, make sure that the script deletes the following line:
+# MODEL        0
 
-# regex for N glycosylation - [N][^P][ST]|[N][A-Z][C]
-donorPDBID = "MAN6"
-receiverPDBID = "FOLD"
-outputPDBID = "t35t"
 
 donorpath = "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/glycanblocks/man9/cluster1.pdb"
 # donorpath = (
 #     f"/home/harold/Dev/privateer_python/project_alliance/builder_test/{donorPDBID}.pdb"
 # )
 
-receiverpath = f"/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/receiving_model/P29016.pdb"
+receiverpath = f"/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/receiving_model/O15552.pdb"
 # receiverpath = f"/home/harold/Dev/privateer_python/project_alliance/builder_test/{receiverPDBID}.pdb"
 
-outputpath = "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/output/P29016.pdb"
+outputpath = "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/output/O15552.pdb"
 # outputpath = (
 #     f"/home/harold/Dev/privateer_python/project_alliance/builder_test/{outputPDBID}.pdb"
 # )
 
-uniprotID = "P29016"
+uniprotID = "O15552"
 
 
 def query_uniprot_for_glycosylation_locations(uniprotID):
@@ -124,35 +121,78 @@ def glycosylate_receiving_model_using_consensus_seq(
     return graftedGlycanSummary
 
 
+def glycosylate_receiving_model_using_uniprot_info(
+    receiverpath,
+    donorpath,
+    outputpath,
+    targets,
+    enableUserMessages,
+    trimGlycanIfClashesDetected,
+):
+    builder = pvtmodelling.Builder(
+        receiverpath,
+        donorpath,
+        trimGlycanIfClashesDetected,
+        True,
+        enableUserMessages,
+        False,
+    )
+    for currentTarget in targets:
+        chainIndex = 0
+        builder.graft_glycan_to_receiver(0, chainIndex, currentTarget)
+
+    graftedGlycanSummary = builder.get_summary_of_grafted_glycans()
+    builder.export_grafted_model(outputpath)
+
+    return graftedGlycanSummary
+
+
+def print_grafted_glycans_summary(graftedGlycans):
+    for idx, graft in enumerate(graftedGlycans):
+        proteinChainID = graft["receiving_protein_residue_chain_PDBID"]
+        proteinPDBID = graft["receiving_protein_residue_monomer_PDBID"]
+        proteinResidueType = graft["receiving_protein_residue_monomer_type"]
+        graftedGlycanChainID = graft["glycan_grafted_as_chainID"]
+
+        if len(graft["ClashingResidues"]):
+            averageTotalAtomicDistance = graft["AvgTotalAtomicDistance"]
+            numberOfClashingResidues = len(graft["ClashingResidues"])
+            print(
+                f"{idx+1}/{len(graftedGlycans)}: Grafted donor glycan as chain {graftedGlycanChainID} to {proteinChainID}/{proteinResidueType}-{proteinPDBID}. The graft has resulted in {numberOfClashingResidues} clashes with an average atomic distance of from detected clashing residues: {averageTotalAtomicDistance}."
+            )
+        else:
+            print(
+                f"{idx+1}/{len(graftedGlycans)}: Grafted donor glycan as chain {graftedGlycanChainID} to {proteinChainID}/{proteinResidueType}-{proteinPDBID}. The graft did not produce any clashes."
+            )
+
+
 def local_input_model_pipeline(receiverpath, donorpath, outputpath, uniprotID):
     sequences = get_sequences_in_receiving_model(receiverpath)
     if uniprotID is not None:
         uniprotQuery = query_uniprot_for_glycosylation_locations(uniprotID)
-        # function to align uniprot sequence with input model
-        # then do the grafting
+        uniprotSequence = uniprotQuery["sequence"]
+        receiverModelSequence = sequences[0]["Sequence"]
+        if receiverModelSequence != uniprotSequence:
+            raise ValueError(
+                "Receiving model sequence does not match the sequence retrieved from UniProt. Please graft glycans using consensus sequence glycan grafting method"
+            )
+        else:
+            uniprotGlycosylations = uniprotQuery["glycosylations"]
+            targets = []
+            for item in uniprotGlycosylations:
+                if item["description"][0] == "N":
+                    targets.append(int(item["begin"]) - 1)
+            graftedGlycans = glycosylate_receiving_model_using_uniprot_info(
+                receiverpath, donorpath, outputpath, targets, True, False
+            )
+            print_grafted_glycans_summary(graftedGlycans)
+
     else:
         targets = get_NGlycosylation_targets_via_consensus_seq(sequences)
         graftedGlycans = glycosylate_receiving_model_using_consensus_seq(
             receiverpath, donorpath, outputpath, targets, True, False
         )
-
-        for idx, graft in enumerate(graftedGlycans):
-            index = graft["index"]
-            proteinChainID = graft["receiving_protein_residue_chain_PDBID"]
-            proteinPDBID = graft["receiving_protein_residue_monomer_PDBID"]
-            proteinResidueType = graft["receiving_protein_residue_monomer_type"]
-            graftedGlycanChainID = graft["glycan_grafted_as_chainID"]
-
-            if len(graft["ClashingResidues"]):
-                averageTotalAtomicDistance = graft["AvgTotalAtomicDistance"]
-                numberOfClashingResidues = len(graft["ClashingResidues"])
-                print(
-                    f"{idx+1}/{len(graftedGlycans)}: Grafted donor glycan as chain {graftedGlycanChainID} to {proteinChainID}/{proteinResidueType}-{proteinPDBID}. The graft has resulted in {numberOfClashingResidues} clashes with an average atomic distance of: {averageTotalAtomicDistance}."
-                )
-            else:
-                print(
-                    f"{idx+1}/{len(graftedGlycans)}: Grafted donor glycan as chain {graftedGlycanChainID} to {proteinChainID}/{proteinResidueType}-{proteinPDBID}. The graft did not produce any clashes."
-                )
+        print_grafted_glycans_summary(graftedGlycans)
 
 
 local_input_model_pipeline(receiverpath, donorpath, outputpath, uniprotID)
