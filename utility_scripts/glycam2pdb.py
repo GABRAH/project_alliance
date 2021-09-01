@@ -814,7 +814,7 @@ def replaceROH(instructionsForROHReplacement, Lines):
     return output
 
 
-def convertGlycamToPDB(glycamOneLetterToPDBThreeLetterCodeConversion, inputPDB):
+def convertGlycamToPDB(glycamOneLetterToPDBThreeLetterCodeConversion, inputPDB, path):
     output = inputPDB.copy()
     unsupportedByPrivateer = 0
 
@@ -851,7 +851,7 @@ def convertGlycamToPDB(glycamOneLetterToPDBThreeLetterCodeConversion, inputPDB):
                     unsupportedByPrivateer += 1
             else:
                 print(
-                    f'ERROR: Unable to convert the following glycam ID of "{currentCodeNoSpaces}", the internal database query used "{queryCode}"'
+                    f'ERROR: Unable to convert the following glycam ID of "{currentCodeNoSpaces}", the internal database query used "{queryCode}". Current file: {path}'
                 )
                 return False
 
@@ -867,16 +867,18 @@ def conversionPipeline(path):
     instructionsForROHReplacement = generateROHReplacementInstructions(glycamPDB)
     ROH_removed = replaceROH(instructionsForROHReplacement, glycamPDB)
     convertedPDB = convertGlycamToPDB(
-        glycamOneLetterToPDBThreeLetterCodeConversion, ROH_removed
+        glycamOneLetterToPDBThreeLetterCodeConversion, ROH_removed, path
     )
-    convertedPDB.pop(
-        0
-    )  # Comment this line out of input file contains "MODEL 2506" at the very beginning to not get rid of O1 atom!
+    # convertedPDB.pop(
+    #     0
+    # )  # Comment this line out of input file contains "MODEL 2506" at the very beginning to not get rid of O1 atom!
     return convertedPDB
 
 
-inputpath = "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/Volume/"
-outputpath = "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/VolumeConvertedPDB/"
+inputpath = (
+    "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/omannose/"
+)
+outputpath = "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/omannoseConvertedPDB/"
 CreateFolder(outputpath)
 
 for root, dirs, files in os.walk(inputpath, topdown=False):

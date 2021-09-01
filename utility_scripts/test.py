@@ -22,12 +22,15 @@ outputpath = (
 print(donorpath)
 
 
-builder = pvtmodelling.Builder(receiverpath, donorpath, True, True, False)
+builder = pvtmodelling.Builder(receiverpath, donorpath, False, True, True, False)
 sequence = builder.get_receiving_model_sequence_info()
-# print(sequence)
+print(sequence)
 builder.graft_glycan_to_receiver(0, 0, 37)
+builder.graft_glycan_to_receiver(0, 0, 74)
 builder.export_grafted_model(outputpath)
+grafted_glycan_summary = builder.get_summary_of_grafted_glycans()
 
+print(grafted_glycan_summary)
 
 # with 5fjj as donor to FOLD model.
 # donorPDBID = "5fjj"
