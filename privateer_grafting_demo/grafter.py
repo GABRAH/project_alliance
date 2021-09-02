@@ -247,7 +247,9 @@ def online_input_model_pipeline(
 scriptFilePath = os.path.abspath(__file__)
 workingDirectoryPath = get_working_directory_path(scriptFilePath)
 defaultDonorPath = os.path.join(workingDirectoryPath, defaultDonorLocation)
-defaultInputModelPath = os.path.join(workingDirectoryPath, defaultInputModelLocation)
+defaultInputModelDirectory = os.path.join(
+    workingDirectoryPath, defaultInputModelLocation
+)
 defaultOutputModelPath = os.path.join(workingDirectoryPath, defaultOutputModelLocation)
 defaultuniprotIDsListPath = os.path.join(scriptFilePath, "uniprotIDinputs.txt")
 
@@ -256,9 +258,9 @@ defaultUniprotID = "P29016"
 
 parser = argparse.ArgumentParser(
     prog="grafter.py",
-    usage="%(prog)s [options] path",
+    usage="%(prog)s [options]. Most convenient usage: python grafter.py -import_uniprotIDs_from_file uniprotIDinputs.txt",
     description=f"Graft Glycans to AlphaFoldDB models using Privateer Modelling module.",
-    epilog=f"If -local_receiver_path or -uniprotID are not provided, the script will default to using UniProtID: {defaultUniprotID} as default input.",
+    epilog=f"If -local_receiver_path or -uniprotID are not provided, the script will default to using UniProtID: {defaultUniprotID} as default input. Will download the PDB from AlphaFoldDB and N-glycosylate according to UniProt data.",
 )
 parser.add_argument(
     "-uniprotID",
@@ -280,6 +282,13 @@ parser.add_argument(
     default=None,
     dest="user_donorPath",
     help=f"Path to the glycan that is to be grafted throughout AlphaFoldDB model. If not specified, the script will default to using glycan located in '{defaultDonorPath}'",
+)
+parser.add_argument(
+    "-download_path",
+    action="store",
+    default=None,
+    dest="user_inputModelDirectory",
+    help=f"Specify download directory where original AlpfaFoldDB models downloaded from the server should be saved. If unspecified, the script will default to '{defaultInputModelDirectory}'",
 )
 parser.add_argument(
     "-output_path",
@@ -311,6 +320,10 @@ if args.user_outputPath is not None:
     outputPath = args.user_outputPath
 else:
     outputPath = defaultOutputModelPath
+if args.user_inputModelDirectory is not None:
+    inputModelDirectory = args.user_inputModelDirectory
+else:
+    inputModelDirectory = defaultInputModelDirectory
 
 if args.user_uniprotIDsList is not None:
     uniprotIDListPath = args.user_uniprotIDsList
@@ -329,10 +342,10 @@ elif args.user_uniprotIDsList is not None:
     uniprotIDList = import_list_of_uniprotIDs_to_glycosylate(uniprotIDListPath)
     for idx, uniprotID in enumerate(uniprotIDList):
         online_input_model_pipeline(
-            uniprotID, donorPath, defaultInputModelPath, outputPath
+            uniprotID, donorPath, inputModelDirectory, outputPath
         )
         print(
             f"\n{idx+1}/{len(uniprotIDList)}: Successfully finished processing AlphaFoldDB model with UniProt ID of {uniprotID}.\n"
         )
 else:
-    online_input_model_pipeline(uniprotID, donorPath, defaultInputModelPath, outputPath)
+    online_input_model_pipeline(uniprotID, donorPath, inputModelDirectory, outputPath)

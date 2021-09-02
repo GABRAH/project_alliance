@@ -1,4 +1,5 @@
 import os
+import re
 import shutil
 
 # import gemmi
@@ -742,10 +743,20 @@ glycamOneLetterToPDBThreeLetterCodeConversion = {
 
 
 def import_pdb(path):
+    outputLines = []
     file = open(path, "r")
     Lines = file.readlines()
     file.close()
-    return Lines
+
+    for line in Lines:
+        if type(line) is not str:
+            decodedLine = line.decode("utf-8")
+            if decodedLine[:5] != "MODEL":
+                outputLines.append(decodedLine)
+        else:
+            if line[:5] != "MODEL":
+                outputLines.append(line)
+    return outputLines
 
 
 def export_pdb(path, output):
@@ -771,95 +782,94 @@ def replace_char_at_index(org_str, index, replacement):
     return new_str
 
 
+def find_location_of_glycam_residue_code(line):
+    regex = "|".join(
+        "([\w]({}))".format(k) for k in glycamOneLetterToPDBThreeLetterCodeConversion
+    )
+    match = re.search(regex, line)
+    if match is not None:
+        return {"start": match.start(), "end": match.end(), "match": match.group()}
+    else:
+        return None
+
+
 def generateROHReplacementInstructions(Lines):
-    rohID = ""
-    rohIDNoSpaces = ""
-    for count, line in enumerate(Lines):
-        if len(line) > 20:
-            currentCode = line[16:21]
-            symbolsToReplace = currentCode.replace(" ", "")
-
-            currentMonomerID = line[24:28]
-            currentMonomerIDNoSpaces = currentMonomerID.replace(" ", "")
-
-            if symbolsToReplace == "ROH":
-                rohID = line[24:28]
-                rohIDNoSpaces = rohID.replace(" ", "")
-            if not symbolsToReplace == "ROH":
-                return {
-                    "count": count,
-                    "code": symbolsToReplace,
-                    "monomerID": currentMonomerIDNoSpaces,
-                    "ROH_ID": rohIDNoSpaces,
-                }
-
-    return False
+    for idx, line in enumerate(Lines):
+        ROHregex = "(ROH)"
+        ROHmatch = re.search(ROHregex, line)
+        if ROHmatch is not None:
+            while idx < len(Lines):
+                glycamCodeMatch = find_location_of_glycam_residue_code(Lines[idx])
+                if glycamCodeMatch is not None:
+                    splitLine = Lines[idx].split()
+                    residueID = splitLine[4]
+                    return {
+                        "replacement_code": glycamCodeMatch["match"],
+                        "replacement_residue_ID": residueID,
+                    }
+                idx += 1
+    return None
 
 
 def replaceROH(instructionsForROHReplacement, Lines):
-    output = Lines.copy()
-    if instructionsForROHReplacement == False:
-        return output
+    output = []
+    if instructionsForROHReplacement == None:
+        return Lines
     else:
-        count = instructionsForROHReplacement["count"]
-        code = instructionsForROHReplacement["code"]
-        rohID = instructionsForROHReplacement["ROH_ID"]
-        monomerID = instructionsForROHReplacement["monomerID"]
-
-    for i in range(count):
-        if len(output[i]) > 20:
-            output[i] = output[i].replace("ROH", code)
-            output[i] = replace_char_at_index(output[i], 25, monomerID)
-
+        replacementResidue = instructionsForROHReplacement["replacement_code"]
+        replacement_residue_ID = instructionsForROHReplacement["replacement_residue_ID"]
+        for line in Lines:
+            if "ROH" in line:
+                ROHreplaced = line.replace("ROH", replacementResidue)
+                splitLine = re.split(r"(\s+)", ROHreplaced)
+                splitLine[8] = re.sub("\d", replacement_residue_ID, splitLine[8])
+                outputLine = "".join(splitLine)
+                output.append(outputLine)
+            else:
+                output.append(line)
     return output
 
 
 def convertGlycamToPDB(glycamOneLetterToPDBThreeLetterCodeConversion, inputPDB, path):
-    output = inputPDB.copy()
-    unsupportedByPrivateer = 0
+    output = []
+    unsupportedByPrivaterCodes = []
 
-    alreadyBeenInLoop = False
-    reduceIndexBy = 0
-    for count, line in enumerate(inputPDB):
-        if len(line) > 20:
-            if alreadyBeenInLoop == False:
-                currentMonomerID = line[24:28]
-                currentMonomerIDNoSpaces = currentMonomerID.replace(" ", "")
+    regex = "|".join(
+        "([\w]({}))".format(k) for k in glycamOneLetterToPDBThreeLetterCodeConversion
+    )
 
-                if int(currentMonomerIDNoSpaces) > 1:
-                    reduceIndexBy = int(currentMonomerIDNoSpaces) - 1
-                alreadyBeenInLoop = True
+    for line in inputPDB:
+        splitLine = re.split(r"(\s+)", line)
+        if len(splitLine) > 3:
+            match = re.search(regex, splitLine[6])
+            if match is not None:
+                codeToReplace = splitLine[6][match.start() + 1 : match.end()]
+                replacementDictionary = glycamOneLetterToPDBThreeLetterCodeConversion[
+                    codeToReplace
+                ]
+                replacementPDBCode = replacementDictionary["PDB"]
+                supportedByPrivateer = replacementDictionary["supported"]
+                splitLine[6] = re.sub(match.group(), replacementPDBCode, splitLine[6])
+                outputLine = "".join(splitLine)
+                output.append(outputLine)
 
-            currentCode = line[16:21]
-            currentCodeNoSpaces = currentCode.replace(" ", "")
-            queryCode = currentCodeNoSpaces[1:]
+                if supportedByPrivateer == False:
+                    unsupportedByPrivaterCodes.append(
+                        {"GlycamCode": match.group(), "PDBCode": replacementPDBCode}
+                    )
+        else:
+            output.append(line)
 
-            currentMonomerID = line[24:28]
-            currentMonomerIDNoSpaces = currentMonomerID.replace(" ", "")
+    if len(unsupportedByPrivaterCodes):
+        print(
+            f"Detected {len(unsupportedByPrivaterCodes)} sugars that are not supported by Privateer in the following structure {path}!"
+        )
+        for idx, unsupportedCode in enumerate(unsupportedByPrivaterCodes):
+            print(
+                f'{idx}/{len(unsupportedByPrivaterCodes)}: Glycam ID - {unsupportedCode["GlycamCode"]}\t\tPDB ID: {unsupportedCode["PDBCode"]}'
+            )
 
-            if queryCode in glycamOneLetterToPDBThreeLetterCodeConversion:
-                detectedMatch = glycamOneLetterToPDBThreeLetterCodeConversion[queryCode]
-                replaceGlycamCodeWith = detectedMatch["PDB"]
-                output[count] = output[count].replace(
-                    currentCodeNoSpaces, replaceGlycamCodeWith
-                )
-                # output[count] = replace_char_at_index(output[count], 21, "A")
-                # Need to ask Carl whether he requires the index to start from 1, otherwise I need to sort out the space character issue from index 9 onwards
-                # And also modify the TER record.
-                # output[count] = output[count].replace(currentMonomerIDNoSpaces, str(int(currentMonomerIDNoSpaces) - reduceIndexBy))
-                if detectedMatch["supported"] == False:
-                    unsupportedByPrivateer += 1
-            else:
-                print(
-                    f'ERROR: Unable to convert the following glycam ID of "{currentCodeNoSpaces}", the internal database query used "{queryCode}". Current file: {path}'
-                )
-                return False
-
-    if unsupportedByPrivateer > 0:
-        print("WARNING: input PDB has sugars that are unsupported by Privateer!")
-        return output
-    else:
-        return output
+    return output
 
 
 def conversionPipeline(path):
@@ -869,11 +879,13 @@ def conversionPipeline(path):
     convertedPDB = convertGlycamToPDB(
         glycamOneLetterToPDBThreeLetterCodeConversion, ROH_removed, path
     )
-    # convertedPDB.pop(
-    #     0
-    # )  # Comment this line out of input file contains "MODEL 2506" at the very beginning to not get rid of O1 atom!
     return convertedPDB
 
+
+# inputpath = (
+#     "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/omannose/"
+# )
+# outputpath = "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/omannoseConvertedPDB/"
 
 inputpath = (
     "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/omannose/"
