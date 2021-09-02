@@ -17,7 +17,20 @@ def get_working_directory_path(scriptfilepath):
 
 
 def import_list_of_uniprotIDs_to_glycosylate(inputFilePath):
-    pass
+    output = []
+    with open(inputFilePath) as file:
+        lines = file.readlines()
+    for line in lines:
+        lineSplitCommaList = line.split(",")
+        if lineSplitCommaList:
+            for split_line in lineSplitCommaList:
+                cleanLine = re.sub("\W+", "", split_line)
+                output.append(cleanLine)
+        else:
+            cleanLine = re.sub("\W+", "", line)
+            output.append(cleanLine)
+
+    return output
 
 
 def download_and_prepare_alphafoldDB_model(uniprotID, downloadLocation):
@@ -211,7 +224,9 @@ def local_input_model_pipeline(receiverpath, donorpath, outputpath, uniprotID):
         print_grafted_glycans_summary(graftedGlycans)
 
 
-def online_input_model_pipeline(uniprotID, donorpath, outputLocation):
+def online_input_model_pipeline(
+    uniprotID, donorpath, defaultInputModelPath, outputLocation
+):
     outputFileName = uniprotID + ".pdb"
     outputpath = os.path.join(outputLocation, outputFileName)
     receiverpath = download_and_prepare_alphafoldDB_model(
@@ -234,13 +249,90 @@ workingDirectoryPath = get_working_directory_path(scriptFilePath)
 defaultDonorPath = os.path.join(workingDirectoryPath, defaultDonorLocation)
 defaultInputModelPath = os.path.join(workingDirectoryPath, defaultInputModelLocation)
 defaultOutputModelPath = os.path.join(workingDirectoryPath, defaultOutputModelLocation)
+defaultuniprotIDsListPath = os.path.join(scriptFilePath, "uniprotIDinputs.txt")
 
-localReceiverPath = f"/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/receiving_model/O15552.pdb"
-
-uniprotID = "O15552"
+defaultUniprotID = "P29016"
 
 
-# local_input_model_pipeline(localReceiverPath, defaultDonorPath, outputpath, uniprotID)
-online_input_model_pipeline(uniprotID, defaultDonorPath, defaultOutputModelPath)
+parser = argparse.ArgumentParser(
+    prog="grafter.py",
+    usage="%(prog)s [options] path",
+    description=f"Graft Glycans to AlphaFoldDB models using Privateer Modelling module.",
+    epilog=f"If -local_receiver_path or -uniprotID are not provided, the script will default to using UniProtID: {defaultUniprotID} as default input.",
+)
+parser.add_argument(
+    "-uniprotID",
+    action="store",
+    default=None,
+    dest="user_uniprotID",
+    help="If used with -local_receiver_path, N-glycosylate according to UniProt targets. If used without -local_receiver_path, this variable is used in the download of AlphaFoldDB .pdb file and N-Glycosylation according to UniProt targets.",
+)
+parser.add_argument(
+    "-local_receiver_path",
+    action="store",
+    default=None,
+    dest="user_localReceiverPath",
+    help=f"Path to locally saved AlpfaFoldDB model on the computer. If -uniprotID is not provided, will carry out N-glycosylation according to regex consensus sequence of '[N][^P][ST]|[N][A-Z][C]'. The argument overrides default behaviour of downloading AlpfaFoldDB model from the server. WARNING: Ensure that \"MODEL 0\" line is deleted in the local file, as otherwise Privateer's MMBD dependency will not be able to import the model!",
+)
+parser.add_argument(
+    "-donor_path",
+    action="store",
+    default=None,
+    dest="user_donorPath",
+    help=f"Path to the glycan that is to be grafted throughout AlphaFoldDB model. If not specified, the script will default to using glycan located in '{defaultDonorPath}'",
+)
+parser.add_argument(
+    "-output_path",
+    action="store",
+    default=None,
+    dest="user_outputPath",
+    help=f"Specify output directory where AlpfaFoldDB models with grafted glycans should be saved. If unspecified, the script will default to '{defaultOutputModelPath}'",
+)
+parser.add_argument(
+    "-import_uniprotIDs_from_file",
+    action="store",
+    default=None,
+    dest="user_uniprotIDsList",
+    help=f"Glycosylate multiple AlphaFoldDB models from a list of UniProtIDs. Example file is located in '{defaultuniprotIDsListPath}' By default will download files from the server and save them localy in specified or default directory locations.",
+)
 
-# Implement argparse here to complete demo for Zenodo release.
+args = parser.parse_args()
+
+
+if args.user_uniprotID is not None:
+    uniprotID = args.user_uniprotID
+else:
+    uniprotID = defaultUniprotID
+if args.user_donorPath is not None:
+    donorPath = args.user_donorPath
+else:
+    donorPath = defaultDonorPath
+if args.user_outputPath is not None:
+    outputPath = args.user_outputPath
+else:
+    outputPath = defaultOutputModelPath
+
+if args.user_uniprotIDsList is not None:
+    uniprotIDListPath = args.user_uniprotIDsList
+
+
+if args.user_localReceiverPath is not None and args.user_uniprotID is None:
+    uniprotID = None
+    local_input_model_pipeline(
+        args.user_localReceiverPath, donorPath, outputPath, uniprotID
+    )
+elif args.user_localReceiverPath is not None and args.user_uniprotID is not None:
+    local_input_model_pipeline(
+        args.user_localReceiverPath, donorPath, outputPath, uniprotID
+    )
+elif args.user_uniprotIDsList is not None:
+    uniprotIDList = import_list_of_uniprotIDs_to_glycosylate(uniprotIDListPath)
+    for idx, uniprotID in enumerate(uniprotIDList):
+        online_input_model_pipeline(
+            uniprotID, donorPath, defaultInputModelPath, outputPath
+        )
+        print(
+            f"\n{idx+1}/{len(uniprotIDList)}: Successfully finished processing AlphaFoldDB model with UniProt ID of {uniprotID}.\n"
+        )
+else:
+    online_input_model_pipeline(uniprotID, donorPath, defaultInputModelPath, outputPath)
