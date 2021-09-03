@@ -1,10 +1,4 @@
-<!-- [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url] -->
-
+[![DOI](https://zenodo.org/badge/380387978.svg)](https://zenodo.org/badge/latestdoi/380387978)
 
 
 <!-- PROJECT LOGO -->
@@ -33,22 +27,18 @@
   <ol>
     <li>
       <a href="#about-the-grafting-script">About The Grafting Script</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#installation-of-privateer">Installation Of Privateer</a></li>
+        <li><a href="#setup-of-the-alphafolddb-glycan-grafting-demo-script">Demo Script Setup</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
@@ -97,7 +87,7 @@ brew install m4
 
 After the required system packages are installed, **[development version of Privateer](https://github.com/glycojones/privateer/tree/privateerpython)** needs to be compiled and built from scratch. For the grafting demo of AlphaFoldDB models, the installation procedure is composed of 2 steps.
 
-### **1.) Installation of Privateer**
+### **Installation of Privateer**
 
 1. Clone Privateer repo into *privateer_python* directory:
    ```sh
@@ -144,7 +134,7 @@ After the required system packages are installed, **[development version of Priv
     <p align="left">
     <img src="images/successfullinstall.png" alt="SuccessfulInstall" width="723" height="537"></p>
 
-### **2.) Setup of the AlphaFoldDB glycan grafting demo script**
+### **Setup of the AlphaFoldDB glycan grafting demo script**
 
 1. In *privateer_python* directory from **substep 2** of previous installation step, clone [project_alliane](https://github.com/GABRAH/project_alliance.git) GitHub repository:
    ```sh
@@ -165,30 +155,63 @@ After the required system packages are installed, **[development version of Priv
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### **1.) After the installation is complete, the following steps show how to prepare a fresh Terminal session to successfully run [grafter.py](privateer_grafting_demo/grafter.py) script.**
+1. Change directory to *privateer_python*:
+   ```sh
+   cd privateer_python
+   ```
+2. Source [CCP4](https://www.ccp4.ac.uk/) environment variables that are used by Privateer's [CCP4](https://www.ccp4.ac.uk/) dependencies:
+   ```sh
+   source ccp4.envsetup-sh
+   ```
+3. Source Python3 interpreter from virtualenv that contains [pybind11](https://github.com/pybind/pybind11) bindings to Privateer's **C++11 backend**:
+   ```sh
+   source privateerpython/bin/activate
+   ```
+4. Change directory to *grafting_demo*:
+   ```sh
+   cd grafting_demo
+   ```
+5. Change directory to *privateer_grafting_demo*:
+   ```sh
+   cd privateer_grafting_demo
+   ```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### **2.) Running [grafter.py](privateer_grafting_demo/grafter.py) script.**
 
-
-
+1. Get all available command line arguments/flags:
+   ```sh
+   python grafter.py -h
+   ```
+2. Most convenient use of the script:
+   ```sh
+   python grafter.py -import_uniprotIDs_from_file uniprotIDinputs.txt
+   ```
+   The **"-import_uniprotIDs_from_file"** flag will import a text file containing UniProtIDs of AlphaFoldDB models that are to be N-Glycosylated. The script will make online API queries to appropriate servers to 1) **retrieve and locally save the AlphaFoldDB model** and 2) **query UniProt database to determine which amino acids to N-glycosylate**.</br>
+   An [example file](privateer_grafting_demo/uniprotIDinputs.txt) is provided and users are encouraged to modify it with appropriate UniProt IDs that can be N-Glycosylated. The script is able to parse **both** _comma seperated values_ and _new line seperated values_
+3. It is also possible to run the script in the offline mode(assuming that an input structure can be locally sourced):
+   ```sh
+   python grafter.py -local_receiver_path input/receiving_model/P29016.pdb
+   ```
+   If **"-uniprotID"** flag with appropriate **UniProt ID** is not provided alongside with **"-local_receiver_path"** flag, then the script will glycosylate input structure according to the following N-Glycosylation consensus sequence: **Asn-Xaa-Ser/Thr**(where **Xaa** is not **Pro**) or **Asn-X-Cys**(where **X** denotes any amino acid).</br>
+   **WARNING: If using this method, please make sure that the following highlighted line in the image is removed:**
+    <p align="left">
+    <img src="images/deletemodel0.png" alt="deleteModel0Line" width="742" height="134">If the specific line is not removed, this will cause Privateer's MMDB dependency to segfault. Online methods of the script automatically deletes the line shown on the picture above.</p>
+4. Currently, by default all input AlphaFoldDB models are N-glycosylated with [Man5](privateer_grafting_demo/input/glycanblocks/man5/cluster1.pdb) glycan. In order to change the donor glycan, this can be done through the following method:
+   ```sh
+   python grafter.py -import_uniprotIDs_from_file uniprotIDinputs.txt -donor_path privateer_grafting_demo/input/glycanblocks/man9/cluster3.pdb
+   ```
+5. Simply running the script without any optional flags:
+   ```sh
+   python grafter.py
+   ```
+    Will run the script with the following default flags: 
+    _-uniprotID P29016_; _-donor_path privateer_grafting_demo/input/glycanblocks/man5/cluster1.pdb_; _-download_path privateer_grafting_demo/input/receiving_model_; _-output_path privateer_grafting_demo/output_. 
+    
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
+See the [open issues](https://github.com/glycojones/privateer/issues) for a list of proposed features (and known issues).
 
 
 <!-- LICENSE -->
@@ -197,38 +220,12 @@ Contributions are what make the open source community such an amazing place to l
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/glycojones/privateer](https://github.com/glycojones/privateer)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+HB is funded by The Royal Society grant RGF/R1/181006. JA is the Royal Society Olga Kennard Research Fellow award ref. UF160039. CAF is funded by the Irish Research Council (IRC) Government of Ireland Postgraduate Scholarship Programme.
+Data and methods are available at https://doi.org/10.5281/zenodo.5290625
