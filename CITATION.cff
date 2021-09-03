@@ -1,0 +1,18 @@
+cff-version: 1.0
+message: "Prototype version of Privateer software functionality that grafts glycans to AlphaFoldDB models."
+authors:
+  - family-names: Bagdonas
+    given-names: Haroldas
+    orcid: https://orcid.org/0000-0001-5028-4847
+  - family-names: Fogarty
+    given-names: Carl
+    orcid: https://orcid.org/0000-0001-5333-8206
+  - family-names: Fadda
+    given-names: Elisa
+    orcid: https://orcid.org/0000-0002-2898-7770
+  - family-names: Agirre
+    given-names: Jon
+    orcid: https://orcid.org/0000-0002-1086-0253
+title: The case for post-predictional modifications in the AlphaFold Protein Structure Database: supplementary data 
+version: v1.0
+date-released: 2021-09-03

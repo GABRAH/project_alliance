@@ -345,7 +345,7 @@ elif args.user_uniprotIDsList is not None:
             uniprotID, donorPath, inputModelDirectory, outputPath
         )
         print(
-            f"\n{idx+1}/{len(uniprotIDList)}: Successfully finished processing AlphaFoldDB model with UniProt ID of {uniprotID}.\n"
+            f"\n{idx+1}/{len(uniprotIDList)}: Successfully finished processing AlphaFoldDB model with UniProt ID of '{uniprotID}'.\n"
         )
 else:
     online_input_model_pipeline(uniprotID, donorPath, inputModelDirectory, outputPath)
