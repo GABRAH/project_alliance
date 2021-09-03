@@ -130,7 +130,7 @@ After the required system packages are installed, **[development version of Priv
    ```sh
    python setup.py install
    ```
-    Successfull installation of Privateer and its dependencies in the Terminal should appear in the following way:
+    Successful installation of Privateer and its dependencies in the Terminal should appear in the following way:
     <p align="left">
     <img src="images/successfullinstall.png" alt="SuccessfulInstall" width="723" height="537"></p>
 
