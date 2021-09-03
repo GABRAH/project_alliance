@@ -1,6 +1,9 @@
 import os
 import re
 import shutil
+import argparse
+from privateer import privateer_core as pvtcore
+from prettytable import PrettyTable
 
 # import gemmi
 # from privateer import libprivateer as pvt
@@ -840,7 +843,7 @@ def convertGlycamToPDB(glycamOneLetterToPDBThreeLetterCodeConversion, inputPDB, 
 
     for line in inputPDB:
         splitLine = re.split(r"(\s+)", line)
-        if len(splitLine) > 3:
+        if len(splitLine) > 10:
             match = re.search(regex, splitLine[6])
             if match is not None:
                 codeToReplace = splitLine[6][match.start() + 1 : match.end()]
@@ -857,6 +860,21 @@ def convertGlycamToPDB(glycamOneLetterToPDBThreeLetterCodeConversion, inputPDB, 
                     unsupportedByPrivaterCodes.append(
                         {"GlycamCode": match.group(), "PDBCode": replacementPDBCode}
                     )
+        elif splitLine[0] == "TER":
+            match = re.search(regex, line)
+            codeToReplace = line[match.start() + 1 : match.end()]
+            replacementDictionary = glycamOneLetterToPDBThreeLetterCodeConversion[
+                codeToReplace
+            ]
+            replacementPDBCode = replacementDictionary["PDB"]
+            supportedByPrivateer = replacementDictionary["supported"]
+            outputLine = line.replace(match.group(), replacementPDBCode)
+            output.append(outputLine)
+
+            if supportedByPrivateer == False:
+                unsupportedByPrivaterCodes.append(
+                    {"GlycamCode": match.group(), "PDBCode": replacementPDBCode}
+                )
         else:
             output.append(line)
 
@@ -882,22 +900,195 @@ def conversionPipeline(path):
     return convertedPDB
 
 
-# inputpath = (
-#     "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/omannose/"
-# )
-# outputpath = "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/omannoseConvertedPDB/"
+def privateerValidation(path):
+    outputList = []
+    glycosylation = pvtcore.GlycosylationComposition_memsafe(path)
+    numGlycans = glycosylation.get_number_of_glycan_chains_detected()
+    for glycanIndex in range(numGlycans):
+        glycanList = []
+        glycan = glycosylation.get_glycan(glycanIndex)
+        glycanWURCS = glycan.get_wurcs_notation()
+        numSugars = glycan.get_total_number_of_sugars()
+        for sugarIndex in range(numSugars):
+            sugar = glycan.get_monosaccharide(sugarIndex)
+            sugarPDBCode = sugar.get_name_short()
+            sugarPDBChain = sugar.get_sugar_pdb_chain()
+            sugarPDBID = int(sugar.get_sugar_pdb_id())
+            sugarCremerPople = sugar.get_cremer_pople_params()
+            puckeringAmplitude = sugarCremerPople[0]
+            Phi = sugarCremerPople[1]
+            Theta = sugarCremerPople[2]
+            sugarType = sugar.get_denomination()
+            sugarConformation = sugar.get_conformation_name()
+            sugarBFac = sugar.get_bfactor()
+            sugarCtx = sugar.get_glycosylation_type()
+            sugarPrivateerDiagnostic = sugar.get_privateer_diagnostic()
+            if sugarConformation != "4c1" or sugarPrivateerDiagnostic != "yes":
+                glycanList.append(
+                    {
+                        "Code": sugarPDBCode,
+                        "Chain": sugarPDBChain,
+                        "ID": sugarPDBID,
+                        "Q": puckeringAmplitude,
+                        "Phi": Phi,
+                        "Theta": Theta,
+                        "detectedType": sugarType,
+                        "cnf": sugarConformation,
+                        "bfac": sugarBFac,
+                        "ctx": sugarCtx,
+                        "diagnostic": sugarPrivateerDiagnostic,
+                    }
+                )
+        if len(glycanList):
+            sortedList = sorted(glycanList, key=lambda k: k["ID"])
+            outputDict = {
+                "WURCS": glycanWURCS,
+                "totalSugars": numSugars,
+                "problematicSugars": sortedList,
+            }
+            outputList.append(outputDict)
 
-inputpath = (
-    "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/omannose/"
+    if len(outputList):
+        return {"path": path, "Glycans": outputList}
+    else:
+        return None
+
+
+def print_privateer_validation_results(fileResults):
+    totalSugars = 0
+    totalProblematicSugars = 0
+    table = PrettyTable()
+    table.field_names = [
+        "Sugar",
+        "Q",
+        "Phi",
+        "Theta",
+        "Detected type",
+        "Cnf",
+        "<Bfac>",
+        "Ctx",
+        "Ok?",
+    ]
+    path = fileResults["path"]
+    glycans = fileResults["Glycans"]
+    print(f"File path: {path}")
+    for idx, glycan in enumerate(glycans):
+        print(f'Glycans - {idx+1}/{len(glycans)}: Conversion WURCS: {glycan["WURCS"]}')
+        problematicSugars = glycan["problematicSugars"]
+        totalSugars += glycan["totalSugars"]
+        totalProblematicSugars += len(problematicSugars)
+        for sugar in problematicSugars:
+            sugarString = f'{sugar["Code"]}-{sugar["Chain"]}-{sugar["ID"]}'
+            table.add_row(
+                [
+                    sugarString,
+                    sugar["Q"],
+                    sugar["Phi"],
+                    sugar["Theta"],
+                    sugar["detectedType"],
+                    sugar["cnf"],
+                    sugar["bfac"],
+                    sugar["ctx"],
+                    sugar["diagnostic"],
+                ]
+            )
+    print(table)
+    print(
+        f"{totalProblematicSugars}/{totalSugars} sugars in the input file have been detected as having problems.\n\n"
+    )
+
+
+parser = argparse.ArgumentParser(
+    prog="glycam2pdb.py",
+    usage="%(prog)s [options] PATH.",
+    description=f"Convert Glycam notation PDBs to standard PDB files.",
 )
-outputpath = "/home/harold/Dev/privateer_python/project_alliance/glycampdbfiles/omannoseConvertedPDB/"
-CreateFolder(outputpath)
+required = parser.add_argument_group("required arguments")
+required.add_argument(
+    "-input",
+    action="store",
+    dest="user_inputPath",
+    help="Input path either directly to a single file or a root directory that contains multiple PDB files(no trailing slash should be left)",
+    required=True,
+)
+parser.add_argument(
+    "-output",
+    action="store",
+    default=None,
+    dest="user_outputPath",
+    help="Output converted file to a specific path or if directory is converted - to a specific directory.",
+)
+parser.add_argument(
+    "-validate",
+    action="store_true",
+    default=False,
+    dest="user_validate",
+    help="Validate converted file with Privateer and output summary results at the end of the script",
+)
 
-for root, dirs, files in os.walk(inputpath, topdown=False):
-    for name in files:
-        head, tail = os.path.split(root)
-        outputroot = os.path.join(outputpath, tail)
-        if not os.path.exists(outputroot):
-            os.makedirs(outputroot)
-        with open(os.path.join(outputroot, name), mode="w") as newfile:
-            newfile.writelines(conversionPipeline(os.path.join(root, name)))
+args = parser.parse_args()
+inputpath = args.user_inputPath
+
+currentDirectory = os.getcwd()
+completeInputPath = os.path.join(currentDirectory, inputpath)
+
+if completeInputPath[-1] == "/":
+    basePath = os.path.dirname(os.path.dirname(completeInputPath))
+else:
+    basePath = os.path.dirname(completeInputPath)
+
+if os.path.isdir(completeInputPath):
+    inputDirectory = os.path.basename(os.path.normpath(completeInputPath))
+    if args.user_outputPath is None:
+        outputDirectory = inputDirectory + "ConvertedPDB"
+        outputpath = os.path.join(basePath, outputDirectory)
+    else:
+        outputpath = os.path.join(currentDirectory, args.user_outputPath)
+    CreateFolder(outputpath)
+    for root, dirs, files in os.walk(completeInputPath, topdown=False):
+        for name in files:
+            head, tail = os.path.split(root)
+            difference = os.path.relpath(head, outputpath)
+            if len(difference) > 2:
+                outputroot = os.path.join(outputpath, tail)
+                if not os.path.exists(outputroot):
+                    os.makedirs(outputroot)
+                outputFilePath = os.path.join(outputroot, name)
+                with open(outputFilePath, mode="w") as newfile:
+                    newfile.writelines(conversionPipeline(os.path.join(root, name)))
+                if args.user_validate is True:
+                    fileResults = privateerValidation(outputFilePath)
+                    if fileResults is not None:
+                        print_privateer_validation_results(fileResults)
+                    else:
+                        print(f"Privateer detected no issues in: {outputFilePath}")
+            else:
+                outputroot = os.path.join(head, outputDirectory)
+                outputFilePath = os.path.join(outputroot, name)
+                with open(outputFilePath, mode="w") as newfile:
+                    newfile.writelines(conversionPipeline(os.path.join(root, name)))
+                if args.user_validate is True:
+                    fileResults = privateerValidation(outputFilePath)
+                    if fileResults is not None:
+                        print_privateer_validation_results(fileResults)
+                    else:
+                        print(f"Privateer detected no issues in: {outputFilePath}")
+elif os.path.isdir(completeInputPath) is False:
+    inputFileName = os.path.basename(os.path.normpath(completeInputPath))
+    if args.user_outputPath is None:
+        outputFileName = "CONVERTED_" + inputFileName
+        outputFilePath = os.path.join(basePath, outputFileName)
+    else:
+        outputFilePath = os.path.join(currentDirectory, args.user_outputPath)
+    with open(os.path.join(outputFilePath), mode="w") as newfile:
+        newfile.writelines(conversionPipeline(os.path.join(completeInputPath)))
+    if args.user_validate is True:
+        fileResults = privateerValidation(outputFilePath)
+        if fileResults is not None:
+            print_privateer_validation_results(fileResults)
+        else:
+            print(f"Privateer detected no issues in: {outputFilePath}")
+else:
+    raise ValueError(
+        f"Unable to determine whether {completeInputPath} is a file or a directory!"
+    )
