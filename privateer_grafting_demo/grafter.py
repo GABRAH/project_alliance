@@ -132,6 +132,7 @@ def glycosylate_receiving_model_using_consensus_seq(
     builder = pvtmodelling.Builder(
         receiverpath,
         donorpath,
+        -1,
         trimGlycanIfClashesDetected,
         True,
         enableUserMessages,
@@ -161,6 +162,7 @@ def glycosylate_receiving_model_using_uniprot_info(
     builder = pvtmodelling.Builder(
         receiverpath,
         donorpath,
+        -1,
         trimGlycanIfClashesDetected,
         True,
         enableUserMessages,
