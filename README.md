@@ -1,5 +1,7 @@
 # project_alliance
-Collaboration between Dr. Elisa Fadda and Dr. Jon Agirre groups 
+Collaboration between Dr. Elisa Fadda and Dr. Jon Agirre groups
+
+# [CAUTION: Cleaner repository accompanying the Nature Communications Demo, can be accessed in a seperate branch - https://github.com/GABRAH/project_alliance/tree/NatureCommunicationsDemo](https://github.com/GABRAH/project_alliance/tree/NatureCommunicationsDemo)
 
 ## Example commands for new version of [glycam2pdb.py](utility_scripts/glycam2pdb.py)
 
