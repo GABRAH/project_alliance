@@ -1,6 +1,5 @@
 [![DOI](https://zenodo.org/badge/380387978.svg)](https://zenodo.org/badge/latestdoi/380387978)
 
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -19,12 +18,17 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
+   <li>
+      <a href="#changelog">Changelog</a>
+      <ul>
+        <li><a href="#version-11">v1.1, released 12/10/2021</a></li>
+        <li><a href="#initial-release">Initial Release</a></li>
+      </ul>
+    </li>
     <li>
       <a href="#about-the-grafting-script">About The Grafting Script</a>
     </li>
@@ -43,7 +47,21 @@
   </ol>
 </details>
 
+## Changelog
 
+### Version 1.1
+* Modified demo [grafter.py](privateer_grafting_demo/grafter.py) script to reflect recent additions to Privateer's pymodelling module
+   * Manipulation of Phi/Psi angles to reduce clashes can now be executed in parallel
+   * Functions to change targer Phi/Psi angles for ASN-sugar linkages.
+   * Function to change iteration step of Phi/Psi angle manipulation. 
+* Fixed typos in [README.MD](README.MD)
+* Update of [glycanblocks](privateer_grafting_demo/input/glycanblocks/) as some sugar in the structures had previously contained conformations in higher energies.
+* Added exemplar [reference_output.txt](privateer_grafting_demo/reference_output.txt) as a reference.
+* Added [CITATION.cff](CITATION.cff) file.
+
+### Initial Release
+
+* Originally released on 3rd September 2021.
 
 ## About The Grafting Script
 
@@ -54,11 +72,13 @@ The demo [grafter.py](privateer_grafting_demo/grafter.py) script is a user-frien
 In order to run this script, a **development version** of [Privateer](https://github.com/glycojones/privateer/tree/privateerpython) software must be obtained that is not yet officially released through [CCP4](https://www.ccp4.ac.uk/) and [CCP-EM](https://www.ccpem.ac.uk/).
 
 **Supported operating systems by the [development version of Privateer](https://github.com/glycojones/privateer/tree/privateerpython):**
-* **Linux**(tested on Ubuntu Linux 20.04)
-* **MacOS**(tested on MacOS "Catalina" 10.15.5)
+
+- **Linux**(tested on Ubuntu Linux 20.04)
+- **MacOS**(tested on MacOS "Catalina" 10.15.5)
 
 **Currently unsupported operating systems by the [development version of Privateer](https://github.com/glycojones/privateer/tree/privateerpython):**
-* **Windows**
+
+- **Windows**
 
 ## Getting Started
 
@@ -67,6 +87,7 @@ To get a local copy up and running follow the steps below:
 ### Prerequisites
 
 Assuming a fresh installation of **Ubuntu Linux 20.04**, the following system packages need to be installed via:
+
 ```sh
 sudo apt-get install cmake
 sudo apt-get install bzr
@@ -76,6 +97,7 @@ sudo apt-get install m4
 ```
 
 On MacOS, this can be achieved via [Homebrew](https://brew.sh/) package manager and running the following commands afterwards:
+
 ```sh
 brew install wget
 brew install cmake
@@ -85,15 +107,15 @@ brew install gfortran
 brew install m4
 ```
 
-After the required system packages are installed, **[development version of Privateer](https://github.com/glycojones/privateer/tree/privateerpython)** needs to be compiled and built from scratch. For the grafting demo of AlphaFoldDB models, the installation procedure is composed of 2 steps.
+After the required system packages are installed, **[development version of Privateer](https://github.com/glycojones/privateer/tree/privateerpython)** needs to be compiled and built from scratch. For the grafting demo of AlphaFoldDB models, the installation procedure is composed of 2 sections.
 
 ### **Installation of Privateer**
 
-1. Clone Privateer repo into *privateer_python* directory:
+1. Clone Privateer repo into _privateer_python_ directory:
    ```sh
    git clone https://github.com/glycojones/privateer.git privateer_python
    ```
-2. Change directory to *privateer_python*:
+2. Change directory to _privateer_python_:
    ```sh
    cd privateer_python
    ```
@@ -113,15 +135,15 @@ After the required system packages are installed, **[development version of Priv
    ```sh
    source ccp4.envsetup-sh
    ```
-    **CAUTION: THIS STEP HAS TO BE REPEATED EVERY TIME A NEW TERMINAL TAB/WINDOW IS OPENED**<br/>
-    Secondary caution: The output of this step may appear error-like. This is normal behaviour, as shown in the following picture:
+   **CAUTION: THIS STEP HAS TO BE REPEATED EVERY TIME A NEW TERMINAL TAB/WINDOW IS OPENED**<br/>
+   Secondary caution: The output of this step may appear error-like. This is normal behaviour, as shown in the following picture:
     <p align="left">
     <img src="images/ccp4sourcescriptoutput.png" alt="CCP4Source" width="923" height="183"></p>
 7. Source Python3 interpreter from virtualenv that contains [pybind11](https://github.com/pybind/pybind11) bindings to Privateer's **C++11 backend**:
    ```sh
    source privateerpython/bin/activate
    ```
-    **CAUTION: THIS STEP HAS TO BE REPEATED EVERY TIME A NEW TERMINAL TAB/WINDOW IS OPENED**
+   **CAUTION: THIS STEP HAS TO BE REPEATED EVERY TIME A NEW TERMINAL TAB/WINDOW IS OPENED**
 8. Install necessary Python modules through **pip3** to local **privateerpython** interpreter
    ```sh
    pip install -r requirements.txt
@@ -130,17 +152,17 @@ After the required system packages are installed, **[development version of Priv
    ```sh
    python setup.py install
    ```
-    Successful installation of Privateer and its dependencies in the Terminal should appear in the following way:
+   Successful installation of Privateer and its dependencies in the Terminal should appear in the following way:
     <p align="left">
     <img src="images/successfullinstall.png" alt="SuccessfulInstall" width="723" height="537"></p>
 
 ### **Setup of the AlphaFoldDB glycan grafting demo script**
 
-1. In *privateer_python* directory from **substep 2** of previous installation step, clone [project_alliane](https://github.com/GABRAH/project_alliance.git) GitHub repository:
+1. In _privateer_python_ directory from **substep 2** of previous installation step, clone [project_alliane](https://github.com/GABRAH/project_alliance.git) GitHub repository:
    ```sh
    git clone https://github.com/GABRAH/project_alliance.git grafting_demo
    ```
-2. Change directory to *grafting_demo*:
+2. Change directory to _grafting_demo_:
    ```sh
    cd grafting_demo
    ```
@@ -151,12 +173,13 @@ After the required system packages are installed, **[development version of Priv
 
 **After following these steps, the installation should be complete!**
 
-
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 ### **1.) After the installation is complete, the following steps show how to prepare a fresh Terminal session to successfully run [grafter.py](privateer_grafting_demo/grafter.py) script.**
-1. Change directory to *privateer_python*:
+
+1. Change directory to _privateer_python_:
    ```sh
    cd privateer_python
    ```
@@ -168,11 +191,11 @@ After the required system packages are installed, **[development version of Priv
    ```sh
    source privateerpython/bin/activate
    ```
-4. Change directory to *grafting_demo*:
+4. Change directory to _grafting_demo_:
    ```sh
    cd grafting_demo
    ```
-5. Change directory to *privateer_grafting_demo*:
+5. Change directory to _privateer_grafting_demo_:
    ```sh
    cd privateer_grafting_demo
    ```
@@ -196,7 +219,7 @@ After the required system packages are installed, **[development version of Priv
    If **"-uniprotID"** flag with appropriate **UniProt ID** is not provided alongside with **"-local_receiver_path"** flag, then the script will glycosylate input structure according to the following N-Glycosylation consensus sequence: **Asn-Xaa-Ser/Thr**(where **Xaa** is not **Pro**) or **Asn-X-Cys**(where **X** denotes any amino acid).</br>
    **WARNING: If using this method, please make sure that the following highlighted line in the image is removed:**
     <p align="left">
-    <img src="images/deletemodel0.png" alt="deleteModel0Line" width="742" height="134">If the specific line is not removed, this will cause Privateer's MMDB dependency to segfault. Online methods of the script automatically deletes the line shown on the picture above.</p>
+    <img src="images/deletemodel0.png" alt="deleteModel0Line" width="742" height="134"><br/>If the specific line is not removed, this will cause Privateer's MMDB dependency to segfault. The script automatically deletes the line shown on the picture above, if it is allowed to automatically download the structures from AlphaFoldDB.</p>
 4. Currently, by default all input AlphaFoldDB models are N-glycosylated with [Man5](privateer_grafting_demo/input/glycanblocks/man5/cluster1.pdb) glycan. In order to change the donor glycan, this can be done through the following method:
    ```sh
    python grafter.py -import_uniprotIDs_from_file uniprotIDinputs.txt -donor_path privateer_grafting_demo/input/glycanblocks/man9/cluster3.pdb
@@ -205,26 +228,25 @@ After the required system packages are installed, **[development version of Priv
    ```sh
    python grafter.py
    ```
-    Will run the script with the following default flags: 
-    _-uniprotID P29016_; _-donor_path privateer_grafting_demo/input/glycanblocks/man5/cluster1.pdb_; _-download_path privateer_grafting_demo/input/receiving_model_; _-output_path privateer_grafting_demo/output_. 
-    
+   Will run the script with the following default flags:
+   _-uniprotID P29016_; _-donor_path privateer_grafting_demo/input/glycanblocks/man5/cluster1.pdb_; _-download_path privateer_grafting_demo/input/receiving_model_; _-output_path privateer_grafting_demo/output_.
+
 <!-- ROADMAP -->
+
 ## Roadmap
 
 See the [open issues](https://github.com/glycojones/privateer/issues) for a list of proposed features (and known issues).
 
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
 Project Link: [https://github.com/glycojones/privateer](https://github.com/glycojones/privateer)
 
-
-
 <!-- ACKNOWLEDGEMENTS -->
+
 ## Acknowledgements
 
 HB is funded by The Royal Society grant RGF/R1/181006. JA is the Royal Society Olga Kennard Research Fellow award ref. UF160039. CAF is funded by the Irish Research Council (IRC) Government of Ireland Postgraduate Scholarship Programme.

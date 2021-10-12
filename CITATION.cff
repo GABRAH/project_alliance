@@ -1,0 +1,25 @@
+cff-version: 1.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Haroldas
+    given-names: Bagdonas
+    orcid: https://orcid.org/0000-0001-5028-4847
+  - family-names: Carl A.
+    given-names: Fogarty
+    orcid: https://orcid.org/0000-0001-5333-8206
+  - family-names: Elisa
+    given-names: Fadda
+    orcid: https://orcid.org/0000-0002-2898-7770
+  - family-names: Jon
+    given-names: Agirre
+    orcid: https://orcid.org/0000-0002-1086-0253
+title: The case for post-predictional modifications in the AlphaFold Protein Structure Database
+abstract: AlphaFold2 has arrived to change workflows in structural biology, for good. However, the algorithm does not account for essential modifications that affect protein structure and function, giving us only part of the picture. Here we discuss how this omission can be addressed in a relatively straightforward manner, leading to a complete structural prediction of complex biomolecular systems.
+version: v1.1
+date-released: 2021-10-12
+identifiers:
+  - description: Archived snapshots of all software repositories accompanying the article
+    type: doi
+    value: "10.5281/zenodo.5290624"
+license: MIT
+repository-code: "https://github.com/GABRAH/project_alliance/tree/NatureCommunicationsDemo"

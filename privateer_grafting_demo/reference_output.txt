@@ -1,0 +1,234 @@
+
+THREADING: Privateer will use 16 of the 16 available threads...
+
+ Spacegroup/cell information is missing from the PDB file.
+ Privateer will still run, but may miss any important contacts described by crystallographic symmetry.
+
+Imported receiver model with the path of: /home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/receiving_model/O15552.pdb
+Number of chains detected in receiver model: 1
+
+ Spacegroup/cell information is missing from the PDB file.
+ Privateer will still run, but may miss any important contacts described by crystallographic symmetry.
+
+Imported donor model with the path of: /home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/glycanblocks/man5/cluster1.pdb
+Number of chains detected in donor model: 1
+
+ Spacegroup/cell information is missing from the PDB file.
+ Privateer will still run, but may miss any important contacts described by crystallographic symmetry.
+
+Number of glycans detected in donor model: 1
+Grafting glycan with the WURCS of:
+WURCS=2.0/3,7,6/[a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-1-2-3-3-3-3/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-g1
+Grafting input glycan to: A/ASN-151
+Successfully located ASN instructions. Will connect glycan to ND2 with CG and CB used to generate rotation-translation matrix. Target Phi = -97.5, target Psi = 178
+Successfully located ideal glycan grafting instructions. Will connect glycan via C1 and O1 used to generate rotation-translation matrix.
+Unfortunately, the grafted glycan resulted in 3 clashes with protein backbone. Attempting to eliminate or minimize clashes through further manipulation of Phi/Psi torsion angles.
+1/3 initial clash: A/171-ASN			Sugar: B/2-NAG
+2/3 initial clash: A/172-GLN			Sugar: B/2-NAG
+3/3 initial clash: A/150-LEU			Sugar: B/2-NAG
+After manipulating Phi/Psi torsion angles further, the following were found to minimize clashes the most, Psi: 156.407		Phi: -75.9074
+Managed to eliminate 1 clashes. Remaining clashes: 
+1/2 remaining clash: A/171-ASN			Sugar: B/2-NAG
+2/2 remaining clash: A/172-GLN			Sugar: B/2-NAG
+Grafting input glycan with Chain ID of: B to ASN-151
+Glycan has been grafted!
+Grafting glycan with the WURCS of:
+WURCS=2.0/3,7,6/[a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-1-2-3-3-3-3/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-g1
+Grafting input glycan to: A/ASN-167
+Successfully located ASN instructions. Will connect glycan to ND2 with CG and CB used to generate rotation-translation matrix. Target Phi = -97.5, target Psi = 178
+Successfully located ideal glycan grafting instructions. Will connect glycan via C1 and O1 used to generate rotation-translation matrix.
+Unfortunately, the grafted glycan resulted in 8 clashes with protein backbone. Attempting to eliminate or minimize clashes through further manipulation of Phi/Psi torsion angles.
+1/8 initial clash: A/161-GLU			Sugar: C/2-NAG
+2/8 initial clash: A/163-THR			Sugar: C/2-NAG
+3/8 initial clash: A/5-TRP			Sugar: C/4-BMA
+4/8 initial clash: A/5-TRP			Sugar: C/8-MAN
+5/8 initial clash: A/4-ASP			Sugar: C/8-MAN
+6/8 initial clash: A/6-LYS			Sugar: C/8-MAN
+7/8 initial clash: A/253-TRP			Sugar: C/7-MAN
+8/8 initial clash: A/250-LYS			Sugar: C/7-MAN
+After manipulating Phi/Psi torsion angles further, the following were found to minimize clashes the most, Psi: 152.985		Phi: -95.6854
+Managed to eliminate 7 clashes. Remaining clashes: 
+1/1 remaining clash: A/161-GLU			Sugar: C/2-NAG
+Grafting input glycan with Chain ID of: C to ASN-167
+Glycan has been grafted!
+
+THREADING: Privateer will use 16 of the 16 available threads...
+
+ Spacegroup/cell information is missing from the PDB file.
+ Privateer will still run, but may miss any important contacts described by crystallographic symmetry.
+
+Imported receiver model with the path of: /home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/receiving_model/P01920.pdb
+Number of chains detected in receiver model: 1
+
+ Spacegroup/cell information is missing from the PDB file.
+ Privateer will still run, but may miss any important contacts described by crystallographic symmetry.
+
+Imported donor model with the path of: /home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/glycanblocks/man5/cluster1.pdb
+Number of chains detected in donor model: 1
+
+ Spacegroup/cell information is missing from the PDB file.
+ Privateer will still run, but may miss any important contacts described by crystallographic symmetry.
+
+Number of glycans detected in donor model: 1
+Grafting glycan with the WURCS of:
+WURCS=2.0/3,7,6/[a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-1-2-3-3-3-3/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-g1
+Grafting input glycan to: A/ASN-51
+Successfully located ASN instructions. Will connect glycan to ND2 with CG and CB used to generate rotation-translation matrix. Target Phi = -97.5, target Psi = 178
+Successfully located ideal glycan grafting instructions. Will connect glycan via C1 and O1 used to generate rotation-translation matrix.
+Unfortunately, the grafted glycan resulted in 2 clashes with protein backbone. Attempting to eliminate or minimize clashes through further manipulation of Phi/Psi torsion angles.
+1/2 initial clash: A/124-GLN			Sugar: B/7-MAN
+2/2 initial clash: A/119-LEU			Sugar: B/7-MAN
+After manipulating Phi/Psi torsion angles further, the following were found to minimize clashes the most, Psi: -171.07		Phi: -93.5887
+Managed to eliminate 2 clashes. Remaining clashes: 
+Grafting input glycan with Chain ID of: B to ASN-51
+Glycan has been grafted!
+
+THREADING: Privateer will use 16 of the 16 available threads...
+
+ Spacegroup/cell information is missing from the PDB file.
+ Privateer will still run, but may miss any important contacts described by crystallographic symmetry.
+
+Imported receiver model with the path of: /home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/receiving_model/Q9BXJ4.pdb
+Number of chains detected in receiver model: 1
+
+ Spacegroup/cell information is missing from the PDB file.
+ Privateer will still run, but may miss any important contacts described by crystallographic symmetry.
+
+Imported donor model with the path of: /home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/glycanblocks/man5/cluster1.pdb
+Number of chains detected in donor model: 1
+
+ Spacegroup/cell information is missing from the PDB file.
+ Privateer will still run, but may miss any important contacts described by crystallographic symmetry.
+
+Number of glycans detected in donor model: 1
+Grafting glycan with the WURCS of:
+WURCS=2.0/3,7,6/[a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-1-2-3-3-3-3/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-g1
+Grafting input glycan to: A/ASN-70
+Successfully located ASN instructions. Will connect glycan to ND2 with CG and CB used to generate rotation-translation matrix. Target Phi = -97.5, target Psi = 178
+Successfully located ideal glycan grafting instructions. Will connect glycan via C1 and O1 used to generate rotation-translation matrix.
+Grafting input glycan with Chain ID of: B to ASN-70
+Glycan has been grafted!
+
+THREADING: Privateer will use 16 of the 16 available threads...
+
+ Spacegroup/cell information is missing from the PDB file.
+ Privateer will still run, but may miss any important contacts described by crystallographic symmetry.
+
+Imported receiver model with the path of: /home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/receiving_model/P29016.pdb
+Number of chains detected in receiver model: 1
+
+ Spacegroup/cell information is missing from the PDB file.
+ Privateer will still run, but may miss any important contacts described by crystallographic symmetry.
+
+Imported donor model with the path of: /home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/glycanblocks/man5/cluster1.pdb
+Number of chains detected in donor model: 1
+
+ Spacegroup/cell information is missing from the PDB file.
+ Privateer will still run, but may miss any important contacts described by crystallographic symmetry.
+
+Number of glycans detected in donor model: 1
+Grafting glycan with the WURCS of:
+WURCS=2.0/3,7,6/[a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-1-2-3-3-3-3/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-g1
+Grafting input glycan to: A/ASN-38
+Successfully located ASN instructions. Will connect glycan to ND2 with CG and CB used to generate rotation-translation matrix. Target Phi = -97.5, target Psi = 178
+Successfully located ideal glycan grafting instructions. Will connect glycan via C1 and O1 used to generate rotation-translation matrix.
+Unfortunately, the grafted glycan resulted in 10 clashes with protein backbone. Attempting to eliminate or minimize clashes through further manipulation of Phi/Psi torsion angles.
+1/10 initial clash: A/40-THR			Sugar: B/2-NAG
+2/10 initial clash: A/41-TRP			Sugar: B/2-NAG
+3/10 initial clash: A/42-ALA			Sugar: B/2-NAG
+4/10 initial clash: A/40-THR			Sugar: B/3-NAG
+5/10 initial clash: A/42-ALA			Sugar: B/3-NAG
+6/10 initial clash: A/93-PHE			Sugar: B/5-MAN
+7/10 initial clash: A/96-ALA			Sugar: B/7-MAN
+8/10 initial clash: A/97-ARG			Sugar: B/7-MAN
+9/10 initial clash: A/93-PHE			Sugar: B/6-MAN
+10/10 initial clash: A/60-SER			Sugar: B/6-MAN
+After manipulating Phi/Psi torsion angles further, the following were found to minimize clashes the most, Psi: -157.054		Phi: -96.5953
+Managed to eliminate 7 clashes. Remaining clashes: 
+1/3 remaining clash: A/40-THR			Sugar: B/2-NAG
+2/3 remaining clash: A/41-TRP			Sugar: B/2-NAG
+3/3 remaining clash: A/97-ARG			Sugar: B/7-MAN
+Grafting input glycan with Chain ID of: B to ASN-38
+Glycan has been grafted!
+Grafting glycan with the WURCS of:
+WURCS=2.0/3,7,6/[a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-1-2-3-3-3-3/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-g1
+Grafting input glycan to: A/ASN-75
+Successfully located ASN instructions. Will connect glycan to ND2 with CG and CB used to generate rotation-translation matrix. Target Phi = -97.5, target Psi = 178
+Successfully located ideal glycan grafting instructions. Will connect glycan via C1 and O1 used to generate rotation-translation matrix.
+Unfortunately, the grafted glycan resulted in 2 clashes with protein backbone. Attempting to eliminate or minimize clashes through further manipulation of Phi/Psi torsion angles.
+1/2 initial clash: A/189-LEU			Sugar: C/2-NAG
+2/2 initial clash: A/190-GLY			Sugar: C/2-NAG
+After manipulating Phi/Psi torsion angles further, the following were found to minimize clashes the most, Psi: 166.314		Phi: -116.665
+Managed to eliminate 2 clashes. Remaining clashes: 
+Grafting input glycan with Chain ID of: C to ASN-75
+Glycan has been grafted!
+Grafting glycan with the WURCS of:
+WURCS=2.0/3,7,6/[a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-1-2-3-3-3-3/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-g1
+Grafting input glycan to: A/ASN-146
+Successfully located ASN instructions. Will connect glycan to ND2 with CG and CB used to generate rotation-translation matrix. Target Phi = -97.5, target Psi = 178
+Successfully located ideal glycan grafting instructions. Will connect glycan via C1 and O1 used to generate rotation-translation matrix.
+Grafting input glycan with Chain ID of: D to ASN-146
+Glycan has been grafted!
+Grafting glycan with the WURCS of:
+WURCS=2.0/3,7,6/[a2122h-1b_1-5_2*NCC/3=O][a1122h-1b_1-5][a1122h-1a_1-5]/1-1-2-3-3-3-3/a4-b1_b4-c1_c3-d1_c6-e1_e3-f1_e6-g1
+Grafting input glycan to: A/ASN-258
+Successfully located ASN instructions. Will connect glycan to ND2 with CG and CB used to generate rotation-translation matrix. Target Phi = -97.5, target Psi = 178
+Successfully located ideal glycan grafting instructions. Will connect glycan via C1 and O1 used to generate rotation-translation matrix.
+Unfortunately, the grafted glycan resulted in 23 clashes with protein backbone. Attempting to eliminate or minimize clashes through further manipulation of Phi/Psi torsion angles.
+1/23 initial clash: A/260-THR			Sugar: E/2-NAG
+2/23 initial clash: A/203-VAL			Sugar: E/2-NAG
+3/23 initial clash: A/228-GLY			Sugar: E/2-NAG
+4/23 initial clash: A/206-GLU			Sugar: E/3-NAG
+5/23 initial clash: A/205-PRO			Sugar: E/3-NAG
+6/23 initial clash: A/204-LYS			Sugar: E/3-NAG
+7/23 initial clash: A/227-SER			Sugar: E/3-NAG
+8/23 initial clash: A/207-ALA			Sugar: E/4-BMA
+9/23 initial clash: A/206-GLU			Sugar: E/4-BMA
+10/23 initial clash: A/208-TRP			Sugar: E/4-BMA
+11/23 initial clash: A/225-HIS			Sugar: E/4-BMA
+12/23 initial clash: A/205-PRO			Sugar: E/4-BMA
+13/23 initial clash: A/291-ILE			Sugar: E/8-MAN
+14/23 initial clash: A/205-PRO			Sugar: E/8-MAN
+15/23 initial clash: A/208-TRP			Sugar: E/5-MAN
+16/23 initial clash: A/225-HIS			Sugar: E/5-MAN
+17/23 initial clash: A/262-TYR			Sugar: E/5-MAN
+18/23 initial clash: A/262-TYR			Sugar: E/7-MAN
+19/23 initial clash: A/208-TRP			Sugar: E/7-MAN
+20/23 initial clash: A/227-SER			Sugar: E/7-MAN
+21/23 initial clash: A/263-LEU			Sugar: E/7-MAN
+22/23 initial clash: A/226-VAL			Sugar: E/7-MAN
+23/23 initial clash: A/225-HIS			Sugar: E/7-MAN
+After manipulating Phi/Psi torsion angles further, the following were found to minimize clashes the most, Psi: 154.295		Phi: -81.2277
+Managed to eliminate 17 clashes. Remaining clashes: 
+1/6 remaining clash: A/203-VAL			Sugar: E/2-NAG
+2/6 remaining clash: A/227-SER			Sugar: E/3-NAG
+3/6 remaining clash: A/208-TRP			Sugar: E/4-BMA
+4/6 remaining clash: A/208-TRP			Sugar: E/8-MAN
+5/6 remaining clash: A/207-ALA			Sugar: E/8-MAN
+6/6 remaining clash: A/262-TYR			Sugar: E/7-MAN
+Grafting input glycan with Chain ID of: E to ASN-258
+Glycan has been grafted!
+Successfully downloaded model from AlphaFoldDB with UniProt ID: 'O15552' to /home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/receiving_model/O15552.pdb
+1/2: Grafted donor glycan as chain B to A/ASN-151. The graft has resulted in 2 clashes with an average atomic distance of from detected clashing residues: 6.322777884681306.
+2/2: Grafted donor glycan as chain C to A/ASN-167. The graft has resulted in 1 clashes with an average atomic distance of from detected clashing residues: 6.513281689645935.
+
+1/4: Successfully finished processing AlphaFoldDB model with UniProt ID of O15552.
+
+Successfully downloaded model from AlphaFoldDB with UniProt ID: 'P01920' to /home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/receiving_model/P01920.pdb
+1/1: Grafted donor glycan as chain B to A/ASN-51. The graft did not produce any clashes.
+
+2/4: Successfully finished processing AlphaFoldDB model with UniProt ID of P01920.
+
+Successfully downloaded model from AlphaFoldDB with UniProt ID: 'Q9BXJ4' to /home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/receiving_model/Q9BXJ4.pdb
+1/1: Grafted donor glycan as chain B to A/ASN-70. The graft did not produce any clashes.
+
+3/4: Successfully finished processing AlphaFoldDB model with UniProt ID of Q9BXJ4.
+
+Successfully downloaded model from AlphaFoldDB with UniProt ID: 'P29016' to /home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/input/receiving_model/P29016.pdb
+1/4: Grafted donor glycan as chain B to A/ASN-38. The graft has resulted in 3 clashes with an average atomic distance of from detected clashing residues: 5.609778842428329.
+2/4: Grafted donor glycan as chain C to A/ASN-75. The graft did not produce any clashes.
+3/4: Grafted donor glycan as chain D to A/ASN-146. The graft did not produce any clashes.
+4/4: Grafted donor glycan as chain E to A/ASN-258. The graft has resulted in 6 clashes with an average atomic distance of from detected clashing residues: 5.527780130764625.
+
+4/4: Successfully finished processing AlphaFoldDB model with UniProt ID of P29016.
+

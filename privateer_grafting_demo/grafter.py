@@ -83,7 +83,9 @@ def query_uniprot_for_glycosylation_locations(uniprotID):
 
 
 def get_sequences_in_receiving_model(receiverpath):
-    builder_sequence_only = pvtmodelling.Builder(receiverpath, True)
+    builder_sequence_only = pvtmodelling.Builder(
+        path_to_receiving_model_file=receiverpath, enable_user_messages=True
+    )
     receiver_sequence = builder_sequence_only.get_receiving_model_sequence_info()
 
     return receiver_sequence
@@ -130,13 +132,21 @@ def glycosylate_receiving_model_using_consensus_seq(
     trimGlycanIfClashesDetected,
 ):
     builder = pvtmodelling.Builder(
-        receiverpath,
-        donorpath,
-        trimGlycanIfClashesDetected,
-        True,
-        enableUserMessages,
-        False,
+        path_to_receiving_model_file=receiverpath,
+        path_to_donor_model=donorpath,
+        nThreads=-1,
+        trim_donor_when_clashes_detected=trimGlycanIfClashesDetected,
+        ANY_search_policy=True,
+        enable_user_messages=enableUserMessages,
+        debug_output=False,
     )
+    # Additional unused functions that allow to change iteration and target Phi/Psi values
+    #   in the step that is responsible for minimizing clashes through manipulation of grafted glycan's
+    #   Phi/Psi angles.
+
+    # builder.set_iterator_step(2.5)
+    # builder.set_phi(-100)
+    # builder.set_psi(180)
     for item in glycosylationTargets:
         chainIndex = item["chainIndex"]
         targets = item["glycosylationTargets"]
@@ -159,13 +169,21 @@ def glycosylate_receiving_model_using_uniprot_info(
     trimGlycanIfClashesDetected,
 ):
     builder = pvtmodelling.Builder(
-        receiverpath,
-        donorpath,
-        trimGlycanIfClashesDetected,
-        True,
-        enableUserMessages,
-        False,
+        path_to_receiving_model_file=receiverpath,
+        path_to_donor_model=donorpath,
+        nThreads=-1,
+        trim_donor_when_clashes_detected=trimGlycanIfClashesDetected,
+        ANY_search_policy=True,
+        enable_user_messages=enableUserMessages,
+        debug_output=False,
     )
+    # Additional unused functions that allow to change iteration and target Phi/Psi values
+    #   in the step that is responsible for minimizing clashes through manipulation of grafted glycan's
+    #   Phi/Psi angles.
+
+    # builder.set_iterator_step(2.5)
+    # builder.set_phi(-100)
+    # builder.set_psi(180)
     for currentTarget in targets:
         chainIndex = 0
         builder.graft_glycan_to_receiver(0, chainIndex, currentTarget)
@@ -345,7 +363,7 @@ elif args.user_uniprotIDsList is not None:
             uniprotID, donorPath, inputModelDirectory, outputPath
         )
         print(
-            f"\n{idx+1}/{len(uniprotIDList)}: Successfully finished processing AlphaFoldDB model with UniProt ID of '{uniprotID}'.\n"
+            f"\n{idx+1}/{len(uniprotIDList)}: Successfully finished processing AlphaFoldDB model with UniProt ID of {uniprotID}.\n"
         )
 else:
     online_input_model_pipeline(uniprotID, donorPath, inputModelDirectory, outputPath)
