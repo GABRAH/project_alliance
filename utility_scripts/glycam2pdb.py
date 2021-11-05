@@ -24,6 +24,24 @@ full-name: full chemical name used in Google and https://www.ebi.ac.uk/pdbe-srv/
 abbreviation: Glycam/common abbreviation of a sugar unit in mass spec terminology(cuz they don't care about anomeric info lol)
 
 """
+atom_replacements = {
+    "H2N": "HN2",
+    "C2N": "C7",
+    "CME": "C8",
+    "H3M": "H83",
+    "H2M": "H82",
+    "H1M": "H81",
+    "O2N": "O7",
+    "H1O": "HO1",
+    "H2O": "HO2",
+    "H3O": "HO3",
+    "H4O": "HO4",
+    "H5O": "HO5",
+    "H6O": "HO6",
+    "H7O": "HO8",
+    "H9O": "HO9",
+}
+
 # Input glycam-PDB structure will conver second and third characters into equivalent PDB codes.
 glycamOneLetterToPDBThreeLetterCodeConversion = {
     "AA": {
@@ -833,48 +851,67 @@ def replaceROH(instructionsForROHReplacement, Lines):
     return output
 
 
-def convertGlycamToPDB(glycamOneLetterToPDBThreeLetterCodeConversion, inputPDB, path):
+def convertGlycamToPDB(
+    glycamOneLetterToPDBThreeLetterCodeConversion, atom_replacements, inputPDB, path
+):
     output = []
     unsupportedByPrivaterCodes = []
 
-    regex = "|".join(
+    regex_residue_code = "|".join(
         "([\w]({}))".format(k) for k in glycamOneLetterToPDBThreeLetterCodeConversion
     )
-
+    regex_atom_code = "|".join("({})".format(k) for k in atom_replacements)
     for line in inputPDB:
         splitLine = re.split(r"(\s+)", line)
         if len(splitLine) > 10:
-            match = re.search(regex, splitLine[6])
-            if match is not None:
-                codeToReplace = splitLine[6][match.start() + 1 : match.end()]
+            match_residue_code = re.search(regex_residue_code, splitLine[6])
+            match_atom_code = re.search(regex_atom_code, splitLine[4])
+            if match_residue_code is not None:
+                codeToReplace = splitLine[6][
+                    match_residue_code.start() + 1 : match_residue_code.end()
+                ]
                 replacementDictionary = glycamOneLetterToPDBThreeLetterCodeConversion[
                     codeToReplace
                 ]
                 replacementPDBCode = replacementDictionary["PDB"]
                 supportedByPrivateer = replacementDictionary["supported"]
-                splitLine[6] = re.sub(match.group(), replacementPDBCode, splitLine[6])
-                outputLine = "".join(splitLine)
-                output.append(outputLine)
+                splitLine[6] = re.sub(
+                    match_residue_code.group(), replacementPDBCode, splitLine[6]
+                )
 
                 if supportedByPrivateer == False:
                     unsupportedByPrivaterCodes.append(
-                        {"GlycamCode": match.group(), "PDBCode": replacementPDBCode}
+                        {
+                            "GlycamCode": match_residue_code.group(),
+                            "PDBCode": replacementPDBCode,
+                        }
                     )
+            if match_atom_code is not None:
+                codeToReplace = splitLine[4][
+                    match_atom_code.start() : match_atom_code.end()
+                ]
+                replacementAtomCode = atom_replacements[codeToReplace]
+                replacementAtomCode = replacementAtomCode.ljust(
+                    len(codeToReplace)
+                )  # Adds whitespace if were replacing C2N with C7 for example.
+                splitLine[4] = re.sub(
+                    match_atom_code.group(), replacementAtomCode, splitLine[4]
+                )
+
+            outputLine = "".join(splitLine)
+            output.append(outputLine)
         elif splitLine[0] == "TER":
-            match = re.search(regex, line)
-            codeToReplace = line[match.start() + 1 : match.end()]
+            match_residue_code = re.search(regex_residue_code, line)
+            codeToReplace = line[
+                match_residue_code.start() + 1 : match_residue_code.end()
+            ]
             replacementDictionary = glycamOneLetterToPDBThreeLetterCodeConversion[
                 codeToReplace
             ]
             replacementPDBCode = replacementDictionary["PDB"]
             supportedByPrivateer = replacementDictionary["supported"]
-            outputLine = line.replace(match.group(), replacementPDBCode)
+            outputLine = line.replace(match_residue_code.group(), replacementPDBCode)
             output.append(outputLine)
-
-            if supportedByPrivateer == False:
-                unsupportedByPrivaterCodes.append(
-                    {"GlycamCode": match.group(), "PDBCode": replacementPDBCode}
-                )
         else:
             output.append(line)
 
@@ -895,7 +932,10 @@ def conversionPipeline(path):
     instructionsForROHReplacement = generateROHReplacementInstructions(glycamPDB)
     ROH_removed = replaceROH(instructionsForROHReplacement, glycamPDB)
     convertedPDB = convertGlycamToPDB(
-        glycamOneLetterToPDBThreeLetterCodeConversion, ROH_removed, path
+        glycamOneLetterToPDBThreeLetterCodeConversion,
+        atom_replacements,
+        ROH_removed,
+        path,
     )
     return convertedPDB
 
