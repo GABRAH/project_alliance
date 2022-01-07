@@ -16,7 +16,7 @@ def privateerValidation(path):
         for sugarIndex in range(numSugars):
             sugar = glycan.get_monosaccharide(sugarIndex)
             sugarPDBCode = sugar.get_name_short()
-            sugarPDBChain = sugar.get_sugar_pdb_chain()
+            sugarPDBChain = sugar.get_sugar_chain_id()
             sugarPDBID = int(sugar.get_sugar_pdb_id())
             sugarCremerPople = sugar.get_cremer_pople_params()
             puckeringAmplitude = sugarCremerPople[0]
