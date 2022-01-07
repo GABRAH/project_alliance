@@ -1,5 +1,5 @@
 rm(list=ls())
-library(bio3d)
+  library(bio3d)
 
 #
 #This is a script which changed the anomers for all of the glycans *** DO NOT RUN THIS AGAIN *** I didn't change the directories for a reason. Don't do it.   
@@ -49,7 +49,14 @@ setwd("../man8_3/")
 O1switch("cluster5_2.pdb")
 setwd("../man8_2/")
 O1switch("cluster1_1.pdb")
+setwd("../man5")
+O1switch("cluster1_1.pdb")
 
+setwd("~/privateerpython/project_alliance/glycampdbfiles/glycanfrags/chito/")
+O1switch("chito2.pdb")
+
+
+setwd("/mnt/7825866d-3ecf-419f-bfb2-731c265f392f/Data/piliwork/Glycans/tria/1/")
 
 #setwd("/mnt/7825866d-3ecf-419f-bfb2-731c265f392f/Data/highmanose/omannose/man5/")
 #O1switch("cluster1.pdb")
