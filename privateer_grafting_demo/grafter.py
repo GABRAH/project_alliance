@@ -11,6 +11,13 @@ defaultDonorLocation = "input/glycanblocks/man5/cluster1.pdb"
 defaultInputModelLocation = "input/receiving_model"
 defaultOutputModelLocation = "output"
 
+# The plan for tomorrow in terms of improvements:
+# 1. User input as a JSON file for specific grafting instructions
+# 1.1. for every defined grafting location, define donor
+# 2. Create functions that would allow user to input receiver or donor models to extract grafting location indices in some sort of nice output.
+# 3. Check how to make it obvious at local run that users for -output argument need to put output file name.
+# 4. If enough time, maybe take a look at TRP mannosylation cuz that is special.
+
 
 def get_working_directory_path(scriptfilepath):
     return os.path.dirname(scriptfilepath)
@@ -211,7 +218,14 @@ def local_input_model_pipeline(receiverpath, donorpath, outputpath, uniprotID):
             uniprotGlycosylations = uniprotQuery["glycosylations"]
             targets = []
             for item in uniprotGlycosylations:
-                if item["description"][0] == "N":
+                if (
+                    item["description"][0]
+                    == "N"
+                    # or item["description"][0] == "O"
+                    # or item["description"][0] == "S"
+                    # or item["description"][0] == "C"
+                    # or item["description"][0] == "P"
+                ):
                     targets.append(int(item["begin"]) - 1)
             graftedGlycans = glycosylate_receiving_model_using_uniprot_info(
                 receiverpath, donorpath, outputpath, targets, True, False
@@ -226,6 +240,7 @@ def local_input_model_pipeline(receiverpath, donorpath, outputpath, uniprotID):
         print_grafted_glycans_summary(graftedGlycans)
 
 
+# P27918 is a good test for TRP, as TRP is a bit more unique and requires different approach. C-mannosylation currently no worky.
 def online_input_model_pipeline(
     uniprotID, donorpath, defaultInputModelPath, outputLocation
 ):
@@ -238,7 +253,14 @@ def online_input_model_pipeline(
     uniprotGlycosylations = uniprotGlycosylationQuery["glycosylations"]
     targets = []
     for item in uniprotGlycosylations:
-        if item["description"][0] == "N":
+        if (
+            item["description"][0]
+            == "N"
+            # or item["description"][0] == "O"
+            # or item["description"][0] == "S"
+            # or item["description"][0] == "C"
+            # or item["description"][0] == "P"
+        ):
             targets.append(int(item["begin"]) - 1)
     graftedGlycans = glycosylate_receiving_model_using_uniprot_info(
         receiverpath, donorpath, outputpath, targets, True, False
