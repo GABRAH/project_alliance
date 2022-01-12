@@ -4,6 +4,7 @@ import sys
 import argparse
 import requests
 import warnings
+import json
 from privateer import privateer_core as pvtcore
 from privateer import privateer_modelling as pvtmodelling
 
@@ -13,10 +14,6 @@ defaultInputModelLocation = "input/receiving_model"
 defaultOutputModelLocation = "output"
 
 # The plan for tomorrow in terms of improvements:
-# 1. User input as a JSON file for specific grafting instructions
-# 1.1. for every defined grafting location, define donor
-# 2. Create functions that would allow user to input receiver or donor models to extract grafting location indices in some sort of nice output.
-# 3. Check how to make it obvious at local run that users for -output argument need to put output file name.
 # 4. If enough time, maybe take a look at TRP mannosylation cuz that is special.
 
 
@@ -39,6 +36,13 @@ def import_list_of_uniprotIDs_to_glycosylate(inputFilePath):
             output.append(cleanLine)
 
     return output
+
+
+def parse_json_for_grafting_instructions(uniprotIDListPath):
+    with open(uniprotIDListPath) as json_file:
+        data = json.load(json_file)
+
+    return data
 
 
 def download_and_prepare_alphafoldDB_model(uniprotID, downloadLocation):
@@ -226,6 +230,36 @@ def get_NGlycosylation_targets_via_consensus_seq(sequences):
     return output
 
 
+def glycosylate_receiving_model_using_manual_instructions(
+    receiverpath,
+    donorpath,
+    outputpath,
+    glycanIndex,
+    receiverChainIndex,
+    receiverResidueIndex,
+    enableUserMessages,
+    trimGlycanIfClashesDetected,
+):
+    builder = pvtmodelling.Builder(
+        receiverpath,
+        donorpath,
+        -1,
+        trimGlycanIfClashesDetected,
+        True,
+        enableUserMessages,
+        False,
+    )
+
+    builder.graft_glycan_to_receiver(
+        glycanIndex, receiverChainIndex, receiverResidueIndex
+    )
+
+    graftedGlycanSummary = builder.get_summary_of_grafted_glycans()
+    builder.export_grafted_model(outputpath)
+
+    return graftedGlycanSummary
+
+
 def glycosylate_receiving_model_using_consensus_seq(
     receiverpath,
     donorpath,
@@ -302,6 +336,25 @@ def print_grafted_glycans_summary(graftedGlycans):
             )
 
 
+def store_grafted_glycans_summary(graftedGlycans, index, totalCount):
+    for graft in graftedGlycans:
+        proteinChainID = graft["receiving_protein_residue_chain_PDBID"]
+        proteinPDBID = graft["receiving_protein_residue_monomer_PDBID"]
+        proteinResidueType = graft["receiving_protein_residue_monomer_type"]
+        graftedGlycanChainID = graft["glycan_grafted_as_chainID"]
+
+        output = ""
+        if len(graft["ClashingResidues"]):
+            averageTotalAtomicDistance = graft["AvgTotalAtomicDistance"]
+            numberOfClashingResidues = len(graft["ClashingResidues"])
+            output = f"{index+1}/{totalCount}: Grafted donor glycan as chain {graftedGlycanChainID} to {proteinChainID}/{proteinResidueType}-{proteinPDBID}. The graft has resulted in {numberOfClashingResidues} clashes with an average atomic distance of from detected clashing residues: {averageTotalAtomicDistance}."
+
+        else:
+            output = f"{index+1}/{totalCount}: Grafted donor glycan as chain {graftedGlycanChainID} to {proteinChainID}/{proteinResidueType}-{proteinPDBID}. The graft did not produce any clashes."
+
+    return output
+
+
 def local_input_model_pipeline(receiverpath, donorpath, outputpath, uniprotID):
     sequences = get_sequences_in_receiving_model(receiverpath)
     if uniprotID is not None:
@@ -317,12 +370,11 @@ def local_input_model_pipeline(receiverpath, donorpath, outputpath, uniprotID):
             targets = []
             for item in uniprotGlycosylations:
                 if (
-                    item["description"][0]
-                    == "N"
-                    # or item["description"][0] == "O"
-                    # or item["description"][0] == "S"
+                    item["description"][0] == "N"
+                    or item["description"][0] == "O"
+                    or item["description"][0] == "S"
                     # or item["description"][0] == "C"
-                    # or item["description"][0] == "P"
+                    or item["description"][0] == "P"
                 ):
                     targets.append(int(item["begin"]) - 1)
             graftedGlycans = glycosylate_receiving_model_using_uniprot_info(
@@ -352,12 +404,11 @@ def online_input_model_pipeline(
     targets = []
     for item in uniprotGlycosylations:
         if (
-            item["description"][0]
-            == "N"
-            # or item["description"][0] == "O"
-            # or item["description"][0] == "S"
+            item["description"][0] == "N"
+            or item["description"][0] == "O"
+            or item["description"][0] == "S"
             # or item["description"][0] == "C"
-            # or item["description"][0] == "P"
+            or item["description"][0] == "P"
         ):
             targets.append(int(item["begin"]) - 1)
     graftedGlycans = glycosylate_receiving_model_using_uniprot_info(
@@ -374,6 +425,7 @@ defaultInputModelDirectory = os.path.join(
 )
 defaultOutputModelPath = os.path.join(workingDirectoryPath, defaultOutputModelLocation)
 defaultuniprotIDsListPath = os.path.join(scriptFilePath, "uniprotIDinputs.txt")
+defaultJSONgrafting = os.path.join(scriptFilePath, "manual_grafting.json")
 
 defaultUniprotID = "P29016"
 
@@ -434,7 +486,14 @@ parser.add_argument(
     action="store_true",
     default=False,
     dest="user_infoFlag",
-    help=f"Print out relevant information about donor PDB(where glycans are taken from) and receiver PDB(where glycans are grafted to). To be used in conjuction with '-local_receiver_path' or/and '-donor_path'. Usage of this flag overrides grafting functionality, i.e. no grafting will be carried out.",
+    help=f"Print out relevant information about donor PDB(where glycans are taken from) and receiver PDB(where glycans are grafted to). To be used in conjuction with '-local_receiver_path' and/or '-donor_path' and/or '-uniprotID' flags. Usage of this flag overrides grafting functionality, i.e. no grafting will be carried out.",
+)
+parser.add_argument(
+    "-manual_grafting",
+    action="store",
+    default=None,
+    dest="user_JSONgrafting",
+    help=f"Import a JSON file to manually graft glycans with total control over glycosylation sites. Example file is located at '{defaultJSONgrafting}'",
 )
 
 
@@ -468,6 +527,9 @@ else:
 if args.user_uniprotIDsList is not None:
     uniprotIDListPath = args.user_uniprotIDsList
 
+if args.user_JSONgrafting is not None:
+    JSONgraftingPath = args.user_JSONgrafting
+
 if args.user_infoFlag == True and not None:
     printInfo = True
 
@@ -498,6 +560,55 @@ elif args.user_uniprotIDsList is not None and printInfo == False:
         print(
             f"\n{idx+1}/{len(uniprotIDList)}: Successfully finished processing AlphaFoldDB model with UniProt ID of {uniprotID}.\n"
         )
+elif args.user_JSONgrafting is not None and printInfo == False:
+    JSONGraftInstructions = parse_json_for_grafting_instructions(JSONgraftingPath)
+    initialInputPath = JSONGraftInstructions["receiver_path"]
+    initialOutputSubsequentInputOutputPath = JSONGraftInstructions["output_path"]
+    glycosylations = JSONGraftInstructions["glycosylations"]
+    graftedGlycansSummary = []
+    for count, item in enumerate(glycosylations):
+        donorPath = item["donor_path"]
+        glycanIndex = item["glycan_index"]
+        receivingChainIndex = item["receiving_chain_index"]
+        receivingAminoAcidIndex = item["receiving_aa_index"]
+        if count == 0:
+            currentGraftedGlycanSummary = (
+                glycosylate_receiving_model_using_manual_instructions(
+                    initialInputPath,
+                    donorPath,
+                    initialOutputSubsequentInputOutputPath,
+                    glycanIndex,
+                    receivingChainIndex,
+                    receivingAminoAcidIndex,
+                    True,
+                    False,
+                )
+            )
+            messageString = store_grafted_glycans_summary(
+                currentGraftedGlycanSummary, count, len(glycosylations)
+            )
+            graftedGlycansSummary.append(messageString)
+        else:
+            currentGraftedGlycanSummary = (
+                glycosylate_receiving_model_using_manual_instructions(
+                    initialOutputSubsequentInputOutputPath,
+                    donorPath,
+                    initialOutputSubsequentInputOutputPath,
+                    glycanIndex,
+                    receivingChainIndex,
+                    receivingAminoAcidIndex,
+                    True,
+                    False,
+                )
+            )
+            messageString = store_grafted_glycans_summary(
+                currentGraftedGlycanSummary, count, len(glycosylations)
+            )
+            graftedGlycansSummary.append(messageString)
+    print("\n")
+    for message in graftedGlycansSummary:
+        print(message + "\n")
+
 elif printInfo == True:
     warnings.warn(
         "-info flag was provided, overriding all arguments regarding grafting and printing info only. Please remove -info flag if you actually want to graft glycans."
