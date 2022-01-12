@@ -3,6 +3,7 @@ import re
 import sys
 import argparse
 import requests
+import warnings
 from privateer import privateer_core as pvtcore
 from privateer import privateer_modelling as pvtmodelling
 
@@ -94,6 +95,103 @@ def get_sequences_in_receiving_model(receiverpath):
     receiver_sequence = builder_sequence_only.get_receiving_model_sequence_info()
 
     return receiver_sequence
+
+
+# privateer::pymodelling::Builder::graft_glycan_to_receiver(int mglycanindex, int receiver_chain_index, int received_residue_index)
+def get_information_about_input_files(receiverpath, donorpath, uniprotID):
+    if receiverpath is None and donorpath is None and uniprotID is None:
+        raise ValueError(
+            "'-info' flag needs to be used in conjuction with '-uniprotID' and/or '-donor_path' and/or '-local_receiver_path'. At least one of those flags need to be provided."
+        )
+    model_chains = []
+    bulletIndex = 1
+    if receiverpath is not None:
+        print(
+            f"\n\n\n{bulletIndex}. Information related to receiver model(glycans will be grafted to this PDB file). Associated with '-local_receiver_path' flag."
+        )
+        print(f"\nPath: {receiverpath}")
+        bulletIndex += 1
+        sequences = get_sequences_in_receiving_model(receiverpath)
+        for item in sequences:
+            chainIndex = item["index"]
+            chainID = item["ChainID"]
+            chainSequence = item["Sequence"]
+            chainResidues = item["Residues"]
+            dict_for_uniprot = {
+                "index": chainIndex,
+                "chainID": chainID,
+                "sequence": chainSequence,
+            }
+            model_chains.append(dict_for_uniprot)
+            print(
+                f"\nreceiver_chain_index: {chainIndex} \t\t\t(grafter.py input variable)"
+            )
+            print(f"Chain ID: {chainID}")
+            print(f"Chain Sequence: \n{chainSequence}")
+            for residue in chainResidues:
+                residueIndex = residue["index"]
+                residueType = residue["residueType"]
+                residueCode = residue["residueCode"]
+                residueSeqnum = residue["residueSeqnum"]
+                print(
+                    f"\treceiver_residue_index: {residueIndex} \t\t(grafter.py input variable)"
+                )
+                print(
+                    f"\t\tResidue PDB code: {chainID}/{residueType}-{residueCode}/{residueSeqnum}"
+                )
+    if donorpath is not None:
+        print(
+            f"\n\n\n{bulletIndex}. Information related to donor model(glycans will be taken from this PDB file and translocated to another PDB file). Associated with '-donor_path' flag."
+        )
+        print(f"\nPath: {donorpath}")
+        bulletIndex += 1
+        glycosylation = pvtcore.GlycosylationComposition_memsafe(donorpath)
+        glycans = glycosylation.get_summary_of_detected_glycans()
+        for item in glycans:
+            glycanIndex = item["GlycanID"]
+            glycanWURCS = item["WURCS"]
+            glycanType = item["GlycosylationType"]
+            glycanRootInfo = item["RootInfo"]
+            GlycosidicLinkageTorsions = item["ProteinGlycanLinkageTorsion"]
+            print(f"\nglycan_index: {glycanIndex} \t\t\t(grafter.py input variable)")
+            print(f"\tGlycan WURCS: {glycanWURCS}")
+            print(f"\tGlycosylation Type: {glycanType}")
+            print(
+                f"\tGlycan in the donor linked to: {glycanRootInfo['ProteinChainID']}/{glycanRootInfo['ProteinResidueID']}-{glycanRootInfo['ProteinResidueType']} and is modelled as Chain {glycanRootInfo['RootSugarChainID']}"
+            )
+            print(
+                f"\tGlycosidic linkage torsions in the donor model - Phi = {GlycosidicLinkageTorsions['Phi']}, Psi = {GlycosidicLinkageTorsions['Psi']}"
+            )
+    if uniprotID is not None:
+        print(
+            f"\n\n\n{bulletIndex}. Information related to glycosylation site data held by UniProt. Associated with '-uniprotID' flag."
+        )
+        print(f"\nUniProt ID: {uniprotID}")
+        bulletIndex += 1
+        uniprotQuery = query_uniprot_for_glycosylation_locations(uniprotID)
+        uniprotSequence = uniprotQuery["sequence"]
+        uniprotSequenceLength = uniprotQuery["sequenceLength"]
+        glycosylations = uniprotQuery["glycosylations"]
+        print(f"\nProtein Sequence: \n{uniprotSequence}\n")
+        print(f"Protein Sequence Length: {uniprotSequenceLength}\n")
+        if model_chains and receiverpath is not None:
+            search_result = next(
+                (item for item in model_chains if item["sequence"] == uniprotSequence),
+                False,
+            )
+            if search_result == False:
+                print(
+                    f"WARNING: Unable to find a retrieved {uniprotID} sequence in {receiverpath}.\n"
+                )
+            else:
+                print(
+                    f"Successfully managed to find a sequence match for {uniprotID} in receiver_chain_index: {search_result['index']} which is modelled as Chain {search_result['chainID']} in '{receiverpath}'!\n"
+                )
+        for glycosylation in glycosylations:
+            description = glycosylation["description"]
+            residueindex = glycosylation["begin"]
+            print(f"\n\tUniProt description: {description}")
+            print(f"\tGlycosylated at residue seqnum: {residueindex}")
 
 
 def get_NGlycosylation_targets_via_consensus_seq(sequences):
@@ -279,6 +377,8 @@ defaultuniprotIDsListPath = os.path.join(scriptFilePath, "uniprotIDinputs.txt")
 
 defaultUniprotID = "P29016"
 
+printInfo = False
+
 
 parser = argparse.ArgumentParser(
     prog="grafter.py",
@@ -319,7 +419,7 @@ parser.add_argument(
     action="store",
     default=None,
     dest="user_outputPath",
-    help=f"Specify output directory where AlpfaFoldDB models with grafted glycans should be saved. If unspecified, the script will default to '{defaultOutputModelPath}'",
+    help=f"Specify output directory where AlpfaFoldDB models with grafted glycans should be saved. If unspecified, the script will default to '{defaultOutputModelPath}'. If the argument is used alongside -local_receiver_path, then the name of PDB output file should be provided, for example 'P29016_output.pdb'",
 )
 parser.add_argument(
     "-import_uniprotIDs_from_file",
@@ -328,6 +428,15 @@ parser.add_argument(
     dest="user_uniprotIDsList",
     help=f"Glycosylate multiple AlphaFoldDB models from a list of UniProtIDs. Example file is located in '{defaultuniprotIDsListPath}' By default will download files from the server and save them localy in specified or default directory locations.",
 )
+
+parser.add_argument(
+    "-info",
+    action="store_true",
+    default=False,
+    dest="user_infoFlag",
+    help=f"Print out relevant information about donor PDB(where glycans are taken from) and receiver PDB(where glycans are grafted to). To be used in conjuction with '-local_receiver_path' or/and '-donor_path'. Usage of this flag overrides grafting functionality, i.e. no grafting will be carried out.",
+)
+
 
 args = parser.parse_args()
 
@@ -342,6 +451,13 @@ else:
     donorPath = defaultDonorPath
 if args.user_outputPath is not None:
     outputPath = args.user_outputPath
+    if (
+        os.path.isdir(args.user_localReceiverPath)
+        and args.user_localReceiverPath is not None
+    ):
+        raise ValueError(
+            "ERROR: The combination of provided arguments requires -output_path argument to be a file name, rather than directory!"
+        )
 else:
     outputPath = defaultOutputModelPath
 if args.user_inputModelDirectory is not None:
@@ -352,17 +468,28 @@ else:
 if args.user_uniprotIDsList is not None:
     uniprotIDListPath = args.user_uniprotIDsList
 
+if args.user_infoFlag == True and not None:
+    printInfo = True
 
-if args.user_localReceiverPath is not None and args.user_uniprotID is None:
+
+if (
+    args.user_localReceiverPath is not None
+    and args.user_uniprotID is None
+    and printInfo == False
+):
     uniprotID = None
     local_input_model_pipeline(
         args.user_localReceiverPath, donorPath, outputPath, uniprotID
     )
-elif args.user_localReceiverPath is not None and args.user_uniprotID is not None:
+elif (
+    args.user_localReceiverPath is not None
+    and args.user_uniprotID is not None
+    and printInfo == False
+):
     local_input_model_pipeline(
         args.user_localReceiverPath, donorPath, outputPath, uniprotID
     )
-elif args.user_uniprotIDsList is not None:
+elif args.user_uniprotIDsList is not None and printInfo == False:
     uniprotIDList = import_list_of_uniprotIDs_to_glycosylate(uniprotIDListPath)
     for idx, uniprotID in enumerate(uniprotIDList):
         online_input_model_pipeline(
@@ -371,5 +498,19 @@ elif args.user_uniprotIDsList is not None:
         print(
             f"\n{idx+1}/{len(uniprotIDList)}: Successfully finished processing AlphaFoldDB model with UniProt ID of {uniprotID}.\n"
         )
+elif printInfo == True:
+    warnings.warn(
+        "-info flag was provided, overriding all arguments regarding grafting and printing info only. Please remove -info flag if you actually want to graft glycans."
+    )
+    get_information_about_input_files(
+        args.user_localReceiverPath, args.user_donorPath, args.user_uniprotID
+    )
 else:
-    online_input_model_pipeline(uniprotID, donorPath, inputModelDirectory, outputPath)
+    if printInfo == False:
+        online_input_model_pipeline(
+            uniprotID, donorPath, inputModelDirectory, outputPath
+        )
+    else:
+        warnings.warn(
+            "-info flag was provided, overriding all arguments regarding grafting and printing info only. Please remove -info flag if you actually want to graft glycans."
+        )
