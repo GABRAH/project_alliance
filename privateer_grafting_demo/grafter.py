@@ -128,7 +128,7 @@ def get_information_about_input_files(receiverpath, donorpath, uniprotID):
             }
             model_chains.append(dict_for_uniprot)
             print(
-                f"\nreceiver_chain_index: {chainIndex} \t\t\t(grafter.py input variable)"
+                f"\nreceiver_chain_index: {chainIndex} \t\t\t(manual_grafting.json key:value pair)"
             )
             print(f"Chain ID: {chainID}")
             print(f"Chain Sequence: \n{chainSequence}")
@@ -138,7 +138,7 @@ def get_information_about_input_files(receiverpath, donorpath, uniprotID):
                 residueCode = residue["residueCode"]
                 residueSeqnum = residue["residueSeqnum"]
                 print(
-                    f"\treceiver_residue_index: {residueIndex} \t\t(grafter.py input variable)"
+                    f"\treceiving_aa_index: {residueIndex} \t\t(manual_grafting.json key:value pair)"
                 )
                 print(
                     f"\t\tResidue PDB code: {chainID}/{residueType}-{residueCode}/{residueSeqnum}"
@@ -157,7 +157,9 @@ def get_information_about_input_files(receiverpath, donorpath, uniprotID):
             glycanType = item["GlycosylationType"]
             glycanRootInfo = item["RootInfo"]
             GlycosidicLinkageTorsions = item["ProteinGlycanLinkageTorsion"]
-            print(f"\nglycan_index: {glycanIndex} \t\t\t(grafter.py input variable)")
+            print(
+                f"\nglycan_index: {glycanIndex} \t\t\t(manual_grafting.json key:value pair)"
+            )
             print(f"\tGlycan WURCS: {glycanWURCS}")
             print(f"\tGlycosylation Type: {glycanType}")
             print(
