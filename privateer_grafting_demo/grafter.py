@@ -375,7 +375,7 @@ def local_input_model_pipeline(receiverpath, donorpath, outputpath, uniprotID):
                     item["description"][0] == "N"
                     or item["description"][0] == "O"
                     or item["description"][0] == "S"
-                    # or item["description"][0] == "C"
+                    or item["description"][0] == "C"
                     or item["description"][0] == "P"
                 ):
                     targets.append(int(item["begin"]) - 1)
@@ -409,7 +409,7 @@ def online_input_model_pipeline(
             item["description"][0] == "N"
             or item["description"][0] == "O"
             or item["description"][0] == "S"
-            # or item["description"][0] == "C"
+            or item["description"][0] == "C"
             or item["description"][0] == "P"
         ):
             targets.append(int(item["begin"]) - 1)
@@ -427,7 +427,7 @@ defaultInputModelDirectory = os.path.join(
 )
 defaultOutputModelPath = os.path.join(workingDirectoryPath, defaultOutputModelLocation)
 defaultuniprotIDsListPath = os.path.join(scriptFilePath, "uniprotIDinputs.txt")
-defaultJSONgrafting = os.path.join(scriptFilePath, "manual_grafting.json")
+defaultJSONgrafting = os.path.join(workingDirectoryPath, "manual_grafting.json")
 
 defaultUniprotID = "P29016"
 
