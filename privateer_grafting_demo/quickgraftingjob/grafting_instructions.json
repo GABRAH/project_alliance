@@ -1,0 +1,77 @@
+{
+    "receiver_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/F9W650.pdb",
+    "output_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/F9W650_grafted.pdb",
+    "glycosylations": [{
+            "donor_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/donors/4js1.pdb",
+            "glycan_index": 0,
+            "receiving_chain_index": 0,
+            "receiving_aa_index": 121
+        },
+        {
+            "donor_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/donors/5t3x.pdb",
+            "glycan_index": 6,
+            "receiving_chain_index": 0,
+            "receiving_aa_index": 150
+        },
+        {
+            "donor_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/donors/5w5m.pdb",
+            "glycan_index": 0,
+            "receiving_chain_index": 0,
+            "receiving_aa_index": 194
+        },
+        {
+            "donor_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/donors/6bbe.pdb",
+            "glycan_index": 0,
+            "receiving_chain_index": 0,
+            "receiving_aa_index": 409
+        },
+        {
+            "donor_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/donors/6eg0.pdb",
+            "glycan_index": 4,
+            "receiving_chain_index": 0,
+            "receiving_aa_index": 422
+        },
+        {
+            "donor_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/donors/6olp.pdb",
+            "glycan_index": 19,
+            "receiving_chain_index": 0,
+            "receiving_aa_index": 478
+        },
+        {
+            "donor_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/donors/6olp.pdb",
+            "glycan_index": 43,
+            "receiving_chain_index": 0,
+            "receiving_aa_index": 492
+        },
+        {
+            "donor_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/donors/4js1.pdb",
+            "glycan_index": 0,
+            "receiving_chain_index": 0,
+            "receiving_aa_index": 532
+        },
+        {
+            "donor_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/donors/5t3x.pdb",
+            "glycan_index": 6,
+            "receiving_chain_index": 0,
+            "receiving_aa_index": 578
+        },
+        {
+            "donor_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/donors/5w5m.pdb",
+            "glycan_index": 0,
+            "receiving_chain_index": 0,
+            "receiving_aa_index": 597
+        },
+        {
+            "donor_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/donors/6bbe.pdb",
+            "glycan_index": 0,
+            "receiving_chain_index": 0,
+            "receiving_aa_index": 625
+        },
+        {
+            "donor_path": "/home/harold/Dev/privateer_python/project_alliance/privateer_grafting_demo/quickgraftingjob/donors/6eg0.pdb",
+            "glycan_index": 4,
+            "receiving_chain_index": 0,
+            "receiving_aa_index": 644
+        }
+    ]
+}
